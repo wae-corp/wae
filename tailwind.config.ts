@@ -13,6 +13,10 @@ export default {
                 center: true,
             },
             colors: {},
+            backgroundImage: {
+                "window-pattern": "url('/images/covers/window-bg-pattern.jpg')",
+                "water-drop": "url('/images/covers/water-drop.jpg')",
+            },
             // spacing: {
             //     default: "2rem",
             // },

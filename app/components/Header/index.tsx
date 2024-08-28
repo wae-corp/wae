@@ -2,11 +2,11 @@ import {Link, NavLink} from "@remix-run/react";
 
 export const Header = () => {
     return (
-        <header className="fixed w-full bg-gradient-to-b from-black top-0 left-0 z-40 pt-14 pb-5 h-[120px]">
+        <header className="fixed left-0 top-0 z-40 h-[120px] w-full bg-gradient-to-b from-black pb-5 pt-14">
             <div className="container">
-                <div className="flex items-center gap-10 relative text-white">
+                <div className="relative flex items-center gap-10 text-white">
                     <nav className="flex-1">
-                        <ul className="flex gap-10 items-center">
+                        <ul className="flex items-center gap-10">
                             <li>
                                 <NavLink to={"/"}>Company</NavLink>
                             </li>
@@ -23,10 +23,10 @@ export const Header = () => {
                     </nav>
                     <Link
                         to={"/"}
-                        className="absolute left-1/2 t-1/2 -translate-1/2 "
+                        className="t-1/2 -translate-1/2 absolute left-1/2"
                     >
                         <img
-                            src="/images/logo/wae-logo.png"
+                            src="/images/logos/wae-logo.png"
                             alt="Wae"
                             width={120}
                             height={60}
