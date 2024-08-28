@@ -1,3 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Monschone";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("fonts/MonschoneRegular.woff2") format("woff2");
+    }
+
+    /* @font-face {
+        font-family: "Mont";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url("fonts/Mont-ExtraLight.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Mont";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url("fonts/Mont-Heavy.woff2") format("woff2");
+    } */
+}
+
+/* Defaults */
+body {
+    @apply font-primary font-normal;
+}
+
+/* Typography */
+.wae-h1 {
+    @apply text-8xl;
+}
+
+.wae-h2 {
+    @apply text-[58px];
+}
+
+.wae-h3 {
+    @apply text-[40px];
+}
+
+.wae-h4 {
+    @apply text-4xl;
+}
+
+.wae-h5 {
+    @apply text-3xl;
+}
+
+.wae-h6 {
+    @apply text-xl;
+}
