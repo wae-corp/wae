@@ -8,16 +8,18 @@ export const Header = () => {
                     <nav className="flex-1">
                         <ul className="flex items-center gap-10">
                             <li>
-                                <NavLink to={"/"}>Company</NavLink>
+                                <NavLink to={"/company"}>Company</NavLink>
                             </li>
                             <li>
-                                <NavLink to={"/"}>Product & Solutions</NavLink>
+                                <NavLink to={"/product"}>
+                                    Product & Solutions
+                                </NavLink>
                             </li>
                             <li className="ml-auto">
-                                <NavLink to={"/"}>Career</NavLink>
+                                <NavLink to={"/careers"}>Career</NavLink>
                             </li>
                             <li>
-                                <NavLink to={"/"}>News & Updates</NavLink>
+                                <NavLink to={"/blog"}>News & Updates</NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -34,12 +36,12 @@ export const Header = () => {
                         />
                     </Link>
 
-                    <a
-                        href="#"
+                    <Link
+                        to="/contact"
                         className="flex-shrink-0"
                     >
                         Get In Touch
-                    </a>
+                    </Link>
                 </div>
             </div>
         </header>

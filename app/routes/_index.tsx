@@ -5,8 +5,8 @@ import {ProductList, ProjectList} from "~/static";
 
 export const meta: MetaFunction = () => {
     return [
-        {title: "New Remix App"},
-        {name: "description", content: "Welcome to Remix!"},
+        {title: "Home"},
+        {name: "description", content: "Keeping The Blue Planet Green"},
     ];
 };
 
@@ -18,6 +18,7 @@ export default function Index() {
                     <div className="absolute z-[1] h-full w-full bg-gradient-to-b from-black via-transparent to-black"></div>
                     <img
                         src="/images/covers/earth-in-hands.jpg"
+                        alt="Hands holding earth"
                         className="h-full w-full object-cover"
                         width={1920}
                         height={1080}
@@ -155,7 +156,7 @@ export default function Index() {
                         </button>
                     </div>
                 </div>
-                <div className="bg-water-drop relative flex w-1/2 flex-col justify-center bg-black bg-opacity-40 bg-cover bg-bottom bg-no-repeat px-40 py-36 text-white">
+                <div className="relative flex w-1/2 flex-col justify-center bg-black bg-opacity-40 bg-water-drop bg-cover bg-bottom bg-no-repeat px-40 py-36 text-white">
                     <div className="absolute inset-0 bg-black opacity-60"></div>
 
                     <div className="isolate">
