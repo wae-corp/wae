@@ -49,8 +49,7 @@ export default function Index() {
             </h2>
 
             <p className="uppercase">
-              <span className="mr-2 inline-block h-4 w-4 rounded-full bg-current align-middle"></span>{" "}
-              EXPLORE THE SYSTEM ALL AROUND
+              <span className="prefix-dot"></span> EXPLORE THE SYSTEM ALL AROUND
             </p>
           </div>
         </div>
@@ -79,7 +78,7 @@ export default function Index() {
           </div>
 
           <p className="uppercase">
-            <span className="mr-2 inline-block h-4 w-4 rounded-full bg-current align-middle"></span>
+            <span className="prefix-dot"></span>
             You Discover Demo Kitchens
           </p>
         </section>
@@ -98,8 +97,7 @@ export default function Index() {
               </p>
 
               <p className="uppercase">
-                <span className="mr-2 inline-block h-4 w-4 rounded-full bg-current align-middle"></span>{" "}
-                You discover Doimo Kitchens
+                <span className="prefix-dot"></span> You discover Doimo Kitchens
               </p>
             </div>
             <div className="md:col-span-4">
@@ -127,7 +125,7 @@ export default function Index() {
             </h2>
 
             <p className="uppercase">
-              <span className="mr-2 inline-block h-4 w-4 rounded-full bg-current align-middle"></span>
+              <span className="prefix-dot"></span>
               You Discover Demo Kitchens
             </p>
           </div>

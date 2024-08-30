@@ -49,7 +49,7 @@ export default function Products() {
           </div>
 
           <p className="uppercase">
-            <span className="mr-2 inline-block h-4 w-4 rounded-full bg-current align-middle"></span>
+            <span className="prefix-dot"></span>
             You Discover Demo Kitchens
           </p>
         </section>
@@ -115,8 +115,7 @@ export default function Products() {
               </h2>
 
               <p className="uppercase">
-                <span className="mr-2 inline-block h-4 w-4 rounded-full bg-current align-middle"></span>{" "}
-                Design freedom
+                <span className="prefix-dot"></span> Design freedom
               </p>
             </div>
           </div>
