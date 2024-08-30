@@ -13,6 +13,7 @@ export const ProjectSlider = ({projectList}: ProjectSliderProps) => {
         loop={true}
         classNames={{
           slide: "basis-[500px] mr-[60px] 2xl:basis-[600px] 2xl:mr-[100px]",
+          controls: "hidden",
         }}
       >
         {projectList?.map((project, idx) => {

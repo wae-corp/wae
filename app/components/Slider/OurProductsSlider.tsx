@@ -31,6 +31,7 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
           loop={true}
           classNames={{
             slide: "basis-[300px] mr-8",
+            controls: "hidden",
           }}
         >
           {productList?.map((product, idx) => {

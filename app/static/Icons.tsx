@@ -51,36 +51,24 @@ export const Icons = {
   ),
   ChevronLeft: (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
       width="24"
       height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
     >
-      <path
-        d="M6.5 12.5L1.5 7L6.5 1.5"
-        stroke="currentcolor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path>
     </svg>
   ),
   ChevronRight: (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
       width="24"
       height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
     >
-      <path
-        d="M9 18.5L15 12.5L9 6.5"
-        stroke="currentcolor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
     </svg>
   ),
 };
