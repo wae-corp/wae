@@ -90,4 +90,52 @@ export const ProjectList: Project[] = [
   },
 ];
 
+export const ProductsPageListing = [
+  {
+    id: "01",
+    name: "TRUBLU",
+    description:
+      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product",
+    image: "",
+  },
+  {
+    id: "02",
+    name: "TRUBLU",
+    description:
+      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product",
+    image: "",
+  },
+  {
+    id: "03",
+    name: "TRUBLU",
+    description:
+      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product",
+    image: "",
+  },
+  {
+    id: "04",
+    name: "TRUBLU",
+    description:
+      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product",
+    image: "",
+  },
+  {
+    id: "05",
+    name: "TRUBLU",
+    description:
+      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product",
+    image: "",
+  },
+];
+
 export * from "./Icons";

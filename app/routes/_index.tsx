@@ -67,9 +67,14 @@ export default function Index() {
               an interior place.
             </h4>
             <p className="basis-60 uppercase">
-              <strong>We are thought that becomes action.</strong> Matter that
-              transforms into emotion. Invisible yet concrete values,{" "}
-              <strong>to give a new meaning to an interior place.</strong>
+              <strong className="font-extrabold">
+                We are thought that becomes action.
+              </strong>{" "}
+              Matter that transforms into emotion. Invisible yet concrete
+              values,{" "}
+              <strong className="font-extrabold">
+                to give a new meaning to an interior place.
+              </strong>
             </p>
           </div>
 
@@ -127,7 +132,10 @@ export default function Index() {
             </p>
           </div>
         </div>
-        <ProjectSlider projectList={ProjectList} />
+        <ProjectSlider
+          projectList={ProjectList}
+          arrows={true}
+        />
       </section>
 
       <section className="flex">
