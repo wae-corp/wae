@@ -1,3 +1,5 @@
+import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import {
     Links,
     Meta,
@@ -26,9 +28,9 @@ export function Layout({children}: {children: React.ReactNode}) {
                     <Header />
                     {children}
                     <Footer />
-                    <ScrollRestoration />
-                    <Scripts />
                 </MantineProvider>
+                <ScrollRestoration />
+                <Scripts />
             </body>
         </html>
     );
