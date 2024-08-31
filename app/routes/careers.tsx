@@ -1,8 +1,7 @@
-import "@mantine/carousel/styles.css";
 import {Carousel} from "@mantine/carousel";
 import {Link, MetaFunction} from "@remix-run/react";
 import {useRef} from "react";
-import Autoplay from "embla-carousel-autoplay";
+// import Autoplay from "embla-carousel-autoplay";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,7 +12,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Careers() {
-  const autoplay = useRef(Autoplay({delay: 2000}));
+  // const autoplay = useRef(Autoplay({delay: 2000}));
 
   return (
     <>
@@ -69,7 +68,7 @@ export default function Careers() {
         <Carousel
           align={"start"}
           loop={true}
-          plugins={[autoplay.current]}
+          // plugins={[autoplay.current]}
           classNames={{
             slide: "basis-[370px] mr-14",
             controls: "hidden",
