@@ -38,7 +38,7 @@ export default function Careers() {
         <div className="container flex min-h-screen items-center">
           <div className="grid gap-8 md:grid-cols-12">
             <div className="flex flex-col justify-start md:col-span-8">
-              <h3 className="mb-10 font-secondary text-4xl">Life at WAE</h3>
+              <h3 className="wae-h4 mb-10 font-secondary">Life at WAE</h3>
               <p className="mb-10 max-w-[80%] uppercase md:ml-28">
                 Life at WAE is vibrant and inspiring. Our culture is a tapestry
                 of collaboration, inclusivity, and continuous learning. Here,

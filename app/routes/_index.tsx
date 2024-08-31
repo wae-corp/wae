@@ -86,7 +86,7 @@ export default function Index() {
         <section className="container">
           <div className="grid gap-8 md:grid-cols-12">
             <div className="flex flex-col justify-start md:col-span-8">
-              <h3 className="mb-10 font-secondary text-4xl">
+              <h3 className="wae-h4 mb-10 font-secondary">
                 A 100% Made in India
               </h3>
               <p className="mb-10 max-w-[80%] uppercase md:ml-28">
