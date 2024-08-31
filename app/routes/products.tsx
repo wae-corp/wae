@@ -56,7 +56,7 @@ export default function Products() {
 
         <section>
           <div className="container max-w-[1080px]">
-            <div className="flex flex-col gap-[180px]">
+            <div className="wae-gap-lg flex flex-col">
               {ProductsPageListing.map((product) => {
                 return (
                   <div className="flex gap-[110px] even:flex-row-reverse">

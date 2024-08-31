@@ -40,7 +40,7 @@ export const ProjectSlider = ({
         <div className="container mt-20 flex items-center justify-end gap-4">
           <button
             onClick={() => embla?.scrollPrev()}
-            className="flex h-12 w-12 items-center justify-center rounded-lg border border-white transition-colors hover:bg-gray-800 active:bg-gray-700"
+            className="wae-btn carousel-nav-btn border-white"
           >
             <svg
               width="8"
@@ -57,7 +57,7 @@ export const ProjectSlider = ({
           </button>
           <button
             onClick={() => embla?.scrollNext()}
-            className="flex h-12 w-12 items-center justify-center rounded-lg border border-white transition-colors hover:bg-gray-800 active:bg-gray-700"
+            className="wae-btn carousel-nav-btn border-white"
           >
             <svg
               width="8"

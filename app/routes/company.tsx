@@ -13,10 +13,11 @@ export const meta: MetaFunction = () => {
 export default function Company() {
   return (
     <>
-      <main className="bg-washing-hands flex min-h-screen items-center justify-center bg-black bg-cover bg-no-repeat py-8 text-center text-black">
-        <div className="container">
+      <main className="flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 text-center text-black">
+        <div className="absolute inset-0 h-full w-full bg-black/60"></div>
+        <div className="container isolate">
           <div className="mx-auto mt-40 max-w-[1080px] text-white">
-            <h2 className="mt-10 font-secondary text-2xl uppercase leading-tight">
+            <h2 className="wae-h6-lg mt-10 font-secondary uppercase leading-tight">
               At WAE, we're driven by an audacious and inspiring mission: to
               become the world's most admired environmental services
               corporation, leaving an indelible mark on the quality of life. We
@@ -33,7 +34,7 @@ export default function Company() {
 
       <section className="bg-white py-36">
         <div className="container">
-          <div className="mb-36 flex justify-center gap-[180px]">
+          <div className="wae-gap-lg mb-36 flex justify-center">
             <div className="flex-shrink-0">
               <label className="mb-5 block text-sm uppercase">
                 Mission & Vision
@@ -80,14 +81,15 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="bg-washing-hands flex min-h-screen items-center justify-center bg-black bg-cover bg-no-repeat py-8 text-center text-black">
-        <div className="container">
+      <section className="relative flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 text-center text-black">
+        <div className="absolute inset-0 h-full w-full bg-black/60"></div>
+        <div className="container isolate">
           <div className="mx-auto mt-40 max-w-[1080px] text-white">
             <h2 className="mb-8 font-extrabold uppercase">
               Journey and Transformation
             </h2>
 
-            <p className="mt-10 font-secondary text-2xl uppercase leading-tight">
+            <p className="wae-h6-lg mt-10 font-secondary uppercase leading-tight">
               Our journey has been a rewarding one, contributing to a
               sustainable planet where everyone can thrive. Looking ahead, our
               transformation will be guided by our capabilities, strategic
@@ -102,7 +104,7 @@ export default function Company() {
 
       <section className="bg-black py-36 text-white">
         <div className="container">
-          <div className="mb-36 flex justify-center gap-[180px]">
+          <div className="wae-gap-lg mb-36 flex justify-center">
             <div className="flex-shrink-0">
               <h4 className="wae-h4 font-secondary uppercase">Brand Purpose</h4>
             </div>
@@ -122,7 +124,7 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="container py-[180px]">
+      <section className="wae-pt-lg wae-pb-lg container">
         <div className="grid gap-8 md:grid-cols-12">
           <div className="flex flex-col justify-start md:col-span-8">
             <h3 className="wae-h4 mb-10 font-secondary">
@@ -153,7 +155,7 @@ export default function Company() {
           </div>
         </div>
 
-        <div className="container mt-[180px]">
+        <div className="wae-mt-lg container">
           <div className="mb-36 max-w-[670px]">
             <h4 className="wae-h4 mb-5 font-secondary uppercase">
               Core Values and Beliefs
@@ -175,7 +177,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Research-Driven
               </h5>
 
@@ -192,7 +194,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Environmental and Human Service
               </h5>
 
@@ -209,7 +211,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Responsibility
               </h5>
 
@@ -228,7 +230,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Employee Value
               </h5>
 
@@ -246,7 +248,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Participative Management
               </h5>
 
@@ -264,7 +266,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Quality Commitment
               </h5>
 
@@ -277,9 +279,9 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center justify-center bg-black py-[180px] text-center text-white">
+      <section className="wae-pt-lg wae-pb-lg flex flex-col items-center justify-center bg-black text-center text-white">
         <div className="container">
-          <div className="mx-auto mb-[180px] max-w-5xl">
+          <div className="wae-mb-lg mx-auto max-w-5xl">
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
             <h2 className="wae-h2 mb-[100px] mt-10 font-secondary leading-tight">

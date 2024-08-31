@@ -52,7 +52,7 @@ export default function Careers() {
               </p>
             </div>
             <div className="md:col-span-4">
-              <p className="text-2xl uppercase">
+              <p className="wae-h6-lg uppercase">
                 WAE is more than a job - it's a journey. We offer competitive
                 benefits, a supportive and inclusive community, and countless
                 opportunities for personal and professional growth. Join us and
@@ -89,7 +89,7 @@ export default function Careers() {
           })}
         </Carousel>
 
-        <div className="container mt-[180px]">
+        <div className="wae-mt-lg container">
           <div className="mb-36 max-w-[670px]">
             <h4 className="wae-h4 mb-5 font-secondary uppercase">
               Explore Current Openings
@@ -106,7 +106,7 @@ export default function Careers() {
 
           <div className="grid grid-cols-2 gap-32">
             <div className="even:-translate-y-20">
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Apprenticeship
               </h5>
 
@@ -116,15 +116,15 @@ export default function Careers() {
               </p>
 
               <Link
-                to={"/careers"}
-                className="inline-flex h-14 min-w-[200px] items-center justify-center rounded-xl border border-black px-4 py-2 text-center font-secondary tracking-wide text-black"
+                to={"/careers/apprenticeship"}
+                className="wae-btn wae-btn-md min-w-[200px] border-black"
               >
                 Explore
               </Link>
             </div>
 
             <div className="even:-translate-y-20">
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Full-Time Positions
               </h5>
 
@@ -135,15 +135,15 @@ export default function Careers() {
               </p>
 
               <Link
-                to={"/careers"}
-                className="inline-flex h-14 min-w-[200px] items-center justify-center rounded-xl border border-black px-4 py-2 text-center font-secondary tracking-wide text-black"
+                to={"/careers/full-time"}
+                className="wae-btn wae-btn-md min-w-[200px] border-black"
               >
                 Explore
               </Link>
             </div>
 
             <div className="even:-translate-y-20">
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Internship
               </h5>
 
@@ -154,15 +154,15 @@ export default function Careers() {
               </p>
 
               <Link
-                to={"/careers"}
-                className="inline-flex h-14 min-w-[200px] items-center justify-center rounded-xl border border-black px-4 py-2 text-center font-secondary tracking-wide text-black"
+                to={"/careers/internship"}
+                className="wae-btn wae-btn-md min-w-[200px] border-black"
               >
                 Explore
               </Link>
             </div>
 
             <div className="even:-translate-y-20">
-              <h5 className="mb-6 text-2xl font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Short Term Projects
               </h5>
 
@@ -172,8 +172,8 @@ export default function Careers() {
               </p>
 
               <Link
-                to={"/careers"}
-                className="inline-flex h-14 min-w-[200px] items-center justify-center rounded-xl border border-black px-4 py-2 text-center font-secondary tracking-wide text-black"
+                to={"/careers/short-term"}
+                className="wae-btn wae-btn-md min-w-[200px] border-black"
               >
                 Explore
               </Link>

@@ -33,6 +33,7 @@
 /* Defaults */
 body {
   @apply font-primary font-normal;
+  --header-height: 120px;
 }
 
 /* Typography */
@@ -56,8 +57,74 @@ body {
   @apply text-3xl;
 }
 
+.wae-h6-lg {
+  @apply text-2xl;
+}
+
 .wae-h6 {
   @apply text-xl;
+}
+
+/* Spacing */
+.wae-pt-lg {
+  @apply pt-[180px];
+}
+
+.wae-pb-lg {
+  @apply pb-[180px];
+}
+
+.wae-mt-lg {
+  @apply mt-[180px];
+}
+
+.wae-mb-lg {
+  @apply mb-[180px];
+}
+
+.wae-pt-md {
+  @apply pt-[140px];
+}
+
+.wae-pb-md {
+  @apply pb-[140px];
+}
+
+.wae-mb-md {
+  @apply mb-[140px];
+}
+
+.wae-gap-lg {
+  @apply gap-[180px];
+}
+
+/* Buttons */
+.wae-btn {
+  @apply inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border bg-transparent text-center transition-colors hover:bg-white/20 active:bg-white/40;
+}
+
+.wae-btn-dark {
+  @apply border-white bg-black text-white hover:bg-gray-700 active:bg-gray-800;
+}
+
+.wae-btn-light {
+  @apply border-black bg-white text-black hover:bg-gray-200 active:bg-gray-300;
+}
+
+.wae-btn-pill {
+  @apply rounded-full;
+}
+
+.wae-btn-md {
+  @apply min-h-[54px];
+}
+
+.wae-btn-lg {
+  @apply min-h-16;
+}
+
+.carousel-nav-btn {
+  @apply flex h-12 w-12 items-center justify-center;
 }
 
 /* Tabs */

@@ -124,7 +124,7 @@ export const Footer = () => {
                 Subscribe to our Newsletter
               </label>
 
-              <form className="flex h-12 items-stretch overflow-hidden rounded-lg border border-[#303030] focus-within:border-white">
+              <form className="flex h-[54px] items-stretch overflow-hidden rounded-lg border border-[#303030] focus-within:border-white">
                 <div className="relative flex items-stretch">
                   <div className="absolute left-5 top-1/2 -translate-y-1/2">
                     {Icons.EnvelopeSquare}
@@ -138,7 +138,7 @@ export const Footer = () => {
                   />
                 </div>
 
-                <button className="bg-white px-5 py-2 font-medium text-black transition-colors hover:bg-gray-200 active:bg-gray-300">
+                <button className="wae-btn-light wae-btn-md px-5 py-2 font-medium">
                   Subscribe
                 </button>
               </form>

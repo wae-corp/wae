@@ -55,13 +55,13 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
       <div className="container mt-20 flex items-center justify-end gap-4">
         <button
           onClick={() => embla?.scrollPrev()}
-          className="flex h-12 w-12 items-center justify-center rounded-lg border border-black transition-colors hover:bg-gray-200 active:bg-gray-300"
+          className="wae-btn carousel-nav-btn border-black"
         >
           {Icons.ChevronLeft}
         </button>
         <button
           onClick={() => embla?.scrollNext()}
-          className="flex h-12 w-12 items-center justify-center rounded-lg border border-black transition-colors hover:bg-gray-200 active:bg-gray-300"
+          className="wae-btn carousel-nav-btn border-black"
         >
           {Icons.ChevronRight}
         </button>

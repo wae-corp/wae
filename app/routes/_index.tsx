@@ -55,7 +55,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-[180px] bg-window-pattern bg-cover bg-no-repeat py-72">
+      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-72">
         <section className="container">
           <p className="mb-12 text-sm uppercase">WHO WE ARE</p>
 
@@ -115,9 +115,9 @@ export default function Index() {
         <OurProductsSlider productList={ProductList} />
       </section>
 
-      <section className="flex flex-col items-center justify-center bg-black py-[180px] text-center text-white">
+      <section className="wae-pt-lg wae-pb-lg flex flex-col items-center justify-center bg-black text-center text-white">
         <div className="container">
-          <div className="mx-auto mb-[180px] max-w-5xl">
+          <div className="wae-mb-lg mx-auto max-w-5xl">
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
             <h2 className="wae-h2 mb-[100px] mt-10 font-secondary leading-tight">
@@ -149,7 +149,7 @@ export default function Index() {
               </p>
             </div>
 
-            <button className="h-14 min-w-[200px] rounded-xl bg-black px-4 py-2 tracking-wide text-white">
+            <button className="wae-btn wae-btn-md wae-btn-dark min-w-[200px]">
               Join
             </button>
           </div>
@@ -163,7 +163,7 @@ export default function Index() {
               to={"/"}
               className="flex items-center justify-between border-b border-white pb-2 transition-colors hover:bg-gray-800"
             >
-              <span className="font-secondary text-2xl">
+              <span className="wae-h6-lg font-secondary">
                 Senior Corporate Manager
               </span>
               <span>
@@ -260,7 +260,7 @@ export default function Index() {
               </div>
             </div>
             <div className="mx-auto">
-              <h5 className="mb-5 text-2xl">I am</h5>
+              <h5 className="wae-h6-lg mb-5">I am</h5>
 
               <div className="col grid grid-cols-[repeat(2,200px)] grid-rows-[repeat(2,200px)] gap-5">
                 <div className="flex items-center justify-center rounded-xl border border-black">

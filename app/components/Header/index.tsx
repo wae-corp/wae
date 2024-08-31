@@ -2,7 +2,7 @@ import {Link, NavLink} from "@remix-run/react";
 
 export const Header = () => {
   return (
-    <header className="fixed left-0 top-0 z-40 h-[120px] w-full bg-gradient-to-b from-black pb-5 pt-14">
+    <header className="fixed left-0 top-0 z-40 flex h-[var(--header-height)] w-full items-center bg-black py-3">
       <div className="container">
         <div className="relative flex items-center gap-10 text-white">
           <nav className="flex-1">
@@ -36,7 +36,7 @@ export const Header = () => {
 
           <Link
             to="/contact"
-            className="flex-shrink-0"
+            className="wae-btn px-4 py-2"
           >
             Get In Touch
           </Link>

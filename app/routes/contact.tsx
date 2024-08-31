@@ -95,7 +95,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="mt-12 flex h-16 w-full items-center justify-center rounded-xl border border-white px-4 py-3 text-center text-xl"
+                    className="wae-btn wae-btn-lg mt-12 w-full"
                   >
                     Contact Us {Icons.ChevronRight}
                   </button>
@@ -133,7 +133,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="mt-12 flex h-16 w-full items-center justify-center rounded-xl border border-white px-4 py-3 text-center text-xl"
+                    className="wae-btn wae-btn-lg mt-12 w-full"
                   >
                     Contact Us {Icons.ChevronRight}
                   </button>
