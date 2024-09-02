@@ -1,7 +1,11 @@
 import type {MetaFunction} from "@remix-run/node";
 import {Link} from "@remix-run/react";
+import clsx from "clsx";
+import {useState} from "react";
 import {OurProductsSlider, ProjectSlider} from "~/components";
-import {ProductList, ProjectList} from "~/static";
+import {Icons, ProductList, ProjectList} from "~/static";
+
+type EnquiryType = "Corporate" | "Architect" | "Consultant" | "Curious" | null;
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,6 +15,8 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const [enquiryFor, setEnquiryFor] = useState<EnquiryType>(null);
+
   return (
     <>
       <main className="relative flex h-screen items-center justify-center pb-10">
@@ -260,22 +266,152 @@ export default function Index() {
               </div>
             </div>
             <div className="mx-auto">
-              <h5 className="wae-h6-lg mb-5">I am</h5>
+              <form action="w-full">
+                <div
+                  className={clsx({
+                    hidden: enquiryFor !== null,
+                  })}
+                >
+                  <h5 className="wae-h6-lg mb-5">I am</h5>
 
-              <div className="col grid grid-cols-[repeat(2,200px)] grid-rows-[repeat(2,200px)] gap-5">
-                <div className="flex items-center justify-center rounded-xl border border-black">
-                  A Corporate
+                  <div className="col grid grid-cols-[repeat(2,200px)] grid-rows-[repeat(2,200px)] gap-5">
+                    <div>
+                      <input
+                        id="corporate-enquiry"
+                        type="radio"
+                        name="enquiry"
+                        checked={enquiryFor === "Corporate"}
+                        aria-checked={enquiryFor === "Corporate"}
+                        value={"Corporate"}
+                        onChange={(e) =>
+                          setEnquiryFor(e.currentTarget.value as EnquiryType)
+                        }
+                        className="peer hidden"
+                      />
+                      <label
+                        htmlFor="corporate-enquiry"
+                        className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
+                      >
+                        A Corporate
+                      </label>
+                    </div>
+
+                    <div>
+                      <input
+                        id="architect-enquiry"
+                        type="radio"
+                        name="enquiry"
+                        checked={enquiryFor === "Architect"}
+                        aria-checked={enquiryFor === "Architect"}
+                        value={"Architect"}
+                        onChange={(e) =>
+                          setEnquiryFor(e.currentTarget.value as EnquiryType)
+                        }
+                        className="peer hidden"
+                      />
+                      <label
+                        htmlFor="architect-enquiry"
+                        className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
+                      >
+                        An Architect
+                      </label>
+                    </div>
+
+                    <div>
+                      <input
+                        id="consultant-enquiry"
+                        type="radio"
+                        name="enquiry"
+                        checked={enquiryFor === "Consultant"}
+                        aria-checked={enquiryFor === "Consultant"}
+                        value={"Consultant"}
+                        onChange={(e) =>
+                          setEnquiryFor(e.currentTarget.value as EnquiryType)
+                        }
+                        className="peer hidden"
+                      />
+                      <label
+                        htmlFor="consultant-enquiry"
+                        className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
+                      >
+                        A Consultant
+                      </label>
+                    </div>
+
+                    <div>
+                      <input
+                        id="curious-enquiry"
+                        type="radio"
+                        name="enquiry"
+                        checked={enquiryFor === "Curious"}
+                        aria-checked={enquiryFor === "Curious"}
+                        value={"Curious"}
+                        onChange={(e) =>
+                          setEnquiryFor(e.currentTarget.value as EnquiryType)
+                        }
+                        className="peer hidden"
+                      />
+                      <label
+                        htmlFor="curious-enquiry"
+                        className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
+                      >
+                        Just Curious
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center justify-center rounded-xl border border-black">
-                  An Architect
+                <div
+                  className={clsx({
+                    hidden: enquiryFor === null,
+                  })}
+                >
+                  <div className="mb-10 flex items-center">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.currentTarget.closest("form")?.reset();
+                        setEnquiryFor(null);
+                      }}
+                      className="wae-btn carousel-nav-btn mr-3 border-black"
+                    >
+                      {Icons.ChevronLeft}
+                    </button>
+                    Back
+                  </div>
+
+                  <input
+                    type="text"
+                    className="wae-input mb-10 !border-black"
+                    name="distributor-name"
+                    placeholder="First Name"
+                  />
+                  <input
+                    type="text"
+                    className="wae-input mb-10 !border-black"
+                    name="distributor-email"
+                    placeholder="Company Name"
+                  />
+                  <input
+                    type="text"
+                    className="wae-input mb-10 !border-black"
+                    name="distributor-contact"
+                    placeholder="City"
+                  />
+                  <textarea
+                    name="enquiry"
+                    placeholder="Message"
+                    className="wae-input mb-10 !h-auto w-full resize-none !border-black"
+                    rows={3}
+                  ></textarea>
+
+                  <button
+                    type="submit"
+                    className="wae-btn wae-btn-lg mt-12 w-full border-black"
+                  >
+                    Send
+                  </button>
                 </div>
-                <div className="flex items-center justify-center rounded-xl border border-black">
-                  A Consultant
-                </div>
-                <div className="flex items-center justify-center rounded-xl border border-black">
-                  Just Curious
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
