@@ -125,8 +125,8 @@ export default function Company() {
       </section>
 
       <section className="wae-pt-lg wae-pb-lg container">
-        <div className="grid gap-8 md:grid-cols-12">
-          <div className="flex flex-col justify-start md:col-span-8">
+        <div className="flex gap-8">
+          <div>
             <h3 className="wae-h4 mb-10 font-secondary">
               Journey and Transformation
             </h3>
@@ -144,7 +144,7 @@ export default function Company() {
               <span className="prefix-dot"></span> You discover Doimo Kitchens
             </p>
           </div>
-          <div className="md:col-span-4">
+          <div className="max-w-[400px] flex-shrink-0">
             <img
               src="/images/covers/bowl-with-chopsticks.jpg"
               alt="bowl-with-chopsticks"

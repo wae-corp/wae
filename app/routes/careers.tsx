@@ -1,7 +1,5 @@
 import {Carousel} from "@mantine/carousel";
 import {Link, MetaFunction} from "@remix-run/react";
-import {useRef} from "react";
-// import Autoplay from "embla-carousel-autoplay";
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,8 +10,6 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Careers() {
-  // const autoplay = useRef(Autoplay({delay: 2000}));
-
   return (
     <>
       <main className="flex flex-col items-center bg-black text-white">
@@ -35,8 +31,8 @@ export default function Careers() {
         </div>
 
         <div className="container flex min-h-screen items-center">
-          <div className="grid gap-8 md:grid-cols-12">
-            <div className="flex flex-col justify-start md:col-span-8">
+          <div className="flex gap-8">
+            <div>
               <h3 className="wae-h4 mb-10 font-secondary">Life at WAE</h3>
               <p className="mb-10 max-w-[80%] uppercase md:ml-28">
                 Life at WAE is vibrant and inspiring. Our culture is a tapestry
@@ -50,7 +46,7 @@ export default function Careers() {
                 <span className="prefix-dot"></span> You discover Life at WAE
               </p>
             </div>
-            <div className="md:col-span-4">
+            <div className="max-w-[400px] flex-shrink-0">
               <p className="wae-h6-lg uppercase">
                 WAE is more than a job - it's a journey. We offer competitive
                 benefits, a supportive and inclusive community, and countless
@@ -68,7 +64,6 @@ export default function Careers() {
         <Carousel
           align={"start"}
           loop={true}
-          // plugins={[autoplay.current]}
           classNames={{
             slide: "basis-[370px] mr-14",
             controls: "hidden",
@@ -82,6 +77,7 @@ export default function Careers() {
                   width={370}
                   height={450}
                   className="object-cover"
+                  alt=""
                 />
               </Carousel.Slide>
             );

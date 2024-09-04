@@ -55,7 +55,7 @@ export default function Products() {
         </section>
 
         <section>
-          <div className="container max-w-[1080px]">
+          <div className="container">
             <div className="wae-gap-lg flex flex-col">
               {ProductsPageListing.map((product) => {
                 return (
