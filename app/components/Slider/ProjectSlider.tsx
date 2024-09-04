@@ -16,8 +16,8 @@ export const ProjectSlider = ({
         loop={true}
         classNames={{
           slide: "basis-[500px] mr-[60px] 2xl:basis-[600px] 2xl:mr-[100px]",
-          controls: "hidden",
         }}
+        withControls={false}
       >
         {projectList?.map((project, idx) => {
           return (
@@ -30,7 +30,9 @@ export const ProjectSlider = ({
                   height={384}
                   className="aspect-video object-cover"
                 />
-                <h5 className="mt-5 text-start">{project?.name}</h5>
+                {project?.name && (
+                  <h5 className="mt-5 text-start">{project?.name}</h5>
+                )}
               </Link>
             </Carousel.Slide>
           );

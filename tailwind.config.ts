@@ -11,22 +11,12 @@ export default {
         primary: ["Inter"],
         secondary: ["Monschone"],
       },
-      container: {
-        screens: {
-          //   sm: "640px",
-          //   md: "768px",
-          //   lg: "1024px",
-          xl: "1080px",
-          "2xl": "1440px",
-        },
-        padding: "12px",
-        center: true,
-      },
-      colors: {},
       backgroundImage: {
         "window-pattern": "url('/images/covers/window-bg-pattern.jpg')",
         "water-drop": "url('/images/covers/water-drop.jpg')",
         "washing-hands": "url('/images/covers/washing-hands.jpg')",
+        "product-details-banner":
+          "url('/images/covers/vending-machine-in-a-room.jpg')",
       },
       // spacing: {
       //     default: "2rem",
@@ -39,7 +29,7 @@ export default {
     },
   },
   plugins: [
-    function ({addComponents}: any) {
+    function ({addComponents}) {
       addComponents({
         ".container": {
           width: "100%",
@@ -58,6 +48,25 @@ export default {
           },
           "@screen xl": {
             maxWidth: "1080px",
+          },
+          "@screen 2xl": {
+            maxWidth: "1440px",
+          },
+        },
+        ".container-lg": {
+          width: "100%",
+          paddingLeft: "12px",
+          paddingRight: "12px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          "@screen md": {
+            maxWidth: "100%",
+          },
+          "@screen lg": {
+            maxWidth: "992px",
+          },
+          "@screen xl": {
+            maxWidth: "1200px",
           },
           "@screen 2xl": {
             maxWidth: "1440px",

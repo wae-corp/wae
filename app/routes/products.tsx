@@ -59,7 +59,10 @@ export default function Products() {
             <div className="wae-gap-lg flex flex-col">
               {ProductsPageListing.map((product) => {
                 return (
-                  <div className="flex gap-[110px] even:flex-row-reverse">
+                  <div
+                    key={product.id}
+                    className="flex gap-[110px] even:flex-row-reverse"
+                  >
                     <div className="flex-1">
                       <img
                         src="/images/covers/trublu.jpg"

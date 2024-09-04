@@ -12,7 +12,7 @@ export const meta: MetaFunction = () => {
 export default function Contact() {
   return (
     <>
-      <section className="bg-black py-44 text-white">
+      <section className="wae-pt-lg bg-black text-white">
         <div className="container flex">
           <div className="w-1/2">
             <div className="mb-12 max-w-[360px]">
@@ -52,7 +52,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="bg-opacity-40px-40 flex w-1/2">
+          <div className="flex w-1/2 bg-opacity-40 px-40">
             <Tabs
               variant="pills"
               defaultValue="distributor"

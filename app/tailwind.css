@@ -45,6 +45,10 @@ body {
   @apply text-[58px];
 }
 
+.wae-h3-lg {
+  @apply text-5xl leading-normal;
+}
+
 .wae-h3 {
   @apply text-[40px];
 }
@@ -152,4 +156,16 @@ body {
 /* Utilities */
 .prefix-dot {
   @apply mr-2 inline-block h-4 w-4 flex-shrink-0 rounded-full bg-current align-middle;
+}
+
+.product-image-slider .mantine-Carousel-indicators {
+  @apply static mt-6;
+}
+
+.product-image-slider .mantine-Carousel-indicator {
+  @apply h-[10px] w-[10px] rounded-full border border-solid border-black bg-white opacity-100;
+}
+
+.product-image-slider .mantine-Carousel-indicator[data-active="true"] {
+  @apply bg-black;
 }

@@ -138,4 +138,9 @@ export const ProductsPageListing = [
   },
 ];
 
+export const ProductImageSliderData = [
+  "/images/covers/trublu.jpg",
+  "/images/covers/trublu.jpg",
+];
+
 export * from "./Icons";
