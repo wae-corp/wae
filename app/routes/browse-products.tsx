@@ -4,7 +4,7 @@ import {ProjectSlider} from "~/components";
 import {Icons, ProductsPageListing, ProjectList} from "~/static";
 
 export const meta: MetaFunction = () => {
-  return [{title: "Product Types"}];
+  return [{title: "Browse Products"}];
 };
 
 export default function BrowseProducts() {

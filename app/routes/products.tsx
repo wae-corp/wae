@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Products() {
   return (
     <>
-      <main className="flex min-h-screen items-center justify-center bg-white bg-gradient-to-b from-[#6d6d6d] from-0% to-white py-8 text-center text-black">
+      <main className="flex min-h-screen items-center justify-center bg-white bg-gradient-to-b from-[#6d6d6d] from-0% to-white py-8 pt-[var(--header-height)] text-center text-black">
         <div className="container">
           <div className="mx-auto mt-40 max-w-3xl">
             <h6 className="uppercase">SUSTAINABILITY</h6>

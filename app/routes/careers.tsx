@@ -12,7 +12,7 @@ export const meta: MetaFunction = () => {
 export default function Careers() {
   return (
     <>
-      <main className="flex flex-col items-center bg-black text-white">
+      <main className="flex flex-col items-center bg-black pt-[var(--header-height)] text-white">
         <div className="container flex min-h-[550px] max-w-[1100px] items-end">
           <div className="text-center">
             <h1 className="wae-h6 mb-10 font-extrabold uppercase">

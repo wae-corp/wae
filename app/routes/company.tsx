@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Company() {
   return (
     <>
-      <main className="flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 text-center text-black">
+      <main className="flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center text-black">
         <div className="absolute inset-0 h-full w-full bg-black/60"></div>
         <div className="container isolate">
           <div className="mx-auto mt-40 max-w-[1080px] text-white">

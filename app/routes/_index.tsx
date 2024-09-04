@@ -19,7 +19,7 @@ export default function Index() {
 
   return (
     <>
-      <main className="relative flex h-screen items-center justify-center pb-10">
+      <main className="relative flex h-screen items-center justify-center pb-10 pt-[var(--header-height)]">
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <div className="absolute z-[1] h-full w-full bg-gradient-to-b from-black via-transparent to-black"></div>
           <img
