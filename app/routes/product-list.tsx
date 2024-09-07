@@ -1,6 +1,7 @@
 import {Accordion} from "@mantine/core";
 import {Link, MetaFunction} from "@remix-run/react";
 import {ProductsPageListing} from "~/static";
+import {Checkbox} from "~/components";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,6 +10,101 @@ export const meta: MetaFunction = () => {
     },
   ];
 };
+
+const filters = [
+  {
+    id: 1,
+    type: "Category",
+    options: [
+      {
+        id: 1,
+        name: "Drinking Water Station",
+      },
+    ],
+  },
+  {
+    id: 2,
+    type: "Mounting Type",
+    options: [
+      {
+        id: 1,
+        name: "On Wall",
+      },
+      {
+        id: 2,
+        name: "On Wall",
+      },
+      {
+        id: 3,
+        name: "On Wall",
+      },
+    ],
+  },
+  {
+    id: 3,
+    type: "Power",
+    options: [
+      {
+        id: 1,
+        name: "On Wall",
+      },
+      {
+        id: 2,
+        name: "On Wall",
+      },
+    ],
+  },
+  {
+    id: 4,
+    type: "ADA Compliance",
+    options: [
+      {
+        id: 1,
+        name: "On Wall",
+      },
+      {
+        id: 2,
+        name: "On Wall",
+      },
+    ],
+  },
+  {
+    id: 5,
+    type: "Chilling Capacity",
+    options: [
+      {
+        id: 1,
+        name: "On Wall",
+      },
+      {
+        id: 2,
+        name: "On Wall",
+      },
+      {
+        id: 3,
+        name: "On Wall",
+      },
+    ],
+  },
+  {
+    id: 6,
+    type: "Installation Location",
+    options: [
+      {
+        id: 1,
+        name: "Indoor",
+      },
+      {
+        id: 2,
+        name: "Outdoor",
+      },
+      {
+        id: 3,
+        name: "Indoor + Outdoor",
+      },
+    ],
+  },
+];
 
 export default function ProductList() {
   return (
@@ -24,7 +120,7 @@ export default function ProductList() {
       </main>
       <section className="py-32">
         <div className="container grid grid-cols-[240px,_1fr] gap-14">
-          <aside className="sticky top-[var(--header-height)] max-h-[600px] overflow-y-auto">
+          <aside className="sticky top-[var(--header-height)] max-h-[700px] overflow-y-auto overflow-x-hidden pr-1">
             <h6 className="mb-6 font-extrabold">Filter By</h6>
             <div>
               <Accordion
@@ -33,11 +129,25 @@ export default function ProductList() {
                   control: "p-0",
                   content: "p-0",
                 }}
+                multiple={true}
               >
-                <Accordion.Item value="filter-category">
-                  <Accordion.Control>Category</Accordion.Control>
-                  <Accordion.Panel>Hey</Accordion.Panel>
-                </Accordion.Item>
+                {filters.map((filter) => {
+                  return (
+                    <Accordion.Item
+                      value={`${filter.id}`}
+                      className="mb-5 border-none"
+                    >
+                      <Accordion.Control className="mb-4">
+                        {filter.type}
+                      </Accordion.Control>
+                      <Accordion.Panel>
+                        {filter.options.map((option) => {
+                          return <Checkbox label={option.name} />;
+                        })}
+                      </Accordion.Panel>
+                    </Accordion.Item>
+                  );
+                })}
               </Accordion>
             </div>
           </aside>

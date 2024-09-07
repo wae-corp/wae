@@ -157,8 +157,6 @@ body {
   @apply h-16 w-full border-b border-white/20 bg-transparent px-4 py-2 text-xl focus:border-b-white focus:outline-none;
 }
 
-/* Accordion */
-
 /* Utilities */
 .prefix-dot {
   @apply mr-2 inline-block h-4 w-4 flex-shrink-0 rounded-full bg-current align-middle;
