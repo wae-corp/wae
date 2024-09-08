@@ -3,7 +3,7 @@ import {Link} from "@remix-run/react";
 import clsx from "clsx";
 import {useState} from "react";
 import {OurProductsSlider, ProjectSlider} from "~/components";
-import {Icons, ProductList, ProjectList} from "~/static";
+import {Icons, ProductList, SecondaryProducts} from "~/static";
 
 type EnquiryType = "Corporate" | "Architect" | "Consultant" | "Curious" | null;
 
@@ -19,7 +19,7 @@ export default function Index() {
 
   return (
     <>
-      <main className="relative flex h-screen items-center justify-center pb-10 pt-[var(--header-height)]">
+      <main className="relative flex h-screen flex-col items-center justify-center pb-10 pt-[var(--header-height)]">
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <div className="absolute z-[1] h-full w-full bg-gradient-to-b from-black via-transparent to-black"></div>
           <img
@@ -31,16 +31,20 @@ export default function Index() {
           />
         </div>
 
-        <div className="self-end text-center text-white">
-          <h1 className="wae-h1 mb-40 font-secondary">
+        <div className="mb-10 text-center text-white">
+          <h1 className="wae-h1 font-secondary lg:mb-36">
             Keeping The Blue Planet Green
           </h1>
-
-          <p className="mx-auto max-w-[600px] font-normal uppercase">
+          <p className="mx-auto hidden max-w-[600px] font-normal uppercase md:block">
             Nec massa viverra eget feugiat pellentesque. Feugiat adipiscing
             massa vitae auctor mi massa. Sodales libero viverra cursus sed duis
             luctus nulla. In malesuada.
           </p>
+        </div>
+
+        <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
+          {Icons.ArrowDown}
+          Scroll
         </div>
       </main>
 
@@ -49,7 +53,7 @@ export default function Index() {
           <div className="mx-auto max-w-3xl">
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
-            <h2 className="wae-h2 mb-[100px] mt-10 font-secondary leading-tight">
+            <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
               Did you know? On average we use 5,500 liters of water a day! That
               is a humungous amount of water!…
             </h2>
@@ -61,17 +65,17 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-72">
+      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-72">
         <section className="container">
           <p className="mb-12 text-sm uppercase">WHO WE ARE</p>
 
-          <div className="mb-8 flex items-center justify-between">
-            <h4 className="wae-h4 max-w-[592px] font-secondary">
+          <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
+            <h4 className="wae-h4 mb-12 max-w-[592px] font-secondary lg:mb-0">
               We are thought that becomes action. Matter that transforms into
               emotion. Invisible yet concrete values, to give a new meaning to
               an interior place.
             </h4>
-            <p className="basis-60 uppercase">
+            <p className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base">
               <strong className="font-extrabold">
                 We are thought that becomes action.
               </strong>{" "}
@@ -90,12 +94,12 @@ export default function Index() {
         </section>
 
         <section className="container">
-          <div className="flex gap-8">
+          <div className="flex flex-col gap-8 lg:flex-row">
             <div>
               <h3 className="wae-h4 mb-10 font-secondary">
                 A 100% Made in India
               </h3>
-              <p className="mb-10 max-w-[80%] uppercase md:ml-28">
+              <p className="mb-10 uppercase md:ml-28 lg:max-w-[80%]">
                 Like the design, the production of our kitchens also takes place
                 entirely within our company and is the result of a process in
                 which human qualities are fundamental, together with the quality
@@ -106,7 +110,7 @@ export default function Index() {
                 <span className="prefix-dot"></span> You discover Doimo Kitchens
               </p>
             </div>
-            <div className="flex-shrink-0 md:max-w-[400px]">
+            <div className="flex-shrink-0 pl-8 lg:max-w-[400px] lg:pl-0">
               <img
                 src="/images/covers/bowl-with-chopsticks.jpg"
                 alt="bowl-with-chopsticks"
@@ -121,12 +125,12 @@ export default function Index() {
         <OurProductsSlider productList={ProductList} />
       </section>
 
-      <section className="wae-pt-lg wae-pb-lg flex flex-col items-center justify-center bg-black text-center text-white">
+      <section className="wae-pt-lg wae-pb-lg bg-black text-center text-white">
         <div className="container">
           <div className="wae-mb-lg mx-auto max-w-5xl">
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
-            <h2 className="wae-h2 mb-[100px] mt-10 font-secondary leading-tight">
+            <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
               Projects created by our <br /> customers to draw inspiration from
             </h2>
 
@@ -137,13 +141,13 @@ export default function Index() {
           </div>
         </div>
         <ProjectSlider
-          projectList={ProjectList}
+          projectList={SecondaryProducts}
           arrows={true}
         />
       </section>
 
-      <section className="flex">
-        <div className="w-1/2 bg-white px-40 py-36">
+      <section className="md:flex">
+        <div className="bg-white py-20 md:w-1/2 md:px-14 md:py-20 xl:px-40 xl:py-36">
           <div className="container">
             <p className="uppercase">LIFE @ WAE</p>
 
@@ -160,50 +164,52 @@ export default function Index() {
             </button>
           </div>
         </div>
-        <div className="relative flex w-1/2 flex-col justify-center bg-black bg-opacity-40 bg-water-drop bg-cover bg-bottom bg-no-repeat px-40 py-36 text-white">
-          <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="relative flex flex-col justify-center bg-black bg-opacity-40 bg-water-drop bg-cover bg-bottom bg-no-repeat py-36 text-white md:w-1/2 md:px-14 md:py-28 xl:px-32 xl:py-28 2xl:px-40 2xl:py-36">
+          <div className="container">
+            <div className="absolute inset-0 bg-black opacity-60"></div>
 
-          <div className="isolate">
-            <div className="mb-8">We're looking for</div>
-            <Link
-              to={"/"}
-              className="flex items-center justify-between border-b border-white pb-2 transition-colors hover:bg-gray-800"
-            >
-              <span className="wae-h6-lg font-secondary">
-                Senior Corporate Manager
-              </span>
-              <span>
-                <svg
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 18.5L15 12.5L9 6.5"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
+            <div className="isolate">
+              <div className="mb-8 text-sm lg:text-base">We're looking for</div>
+              <Link
+                to={"/"}
+                className="flex items-center justify-between border-b border-white pb-2 transition-colors hover:bg-gray-800"
+              >
+                <span className="wae-h6-lg font-secondary">
+                  Senior Corporate Manager
+                </span>
+                <span>
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 18.5L15 12.5L9 6.5"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#e0e0e0] py-40">
+      <section className="wae-pt-lg wae-pb-lg bg-[#e0e0e0]">
         <div className="container">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 lg:gap-0">
             <div>
               <h3 className="wae-h3 mb-4 font-secondary">
                 Get in Touch with Us
               </h3>
               <p className="font-secondary">Talk to our Water Expert</p>
 
-              <div className="mt-10 text-xl">
+              <div className="wae-h6 mt-10">
                 <div className="flex">
                   <svg
                     width="32"
@@ -265,17 +271,17 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div className="mx-auto">
+            <div className="mx-auto w-full">
               <form action="w-full">
                 <div
                   className={clsx({
                     hidden: enquiryFor !== null,
                   })}
                 >
-                  <h5 className="wae-h6-lg mb-5">I am</h5>
+                  <h5 className="lg:wae-h6-lg mb-5 text-2xl">I am</h5>
 
-                  <div className="col grid grid-cols-[repeat(2,200px)] grid-rows-[repeat(2,200px)] gap-5">
-                    <div>
+                  <div className="col grid grid-cols-[repeat(2,130px)] grid-rows-[repeat(2,130px)] gap-5 lg:grid-cols-[repeat(2,200px)] lg:grid-rows-[repeat(2,200px)]">
+                    <div className="aspect-square max-w-[200px]">
                       <input
                         id="corporate-enquiry"
                         type="radio"
@@ -296,7 +302,7 @@ export default function Index() {
                       </label>
                     </div>
 
-                    <div>
+                    <div className="aspect-square max-w-[200px]">
                       <input
                         id="architect-enquiry"
                         type="radio"
@@ -317,7 +323,7 @@ export default function Index() {
                       </label>
                     </div>
 
-                    <div>
+                    <div className="aspect-square max-w-[200px]">
                       <input
                         id="consultant-enquiry"
                         type="radio"
@@ -338,7 +344,7 @@ export default function Index() {
                       </label>
                     </div>
 
-                    <div>
+                    <div className="aspect-square max-w-[200px]">
                       <input
                         id="curious-enquiry"
                         type="radio"
@@ -365,7 +371,7 @@ export default function Index() {
                     hidden: enquiryFor === null,
                   })}
                 >
-                  <div className="mb-10 flex items-center">
+                  <div className="mb-5 flex items-center lg:mb-10">
                     <button
                       type="button"
                       onClick={(e) => {
@@ -381,32 +387,32 @@ export default function Index() {
 
                   <input
                     type="text"
-                    className="wae-input mb-10 !border-black"
+                    className="wae-input mt-6 !border-black lg:mb-10"
                     name="distributor-name"
                     placeholder="First Name"
                   />
                   <input
                     type="text"
-                    className="wae-input mb-10 !border-black"
+                    className="wae-input mt-6 !border-black lg:mb-10"
                     name="distributor-email"
                     placeholder="Company Name"
                   />
                   <input
                     type="text"
-                    className="wae-input mb-10 !border-black"
+                    className="wae-input mt-6 !border-black lg:mb-10"
                     name="distributor-contact"
                     placeholder="City"
                   />
                   <textarea
                     name="enquiry"
                     placeholder="Message"
-                    className="wae-input mb-10 !h-auto w-full resize-none !border-black"
+                    className="wae-input mt-6 !h-auto w-full resize-none !border-black lg:mb-10"
                     rows={3}
                   ></textarea>
 
                   <button
                     type="submit"
-                    className="wae-btn wae-btn-lg mt-12 w-full border-black"
+                    className="wae-btn wae-btn-lg mt-6 w-full border-black lg:mt-12"
                   >
                     Send
                   </button>

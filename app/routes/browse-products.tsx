@@ -1,7 +1,12 @@
 import type {MetaFunction} from "@remix-run/node";
 import {Link} from "@remix-run/react";
 import {ProjectSlider} from "~/components";
-import {Icons, ProductsPageListing, ProjectList} from "~/static";
+import {
+  Icons,
+  productsByApplication,
+  ProductsPageListing,
+  SecondaryProducts,
+} from "~/static";
 
 export const meta: MetaFunction = () => {
   return [{title: "Browse Products"}];
@@ -37,12 +42,12 @@ export default function BrowseProducts() {
 
       <section className="wae-pt-md wae-pb-md bg-black text-white">
         <div className="container flex items-center">
-          <div className="flex gap-8">
+          <div className="gap-8 sm:flex">
             <div className="flex flex-col justify-start md:col-span-8">
               <h3 className="wae-h4 mb-10 font-secondary">
                 Drinking Water Solutions
               </h3>
-              <p className="mb-10 max-w-[80%] uppercase md:ml-28">
+              <p className="mb-10 uppercase lg:max-w-[80%] xl:ml-28">
                 Life at WAE is vibrant and inspiring. Our culture is a tapestry
                 of collaboration, inclusivity, and continuous learning. Here,
                 your professional growth is as important as your personal
@@ -54,7 +59,7 @@ export default function BrowseProducts() {
                 <span className="prefix-dot"></span> You discover Life at WAE
               </p>
             </div>
-            <div className="flex-shrink-0 md:max-w-[400px]">
+            <div className="mt-10 sm:mt-0 lg:max-w-[400px]">
               <p className="wae-h6-lg uppercase">
                 WAE is more than a job - it's a journey. We offer competitive
                 benefits, a supportive and inclusive community, and countless
@@ -83,12 +88,12 @@ export default function BrowseProducts() {
             </p>
           </div>
 
-          <ProjectSlider projectList={ProjectList} />
+          <ProjectSlider productList={SecondaryProducts} />
 
           <div className="container mt-20 flex items-center">
-            <div className="flex gap-8">
+            <div className="gap-8 sm:flex">
               <div className="flex flex-col justify-start md:col-span-7">
-                <p className="max-w-[80%] uppercase">
+                <p className="mb-10 uppercase lg:max-w-[80%] xl:ml-28">
                   Life at WAE is vibrant and inspiring. Our culture is a
                   tapestry of collaboration, inclusivity, and continuous
                   learning. Here, your professional growth is as important as
@@ -97,7 +102,7 @@ export default function BrowseProducts() {
                   success. At WAE, your journey is our story.
                 </p>
               </div>
-              <div className="flex-shrink-0 md:max-w-[400px]">
+              <div className="mt-10 sm:mt-0 lg:max-w-[400px]">
                 <p className="wae-h6-lg uppercase">
                   WAE is more than a job - it's a journey. We offer competitive
                   benefits, a supportive and inclusive community, and countless
@@ -125,7 +130,7 @@ export default function BrowseProducts() {
             </p>
           </div>
 
-          <ProjectSlider projectList={ProjectList} />
+          <ProjectSlider productList={productsByApplication} />
 
           <div className="wae-pt-lg container max-w-[1080px]">
             <div className="flex flex-col gap-[120px]">
@@ -133,19 +138,19 @@ export default function BrowseProducts() {
                 return (
                   <div
                     key={product.id}
-                    className="flex gap-[110px] even:flex-row-reverse"
+                    className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
                   >
-                    <div className="flex-1">
+                    <div className="flex-shrink-0 md:basis-1/2">
                       <img
                         src="/images/covers/trublu.jpg"
                         alt="TruBlu"
-                        className="aspect-square object-cover"
+                        className="aspect-square object-cover group-even:ml-auto max-sm:w-full"
                         width="500"
                         height="500"
                       />
                     </div>
-                    <div className="flex-1">
-                      <div className="mb-14 flex flex-col gap-10">
+                    <div className="md:basis-1/2">
+                      <div className="mb-14 flex flex-col gap-8 lg:gap-10">
                         <label className="text-xs font-bold">
                           {product.id}
                         </label>

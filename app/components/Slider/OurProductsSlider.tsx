@@ -10,18 +10,20 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
   const [containerOffset, setContainerOffset] = useState<number>();
 
   useEffect(() => {
-    const containerElement = document
+    const offset = document
       .querySelector(".container")
       ?.getBoundingClientRect().left;
 
-    setContainerOffset(containerElement);
+    console.log(offset);
+
+    setContainerOffset(offset);
   }, []);
 
   return (
     <section>
       <div
         style={{paddingLeft: containerOffset}}
-        className="pl-0"
+        className="max-lg:!pl-3"
       >
         <h5 className="mb-8 text-center text-sm md:text-left">OUR PRODUCTS</h5>
 
@@ -30,7 +32,7 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
           align={"start"}
           loop={true}
           classNames={{
-            slide: "basis-[300px] mr-8",
+            slide: "basis-[200px] lg:basis-[300px] mr-8",
             controls: "hidden",
           }}
         >
@@ -45,14 +47,14 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
                     height={400}
                     className="object-cover"
                   />
-                  <h5 className="mt-5">{product?.name}</h5>
+                  <h5 className="mt-3 lg:mt-5">{product?.name}</h5>
                 </Link>
               </Carousel.Slide>
             );
           })}
         </Carousel>
       </div>
-      <div className="container mt-20 flex items-center justify-end gap-4">
+      <div className="container mt-10 flex items-center justify-end gap-4 lg:mt-20">
         <button
           onClick={() => embla?.scrollPrev()}
           className="wae-btn carousel-nav-btn border-black"

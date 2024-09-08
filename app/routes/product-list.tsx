@@ -1,7 +1,9 @@
 import {Accordion} from "@mantine/core";
 import {Link, MetaFunction} from "@remix-run/react";
-import {ProductsPageListing} from "~/static";
+import {Icons, ProductsPageListing} from "~/static";
 import {Checkbox} from "~/components";
+import {useState} from "react";
+import clsx from "clsx";
 
 export const meta: MetaFunction = () => {
   return [
@@ -107,6 +109,12 @@ const filters = [
 ];
 
 export default function ProductList() {
+  const [filterOpen, setFilterOpen] = useState(false);
+
+  function toggleFilter() {
+    setFilterOpen(!filterOpen);
+  }
+
   return (
     <>
       <main className="relative flex min-h-[600px] items-end bg-washing-hands bg-cover bg-no-repeat pb-32 pt-[var(--header-height)] text-white">
@@ -118,10 +126,29 @@ export default function ProductList() {
           </h5>
         </div>
       </main>
-      <section className="py-32">
-        <div className="container grid grid-cols-[240px,_1fr] gap-14">
-          <aside className="sticky top-[var(--header-height)] max-h-[700px] overflow-y-auto overflow-x-hidden pr-1">
-            <h6 className="mb-6 font-extrabold">Filter By</h6>
+      <section className="py-16 2xl:py-32">
+        <button
+          onClick={toggleFilter}
+          title={filterOpen ? "Close Filter" : "Open Filter"}
+          className="fixed bottom-6 right-6 isolate z-[40] flex h-10 w-10 items-center justify-center rounded-md border border-white bg-black p-1 text-white sm:hidden"
+        >
+          {filterOpen ? Icons.Close : Icons.Filter}
+        </button>
+        <div className="container grid gap-8 sm:grid-cols-[240px,_1fr] lg:gap-14">
+          <aside
+            aria-expanded={filterOpen ? "true" : "false"}
+            className={clsx(
+              "fixed inset-0 z-[30] w-full max-w-[320px] overflow-y-auto overflow-x-hidden bg-white p-6 shadow-md transition-transform sm:sticky sm:top-[var(--header-height)] sm:h-screen sm:max-h-[700px] sm:!translate-x-0 sm:pr-1 sm:shadow-none",
+              {
+                "translate-x-0": filterOpen,
+                "-translate-x-full": !filterOpen,
+              },
+            )}
+          >
+            <div>
+              <h6 className="mb-6 font-extrabold">Filter By</h6>
+            </div>
+
             <div>
               <Accordion
                 classNames={{
@@ -151,7 +178,8 @@ export default function ProductList() {
               </Accordion>
             </div>
           </aside>
-          <div className="grid gap-[72px] lg:grid-cols-2 2xl:grid-cols-3">
+
+          <div className="grid grid-cols-2 gap-3 sm:gap-8 2xl:grid-cols-3 2xl:gap-[72px]">
             {ProductsPageListing.map((_, idx) => {
               return (
                 <Link
@@ -161,7 +189,7 @@ export default function ProductList() {
                   <img
                     src="/images/covers/trublu.jpg"
                     alt="Trublu"
-                    className="mb-6 aspect-square object-cover"
+                    className="mb-1 aspect-square object-cover sm:mb-6"
                   />
 
                   <div className="wae-h6-lg text-center uppercase">ROBUSTO</div>

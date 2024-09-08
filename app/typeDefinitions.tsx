@@ -1,29 +1,21 @@
+import {ReactNode} from "react";
+
 export interface ProductSliderProps {
   productList: Product[];
-}
-
-export interface ProjectSliderProps {
-  projectList: Project[];
   arrows?: boolean;
 }
 
-export interface ProjectImageSliderProps {
+export interface ProductDetailImageSliderProps {
   images: string[];
   arrows?: boolean;
 }
 
 export interface Product {
   id: string;
-  image: string;
-  link: string;
+  image?: string;
+  link?: string;
   name?: string;
-}
-
-export interface Project {
-  id: string;
-  image: string;
-  link: string;
-  name?: string;
+  details?: ReactNode;
 }
 
 export interface ProductDetails {

@@ -20,22 +20,24 @@ export default function Contact() {
 
               <a
                 href="mailTo:info@waecorp.com"
-                className="wae-h2 mb-8 block font-secondary hover:underline"
+                className="md:wae-h2 mb-4 block font-secondary text-xl hover:underline md:mb-8"
               >
                 info@waecorp.com
               </a>
               <a
                 href="mailTo:marketing@waecorp.com"
-                className="wae-h2 mb-8 block font-secondary hover:underline"
+                className="md:wae-h2 mb-4 block font-secondary text-xl hover:underline md:mb-8"
               >
                 marketing@waecorp.com
               </a>
             </div>
           </section>
 
-          <section className="mb-[100px] grid grid-cols-2 gap-x-8 gap-y-[100px]">
+          <section className="mb-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 sm:gap-y-[100px] md:mb-[100px]">
             <div className="text-center">
-              <h5 className="wae-h5-lg mb-5 font-extrabold">Noida Office</h5>
+              <h5 className="md:wae-h5-lg mb-2 text-lg font-extrabold sm:mb-5">
+                Noida Office
+              </h5>
               <address className="wae-h6 font-secondary not-italic">
                 WAE Ltd. <br /> WAE Corp India Ltd. <br /> H-18, Sector 63,
                 <br /> Noida, Uttar Pradesh 201301
@@ -43,7 +45,9 @@ export default function Contact() {
               </address>
             </div>
             <div className="text-center">
-              <h5 className="wae-h5-lg mb-5 font-extrabold">Mumbai Office</h5>
+              <h5 className="md:wae-h5-lg mb-2 text-lg font-extrabold sm:mb-5">
+                Mumbai Office
+              </h5>
 
               <address className="wae-h6 font-secondary not-italic">
                 WAE Corp India Ltd. <br /> 91 Springboard Business Hub <br />{" "}
@@ -54,7 +58,7 @@ export default function Contact() {
               </address>
             </div>
             <div className="text-center">
-              <h5 className="wae-h5-lg mb-5 font-extrabold">
+              <h5 className="md:wae-h5-lg mb-2 text-lg font-extrabold sm:mb-5">
                 Hyderabad Office
               </h5>
               <address className="wae-h6 font-secondary not-italic">
@@ -66,7 +70,7 @@ export default function Contact() {
               </address>
             </div>
             <div className="text-center">
-              <h5 className="wae-h5-lg mb-5 font-extrabold">
+              <h5 className="md:wae-h5-lg mb-2 text-lg font-extrabold sm:mb-5">
                 Bengaluru Office
               </h5>
               <address className="wae-h6 font-secondary not-italic">
@@ -80,18 +84,18 @@ export default function Contact() {
           </section>
 
           <section>
-            <div className="mb-[100px] flex gap-8">
-              <div className="flex flex-1 items-start">
-                <div className="mr-5 h-14 w-14 flex-shrink-0 bg-black"></div>
+            <div className="mb-14 flex flex-wrap gap-8 sm:flex-nowrap md:mb-[100px]">
+              <div className="flex w-full items-center text-sm sm:items-start sm:text-base">
+                <div className="mr-3 h-8 w-8 flex-shrink-0 bg-black sm:mr-5 md:h-14 md:w-14"></div>
                 Manufacturing hubs- India, China and S. Korea
               </div>
-              <div className="flex flex-1 items-start">
-                <div className="mr-5 h-14 w-14 flex-shrink-0 bg-[#4d4d4d]"></div>
+              <div className="flex w-full items-center text-sm sm:items-start sm:text-base">
+                <div className="mr-3 h-8 w-8 flex-shrink-0 bg-[#4d4d4d] sm:mr-5 md:h-14 md:w-14"></div>
                 Existing Markets- India, U.S, China, Europe, Africa and Middle
                 East
               </div>
-              <div className="flex flex-1 items-start">
-                <div className="mr-5 h-14 w-14 flex-shrink-0 bg-[#999999]"></div>
+              <div className="flex w-full items-center text-sm sm:items-start sm:text-base">
+                <div className="mr-3 h-8 w-8 flex-shrink-0 bg-[#999999] sm:mr-5 md:h-14 md:w-14"></div>
                 Emerging Markets- S. America, Canada, Russia and Oceania
               </div>
             </div>
@@ -108,8 +112,8 @@ export default function Contact() {
       </main>
 
       <section className="wae-pt-lg wae-pb-lg bg-black text-white">
-        <div className="container flex">
-          <div className="w-1/2">
+        <div className="container sm:flex">
+          <div className="mb-12 sm:mb-0 sm:w-1/2">
             <div className="mb-12 max-w-[360px]">
               <h3 className="wae-h3 mb-5 font-secondary">
                 For more info/site assessment
@@ -147,7 +151,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="flex w-1/2 bg-opacity-40">
+          <div className="flex bg-opacity-40 sm:w-1/2">
             <Tabs
               variant="pills"
               defaultValue="distributor"
@@ -190,7 +194,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="wae-btn wae-btn-lg mt-12 w-full"
+                    className="wae-btn wae-btn-lg mt-3 w-full md:mt-12"
                   >
                     Contact Us {Icons.ChevronRight}
                   </button>
@@ -228,7 +232,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="wae-btn wae-btn-lg mt-12 w-full"
+                    className="wae-btn wae-btn-lg mt-3 w-full md:mt-12"
                   >
                     Contact Us {Icons.ChevronRight}
                   </button>

@@ -1,12 +1,12 @@
 import {Carousel, Embla} from "@mantine/carousel";
 import {Link} from "@remix-run/react";
 import {useState} from "react";
-import {ProjectSliderProps} from "~/typeDefinitions";
+import {ProductSliderProps} from "~/typeDefinitions";
 
 export const ProjectSlider = ({
-  projectList,
+  productList,
   arrows = false,
-}: ProjectSliderProps) => {
+}: ProductSliderProps) => {
   const [embla, setEmbla] = useState<Embla | null>();
 
   return (
@@ -15,31 +15,49 @@ export const ProjectSlider = ({
         getEmblaApi={setEmbla}
         loop={true}
         classNames={{
-          slide: "basis-[500px] mr-[60px] 2xl:basis-[600px] 2xl:mr-[100px]",
+          slide:
+            "basis-[240px] mr-4 min-w-[0] sm:basis-[350px] lg:basis-[500px] lg:mr-[60px] 2xl:basis-[600px] 2xl:mr-[100px]",
+          controls: "hidden",
         }}
-        withControls={false}
       >
-        {projectList?.map((project, idx) => {
+        {productList?.map((product, idx) => {
           return (
             <Carousel.Slide key={idx}>
-              <Link to={project?.link}>
-                <img
-                  src={project?.image}
-                  alt={project?.name}
-                  width={600}
-                  height={384}
-                  className="aspect-video object-cover"
-                />
-                {project?.name && (
-                  <h5 className="mt-5 text-start">{project?.name}</h5>
-                )}
-              </Link>
+              {product.link ? (
+                <Link to={product?.link}>
+                  <img
+                    src={product?.image}
+                    alt={product?.name}
+                    width={600}
+                    height={384}
+                    className="aspect-video object-cover"
+                  />
+                  {product?.name && (
+                    <h5 className="mt-5 text-start">{product?.name}</h5>
+                  )}
+                  {product?.details && <div>{product?.details}</div>}
+                </Link>
+              ) : (
+                <div>
+                  <img
+                    src={product?.image}
+                    alt={product?.name}
+                    width={600}
+                    height={384}
+                    className="aspect-video object-cover"
+                  />
+                  {product?.name && (
+                    <h5 className="mt-5 text-start">{product?.name}</h5>
+                  )}
+                  {product?.details && <div>{product?.details}</div>}
+                </div>
+              )}
             </Carousel.Slide>
           );
         })}
       </Carousel>
       {arrows && (
-        <div className="container mt-20 flex items-center justify-end gap-4">
+        <div className="container mt-10 flex items-center justify-end gap-4 lg:mt-20">
           <button
             onClick={() => embla?.scrollPrev()}
             className="wae-btn carousel-nav-btn border-white"

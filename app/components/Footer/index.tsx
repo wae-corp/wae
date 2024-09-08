@@ -100,23 +100,23 @@ export const Footer = () => {
         height={146}
         className="l-0 absolute top-0"
       />
-      <div className="border-t border-t-white/40">
-        <div className="mx-auto flex max-w-[85%] items-start justify-between">
-          <div className="-mt-16">
+      <div className="border-t-white/40 lg:border-t">
+        <div className="mx-auto flex flex-col items-start justify-between lg:max-w-[85%] lg:flex-row">
+          <div className="max-lg:w-full lg:-mt-16">
             <Link
               to={"/"}
-              className="mb-6 block"
+              className="mx-auto mb-6 block lg:mr-0"
             >
               <img
                 src="/images/logos/wae-logo.png"
                 alt="Wae"
                 width={120}
                 height={60}
-                className="object-contain"
+                className="mx-auto object-contain lg:ml-0"
               />
             </Link>
 
-            <div className="mb-20">
+            <div className="mb-10 xl:mb-20">
               <label
                 htmlFor="newsletter"
                 className="mb-6 block font-secondary text-base"
@@ -124,9 +124,9 @@ export const Footer = () => {
                 Subscribe to our Newsletter
               </label>
 
-              <form className="flex h-[54px] items-stretch overflow-hidden rounded-lg border border-[#303030] focus-within:border-white">
-                <div className="relative flex items-stretch">
-                  <div className="absolute left-5 top-1/2 -translate-y-1/2">
+              <form className="flex h-[54px] items-stretch overflow-hidden rounded-lg border border-[#303030] focus-within:border-white max-lg:w-full">
+                <div className="relative flex flex-1 items-stretch">
+                  <div className="left-5 top-1/2 hidden -translate-y-1/2 md:absolute lg:block">
                     {Icons.EnvelopeSquare}
                   </div>
                   <input
@@ -134,7 +134,7 @@ export const Footer = () => {
                     type="email"
                     name="newsletter-mail"
                     placeholder="Enter your email to get the latest news..."
-                    className="w-[400px] bg-black p-3 pl-16"
+                    className="w-full bg-black p-3 lg:pl-16 xl:w-[400px]"
                   />
                 </div>
 
@@ -144,7 +144,7 @@ export const Footer = () => {
               </form>
             </div>
 
-            <div className="text-xs text-[#f2f2f2] opacity-75">
+            <div className="hidden text-xs text-[#f2f2f2] opacity-75 lg:block">
               <p className="mb-4">
                 ©2024 Moxion Power / Manufactured in the USA
               </p>
@@ -155,11 +155,11 @@ export const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="-mt-10 flex gap-9">
+          <div className="flex flex-wrap justify-between gap-9 max-lg:w-full lg:-mt-10 lg:flex-nowrap">
             {footerLinks.map((col) => {
               return (
                 <div key={col.id}>
-                  <h6 className="mb-10 text-base">{col.title}</h6>
+                  <h6 className="mb-5 text-base sm:mb-10">{col.title}</h6>
                   <ul key={col.id}>
                     {col.list.map((listItem) => {
                       return (
@@ -180,6 +180,17 @@ export const Footer = () => {
                 </div>
               );
             })}
+          </div>
+
+          <div className="mt-10 w-full text-center text-xs text-[#f2f2f2] opacity-75 lg:hidden">
+            <p className="mb-4">
+              ©2024 Moxion Power / Manufactured in the USA
+            </p>
+
+            <p>
+              1414 Harbour Way S #1201, <br />
+              Richmond, CA 94804, USA
+            </p>
           </div>
         </div>
       </div>

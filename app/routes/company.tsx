@@ -1,6 +1,6 @@
 import {MetaFunction} from "@remix-run/react";
 import {ProjectSlider} from "~/components";
-import {ProjectList} from "~/static";
+import {SecondaryProducts} from "~/static";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Company() {
   return (
     <>
-      <main className="flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center text-black">
+      <main className="relative flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center">
         <div className="absolute inset-0 h-full w-full bg-black/60"></div>
         <div className="container isolate">
           <div className="mx-auto mt-40 max-w-[1080px] text-white">
@@ -32,9 +32,9 @@ export default function Company() {
         </div>
       </main>
 
-      <section className="bg-white py-36">
+      <section className="wae-pt-lg wae-pb-lg bg-white">
         <div className="container">
-          <div className="wae-gap-lg mb-36 flex justify-center">
+          <div className="lg:wae-gap-lg mb-16 flex max-w-[1080px] flex-col justify-between gap-6 sm:flex-row lg:mb-36">
             <div className="flex-shrink-0">
               <label className="mb-5 block text-sm uppercase">
                 Mission & Vision
@@ -44,7 +44,7 @@ export default function Company() {
                 <span className="prefix-dot"></span>You discover wae vision
               </p>
             </div>
-            <div>
+            <div className="max-w-[650px]">
               <p className="wae-h6">
                 At WAE, we're driven by an audacious and inspiring mission: to
                 become the world's most admired environmental services
@@ -58,21 +58,21 @@ export default function Company() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-3">
+          <div className="grid gap-y-12 sm:grid-cols-3">
             <div className="text-center">
-              <h2 className="mb-5 font-secondary text-[50px] uppercase">
+              <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
                 1,012,120.25
               </h2>
               <p className="uppercase">Tonnes CO2 Emissions Saved</p>
             </div>
             <div className="text-center">
-              <h2 className="mb-5 font-secondary text-[50px] uppercase">
+              <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
                 12,185.43
               </h2>
               <p className="uppercase">million gallons Water Saved</p>
             </div>
             <div className="text-center">
-              <h2 className="mb-5 font-secondary text-[50px] uppercase">
+              <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
                 22,253.65
               </h2>
               <p className="uppercase">Tonnes Plastic Removed</p>
@@ -84,7 +84,7 @@ export default function Company() {
       <section className="relative flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 text-center text-black">
         <div className="absolute inset-0 h-full w-full bg-black/60"></div>
         <div className="container isolate">
-          <div className="mx-auto mt-40 max-w-[1080px] text-white">
+          <div className="mx-auto max-w-[1080px] text-white 2xl:mt-40">
             <h2 className="mb-8 font-extrabold uppercase">
               Journey and Transformation
             </h2>
@@ -104,7 +104,7 @@ export default function Company() {
 
       <section className="bg-black py-36 text-white">
         <div className="container">
-          <div className="wae-gap-lg mb-36 flex justify-center">
+          <div className="sm:wae-gap-lg mb-36 flex flex-col justify-center gap-6 sm:flex-row">
             <div className="flex-shrink-0">
               <h4 className="wae-h4 font-secondary uppercase">Brand Purpose</h4>
             </div>
@@ -125,12 +125,12 @@ export default function Company() {
       </section>
 
       <section className="wae-pt-lg wae-pb-lg container">
-        <div className="flex gap-8">
+        <div className="flex flex-col gap-8 sm:flex-row">
           <div>
             <h3 className="wae-h4 mb-10 font-secondary">
               Journey and Transformation
             </h3>
-            <p className="mb-10 max-w-[80%] uppercase md:ml-28">
+            <p className="mb-10 uppercase lg:ml-28 lg:max-w-[80%]">
               Our journey has been a rewarding one, contributing to a
               sustainable planet where everyone can thrive. Looking ahead, our
               transformation will be guided by our capabilities, strategic
@@ -156,7 +156,7 @@ export default function Company() {
         </div>
 
         <div className="wae-mt-lg container">
-          <div className="mb-36 max-w-[670px]">
+          <div className="mb-28 max-w-[670px] lg:mb-36">
             <h4 className="wae-h4 mb-5 font-secondary uppercase">
               Core Values and Beliefs
             </h4>
@@ -168,8 +168,8 @@ export default function Company() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-32">
-            <div className="even:-translate-y-20">
+          <div className="grid gap-16 sm:grid-cols-2 lg:gap-32">
+            <div className="sm:even:-translate-y-20">
               <img
                 src="/images/icons/magnifying-glass-with-gear.svg"
                 alt=""
@@ -177,7 +177,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-3 font-extrabold uppercase sm:mb-6">
                 Research-Driven
               </h5>
 
@@ -186,7 +186,7 @@ export default function Company() {
               </p>
             </div>
 
-            <div className="even:-translate-y-20">
+            <div className="sm:even:-translate-y-20">
               <img
                 src="/images/icons/person-with-leaves.svg"
                 alt=""
@@ -194,7 +194,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-3 font-extrabold uppercase sm:mb-6">
                 Environmental and Human Service
               </h5>
 
@@ -203,7 +203,7 @@ export default function Company() {
               </p>
             </div>
 
-            <div className="even:-translate-y-20">
+            <div className="sm:even:-translate-y-20">
               <img
                 src="/images/icons/hand-with-checkmark.svg"
                 alt=""
@@ -211,7 +211,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-3 font-extrabold uppercase sm:mb-6">
                 Responsibility
               </h5>
 
@@ -222,7 +222,7 @@ export default function Company() {
               </p>
             </div>
 
-            <div className="even:-translate-y-20">
+            <div className="sm:even:-translate-y-20">
               <img
                 src="/images/icons/employee-value.svg"
                 alt=""
@@ -230,7 +230,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-3 font-extrabold uppercase sm:mb-6">
                 Employee Value
               </h5>
 
@@ -240,7 +240,7 @@ export default function Company() {
               </p>
             </div>
 
-            <div className="even:-translate-y-20">
+            <div className="sm:even:-translate-y-20">
               <img
                 src="/images/icons/hand-with-checkmark.svg"
                 alt=""
@@ -248,7 +248,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-3 font-extrabold uppercase sm:mb-6">
                 Participative Management
               </h5>
 
@@ -258,7 +258,7 @@ export default function Company() {
               </p>
             </div>
 
-            <div className="even:-translate-y-20">
+            <div className="sm:even:-translate-y-20">
               <img
                 src="/images/icons/handshake-verified.svg"
                 alt=""
@@ -266,7 +266,7 @@ export default function Company() {
                 height={70}
                 className="mb-6 object-contain"
               />
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
+              <h5 className="wae-h6-lg mb-3 font-extrabold uppercase sm:mb-6">
                 Quality Commitment
               </h5>
 
@@ -279,12 +279,12 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="wae-pt-lg wae-pb-lg flex flex-col items-center justify-center bg-black text-center text-white">
+      <section className="wae-pt-lg wae-pb-lg bg-black text-center text-white">
         <div className="container">
-          <div className="wae-mb-lg mx-auto max-w-5xl">
+          <div className="wae-mb-lg mx-auto max-w-5xl text-center">
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
-            <h2 className="wae-h2 mb-[100px] mt-10 font-secondary leading-tight">
+            <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
               Projects created by our <br /> customers to draw inspiration from
             </h2>
 
@@ -295,7 +295,7 @@ export default function Company() {
           </div>
         </div>
         <ProjectSlider
-          projectList={ProjectList}
+          projectList={SecondaryProducts}
           arrows={true}
         />
       </section>

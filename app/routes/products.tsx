@@ -1,6 +1,6 @@
 import {Link, MetaFunction} from "@remix-run/react";
 import {ProjectSlider} from "~/components";
-import {Icons, ProductsPageListing, ProjectList} from "~/static";
+import {Icons, ProductsPageListing, SecondaryProducts} from "~/static";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,10 +15,10 @@ export default function Products() {
     <>
       <main className="flex min-h-screen items-center justify-center bg-white bg-gradient-to-b from-[#6d6d6d] from-0% to-white py-8 pt-[var(--header-height)] text-center text-black">
         <div className="container">
-          <div className="mx-auto mt-40 max-w-3xl">
+          <div className="mx-auto mt-0 max-w-3xl sm:mt-20 xl:mt-40">
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
-            <h2 className="wae-h2 mt-10 font-secondary leading-tight">
+            <h2 className="wae-h2 mt-10 font-secondary leading-tight lg:mb-[100px]">
               Did you know? On average we use 5,500 liters of water a day! That
               is a humungous amount of water!…
             </h2>
@@ -26,17 +26,17 @@ export default function Products() {
         </div>
       </main>
 
-      <section className="bg-window-pattern bg-cover bg-left bg-no-repeat py-72">
-        <section className="container mb-[212px]">
+      <section className="bg-window-pattern bg-cover bg-left bg-no-repeat py-20 lg:py-72">
+        <section className="container mb-20 lg:mb-[212px]">
           <p className="mb-12 text-sm uppercase">WHO WE ARE</p>
 
-          <div className="mb-8 flex items-center justify-between">
-            <h4 className="wae-h4 max-w-[592px] font-secondary">
+          <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
+            <h4 className="wae-h4 mb-12 max-w-[592px] font-secondary lg:mb-0">
               We are thought that becomes action. Matter that transforms into
               emotion. Invisible yet concrete values, to give a new meaning to
               an interior place.
             </h4>
-            <p className="basis-60 uppercase">
+            <p className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base">
               <strong className="font-extrabold">
                 We are thought that becomes action.
               </strong>{" "}
@@ -55,25 +55,25 @@ export default function Products() {
         </section>
 
         <section>
-          <div className="container">
+          <div className="container max-w-[1080px]">
             <div className="wae-gap-lg flex flex-col">
               {ProductsPageListing.map((product) => {
                 return (
                   <div
                     key={product.id}
-                    className="flex gap-[110px] even:flex-row-reverse"
+                    className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
                   >
-                    <div className="flex-1">
+                    <div className="flex-shrink-0 md:basis-1/2">
                       <img
                         src="/images/covers/trublu.jpg"
                         alt="TruBlu"
-                        className="aspect-square object-cover"
+                        className="aspect-square object-cover group-even:ml-auto max-sm:w-full"
                         width="500"
                         height="500"
                       />
                     </div>
-                    <div className="flex-1">
-                      <div className="mb-14 flex flex-col gap-10">
+                    <div className="md:basis-1/2">
+                      <div className="mb-14 flex flex-col gap-8 lg:gap-10">
                         <label className="text-xs font-bold">
                           {product.id}
                         </label>
@@ -94,7 +94,7 @@ export default function Products() {
                       </div>
                       <Link
                         to={"/product"}
-                        className="rounded-full border border-black px-5 py-3 transition-colors hover:bg-white"
+                        className="inline-block rounded-full border border-black px-5 py-3 transition-colors hover:bg-white"
                       >
                         View Details
                       </Link>
@@ -106,12 +106,12 @@ export default function Products() {
           </div>
         </section>
 
-        <section className="mb-10 flex items-center justify-center py-40 text-center text-black">
+        <section className="mb-10 flex items-center justify-center py-20 text-center text-black lg:py-40">
           <div className="container">
             <div className="mx-auto max-w-[845px]">
               <h6 className="uppercase">HOW DOES IT WORK?</h6>
 
-              <h2 className="wae-h2 mb-[100px] mt-10 font-secondary leading-tight">
+              <h2 className="wae-h2 mb-12 mt-12 font-secondary leading-tight lg:mb-[100px]">
                 Once you have chosen the style of the product or its type, let
                 yourself be guided by your taste for materials and their
                 finishes and by your needs.
@@ -126,9 +126,11 @@ export default function Products() {
 
         <section>
           <div className="container">
-            <p className="mb-6 text-center text-sm uppercase">Other Products</p>
+            <p className="mb-6 text-center uppercase lg:text-sm">
+              Other Products
+            </p>
           </div>
-          <ProjectSlider projectList={ProjectList} />
+          <ProjectSlider productList={SecondaryProducts} />
         </section>
       </section>
     </>

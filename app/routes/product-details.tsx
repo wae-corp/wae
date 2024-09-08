@@ -13,12 +13,14 @@ export const meta: MetaFunction = () => {
 export default function ProductDetails() {
   return (
     <>
-      <main className="flex min-h-screen items-center bg-product-details-banner bg-cover bg-center bg-no-repeat pt-[var(--header-height)] text-white">
+      <main className="flex min-h-[500px] items-center bg-product-details-banner bg-cover bg-no-repeat pb-12 pt-[var(--header-height)] text-white xl:min-h-screen xl:bg-center">
         <div className="container-lg">
           <div className="max-w-3xl">
-            <h6 className="wae-h6 font-extrabold uppercase">NEPTUNE DUO</h6>
+            <h6 className="wae-h6 mb-4 font-extrabold uppercase">
+              NEPTUNE DUO
+            </h6>
 
-            <h1 className="wae-h3-lg font-secondary">
+            <h1 className="wae-h3-lg font-secondary !leading-normal">
               Did you know? On average we use 5,500 liters of water a day! That
               is a humungous amount of water!…
             </h1>
@@ -28,12 +30,14 @@ export default function ProductDetails() {
 
       <section className="wae-pt-lg wae-pb-lg">
         <div className="container">
-          <div className="flex items-start gap-10">
-            <div className="flex-shrink-0 basis-[600px]">
+          <div className="flex flex-col items-center gap-10 xl:flex-row xl:items-start xl:justify-start">
+            <div className="flex max-w-[600px] flex-shrink-0 justify-center">
               <ProductImageSlider images={ProductImageSliderData} />
             </div>
             <div>
-              <h6 className="wae-h6-lg mb-10 font-light">Ligature-resistant</h6>
+              <h6 className="wae-h6-lg mb-5 font-light md:mb-10">
+                Ligature-resistant
+              </h6>
 
               <div className="mb-6 flex items-center justify-between gap-2">
                 <h4 className="wae-h4 font-extrabold uppercase">NEPTUNE DUO</h4>
@@ -45,17 +49,17 @@ export default function ProductDetails() {
                 </div>
               </div>
 
-              <div className="wae-h3 mb-10 font-light leading-tight">
+              <div className="wae-h3 mb-5 font-light leading-tight md:mb-10">
                 Shallow, safe, surface-mounted ligature-resistant drinking water
                 tap.
               </div>
 
-              <div className="mb-10 flex items-center gap-4 text-lg">
+              <div className="mb-5 flex items-center gap-4 text-lg md:mb-10">
                 <span>ProCore</span> <span>- DryChill</span>
                 <span> - Totality</span>
               </div>
 
-              <p className="mb-20 text-sm uppercase">
+              <p className="mb-10 text-sm uppercase md:mb-20">
                 Our planet and its globalizing economy face a worldwide resource
                 challenge. Survival in the long run presents a new set of
                 leadership challenges for both business and public institutions
@@ -76,10 +80,12 @@ export default function ProductDetails() {
 
       <section className="wae-pt-lg wae-pb-lg bg-black text-white">
         <div className="container-lg">
-          <div className="wae-h3 mb-14 font-light">Specifications</div>
+          <div className="wae-h3 mb-14 text-center font-light lg:text-left">
+            Specifications
+          </div>
 
-          <div className="mb-20 flex items-start gap-8">
-            <div className="w-full">
+          <div className="mb-20 flex flex-wrap items-start justify-center gap-8 max-sm:justify-start lg:flex-nowrap">
+            <div className="lg:w-full">
               <div className="mb-5 font-extralight">Height</div>
 
               <div className="wae-h2 mb-5">1690mm</div>
@@ -87,7 +93,7 @@ export default function ProductDetails() {
               <div className="font-extralight">World-first design</div>
             </div>
 
-            <div className="w-full">
+            <div className="lg:w-full">
               <div className="mb-5 font-extralight">Chilled temperature</div>
 
               <div className="wae-h2 mb-5">2°C</div>
@@ -95,7 +101,7 @@ export default function ProductDetails() {
               <div className="font-extralight">Maximum 12oC</div>
             </div>
 
-            <div className="w-full">
+            <div className="lg:w-full">
               <div className="mb-5 font-extralight">Hot temperature</div>
 
               <div className="wae-h2 mb-5">69°C</div>
@@ -103,7 +109,7 @@ export default function ProductDetails() {
               <div className="font-extralight">Degrees celsius</div>
             </div>
 
-            <div className="w-full">
+            <div className="lg:w-full">
               <div className="mb-5 font-extralight">Chilled capacity</div>
 
               <div className="wae-h2 mb-5">80L/h</div>
@@ -111,7 +117,7 @@ export default function ProductDetails() {
               <div className="font-extralight">Litres per hour</div>
             </div>
 
-            <div className="w-full">
+            <div className="lg:w-full">
               <div className="mb-5 font-extralight">Hot capacity</div>
 
               <div className="wae-h2 mb-5">16L/h</div>
@@ -143,9 +149,9 @@ export default function ProductDetails() {
         />
       </section>
 
-      <section className="wae-pt-lg bg-black text-white">
-        <div className="container flex">
-          <div className="w-1/2">
+      <section className="wae-pt-lg bg-black pb-6 text-white">
+        <div className="container gap-4 sm:flex">
+          <div className="mb-12 sm:mb-0 sm:w-1/2">
             <div className="mb-12 max-w-[360px]">
               <h3 className="wae-h3 mb-5 font-secondary">
                 For more info/site assessment
@@ -183,7 +189,7 @@ export default function ProductDetails() {
               </div>
             </div>
           </div>
-          <div className="flex w-1/2 bg-opacity-40 px-40">
+          <div className="mx-auto flex max-w-[440px] bg-opacity-40 sm:w-1/2">
             <form className="w-full">
               <input
                 type="text"
@@ -215,7 +221,7 @@ export default function ProductDetails() {
 
               <button
                 type="submit"
-                className="wae-btn wae-btn-lg mt-12 w-full"
+                className="wae-btn wae-btn-lg mt-6 w-full md:mt-12"
               >
                 Contact Us {Icons.ChevronRight}
               </button>

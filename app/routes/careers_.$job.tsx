@@ -40,7 +40,7 @@ export default function Job() {
           alt="Washing Hands"
           width={1920}
           height={450}
-          className="object-cover"
+          className="h-40 object-cover md:h-56 xl:h-auto"
         />
       </main>
 
@@ -60,7 +60,7 @@ export default function Job() {
               </button>
             </div>
             <div>
-              <div className="mb-[60px]">
+              <div className="mb-10 lg:mb-[60px]">
                 <h6 className="wae-h6 mb-5 font-extrabold">Job Description</h6>
                 <p className="wae-h6">
                   dolor sit amet, consectetur adipiscing elit. Ut a justo
@@ -71,7 +71,7 @@ export default function Job() {
                   enim cursus et.
                 </p>
               </div>
-              <div className="mb-[60px]">
+              <div className="mb-10 lg:mb-[60px]">
                 <h6 className="wae-h6 mb-5 font-extrabold">Qualification</h6>
                 <ul className="wae-h6">
                   <li className="mb-3 last:mb-0">
@@ -91,7 +91,7 @@ export default function Job() {
                   </li>
                 </ul>
               </div>
-              <div className="mb-[60px]">
+              <div className="mb-10 lg:mb-[60px]">
                 <h6 className="wae-h6 mb-5 font-extrabold">Responsibility</h6>
                 <ul className="wae-h6">
                   <li className="mb-3 last:mb-0">
@@ -111,7 +111,7 @@ export default function Job() {
                   </li>
                 </ul>
               </div>
-              <div className="mb-[60px]">
+              <div className="mb-10 lg:mb-[60px]">
                 <h6 className="wae-h6 mb-5 font-extrabold">Skills</h6>
                 <ul className="flex flex-wrap items-start gap-2">
                   <li className="wae-h6 rounded-lg bg-[#e0e0e0] px-3 py-2">

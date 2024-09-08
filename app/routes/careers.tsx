@@ -13,7 +13,7 @@ export default function Careers() {
   return (
     <>
       <main className="flex flex-col items-center bg-black pt-[var(--header-height)] text-white">
-        <div className="container flex min-h-[550px] max-w-[1100px] items-end">
+        <div className="container flex max-w-[1100px] items-end pb-10 xl:min-h-[550px]">
           <div className="text-center">
             <h1 className="wae-h6 mb-10 font-extrabold uppercase">
               Why WAE (Make a Difference)
@@ -30,11 +30,11 @@ export default function Careers() {
           </div>
         </div>
 
-        <div className="container flex min-h-screen items-center">
-          <div className="flex gap-8">
+        <div className="wae-pb-lg wae-pt-lg container flex items-center 2xl:min-h-screen">
+          <div className="flex flex-col gap-8 lg:flex-row">
             <div>
               <h3 className="wae-h4 mb-10 font-secondary">Life at WAE</h3>
-              <p className="mb-10 max-w-[80%] uppercase md:ml-28">
+              <p className="mb-10 uppercase lg:ml-28 lg:max-w-[80%]">
                 Life at WAE is vibrant and inspiring. Our culture is a tapestry
                 of collaboration, inclusivity, and continuous learning. Here,
                 your professional growth is as important as your personal
@@ -46,7 +46,7 @@ export default function Careers() {
                 <span className="prefix-dot"></span> You discover Life at WAE
               </p>
             </div>
-            <div className="max-w-[400px] flex-shrink-0">
+            <div className="flex-shrink-0 lg:max-w-[400px] lg:pl-0 lg:pl-8">
               <p className="wae-h6-lg uppercase">
                 WAE is more than a job - it's a journey. We offer competitive
                 benefits, a supportive and inclusive community, and countless
@@ -60,7 +60,7 @@ export default function Careers() {
         </div>
       </main>
 
-      <section className="bg-window-pattern bg-cover bg-no-repeat py-40">
+      <section className="wae-pt-md wae-pb-md bg-window-pattern bg-cover bg-no-repeat md:py-40">
         <Carousel
           align={"start"}
           loop={true}
@@ -85,7 +85,7 @@ export default function Careers() {
         </Carousel>
 
         <div className="wae-mt-lg container">
-          <div className="mb-36 max-w-[670px]">
+          <div className="mb-16 max-w-[670px] md:mb-36">
             <h4 className="wae-h4 mb-5 font-secondary uppercase">
               Explore Current Openings
             </h4>
@@ -99,8 +99,8 @@ export default function Careers() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-32">
-            <div className="even:-translate-y-20">
+          <div className="grid gap-12 md:grid-cols-2 md:gap-32">
+            <div className="md:even:-translate-y-20">
               <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Apprenticeship
               </h5>
@@ -118,7 +118,7 @@ export default function Careers() {
               </Link>
             </div>
 
-            <div className="even:-translate-y-20">
+            <div className="md:even:-translate-y-20">
               <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Full-Time Positions
               </h5>
@@ -137,7 +137,7 @@ export default function Careers() {
               </Link>
             </div>
 
-            <div className="even:-translate-y-20">
+            <div className="md:even:-translate-y-20">
               <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Internship
               </h5>
@@ -156,7 +156,7 @@ export default function Careers() {
               </Link>
             </div>
 
-            <div className="even:-translate-y-20">
+            <div className="md:even:-translate-y-20">
               <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
                 Short Term Projects
               </h5>
