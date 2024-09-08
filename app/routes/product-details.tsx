@@ -70,7 +70,7 @@ export default function ProductDetails() {
                 goals
               </p>
 
-              <button className="wae-btn wae-btn-pill border-black px-6 py-2">
+              <button className="wae-btn border-black px-6 py-2">
                 Get In Touch
               </button>
             </div>
@@ -130,7 +130,7 @@ export default function ProductDetails() {
             <a
               href="/"
               download
-              className="wae-btn wae-btn-pill wae-btn-md gap-4 px-6 py-2"
+              className="wae-btn wae-btn-md gap-4 px-6 py-2"
             >
               Download Brochure
               {Icons.Download}
@@ -142,7 +142,7 @@ export default function ProductDetails() {
       <section className="wae-pt-lg wae-pb-lg">
         <h6 className="mb-6 text-center text-sm uppercase">Other Products</h6>
         <ProjectSlider
-          projectList={ProductList.map((p) => {
+          productList={ProductList.map((p) => {
             delete p.name;
             return p;
           })}

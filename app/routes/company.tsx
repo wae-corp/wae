@@ -295,7 +295,7 @@ export default function Company() {
           </div>
         </div>
         <ProjectSlider
-          projectList={SecondaryProducts}
+          productList={SecondaryProducts}
           arrows={true}
         />
       </section>

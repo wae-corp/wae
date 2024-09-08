@@ -141,7 +141,7 @@ export default function Index() {
           </div>
         </div>
         <ProjectSlider
-          projectList={SecondaryProducts}
+          productList={SecondaryProducts}
           arrows={true}
         />
       </section>

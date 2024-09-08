@@ -93,7 +93,7 @@ export default function Products() {
                         </div>
                       </div>
                       <Link
-                        to={"/product"}
+                        to={"/product-details"}
                         className="inline-block rounded-full border border-black px-5 py-3 transition-colors hover:bg-white"
                       >
                         View Details

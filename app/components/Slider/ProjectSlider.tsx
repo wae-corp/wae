@@ -24,7 +24,10 @@ export const ProjectSlider = ({
           return (
             <Carousel.Slide key={idx}>
               {product.link ? (
-                <Link to={product?.link}>
+                <Link
+                  to={product?.link}
+                  className="block"
+                >
                   <img
                     src={product?.image}
                     alt={product?.name}

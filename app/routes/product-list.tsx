@@ -138,7 +138,7 @@ export default function ProductList() {
           <aside
             aria-expanded={filterOpen ? "true" : "false"}
             className={clsx(
-              "fixed inset-0 z-[30] w-full max-w-[320px] overflow-y-auto overflow-x-hidden bg-white p-6 shadow-md transition-transform sm:sticky sm:top-[var(--header-height)] sm:h-screen sm:max-h-[700px] sm:!translate-x-0 sm:pr-1 sm:shadow-none",
+              "fixed inset-0 top-[var(--header-height)] z-[30] w-full max-w-[320px] overflow-y-auto overflow-x-hidden bg-white p-6 shadow-md transition-transform sm:sticky sm:top-[var(--header-height)] sm:h-screen sm:max-h-[700px] sm:!translate-x-0 sm:pr-1 sm:shadow-none",
               {
                 "translate-x-0": filterOpen,
                 "-translate-x-full": !filterOpen,

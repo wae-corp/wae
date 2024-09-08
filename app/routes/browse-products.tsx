@@ -33,7 +33,7 @@ export default function BrowseProducts() {
 
           <Link
             to={"/product-list"}
-            className="wae-btn wae-btn-pill wae-btn-md border-white px-6"
+            className="wae-btn wae-btn-md border-white px-6"
           >
             View All Products
           </Link>
@@ -43,7 +43,7 @@ export default function BrowseProducts() {
       <section className="wae-pt-md wae-pb-md bg-black text-white">
         <div className="container flex items-center">
           <div className="gap-8 sm:flex">
-            <div className="flex flex-col justify-start md:col-span-8">
+            <div className="flex flex-col items-start justify-start md:col-span-8">
               <h3 className="wae-h4 mb-10 font-secondary">
                 Drinking Water Solutions
               </h3>
@@ -58,6 +58,13 @@ export default function BrowseProducts() {
               <p className="uppercase">
                 <span className="prefix-dot"></span> You discover Life at WAE
               </p>
+
+              <Link
+                to={"/product-list"}
+                className="wae-btn wae-btn-pill mt-11 border-white px-6 py-2"
+              >
+                View All Products
+              </Link>
             </div>
             <div className="mt-10 sm:mt-0 lg:max-w-[400px]">
               <p className="wae-h6-lg uppercase">
@@ -170,7 +177,7 @@ export default function BrowseProducts() {
                         </div>
                       </div>
                       <Link
-                        to={"/product"}
+                        to={"/product-list"}
                         className="rounded-full border border-black px-5 py-3 transition-colors hover:bg-white"
                       >
                         View Details
