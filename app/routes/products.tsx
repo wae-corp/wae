@@ -15,7 +15,10 @@ export default function Products() {
     <>
       <main className="flex min-h-screen items-center justify-center bg-white bg-gradient-to-b from-[#6d6d6d] from-0% to-white py-8 pt-[var(--header-height)] text-center text-black">
         <div className="container">
-          <div className="mx-auto mt-0 max-w-3xl sm:mt-20 xl:mt-40">
+          <div
+            className="mx-auto mt-0 max-w-3xl sm:mt-20 xl:mt-40"
+            data-aos="fade-down"
+          >
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
             <h2 className="wae-h2 mt-10 font-secondary leading-tight lg:mb-[100px]">
@@ -28,15 +31,26 @@ export default function Products() {
 
       <section className="bg-window-pattern bg-cover bg-left bg-no-repeat py-20 lg:py-72">
         <section className="container mb-20 lg:mb-[212px]">
-          <p className="mb-12 text-sm uppercase">WHO WE ARE</p>
+          <p
+            className="mb-12 text-sm uppercase"
+            data-aos="fade-right"
+          >
+            WHO WE ARE
+          </p>
 
           <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
-            <h4 className="wae-h4 mb-12 max-w-[592px] font-secondary lg:mb-0">
+            <h4
+              className="wae-h4 mb-12 max-w-[592px] font-secondary lg:mb-0"
+              data-aos="fade-right"
+            >
               We are thought that becomes action. Matter that transforms into
               emotion. Invisible yet concrete values, to give a new meaning to
               an interior place.
             </h4>
-            <p className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base">
+            <p
+              className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base"
+              data-aos="fade-left"
+            >
               <strong className="font-extrabold">
                 We are thought that becomes action.
               </strong>{" "}
@@ -48,7 +62,10 @@ export default function Products() {
             </p>
           </div>
 
-          <p className="uppercase">
+          <p
+            className="uppercase"
+            data-aos="fade-right"
+          >
             <span className="prefix-dot"></span>
             You Discover Demo Kitchens
           </p>
@@ -57,13 +74,16 @@ export default function Products() {
         <section>
           <div className="container max-w-[1080px]">
             <div className="wae-gap-lg flex flex-col">
-              {ProductsPageListing.map((product) => {
+              {ProductsPageListing.map((product, idx) => {
                 return (
                   <div
                     key={product.id}
                     className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
                   >
-                    <div className="flex-shrink-0 md:basis-1/2">
+                    <div
+                      className="flex-shrink-0 md:basis-1/2"
+                      data-aos="fade-down"
+                    >
                       <img
                         src="/images/covers/trublu.jpg"
                         alt="TruBlu"
@@ -72,7 +92,11 @@ export default function Products() {
                         height="500"
                       />
                     </div>
-                    <div className="md:basis-1/2">
+                    <div
+                      className="md:basis-1/2"
+                      data-aos="fade-down"
+                      data-aos-delay="100"
+                    >
                       <div className="mb-14 flex flex-col gap-8 lg:gap-10">
                         <label className="text-xs font-bold">
                           {product.id}
@@ -108,7 +132,10 @@ export default function Products() {
 
         <section className="mb-10 flex items-center justify-center py-20 text-center text-black lg:py-40">
           <div className="container">
-            <div className="mx-auto max-w-[845px]">
+            <div
+              className="mx-auto max-w-[845px]"
+              data-aos="fade-down"
+            >
               <h6 className="uppercase">HOW DOES IT WORK?</h6>
 
               <h2 className="wae-h2 mb-12 mt-12 font-secondary leading-tight lg:mb-[100px]">

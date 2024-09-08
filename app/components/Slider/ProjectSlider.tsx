@@ -27,6 +27,7 @@ export const ProjectSlider = ({
                 <Link
                   to={product?.link}
                   className="block"
+                  data-aos="fade-in"
                 >
                   <img
                     src={product?.image}
@@ -41,7 +42,7 @@ export const ProjectSlider = ({
                   {product?.details && <div>{product?.details}</div>}
                 </Link>
               ) : (
-                <div>
+                <div data-aos="fade-in">
                   <img
                     src={product?.image}
                     alt={product?.name}

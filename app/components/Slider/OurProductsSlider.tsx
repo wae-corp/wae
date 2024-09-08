@@ -25,7 +25,12 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
         style={{paddingLeft: containerOffset}}
         className="max-lg:!pl-3"
       >
-        <h5 className="mb-8 text-center text-sm md:text-left">OUR PRODUCTS</h5>
+        <h5
+          className="mb-8 text-center text-sm md:text-left"
+          data-aos="fade-down"
+        >
+          OUR PRODUCTS
+        </h5>
 
         <Carousel
           getEmblaApi={setEmbla}
@@ -39,7 +44,11 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
           {productList?.map((product, idx) => {
             return (
               <Carousel.Slide key={idx}>
-                <Link to={product?.link}>
+                <Link
+                  to={product?.link}
+                  data-aos="fade-in"
+                  data-aos-delay={`${idx}00`}
+                >
                   <img
                     src={product?.image}
                     alt={product?.name}

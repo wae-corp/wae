@@ -1,5 +1,6 @@
 import {Carousel} from "@mantine/carousel";
 import {Link, MetaFunction} from "@remix-run/react";
+import {careers} from "~/static";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,7 +15,10 @@ export default function Careers() {
     <>
       <main className="flex flex-col items-center bg-black pt-[var(--header-height)] text-white">
         <div className="container flex max-w-[1100px] items-end pb-10 xl:min-h-[550px]">
-          <div className="text-center">
+          <div
+            className="text-center"
+            data-aos="fade-down"
+          >
             <h1 className="wae-h6 mb-10 font-extrabold uppercase">
               Why WAE (Make a Difference)
             </h1>
@@ -32,7 +36,7 @@ export default function Careers() {
 
         <div className="wae-pb-lg wae-pt-lg container flex items-center 2xl:min-h-screen">
           <div className="flex flex-col gap-8 lg:flex-row">
-            <div>
+            <div data-aos="fade-right">
               <h3 className="wae-h4 mb-10 font-secondary">Life at WAE</h3>
               <p className="mb-10 uppercase lg:ml-28 lg:max-w-[80%]">
                 Life at WAE is vibrant and inspiring. Our culture is a tapestry
@@ -46,7 +50,10 @@ export default function Careers() {
                 <span className="prefix-dot"></span> You discover Life at WAE
               </p>
             </div>
-            <div className="flex-shrink-0 lg:max-w-[400px] lg:pl-0 lg:pl-8">
+            <div
+              data-aos="fade-left"
+              className="flex-shrink-0 lg:max-w-[400px] lg:pl-8"
+            >
               <p className="wae-h6-lg uppercase">
                 WAE is more than a job - it's a journey. We offer competitive
                 benefits, a supportive and inclusive community, and countless
@@ -71,7 +78,11 @@ export default function Careers() {
         >
           {new Array(10).fill("").map((slide, idx) => {
             return (
-              <Carousel.Slide key={idx}>
+              <Carousel.Slide
+                key={idx}
+                data-aos="fade-in"
+                data-aos-delay={`${idx}00`}
+              >
                 <img
                   src={"/images/covers/bowl-with-chopsticks.jpg"}
                   width={370}
@@ -85,7 +96,10 @@ export default function Careers() {
         </Carousel>
 
         <div className="wae-mt-lg container">
-          <div className="mb-16 max-w-[670px] md:mb-36">
+          <div
+            className="mb-16 max-w-[670px] md:mb-36"
+            data-aos="fade-in"
+          >
             <h4 className="wae-h4 mb-5 font-secondary uppercase">
               Explore Current Openings
             </h4>
@@ -100,79 +114,29 @@ export default function Careers() {
           </div>
 
           <div className="grid gap-12 md:grid-cols-2 md:gap-32">
-            <div className="md:even:-translate-y-20">
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
-                Apprenticeship
-              </h5>
+            {careers.map((career, idx) => {
+              return (
+                <div
+                  key={career.id}
+                  className="md:even:!-translate-y-20"
+                  data-aos="fade-down"
+                  data-aos-delay={`${idx}00`}
+                >
+                  <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
+                    {career.type}
+                  </h5>
 
-              <p className="mb-6">
-                Step into the professional world with hands-on experience and
-                expert mentorship. Ideal for those eager to learn and grow.
-              </p>
+                  <p className="mb-6">{career.details}</p>
 
-              <Link
-                to={"/careers/apprenticeship"}
-                className="wae-btn wae-btn-md min-w-[200px] border-black"
-              >
-                Explore
-              </Link>
-            </div>
-
-            <div className="md:even:-translate-y-20">
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
-                Full-Time Positions
-              </h5>
-
-              <p className="mb-6">
-                Dive into diverse roles that challenge and excite you. From
-                engineering to marketing, we are on the lookout for passionate
-                professionals ready to innovate.
-              </p>
-
-              <Link
-                to={"/careers/full-time"}
-                className="wae-btn wae-btn-md min-w-[200px] border-black"
-              >
-                Explore
-              </Link>
-            </div>
-
-            <div className="md:even:-translate-y-20">
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
-                Internship
-              </h5>
-
-              <p className="mb-6">
-                Our internships offer more than just experience. They’re
-                gateways to your future career, providing real-world skills and
-                professional development.
-              </p>
-
-              <Link
-                to={"/careers/internship"}
-                className="wae-btn wae-btn-md min-w-[200px] border-black"
-              >
-                Explore
-              </Link>
-            </div>
-
-            <div className="md:even:-translate-y-20">
-              <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
-                Short Term Projects
-              </h5>
-
-              <p className="mb-6">
-                Engage in unique, high-impact projects. Perfect for specialists
-                looking to contribute their expertise on a flexible basis.
-              </p>
-
-              <Link
-                to={"/careers/short-term"}
-                className="wae-btn wae-btn-md min-w-[200px] border-black"
-              >
-                Explore
-              </Link>
-            </div>
+                  <Link
+                    to={career.link}
+                    className="wae-btn wae-btn-md min-w-[200px] border-black"
+                  >
+                    Explore
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

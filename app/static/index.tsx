@@ -267,4 +267,111 @@ export const ProductImageSliderData = [
   "/images/covers/trublu.jpg",
 ];
 
+export const specifications = [
+  {
+    id: 1,
+    title: "Height",
+    value: "1690mm",
+    subtitle: "World-first design",
+  },
+  {
+    id: 2,
+    title: "Chilled temperature",
+    value: "2°C",
+    subtitle: "Maximum 12°C",
+  },
+  {
+    id: 3,
+    title: "Hot temperature",
+    value: "69°C",
+    subtitle: "Degrees celsius",
+  },
+  {
+    id: 4,
+    title: "Chilled capacity",
+    value: "80L/h",
+    subtitle: "Litres per hour",
+  },
+  {
+    id: 5,
+    title: "Hot capacity",
+    value: "16L/h",
+    subtitle: "Litres per hour",
+  },
+];
+
+export const careers = [
+  {
+    id: 1,
+    type: "Apprenticeship",
+    details:
+      "Step into the professional world with hands-on experience and expert mentorship. Ideal for those eager to learn and grow.",
+    link: "/careers/apprenticeship",
+  },
+  {
+    id: 2,
+    type: "Full-Time Positions",
+    details:
+      "Dive into diverse roles that challenge and excite you. From engineering to marketing, we are on the lookout for passionate professionals ready to innovate.",
+    link: "/careers/full-time",
+  },
+  {
+    id: 3,
+    type: "Internship",
+    details:
+      "Our internships offer more than just experience. They're gateways to your future career, providing real-world skills and professional development.",
+    link: "/careers/internship",
+  },
+  {
+    id: 4,
+    type: "Short Term Projects",
+    details:
+      "Engage in unique, high-impact projects. Perfect for specialists looking to contribute their expertise on a flexible basis.",
+    link: "/careers/short-term",
+  },
+];
+
+export const coreValues = [
+  {
+    id: 1,
+    image: "/images/icons/magnifying-glass-with-gear.svg",
+    value: "Research-Driven",
+    details: "We prioritize research and technology over market trends.",
+  },
+  {
+    id: 2,
+    image: "/images/icons/person-with-leaves.svg",
+    value: "Environmental and Human Service",
+    details: "Our top priority is serving the planet and humanity.",
+  },
+  {
+    id: 3,
+    image: "/images/icons/hand-with-checkmark.svg",
+    value: "Responsibility",
+    details:
+      "We hold ourselves accountable to our employees, customers, associates, and society, upholding the highest standards in all engagements",
+  },
+  {
+    id: 4,
+    image: "/images/icons/employee-value.svg",
+    value: "Employee Value",
+    details:
+      "Our future hinges on our employees' knowledge, attitude, skills, teamwork, and integrity, which we hold in the highest esteem.",
+  },
+  {
+    id: 5,
+    image: "/images/icons/hand-with-checkmark.svg",
+    value: "Participative Management",
+    details:
+      "We champion participative management, productivity, and profit-sharing.",
+  },
+  {
+    id: 6,
+    image: "/images/icons/handshake-verified.svg",
+    value: "Quality Commitment",
+    details:
+      "We commit to quality in our products, services, relationships, communications, and promises",
+  },
+];
+
 export * from "./Icons";

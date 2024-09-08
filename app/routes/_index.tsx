@@ -31,7 +31,10 @@ export default function Index() {
           />
         </div>
 
-        <div className="mb-10 text-center text-white">
+        <div
+          className="mb-10 text-center text-white"
+          data-aos="fade-up"
+        >
           <h1 className="wae-h1 font-secondary lg:mb-36">
             Keeping The Blue Planet Green
           </h1>
@@ -50,7 +53,10 @@ export default function Index() {
 
       <section className="flex min-h-screen items-center justify-center bg-black py-8 text-center text-white">
         <div className="container">
-          <div className="mx-auto max-w-3xl">
+          <div
+            className="mx-auto max-w-3xl"
+            data-aos="fade-up"
+          >
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
             <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
@@ -67,15 +73,26 @@ export default function Index() {
 
       <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-72">
         <section className="container">
-          <p className="mb-12 text-sm uppercase">WHO WE ARE</p>
+          <p
+            className="mb-12 text-sm uppercase"
+            data-aos="fade-right"
+          >
+            WHO WE ARE
+          </p>
 
           <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
-            <h4 className="wae-h4 mb-12 max-w-[592px] font-secondary lg:mb-0">
+            <h4
+              className="wae-h4 mb-12 max-w-[592px] font-secondary lg:mb-0"
+              data-aos="fade-right"
+            >
               We are thought that becomes action. Matter that transforms into
               emotion. Invisible yet concrete values, to give a new meaning to
               an interior place.
             </h4>
-            <p className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base">
+            <p
+              className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base"
+              data-aos="fade-left"
+            >
               <strong className="font-extrabold">
                 We are thought that becomes action.
               </strong>{" "}
@@ -87,7 +104,10 @@ export default function Index() {
             </p>
           </div>
 
-          <p className="uppercase">
+          <p
+            className="uppercase"
+            data-aos="fade-right"
+          >
             <span className="prefix-dot"></span>
             You Discover Demo Kitchens
           </p>
@@ -95,7 +115,7 @@ export default function Index() {
 
         <section className="container">
           <div className="flex flex-col gap-8 lg:flex-row">
-            <div>
+            <div data-aos="fade-right">
               <h3 className="wae-h4 mb-10 font-secondary">
                 A 100% Made in India
               </h3>
@@ -110,7 +130,10 @@ export default function Index() {
                 <span className="prefix-dot"></span> You discover Doimo Kitchens
               </p>
             </div>
-            <div className="flex-shrink-0 pl-8 lg:max-w-[400px] lg:pl-0">
+            <div
+              data-aos="fade-left"
+              className="flex-shrink-0 pl-8 lg:max-w-[400px] lg:pl-0"
+            >
               <img
                 src="/images/covers/bowl-with-chopsticks.jpg"
                 alt="bowl-with-chopsticks"
@@ -127,7 +150,10 @@ export default function Index() {
 
       <section className="wae-pt-lg wae-pb-lg bg-black text-center text-white">
         <div className="container">
-          <div className="wae-mb-lg mx-auto max-w-5xl">
+          <div
+            className="wae-mb-lg mx-auto max-w-5xl"
+            data-aos="fade-down"
+          >
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
             <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
@@ -148,7 +174,10 @@ export default function Index() {
 
       <section className="md:flex">
         <div className="bg-white py-20 md:w-1/2 md:px-14 md:py-20 xl:px-40 xl:py-36">
-          <div className="container">
+          <div
+            className="container"
+            data-aos="fade-in"
+          >
             <p className="uppercase">LIFE @ WAE</p>
 
             <div className="my-12 max-w-[360px]">
@@ -168,7 +197,10 @@ export default function Index() {
           <div className="container">
             <div className="absolute inset-0 bg-black opacity-60"></div>
 
-            <div className="isolate">
+            <div
+              className="isolate"
+              data-aos="fade-in"
+            >
               <div className="mb-8 text-sm lg:text-base">We're looking for</div>
               <Link
                 to={"/"}
@@ -203,7 +235,7 @@ export default function Index() {
       <section className="wae-pt-lg wae-pb-lg bg-[#e0e0e0]">
         <div className="container">
           <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 lg:gap-0">
-            <div>
+            <div data-aos="fade-in">
               <h3 className="wae-h3 mb-4 font-secondary">
                 Get in Touch with Us
               </h3>
@@ -271,7 +303,10 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div className="mx-auto w-full">
+            <div
+              className="mx-auto w-full"
+              data-aos="fade-in"
+            >
               <form action="w-full">
                 <div
                   className={clsx({

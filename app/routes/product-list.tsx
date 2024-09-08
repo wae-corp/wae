@@ -119,7 +119,10 @@ export default function ProductList() {
     <>
       <main className="relative flex min-h-[600px] items-end bg-washing-hands bg-cover bg-no-repeat pb-32 pt-[var(--header-height)] text-white">
         <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black to-transparent"></div>
-        <div className="container isolate text-center">
+        <div
+          className="container isolate text-center"
+          data-aos="fade-down"
+        >
           <h5 className="wae-h5-lg font-secondary">
             Did you know? On average we use 5,500 liters of water a day! <br />{" "}
             That is a humungous amount of water!…
@@ -185,6 +188,8 @@ export default function ProductList() {
                 <Link
                   to={"/product-details"}
                   key={idx}
+                  data-aos="fade-in"
+                  data-aos-delay={`${idx}00`}
                 >
                   <img
                     src="/images/covers/trublu.jpg"

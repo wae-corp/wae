@@ -44,11 +44,11 @@ body {
 
 /* Typography */
 .wae-h1 {
-  @apply text-[40px] sm:text-5xl md:text-6xl lg:text-8xl;
+  @apply text-[40px] leading-normal sm:text-5xl md:text-6xl lg:text-8xl;
 }
 
 .wae-h2 {
-  @apply text-[32px] lg:text-[58px];
+  @apply text-[32px] leading-normal lg:text-[58px];
 }
 
 .wae-h3-lg {
@@ -56,15 +56,15 @@ body {
 }
 
 .wae-h3 {
-  @apply text-[32px] md:text-4xl lg:text-[40px];
+  @apply text-[32px] leading-normal md:text-4xl lg:text-[40px];
 }
 
 .wae-h4 {
-  @apply text-2xl md:text-3xl lg:text-4xl;
+  @apply text-2xl leading-normal md:text-3xl lg:text-4xl;
 }
 
 .wae-h5-lg {
-  @apply text-2xl md:text-[32px];
+  @apply text-2xl leading-normal md:text-[32px];
 }
 
 .wae-h5 {

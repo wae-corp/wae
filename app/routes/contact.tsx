@@ -15,18 +15,21 @@ export default function Contact() {
       <main className="wae-pb-md pt-[var(--header-height)]">
         <div className="container">
           <section className="wae-mb-md wae-pt-md">
-            <div className="text-center">
+            <div
+              className="text-center"
+              data-aos="fade-down"
+            >
               <h6 className="wae-h6 mb-8">Contact Us</h6>
 
               <a
                 href="mailTo:info@waecorp.com"
-                className="md:wae-h2 mb-4 block font-secondary text-xl hover:underline md:mb-8"
+                className="mb-4 block font-secondary text-xl hover:underline md:mb-8 md:text-[32px]"
               >
                 info@waecorp.com
               </a>
               <a
                 href="mailTo:marketing@waecorp.com"
-                className="md:wae-h2 mb-4 block font-secondary text-xl hover:underline md:mb-8"
+                className="mb-4 block font-secondary text-xl hover:underline md:mb-8 md:text-[32px]"
               >
                 marketing@waecorp.com
               </a>
@@ -34,8 +37,11 @@ export default function Contact() {
           </section>
 
           <section className="mb-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 sm:gap-y-[100px] md:mb-[100px]">
-            <div className="text-center">
-              <h5 className="md:wae-h5-lg mb-2 text-lg font-extrabold sm:mb-5">
+            <div
+              className="text-center"
+              data-aos="fade-down"
+            >
+              <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
                 Noida Office
               </h5>
               <address className="wae-h6 font-secondary not-italic">
@@ -44,8 +50,11 @@ export default function Contact() {
                 <br /> Tel. +91 01204069800
               </address>
             </div>
-            <div className="text-center">
-              <h5 className="md:wae-h5-lg mb-2 text-lg font-extrabold sm:mb-5">
+            <div
+              className="text-center"
+              data-aos="fade-down"
+            >
+              <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
                 Mumbai Office
               </h5>
 
@@ -57,8 +66,11 @@ export default function Contact() {
                 <br /> Mumbai - 400079
               </address>
             </div>
-            <div className="text-center">
-              <h5 className="md:wae-h5-lg mb-2 text-lg font-extrabold sm:mb-5">
+            <div
+              className="text-center"
+              data-aos="fade-down"
+            >
+              <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
                 Hyderabad Office
               </h5>
               <address className="wae-h6 font-secondary not-italic">
@@ -69,8 +81,11 @@ export default function Contact() {
                 <br /> Hyderabad Telangana 500032
               </address>
             </div>
-            <div className="text-center">
-              <h5 className="md:wae-h5-lg mb-2 text-lg font-extrabold sm:mb-5">
+            <div
+              className="text-center"
+              data-aos="fade-down"
+            >
+              <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
                 Bengaluru Office
               </h5>
               <address className="wae-h6 font-secondary not-italic">

@@ -1,6 +1,11 @@
 import {MetaFunction} from "@remix-run/react";
 import {ProductImageSlider, ProjectSlider} from "~/components";
-import {Icons, ProductImageSliderData, ProductList} from "~/static";
+import {
+  Icons,
+  ProductImageSliderData,
+  ProductList,
+  specifications,
+} from "~/static";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,7 +20,10 @@ export default function ProductDetails() {
     <>
       <main className="flex min-h-[500px] items-center bg-product-details-banner bg-cover bg-no-repeat pb-12 pt-[var(--header-height)] text-white xl:min-h-screen xl:bg-center">
         <div className="container-lg">
-          <div className="max-w-3xl">
+          <div
+            className="max-w-3xl"
+            data-aos="fade-down"
+          >
             <h6 className="wae-h6 mb-4 font-extrabold uppercase">
               NEPTUNE DUO
             </h6>
@@ -31,10 +39,13 @@ export default function ProductDetails() {
       <section className="wae-pt-lg wae-pb-lg">
         <div className="container">
           <div className="flex flex-col items-center gap-10 xl:flex-row xl:items-start xl:justify-start">
-            <div className="flex max-w-[600px] flex-shrink-0 justify-center">
+            <div
+              className="flex max-w-[600px] flex-shrink-0 justify-center"
+              data-aos="fade-right"
+            >
               <ProductImageSlider images={ProductImageSliderData} />
             </div>
-            <div>
+            <div data-aos="fade-left">
               <h6 className="wae-h6-lg mb-5 font-light md:mb-10">
                 Ligature-resistant
               </h6>
@@ -85,45 +96,22 @@ export default function ProductDetails() {
           </div>
 
           <div className="mb-20 flex flex-wrap items-start justify-center gap-8 max-sm:justify-start lg:flex-nowrap">
-            <div className="lg:w-full">
-              <div className="mb-5 font-extralight">Height</div>
+            {specifications.map((spec, idx) => {
+              return (
+                <div
+                  key={spec.id}
+                  className="lg:w-full"
+                  data-aos="fade-in"
+                  data-aos-delay={`${idx}00`}
+                >
+                  <div className="mb-5 font-extralight">{spec.title}</div>
 
-              <div className="wae-h2 mb-5">1690mm</div>
+                  <div className="wae-h2 mb-5">{spec.value}</div>
 
-              <div className="font-extralight">World-first design</div>
-            </div>
-
-            <div className="lg:w-full">
-              <div className="mb-5 font-extralight">Chilled temperature</div>
-
-              <div className="wae-h2 mb-5">2°C</div>
-
-              <div className="font-extralight">Maximum 12oC</div>
-            </div>
-
-            <div className="lg:w-full">
-              <div className="mb-5 font-extralight">Hot temperature</div>
-
-              <div className="wae-h2 mb-5">69°C</div>
-
-              <div className="font-extralight">Degrees celsius</div>
-            </div>
-
-            <div className="lg:w-full">
-              <div className="mb-5 font-extralight">Chilled capacity</div>
-
-              <div className="wae-h2 mb-5">80L/h</div>
-
-              <div className="font-extralight">Litres per hour</div>
-            </div>
-
-            <div className="lg:w-full">
-              <div className="mb-5 font-extralight">Hot capacity</div>
-
-              <div className="wae-h2 mb-5">16L/h</div>
-
-              <div className="font-extralight">Litres per hour</div>
-            </div>
+                  <div className="font-extralight">{spec.subtitle}</div>
+                </div>
+              );
+            })}
           </div>
 
           <div className="flex justify-center">
