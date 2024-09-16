@@ -1,5 +1,11 @@
-import {Link} from "@remix-run/react";
+import {Link, useFetcher} from "@remix-run/react";
+import {useEffect, useState} from "react";
+import {ActionData} from "~/routes/subscribe-to-newsletter";
 import {Icons} from "~/static";
+import {showNotification} from "@mantine/notifications";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTimesCircle} from "@fortawesome/free-solid-svg-icons";
+import {emailIdValidationRegex} from "~/global--common-typescript/typeDefinations";
 
 const footerLinks: {
   id: string;
@@ -91,6 +97,53 @@ const footerLinks: {
 ];
 
 export const Footer = () => {
+  const [email, setEmail] = useState<string>("");
+  const [formErrors, setFormErrors] = useState<string | null>(null);
+
+  const formFetcher = useFetcher<ActionData>();
+  useEffect(() => {
+    if (formFetcher.data !== null) {
+      if (formFetcher.data?.error != null) {
+        showNotification({
+          title: "Error",
+          message: formFetcher.data.error,
+          color: "red",
+          icon: (
+            <FontAwesomeIcon
+              icon={faTimesCircle}
+              style={{color: "red", fontSize: "18px"}}
+            />
+          ),
+        });
+      }
+    }
+  }, [formFetcher]);
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+
+    // Clear previous errors
+    setFormErrors(null);
+
+    // Email validation
+    if (!emailIdValidationRegex.test(email)) {
+      setFormErrors("Invalid email format");
+      return;
+    }
+
+    // Submit the form using fetcher
+    formFetcher.submit(
+      {"newsletter-mail": email},
+      {
+        method: "post",
+        action: "/subscribe-to-newsletter",
+      },
+    );
+
+    // Reset form on successful submission
+    setEmail("");
+  };
+
   return (
     <footer className="relative bg-black px-4 pb-11 pt-28 text-white">
       <img
@@ -124,7 +177,10 @@ export const Footer = () => {
                 Subscribe to our Newsletter
               </label>
 
-              <form className="flex h-[54px] items-stretch overflow-hidden rounded-lg border border-[#303030] focus-within:border-white max-lg:w-full">
+              <formFetcher.Form
+                onSubmit={handleSubmit}
+                className="flex h-[54px] items-stretch overflow-hidden rounded-lg border border-[#303030] focus-within:border-white max-lg:w-full"
+              >
                 <div className="relative flex flex-1 items-stretch">
                   <div className="left-5 top-1/2 hidden -translate-y-1/2 md:absolute lg:block">
                     {Icons.EnvelopeSquare}
@@ -133,15 +189,23 @@ export const Footer = () => {
                     id="newsletter"
                     type="email"
                     name="newsletter-mail"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email to get the latest news..."
                     className="w-full bg-black p-3 lg:pl-16 xl:w-[400px]"
                   />
                 </div>
 
-                <button className="wae-btn-light wae-btn-md px-5 py-2 font-medium">
+                <button
+                  type="submit"
+                  className="wae-btn-light wae-btn-md px-5 py-2 font-medium"
+                >
                   Subscribe
                 </button>
-              </form>
+              </formFetcher.Form>
+              {formErrors && (
+                <p className="mt-2 text-sm text-red-500">{formErrors}</p>
+              )}
             </div>
 
             <div className="hidden text-xs text-[#f2f2f2] opacity-75 lg:block">

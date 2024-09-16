@@ -201,6 +201,7 @@ export default function Index() {
               className="isolate"
               data-aos="fade-in"
             >
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               <div className="mb-8 text-sm lg:text-base">We're looking for</div>
               <Link
                 to={"/"}
