@@ -1,11 +1,24 @@
+import {faTimesCircle} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {showNotification} from "@mantine/notifications";
 import type {MetaFunction} from "@remix-run/node";
-import {Link} from "@remix-run/react";
+import {Link, useFetcher} from "@remix-run/react";
 import clsx from "clsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {OurProductsSlider, ProjectSlider} from "~/components";
+import {phoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
+import {ActionData} from "~/routes/landing-page-lead";
 import {Icons, ProductList, SecondaryProducts} from "~/static";
 
 type EnquiryType = "Corporate" | "Architect" | "Consultant" | "Curious" | null;
+
+type ErrorObject = {
+  name?: string | null;
+  companyName?: string | null;
+  contact?: string | null;
+  // city?: string | null;
+  message?: string | null;
+};
 
 export const meta: MetaFunction = () => {
   return [
@@ -16,6 +29,66 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   const [enquiryFor, setEnquiryFor] = useState<EnquiryType>(null);
+  const [errors, setErrors] = useState<ErrorObject>({
+    name: null,
+    companyName: null,
+    contact: null,
+    // city: null,
+    message: null,
+  });
+  const formFetcher = useFetcher<ActionData>();
+  useEffect(() => {
+    if (formFetcher.data !== null) {
+      if (formFetcher.data?.error != null) {
+        showNotification({
+          title: "Error",
+          message: formFetcher.data.error,
+          color: "red",
+          icon: (
+            <FontAwesomeIcon
+              icon={faTimesCircle}
+              style={{color: "red", fontSize: "18px"}}
+            />
+          ),
+        });
+      }
+    }
+  }, [formFetcher]);
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    setErrors({});
+    const form = event.currentTarget as HTMLFormElement;
+    const name = form["distributor-name"].value.trim();
+    const companyName = form["company-name"].value.trim();
+    const contact = form["distributor-contact"].value.trim();
+    const message = form["message"].value.trim();
+    const newErrors = {
+      name: name ? null : "First Name is required",
+      companyName: companyName ? null : "Company Name is required",
+      contact: contact
+        ? phoneNumberValidationRegex.test(contact)
+          ? null
+          : "Invalid contact number"
+        : "Contact is required",
+      message: message
+        ? message.length !== 0
+          ? null
+          : "Message cannot be empty"
+        : "Message is required",
+    };
+    setErrors(newErrors);
+
+    if (Object.values(newErrors).every((error) => error === null)) {
+      formFetcher.submit(
+        {name, companyName, contact, message, enquiryFor: enquiryFor ?? ""},
+        {
+          method: "POST",
+          action: "/landing-page-lead",
+        },
+      );
+    }
+  };
 
   return (
     <>
@@ -308,7 +381,10 @@ export default function Index() {
               className="mx-auto w-full"
               data-aos="fade-in"
             >
-              <form action="w-full">
+              <formFetcher.Form
+                action="w-full"
+                onSubmit={handleSubmit}
+              >
                 <div
                   className={clsx({
                     hidden: enquiryFor !== null,
@@ -317,89 +393,35 @@ export default function Index() {
                   <h5 className="lg:wae-h6-lg mb-5 text-2xl">I am</h5>
 
                   <div className="col grid grid-cols-[repeat(2,130px)] grid-rows-[repeat(2,130px)] gap-5 lg:grid-cols-[repeat(2,200px)] lg:grid-rows-[repeat(2,200px)]">
-                    <div className="aspect-square max-w-[200px]">
-                      <input
-                        id="corporate-enquiry"
-                        type="radio"
-                        name="enquiry"
-                        checked={enquiryFor === "Corporate"}
-                        aria-checked={enquiryFor === "Corporate"}
-                        value={"Corporate"}
-                        onChange={(e) =>
-                          setEnquiryFor(e.currentTarget.value as EnquiryType)
-                        }
-                        className="peer hidden"
-                      />
-                      <label
-                        htmlFor="corporate-enquiry"
-                        className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
-                      >
-                        A Corporate
-                      </label>
-                    </div>
-
-                    <div className="aspect-square max-w-[200px]">
-                      <input
-                        id="architect-enquiry"
-                        type="radio"
-                        name="enquiry"
-                        checked={enquiryFor === "Architect"}
-                        aria-checked={enquiryFor === "Architect"}
-                        value={"Architect"}
-                        onChange={(e) =>
-                          setEnquiryFor(e.currentTarget.value as EnquiryType)
-                        }
-                        className="peer hidden"
-                      />
-                      <label
-                        htmlFor="architect-enquiry"
-                        className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
-                      >
-                        An Architect
-                      </label>
-                    </div>
-
-                    <div className="aspect-square max-w-[200px]">
-                      <input
-                        id="consultant-enquiry"
-                        type="radio"
-                        name="enquiry"
-                        checked={enquiryFor === "Consultant"}
-                        aria-checked={enquiryFor === "Consultant"}
-                        value={"Consultant"}
-                        onChange={(e) =>
-                          setEnquiryFor(e.currentTarget.value as EnquiryType)
-                        }
-                        className="peer hidden"
-                      />
-                      <label
-                        htmlFor="consultant-enquiry"
-                        className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
-                      >
-                        A Consultant
-                      </label>
-                    </div>
-
-                    <div className="aspect-square max-w-[200px]">
-                      <input
-                        id="curious-enquiry"
-                        type="radio"
-                        name="enquiry"
-                        checked={enquiryFor === "Curious"}
-                        aria-checked={enquiryFor === "Curious"}
-                        value={"Curious"}
-                        onChange={(e) =>
-                          setEnquiryFor(e.currentTarget.value as EnquiryType)
-                        }
-                        className="peer hidden"
-                      />
-                      <label
-                        htmlFor="curious-enquiry"
-                        className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
-                      >
-                        Just Curious
-                      </label>
-                    </div>
+                    {["Corporate", "Architect", "Consultant", "Curious"].map(
+                      (type) => (
+                        <div
+                          className="aspect-square max-w-[200px]"
+                          key={type}
+                        >
+                          <input
+                            id={`${type}-enquiry`}
+                            type="radio"
+                            name="enquiry"
+                            checked={enquiryFor === type}
+                            aria-checked={enquiryFor === type}
+                            value={type}
+                            onChange={(e) =>
+                              setEnquiryFor(
+                                e.currentTarget.value as EnquiryType,
+                              )
+                            }
+                            className="peer hidden"
+                          />
+                          <label
+                            htmlFor={`${type}-enquiry`}
+                            className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
+                          >
+                            A {type}
+                          </label>
+                        </div>
+                      ),
+                    )}
                   </div>
                 </div>
                 <div
@@ -427,24 +449,34 @@ export default function Index() {
                     name="distributor-name"
                     placeholder="First Name"
                   />
+                  {errors.name && <p className="text-red-500">{errors.name}</p>}
                   <input
                     type="text"
                     className="wae-input mt-6 !border-black lg:mb-10"
-                    name="distributor-email"
+                    name="company-name"
                     placeholder="Company Name"
                   />
+                  {errors.companyName && (
+                    <p className="text-red-500">{errors.companyName}</p>
+                  )}
                   <input
-                    type="text"
+                    type="tel"
                     className="wae-input mt-6 !border-black lg:mb-10"
                     name="distributor-contact"
-                    placeholder="City"
+                    placeholder="Contact"
                   />
+                  {errors.contact && (
+                    <p className="text-red-500">{errors.contact}</p>
+                  )}
                   <textarea
-                    name="enquiry"
+                    name="message"
                     placeholder="Message"
                     className="wae-input mt-6 !h-auto w-full resize-none !border-black lg:mb-10"
                     rows={3}
                   ></textarea>
+                  {errors.message && (
+                    <p className="text-red-500">{errors.message}</p>
+                  )}
 
                   <button
                     type="submit"
@@ -453,7 +485,7 @@ export default function Index() {
                     Send
                   </button>
                 </div>
-              </form>
+              </formFetcher.Form>
             </div>
           </div>
         </div>

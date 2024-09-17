@@ -22,9 +22,8 @@ export const action: ActionFunction = async ({request}) => {
     });
 
     const validatedData = schema.parse({email});
-    console.log(validatedData);
 
-    const response = await appendEmailToSheet(email);
+    const response = await appendEmailToSheet(validatedData.email);
     if (!response.success) {
       throw response.err;
     }
