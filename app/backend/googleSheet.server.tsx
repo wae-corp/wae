@@ -30,10 +30,6 @@ export async function appendEmailToSheet(
 ): Promise<Result<boolean>> {
   try {
     console.log("Trying to append email to sheet");
-    // const serviceEmail = unwrap(
-    //   getStringFromUnknown(process.env.SERVICE_ACCOUNT_EMAIL),
-    //   "380cd1bf-a20d-4a32-8083-477b143b6a51",
-    // );
     const serviceCredentialsFileContent = unwrap(
       getStringFromUnknown(process.env.SERVICE_ACCOUNT_CREDENTIALS),
       "380cd1bf-a20d-4a32-8083-477b143b6a51",
@@ -86,6 +82,13 @@ export async function appendEmailToSheet(
   }
 }
 
+/**
+ * Appends a new landing page lead to the specified Google Sheet.
+ *
+ * @param {LandingLeadFormArgs} args - An object containing the details of the new landing page lead.
+ * @returns {Promise<Result<boolean>>} - A Promise that resolves to a Result containing a boolean value.
+ * If the operation is successful, the Result will contain `true`. If an error occurs, the Result will contain the error object.
+ */
 export async function appendLandingLeadIntoSheet(
   args: LandingLeadFormArgs,
 ): Promise<Result<boolean>> {

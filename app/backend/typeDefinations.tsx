@@ -4,3 +4,7 @@ export enum EnquiryType {
   Consultant = "Consultant",
   Curious = "Curious",
 }
+
+export type ActionData = {
+  error: string | null;
+};

@@ -1,6 +1,6 @@
 import {Link, useFetcher} from "@remix-run/react";
 import {useEffect, useState} from "react";
-import {ActionData} from "~/routes/subscribe-to-newsletter";
+import {ActionData} from "~/backend/typeDefinations";
 import {Icons} from "~/static";
 import {showNotification} from "@mantine/notifications";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -136,7 +136,7 @@ export const Footer = () => {
       {"newsletter-mail": email},
       {
         method: "post",
-        action: "/subscribe-to-newsletter",
+        action: "/api/subscribe-to-newsletter",
       },
     );
 

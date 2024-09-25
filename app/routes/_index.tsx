@@ -1,13 +1,13 @@
-import {faTimesCircle} from "@fortawesome/free-solid-svg-icons";
+import {faCheckCircle, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {showNotification} from "@mantine/notifications";
+import {showNotification, notifications} from "@mantine/notifications";
 import type {MetaFunction} from "@remix-run/node";
 import {Link, useFetcher} from "@remix-run/react";
 import clsx from "clsx";
 import {useEffect, useState} from "react";
 import {OurProductsSlider, ProjectSlider} from "~/components";
-import {phoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
-import {ActionData} from "~/routes/landing-page-lead";
+import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
+import {ActionData} from "~/backend/typeDefinations";
 import {Icons, ProductList, SecondaryProducts} from "~/static";
 
 type EnquiryType = "Corporate" | "Architect" | "Consultant" | "Curious" | null;
@@ -33,14 +33,13 @@ export default function Index() {
     name: null,
     companyName: null,
     contact: null,
-    // city: null,
     message: null,
   });
   const formFetcher = useFetcher<ActionData>();
   useEffect(() => {
     if (formFetcher.data !== null) {
       if (formFetcher.data?.error != null) {
-        showNotification({
+        notifications.show({
           title: "Error",
           message: formFetcher.data.error,
           color: "red",
@@ -51,6 +50,23 @@ export default function Index() {
             />
           ),
         });
+      } else {
+        notifications.show({
+          title: "Success",
+          message: "Form submitted successfully",
+          color: "green",
+          icon: (
+            <FontAwesomeIcon
+              icon={faCheckCircle}
+              style={{color: "green", fontSize: "18px"}}
+            />
+          ),
+        });
+        const form = document.querySelector("form") as HTMLFormElement;
+        if (form) {
+          form.reset();
+        }
+        setEnquiryFor(null);
       }
     }
   }, [formFetcher]);
@@ -67,7 +83,7 @@ export default function Index() {
       name: name ? null : "First Name is required",
       companyName: companyName ? null : "Company Name is required",
       contact: contact
-        ? phoneNumberValidationRegex.test(contact)
+        ? indianPhoneNumberValidationRegex.test(contact)
           ? null
           : "Invalid contact number"
         : "Contact is required",
@@ -84,7 +100,7 @@ export default function Index() {
         {name, companyName, contact, message, enquiryFor: enquiryFor ?? ""},
         {
           method: "POST",
-          action: "/landing-page-lead",
+          action: "/api/landing-page-lead",
         },
       );
     }

@@ -13,6 +13,7 @@ import "./tailwind.css";
 import {useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {Notifications} from "@mantine/notifications";
 
 export function Layout({children}: {children: React.ReactNode}) {
   useEffect(() => {
@@ -32,6 +33,7 @@ export function Layout({children}: {children: React.ReactNode}) {
       </head>
       <body>
         <MantineProvider>
+          <Notifications />
           <Header />
           {children}
           <Footer />
