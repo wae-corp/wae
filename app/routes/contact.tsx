@@ -1,6 +1,28 @@
-import type {MetaFunction} from "@remix-run/node";
+import {json, type ActionFunction, type MetaFunction} from "@remix-run/node";
 import {Tabs} from "@mantine/core";
 import {Icons} from "~/static";
+import {useEffect, useState} from "react";
+import {
+  getErrorFromUnknown,
+  getStringFromUnknown,
+} from "~/global--common-typescript/utilities/typeValidationUtils";
+import {ActionData} from "~/backend/typeDefinations";
+import {z} from "zod";
+import {appendContactInfoIntoSheet} from "~/backend/googleSheet.server";
+import {Form, useActionData, useSubmit} from "@remix-run/react";
+import {notifications} from "@mantine/notifications";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCheckCircle, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
+import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
+import {unwrap} from "~/global--common-typescript/utilities/errorHandling";
+
+type ErrorObject = {
+  name?: string | null;
+  email?: string | null;
+  contact?: string | null;
+  companyName?: string | null;
+  type?: string | null;
+};
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,7 +31,158 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export const action: ActionFunction = async ({request}) => {
+  let error: string | null = null;
+  try {
+    const body = await request.formData();
+    const name = unwrap(
+      getStringFromUnknown(body.get("name")),
+      "383ce9f7-15d4-4537-8faf-0b88e2311193",
+    );
+    const email = unwrap(
+      getStringFromUnknown(body.get("email")),
+      "15351830-908d-4171-aa4c-2596c8656eb3",
+    );
+    const contact = unwrap(
+      getStringFromUnknown(body.get("contact")),
+      "259c4795-d03a-4851-b0bb-b98f31ed31c3",
+    );
+    const companyName = unwrap(
+      getStringFromUnknown(body.get("companyName")),
+      "8da118b1-40fa-47ea-bd64-2cb5e9ab6bea",
+    );
+    const type = unwrap(
+      getStringFromUnknown(body.get("type")),
+      "adb1d1bb-36b2-4685-9ae5-32502da2b1c2",
+    );
+    if (!name || !email || !contact || !companyName || !type) {
+      throw new Error("All fields are required");
+    }
+    const formValues = {
+      name: name,
+      email: email,
+      contact: contact,
+      companyName: companyName,
+      type: type,
+    };
+    const schema = z.object({
+      name: z.string().min(1, {message: "Name is required"}),
+      email: z.string().email({message: "Invalid email"}),
+      contact: z.string().min(10, {message: "Contact number is required"}),
+      companyName: z.string().min(1, {message: "Company name is required"}),
+      type: z.enum(["distributor", "supplier"]),
+    });
+    const parsedData = schema.safeParse(formValues);
+    if (!parsedData.success) {
+      throw parsedData.error;
+    }
+    const response = await appendContactInfoIntoSheet(parsedData.data);
+    if (!response.success) {
+      throw response.err;
+    }
+    console.log("Form submitted successfully");
+    return {
+      status: 200,
+      body: json({message: "Form submitted successfully"}),
+    };
+  } catch (_error) {
+    const error_ = getErrorFromUnknown(_error);
+    error = error_.message;
+
+    console.log(
+      "🤡 ~ file: contact.tsx:67 ~ constaction:ActionFunction= ~ error:",
+      error,
+    );
+
+    const actionData: ActionData = {
+      error,
+    };
+    return json(actionData);
+  }
+};
+
 export default function Contact() {
+  const [errors, setErrors] = useState<ErrorObject>({
+    name: null,
+    companyName: null,
+    contact: null,
+    email: null,
+    type: null,
+  });
+  const actionData = useActionData() as ActionData;
+  const submit = useSubmit();
+  useEffect(() => {
+    if (actionData != null) {
+      if (actionData.error != null) {
+        notifications.show({
+          title: "Error",
+          message: actionData.error,
+          color: "red",
+          icon: (
+            <FontAwesomeIcon
+              icon={faTimesCircle}
+              style={{color: "red", fontSize: "18px"}}
+            />
+          ),
+        });
+      } else {
+        notifications.show({
+          title: "Success",
+          message: "Form submitted successfully",
+          color: "green",
+          icon: (
+            <FontAwesomeIcon
+              icon={faCheckCircle}
+              style={{color: "green", fontSize: "18px"}}
+            />
+          ),
+        });
+        const form = document.querySelector("form") as HTMLFormElement;
+        if (form) {
+          form.reset();
+        }
+      }
+      setErrors({
+        name: null,
+        companyName: null,
+        contact: null,
+        email: null,
+      });
+    }
+  }, [actionData]);
+
+  const validateForm = (formData: FormData) => {
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const contact = formData.get("contact") as string;
+    const companyName = formData.get("companyName") as string;
+    const type = formData.get("type") as string;
+
+    const newErrors = {
+      name: name ? null : "Name is required",
+      email: email ? null : "Email is required",
+      contact: contact
+        ? indianPhoneNumberValidationRegex.test(contact)
+          ? null
+          : "Invalid contact number"
+        : "Contact is required",
+      companyName: companyName ? null : "Company Name is required",
+      type: type ? null : "Type is required",
+    };
+
+    setErrors(newErrors);
+    return Object.values(newErrors).every((error) => error === null);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    if (validateForm(formData)) {
+      submit(form, {method: "post"});
+    }
+  };
   return (
     <>
       <main className="wae-pb-md pt-[var(--header-height)]">
@@ -178,33 +351,54 @@ export default function Contact() {
               </Tabs.List>
 
               <Tabs.Panel value="distributor">
-                <form className="w-full">
+                <Form
+                  className="w-full"
+                  method="POST"
+                  onSubmit={handleSubmit}
+                >
                   <input
                     type="text"
                     className="wae-input mb-10"
-                    name="distributor-name"
+                    name="name"
                     placeholder="Name"
                     required
                   />
+                  {errors.name && (
+                    <p className="mb-2 text-red-500">{errors.name}</p>
+                  )}
                   <input
                     type="email"
                     className="wae-input mb-10"
-                    name="distributor-email"
+                    name="email"
                     placeholder="Your Email"
                     required
                   />
+                  {errors.email && (
+                    <p className="mb-2 text-red-500">{errors.email}</p>
+                  )}
                   <input
                     type="tel"
                     className="wae-input mb-10"
-                    name="distributor-contact"
+                    name="contact"
                     placeholder="Contact No."
                     required
                   />
+                  {errors.contact && (
+                    <p className="mb-2 text-red-500">{errors.contact}</p>
+                  )}
                   <input
                     type="text"
                     className="wae-input mb-10"
-                    name="distributor-company"
+                    name="companyName"
                     placeholder="Company Name"
+                  />
+                  {errors.companyName && (
+                    <p className="mb-2 text-red-500">{errors.companyName}</p>
+                  )}
+                  <input
+                    type="hidden"
+                    name="type"
+                    value="distributor"
                   />
 
                   <button
@@ -213,36 +407,57 @@ export default function Contact() {
                   >
                     Contact Us {Icons.ChevronRight}
                   </button>
-                </form>
+                </Form>
               </Tabs.Panel>
               <Tabs.Panel value="supplier">
-                <form className="w-full">
+                <Form
+                  method="POST"
+                  onSubmit={handleSubmit}
+                  className="w-full"
+                >
                   <input
                     type="text"
                     className="wae-input mb-10"
-                    name="supplier-name"
+                    name="name"
                     placeholder="Name"
                     required
                   />
+                  {errors.name && (
+                    <p className="mb-2 text-red-500">{errors.name}</p>
+                  )}
                   <input
                     type="email"
                     className="wae-input mb-10"
-                    name="supplier-email"
+                    name="email"
                     placeholder="Your Email"
                     required
                   />
+                  {errors.email && (
+                    <p className="mb-2 text-red-500">{errors.email}</p>
+                  )}
                   <input
                     type="tel"
                     className="wae-input mb-10"
-                    name="supplier-contact"
+                    name="contact"
                     placeholder="Contact No."
                     required
                   />
+                  {errors.contact && (
+                    <p className="mb-2 text-red-500">{errors.contact}</p>
+                  )}
                   <input
                     type="text"
                     className="wae-input mb-10"
-                    name="supplier-company"
+                    name="companyName"
                     placeholder="Company Name"
+                  />
+                  {errors.companyName && (
+                    <p className="mb-2 text-red-500">{errors.companyName}</p>
+                  )}
+                  <input
+                    type="hidden"
+                    name="type"
+                    value="supplier"
                   />
 
                   <button
@@ -251,7 +466,7 @@ export default function Contact() {
                   >
                     Contact Us {Icons.ChevronRight}
                   </button>
-                </form>
+                </Form>
               </Tabs.Panel>
             </Tabs>
           </div>

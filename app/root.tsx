@@ -1,5 +1,6 @@
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
+import "@mantine/notifications/styles.css";
 import {
   Links,
   Meta,
@@ -32,8 +33,11 @@ export function Layout({children}: {children: React.ReactNode}) {
         <Links />
       </head>
       <body>
-        <MantineProvider>
-          <Notifications />
+        <MantineProvider defaultColorScheme="light">
+          <Notifications
+            position="top-right"
+            zIndex={2077}
+          />
           <Header />
           {children}
           <Footer />
