@@ -12,9 +12,12 @@ export default {
         secondary: ["Monschone"],
       },
       backgroundImage: {
+        "water-splash": "url('/images/covers/water-splash.jpg')",
         "window-pattern": "url('/images/covers/window-bg-pattern.jpg')",
         "water-drop": "url('/images/covers/water-drop.jpg')",
         "washing-hands": "url('/images/covers/washing-hands.jpg')",
+        "leaf-closeup": "url('/images/covers/leaf-closeup.jpg')",
+        "earth-in-hands": "url('/images/covers/earth-in-hand.jpg')",
         "product-details-banner":
           "url('/images/covers/vending-machine-in-a-room.jpg')",
       },

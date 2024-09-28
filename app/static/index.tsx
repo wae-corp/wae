@@ -374,4 +374,228 @@ export const coreValues = [
   },
 ];
 
+export const championsSpotlight = [
+  {
+    id: 1,
+    image: "/images/covers/citibank.png",
+    title: "Citibank: Banking on a Greener Tomorrow",
+    subtitle:
+      "Citibank has deployed 105 water-refill stations across its Indian offices, turning everyday hydration into an act of environmental stewardship.",
+    statement: "an equivalent of planting thousands of trees.",
+    achievments: [
+      {
+        id: 1,
+        title: "14,173 kg",
+        subtitle: "plastic waste Removed",
+      },
+      {
+        id: 2,
+        title: "16.5m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 3,
+        title: "94,000 kg",
+        subtitle: "CO2 emissions reduced",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 2,
+    image: "/images/covers/credit-suisse.jpg",
+    title: "Credit Suisse: A Fresh Start for a Sustainable Future",
+    subtitle:
+      "Credit Suisse has integrated 70 refill stations in Pune, Gurgaon, and Mumbai, making clean, green hydration accessible to its workforce.",
+    statement: "an equivalent of planting thousands of trees.",
+    achievments: [
+      {
+        id: 1,
+        title: "17m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 2,
+        title: "98,000 kg",
+        subtitle: "CO2 emissions reduced",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 3,
+    image: "/images/covers/deutsche-bank.jpg",
+    title: "Deutsche Bank: Banking on Blue",
+    subtitle:
+      "Deutsche Bank's 73 refill stations are reducing reliance on bottled water across India.",
+    statement: "an equivalent of planting thousands of trees.",
+    achievments: [
+      {
+        id: 1,
+        title: "23m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 2,
+        title: "132,000 kg",
+        subtitle: "CO2 emissions reduced",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 4,
+    image: "/images/covers/ericsson.jpg",
+    title: "Ericsson: Connecting the Dots to a Greener Future",
+    subtitle:
+      "Ericsson's installation of 138 water-refill stations across India showcases their commitment to sustainable practices",
+    statement:
+      "Ericsson's initiative is like removing the equivalent of two medium-sized SUVs from the roads each month.",
+    achievments: [
+      {
+        id: 1,
+        title: "55m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 2,
+        title: "315,000 kg",
+        subtitle: "CO2 emissions reduced",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 5,
+    image: "/images/covers/icici.jpg",
+    title: "ICICI Bank: A Ripple of Change",
+    subtitle:
+      "ICICI Bank leads the pack with 624 water-refill stations across India.",
+    statement: "turning everyday hydration into a force for good.",
+    achievments: [
+      {
+        id: 1,
+        title: "53m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 2,
+        title: "299,000 kg",
+        subtitle: "CO2 emissions reduced",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 6,
+    image: "/images/covers/jp-morgan.jpg",
+    title: "J.P. Morgan: Investing in a Greener Tomorrow",
+    subtitle:
+      "J.P. Morgan has turned 241 locations into green spaces with their water-refill stations.",
+    statement:
+      "J.P. Morgan is redefining the meaning of “investment” by investing in the planet.",
+    achievments: [
+      {
+        id: 1,
+        title: "105m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 2,
+        title: "90,288 kg",
+        subtitle: "plastic waste Removed",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 7,
+    image: "/images/covers/max-life.jpg",
+    title: "Max Life: Securing a Greener Future",
+    subtitle:
+      "Max Life has installed 323 refill stations, securing their commitment to sustainability.",
+    statement:
+      "Max Life's initiative underscores the power of green practices in everyday operations.",
+    achievments: [
+      {
+        id: 1,
+        title: "50m litres",
+        subtitle: "plastic waste Removed",
+      },
+      {
+        id: 2,
+        title: "283,000 kg",
+        subtitle: "Water saved annually",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 8,
+    image: "/images/covers/morgan-stanley.jpg",
+    title: "Morgan Stanley: Reimagining Impact",
+    subtitle:
+      "Morgan Stanley's 47 refill stations in Mumbai and Bangalore are more than water sources—they're symbols of change.",
+    statement:
+      "Morgan Stanley's commitment to sustainability is evident in every sip.",
+    achievments: [
+      {
+        id: 1,
+        title: "18m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 2,
+        title: "103,000 kg",
+        subtitle: "CO2 emissions reduced",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 9,
+    image: "/images/covers/rbs.jpg",
+    title: "RBS (Royal Bank of Scotland): A Fresh Take on Finance",
+    subtitle:
+      "RBS has implemented 127 refill stations across major Indian cities, championing a fresh approach to hydration.",
+    statement:
+      "RBS is making a powerful statement about the future of finance and the planet.",
+    achievments: [
+      {
+        id: 1,
+        title: "26m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 2,
+        title: "21,978 kg",
+        subtitle: "plastic waste Removed",
+      },
+    ],
+    link: "/",
+  },
+  {
+    id: 10,
+    image: "/images/covers/citibank.png",
+    title: "Sapient: Redefining Smart Solutions",
+    subtitle:
+      "Sapient's 103 refill stations in Gurgaon are helping redefine what it means to be a smart, sustainable business.",
+    statement:
+      "Sapient's actions speak louder than words, showing that smart solutions are sustainable solutions.",
+    achievments: [
+      {
+        id: 1,
+        title: "27m litres",
+        subtitle: "Water saved annually",
+      },
+      {
+        id: 2,
+        title: "154,000 kg",
+        subtitle: "CO2 emissions reduced",
+      },
+    ],
+    link: "/",
+  },
+];
+
 export * from "./Icons";
