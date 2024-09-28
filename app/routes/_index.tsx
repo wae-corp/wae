@@ -1,14 +1,20 @@
 import {faCheckCircle, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {showNotification, notifications} from "@mantine/notifications";
-import type {MetaFunction} from "@remix-run/node";
-import {Link, useFetcher} from "@remix-run/react";
+import {notifications} from "@mantine/notifications";
+import type {ActionFunction, MetaFunction} from "@remix-run/node";
+import {Form, json, Link, useActionData, useSubmit} from "@remix-run/react";
 import clsx from "clsx";
 import {useEffect, useState} from "react";
 import {OurProductsSlider, ProjectSlider} from "~/components";
 import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
-import {ActionData} from "~/backend/typeDefinations";
+import {
+  ActionData,
+  EnquiryType as EnquiryTypeOne,
+} from "~/backend/typeDefinations";
 import {Icons, ProductList, SecondaryProducts} from "~/static";
+import {getErrorFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
+import {appendLandingLeadIntoSheet} from "~/backend/googleSheet.server";
+import {z} from "zod";
 
 type EnquiryType = "Corporate" | "Architect" | "Consultant" | "Curious" | null;
 
@@ -27,6 +33,60 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export const action: ActionFunction = async ({request}) => {
+  let error: string | null = null;
+  try {
+    const formData = await request.formData();
+
+    const formValues = {
+      name: formData.get("name"),
+      companyName: formData.get("companyName"),
+      contact: formData.get("contact"),
+      message: formData.get("message"),
+      enquirer: formData.get("enquiryFor"),
+    };
+
+    const leadSchema = z.object({
+      name: z.string().min(1, {message: "First Name is required"}),
+      companyName: z.string().min(1, {message: "Company Name is required"}),
+      contact: z
+        .string()
+        .regex(/^[0-9]{10}$/, {message: "Invalid contact number"}),
+      message: z.string().min(1, {message: "Message cannot be empty"}),
+      enquirer: z.nativeEnum(EnquiryTypeOne),
+    });
+
+    const parsedData = leadSchema.safeParse(formValues);
+
+    if (!parsedData.success) {
+      throw parsedData.error;
+    }
+
+    const response = await appendLandingLeadIntoSheet(parsedData.data);
+    if (!response.success) {
+      throw response.err;
+    }
+    console.log("Lead has been added to the sheet successfully");
+    return {
+      status: 200,
+      body: JSON.stringify({message: "Action executed successfully"}),
+    };
+  } catch (_error) {
+    const error_ = getErrorFromUnknown(_error);
+    error = error_.message;
+
+    console.log(
+      "🤡 ~ file: landing-page-lead.tsx:39 ~ constaction:ActionFunction= ~ error:",
+      error,
+    );
+
+    const actionData: ActionData = {
+      error,
+    };
+    return json(actionData);
+  }
+};
+
 export default function Index() {
   const [enquiryFor, setEnquiryFor] = useState<EnquiryType>(null);
   const [errors, setErrors] = useState<ErrorObject>({
@@ -35,13 +95,14 @@ export default function Index() {
     contact: null,
     message: null,
   });
-  const formFetcher = useFetcher<ActionData>();
+  const actionData = useActionData() as ActionData;
+  const submit = useSubmit();
   useEffect(() => {
-    if (formFetcher.data !== null) {
-      if (formFetcher.data?.error != null) {
+    if (actionData != null) {
+      if (actionData.error != null) {
         notifications.show({
           title: "Error",
-          message: formFetcher.data.error,
+          message: actionData.error,
           color: "red",
           icon: (
             <FontAwesomeIcon
@@ -69,18 +130,15 @@ export default function Index() {
         setEnquiryFor(null);
       }
     }
-  }, [formFetcher]);
+  }, [actionData]);
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    setErrors({});
-    const form = event.currentTarget as HTMLFormElement;
-    const name = form["distributor-name"].value.trim();
-    const companyName = form["company-name"].value.trim();
-    const contact = form["distributor-contact"].value.trim();
-    const message = form["message"].value.trim();
+  const validateForm = (formData: FormData) => {
+    const name = formData.get("name") as string;
+    const companyName = formData.get("companyName") as string;
+    const contact = formData.get("contact") as string;
+    const message = formData.get("message") as string;
     const newErrors = {
-      name: name ? null : "First Name is required",
+      name: name ? null : "Name is required",
       companyName: companyName ? null : "Company Name is required",
       contact: contact
         ? indianPhoneNumberValidationRegex.test(contact)
@@ -94,15 +152,18 @@ export default function Index() {
         : "Message is required",
     };
     setErrors(newErrors);
+    return Object.values(newErrors).every((error) => error === null);
+  };
 
-    if (Object.values(newErrors).every((error) => error === null)) {
-      formFetcher.submit(
-        {name, companyName, contact, message, enquiryFor: enquiryFor ?? ""},
-        {
-          method: "POST",
-          action: "/api/landing-page-lead",
-        },
-      );
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    if (enquiryFor) {
+      formData.append("enquiryFor", enquiryFor);
+    }
+    if (validateForm(formData)) {
+      submit(formData, {method: "post"});
     }
   };
 
@@ -397,8 +458,8 @@ export default function Index() {
               className="mx-auto w-full"
               data-aos="fade-in"
             >
-              <formFetcher.Form
-                action="w-full"
+              <Form
+                method="POST"
                 onSubmit={handleSubmit}
               >
                 <div
@@ -462,14 +523,14 @@ export default function Index() {
                   <input
                     type="text"
                     className="wae-input mt-6 !border-black lg:mb-10"
-                    name="distributor-name"
-                    placeholder="First Name"
+                    name="name"
+                    placeholder="Name"
                   />
                   {errors.name && <p className="text-red-500">{errors.name}</p>}
                   <input
                     type="text"
                     className="wae-input mt-6 !border-black lg:mb-10"
-                    name="company-name"
+                    name="companyName"
                     placeholder="Company Name"
                   />
                   {errors.companyName && (
@@ -478,7 +539,7 @@ export default function Index() {
                   <input
                     type="tel"
                     className="wae-input mt-6 !border-black lg:mb-10"
-                    name="distributor-contact"
+                    name="contact"
                     placeholder="Contact"
                   />
                   {errors.contact && (
@@ -501,7 +562,7 @@ export default function Index() {
                     Send
                   </button>
                 </div>
-              </formFetcher.Form>
+              </Form>
             </div>
           </div>
         </div>
