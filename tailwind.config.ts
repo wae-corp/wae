@@ -20,6 +20,7 @@ export default {
         "earth-in-hands": "url('/images/covers/earth-in-hand.jpg')",
         "product-details-banner":
           "url('/images/covers/vending-machine-in-a-room.jpg')",
+        "leaf-droplet": "url('/images/covers/leaf-droplet.png')",
       },
       // spacing: {
       //     default: "2rem",

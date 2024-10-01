@@ -3,13 +3,13 @@ import clsx from "clsx";
 import {championsSpotlight, Icons} from "~/static";
 
 export const meta: MetaFunction = () => {
-  return [{title: "Sustainability"}];
+  return [{title: "Sustainability Case Study"}];
 };
 
-export default function Sustainability() {
+export default function SustainabilityCaseStudy() {
   return (
     <>
-      <main className="bg-water-splash relative flex min-h-screen items-center bg-cover bg-top bg-no-repeat pt-[var(--header-height)] text-white">
+      <main className="relative flex min-h-screen items-center bg-water-splash bg-cover bg-top bg-no-repeat pt-[var(--header-height)] text-white">
         <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div>
         <div
           className="container isolate text-center"
@@ -64,7 +64,7 @@ export default function Sustainability() {
         </div>
       </section>
 
-      <section className="bg-leaf-closeup relative flex min-h-screen items-center bg-cover bg-top bg-no-repeat text-white">
+      <section className="relative flex min-h-screen items-center bg-leaf-closeup bg-cover bg-top bg-no-repeat text-white">
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/70 via-black to-black/70"></div>
         <div className="container isolate">
           <h3 className="wae-h3 text-center font-black uppercase">
@@ -79,6 +79,7 @@ export default function Sustainability() {
             className={
               "wae-pt-lg wae-pb-lg group text-white odd:bg-black odd:text-white even:bg-white even:text-black"
             }
+            key={idx}
           >
             <div className="container">
               <div className="wae-mb-lg flex flex-col items-start gap-8 lg:flex-row lg:gap-14">
@@ -219,7 +220,7 @@ export default function Sustainability() {
         </div>
       </section>
 
-      <section className="bg-earth-in-hands relative flex items-center justify-center bg-black bg-cover bg-no-repeat pt-20 text-center lg:min-h-screen">
+      <section className="relative flex items-center justify-center bg-black bg-earth-in-hands bg-cover bg-no-repeat pt-20 text-center lg:min-h-screen">
         <div className="absolute inset-0 h-full w-full bg-black/50"></div>
         <div className="container isolate">
           <div
