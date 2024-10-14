@@ -1,12 +1,21 @@
-import {MetaFunction} from "@remix-run/react";
+import {LoaderFunction} from "@remix-run/node";
+import {json, MetaFunction, useLoaderData} from "@remix-run/react";
 import {ProductImageSlider, ProjectSlider} from "~/components";
+import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {
   Icons,
   ProductImageSliderData,
   ProductList,
+  ProductsPageListing,
   specifications,
 } from "~/static";
-
+type LoaderData = {
+  id: string;
+  name: string;
+  description: string;
+  types: string[];
+  image: string;
+};
 export const meta: MetaFunction = () => {
   return [
     {
@@ -15,7 +24,30 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export const loader: LoaderFunction = async ({request, params}) => {
+  const productIdResult = getStringFromUnknown(params.productId);
+  if (productIdResult.success === false) {
+    return new Response(null, {status: 404});
+  }
+  const productId = productIdResult.ok;
+  const product = ProductsPageListing.find(
+    (product) => product.id === productId,
+  );
+  if (!product) {
+    return new Response(null, {status: 404});
+  }
+  const loaderData: LoaderData = {
+    id: product.id,
+    name: product.name,
+    description: product.description,
+    types: product.types,
+    image: product.image,
+  };
+  return json(loaderData);
+};
+
 export default function ProductDetails() {
+  const {id, name, description, types, image} = useLoaderData() as LoaderData;
   return (
     <>
       <main className="flex min-h-[500px] items-center bg-product-details-banner bg-cover bg-no-repeat pb-12 pt-[var(--header-height)] text-white xl:min-h-screen xl:bg-center">

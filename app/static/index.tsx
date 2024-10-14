@@ -217,45 +217,81 @@ export const productsByApplication: Product[] = [
 export const ProductsPageListing = [
   {
     id: "01",
-    name: "TRUBLU",
+    name: "DRINKING WATER STATION - BLUWAE Series",
     description:
-      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+      "Water dispensers with inbuilt purification —pure, safe water delivered efficiently. Designed to reduce plastic waste and energy consumption, making sustainability easy.",
     types: ["Water", "Ice", "Hot"],
     link: "/product-list",
     image: "",
   },
   {
     id: "02",
-    name: "TRUBLU",
+    name: "DRINKING WATER DISPENSERS - TRUBLU Series",
     description:
-      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+      "Stainless steel water dispensers give you fresh, clean water anytime. Compact, energy-efficient, and perfect for spaces where RO water is not readily available.",
     types: ["Water", "Ice", "Hot"],
     link: "/product-list",
     image: "",
   },
   {
     id: "03",
-    name: "TRUBLU",
+    name: "DRINKING WATER FAUCETS - WATERMATIC Series",
     description:
-      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+      "Drinking water faucets with under the counter storage units to make access to fresh water simple. Precision-engineered for smooth flow, with a focus on reducing waste and energy use.",
     types: ["Water", "Ice", "Hot"],
     link: "/product-list",
     image: "",
   },
   {
     id: "04",
-    name: "TRUBLU",
+    name: "WATER COOLER & FOUNTAINS - ZVR Series",
     description:
-      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+      "Water coolers cum bubblers provide chilled water on demand. Built to be energy-efficient, they’re ideal for public spaces, reducing both costs and plastic waste.",
     types: ["Water", "Ice", "Hot"],
     link: "/product-list",
     image: "",
   },
   {
     id: "05",
-    name: "TRUBLU",
+    name: "PUBLIC UTILITY SYSTEMS - PUS Series",
     description:
-      "This is the All-around variant with an aluminum structure, 100% recyclable, visible on the inside of the door. The exterior is covered with panels of your choice in lacquered glass, wood, Stratified HPL, stoneware, MDi or Fenix NTM® and NTA®. The thickness of the door is 20 or 23 mm and the opening systems provided are groove or push-pull.",
+      "Designed for large public spaces, PUS systems ensure clean, accessible water. Engineered for durability and eco-friendliness, they support sustainable communities.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product-list",
+    image: "",
+  },
+  {
+    id: "06",
+    name: "COMMERCIAL/INDUSTRIAL PLANTS",
+    description:
+      "Power your facility with our large-scale hydration plants. Scalable and efficient, they offer high-volume water solutions with a commitment to sustainability.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product-list",
+    image: "",
+  },
+  {
+    id: "07",
+    name: "UTC UNITS",
+    description:
+      "UTC units provide a space-saving solution for clean water. Ideal for compact areas, they combine smart design with environmental responsibility.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product-list",
+    image: "",
+  },
+  {
+    id: "08",
+    name: "SMALL RO UNITS",
+    description:
+      "Maximize your space with our sleek wall hanging units. Perfect for areas with limited room, they deliver reliable, sustainable water access.",
+    types: ["Water", "Ice", "Hot"],
+    link: "/product-list",
+    image: "",
+  },
+  {
+    id: "09",
+    name: "COMMUNITY WATER SOLUTIONS",
+    description:
+      "Bringing clean water to communities, our solutions offer sustainable hydration for all. Designed to be efficient, reliable, and environmentally responsible.",
     types: ["Water", "Ice", "Hot"],
     link: "/product-list",
     image: "",

@@ -16,14 +16,15 @@ export default function Products() {
       <main className="flex min-h-screen items-center justify-center bg-white bg-gradient-to-b from-[#6d6d6d] from-0% to-white py-8 pt-[var(--header-height)] text-center text-black">
         <div className="container">
           <div
-            className="mx-auto mt-0 max-w-3xl sm:mt-20 xl:mt-40"
+            className="mx-auto mt-0 max-w-4xl sm:mt-20 xl:mt-40"
             data-aos="fade-down"
           >
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
             <h2 className="wae-h2 mt-10 font-secondary leading-tight lg:mb-[100px]">
-              Did you know? On average we use 5,500 liters of water a day! That
-              is a humungous amount of water!…
+              At WAE,
+              <br /> we craft bespoke, sustainable hydration solutions with
+              unmatched integrity and innovation
             </h2>
           </div>
         </div>
@@ -31,23 +32,29 @@ export default function Products() {
 
       <section className="bg-window-pattern bg-cover bg-left bg-no-repeat py-20 lg:py-72">
         <section className="container mb-20 lg:mb-[212px]">
-          <p
+          {/* <p
             className="mb-12 text-sm uppercase"
             data-aos="fade-right"
           >
             WHO WE ARE
-          </p>
+          </p> */}
 
           <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
             <h4
-              className="wae-h4 mb-12 max-w-[592px] font-secondary lg:mb-0"
+              className="wae-h4 mb-12 font-secondary lg:mb-0"
               data-aos="fade-right"
             >
-              We are thought that becomes action. Matter that transforms into
-              emotion. Invisible yet concrete values, to give a new meaning to
-              an interior place.
+              At WAE, we're dedicated to developing solutions that are
+              fundamentally aligned with the principles of SDG 6: Clean Water
+              and Sanitation. Every water system we craft is designed not only
+              to provide pure hydration but also to drastically reduce reliance
+              on single-use plastics. Built entirely from metal, our products
+              contribute to zero landfill waste, combining sustainability with
+              energy efficiency. Choosing WAE means making a meaningful
+              commitment to a smarter, greener future, where hydration meets
+              ecological responsibility.
             </h4>
-            <p
+            {/* <p
               className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base"
               data-aos="fade-left"
             >
@@ -59,16 +66,16 @@ export default function Products() {
               <strong className="font-extrabold">
                 to give a new meaning to an interior place.
               </strong>
-            </p>
+            </p> */}
           </div>
 
-          <p
+          {/* <p
             className="uppercase"
             data-aos="fade-right"
           >
             <span className="prefix-dot"></span>
             You Discover Demo Kitchens
-          </p>
+          </p> */}
         </section>
 
         <section>
@@ -138,15 +145,14 @@ export default function Products() {
             >
               <h6 className="uppercase">HOW DOES IT WORK?</h6>
 
-              <h2 className="wae-h2 mb-12 mt-12 font-secondary leading-tight lg:mb-[100px]">
-                Once you have chosen the style of the product or its type, let
-                yourself be guided by your taste for materials and their
-                finishes and by your needs.
+              <h2 className="wae-h2 mt-12 font-secondary leading-tight lg:mb-[100px]">
+                Choose your product style or type, and let us customize it to
+                perfectly match your needs.
               </h2>
 
-              <p className="uppercase">
+              {/* <p className="uppercase">
                 <span className="prefix-dot"></span> Design freedom
-              </p>
+              </p> */}
             </div>
           </div>
         </section>
