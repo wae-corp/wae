@@ -18,78 +18,119 @@ const footerLinks: {
 }[] = [
   {
     id: "1",
-    title: "Company",
+    title: "About Us",
     list: [
       {
         id: "1-1",
-        link: "/",
-        name: "Introducing",
+        link: "/company",
+        name: "Company",
       },
       {
         id: "1-2",
-        link: "/",
-        name: "Features",
+        link: "/company",
+        name: "Brand",
       },
       {
         id: "1-3",
-        link: "/",
-        name: "News",
+        link: "/sustainability",
+        name: "Sustanability",
       },
       {
         id: "1-4",
+        link: "/products",
+        name: "Product & Services",
+      },
+      {
+        id: "1-5",
         link: "/",
-        name: "Waitlist",
+        name: "News & Updated",
       },
     ],
   },
   {
     id: "2",
-    title: "Company",
+    title: "Legal",
     list: [
       {
         id: "2-1",
         link: "/",
-        name: "Introducing",
+        name: "Data Policy",
       },
       {
         id: "2-2",
         link: "/",
-        name: "Features",
+        name: "Privacy Policy",
       },
       {
         id: "2-3",
         link: "/",
-        name: "News",
+        name: "Ethics  & Compliances",
       },
       {
         id: "2-4",
         link: "/",
-        name: "Waitlist",
+        name: "Terms & Conditions",
+      },
+      {
+        id: "2-5",
+        link: "/",
+        name: "Cookies",
       },
     ],
   },
   {
     id: "3",
-    title: "Company",
+    title: "Social",
     list: [
       {
         id: "3-1",
         link: "/",
-        name: "Introducing",
+        name: "LinkedIn",
       },
       {
         id: "3-2",
         link: "/",
-        name: "Features",
+        name: "Twitter",
       },
       {
         id: "3-3",
         link: "/",
-        name: "News",
+        name: "Instagram",
       },
       {
         id: "3-4",
         link: "/",
+        name: "Facebook",
+      },
+      {
+        id: "3-5",
+        link: "/",
+        name: "Youtube",
+      },
+    ],
+  },
+  {
+    id: "4",
+    title: "Contact",
+    list: [
+      {
+        id: "4-1",
+        link: "/careers",
+        name: "Careers",
+      },
+      {
+        id: "4-2",
+        link: "/contact",
+        name: "Office Locations",
+      },
+      {
+        id: "4-3",
+        link: "/blogs",
+        name: "News",
+      },
+      {
+        id: "4-4",
+        link: "/contact",
         name: "Waitlist",
       },
     ],
@@ -145,16 +186,16 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-black px-4 pb-11 pt-28 text-white">
-      <img
+    <footer className="relative bg-black px-4 pb-11 pt-20 text-white">
+      {/* <img
         src="/images/logos/great-place.png"
         alt="Certificate of Great Place to Work"
         width={77}
         height={146}
         className="l-0 absolute top-0"
-      />
+      /> */}
       <div className="border-t-white/40 lg:border-t">
-        <div className="mx-auto flex flex-col items-start justify-between lg:max-w-[85%] lg:flex-row">
+        <div className="mx-auto flex flex-col items-start justify-between gap-24 lg:max-w-[85%] lg:flex-row">
           <div className="max-lg:w-full lg:-mt-16">
             <Link
               to={"/"}
@@ -172,9 +213,10 @@ export const Footer = () => {
             <div className="mb-10 xl:mb-20">
               <label
                 htmlFor="newsletter"
-                className="mb-6 block font-secondary text-base"
+                className="mb-6 block font-secondary text-base uppercase"
               >
-                Subscribe to our Newsletter
+                Join our community to stay updated on our latest news and
+                innovative water projects. Subscribe to Our Newsletter
               </label>
 
               <formFetcher.Form
@@ -192,7 +234,7 @@ export const Footer = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email to get the latest news..."
-                    className="w-full bg-black p-3 lg:pl-16 xl:w-[400px]"
+                    className="w-full bg-black p-3 lg:pl-16"
                   />
                 </div>
 
@@ -209,17 +251,10 @@ export const Footer = () => {
             </div>
 
             <div className="hidden text-xs text-[#f2f2f2] opacity-75 lg:block">
-              <p className="mb-4">
-                ©2024 Moxion Power / Manufactured in the USA
-              </p>
-
-              <p>
-                1414 Harbour Way S #1201, <br />
-                Richmond, CA 94804, USA
-              </p>
+              <p className="mb-4">@ 2024 WAE Ltd.</p>
             </div>
           </div>
-          <div className="flex flex-wrap justify-between gap-9 max-lg:w-full lg:-mt-10 lg:flex-nowrap">
+          <div className="flex flex-wrap justify-between gap-14 max-lg:w-full lg:-mt-10 lg:flex-nowrap">
             {footerLinks.map((col) => {
               return (
                 <div key={col.id}>
@@ -229,7 +264,7 @@ export const Footer = () => {
                       return (
                         <li
                           key={listItem.id}
-                          className="mb-3 font-extralight last:mb-0"
+                          className="mb-3 text-sm font-extralight opacity-80 last:mb-0"
                         >
                           <Link
                             to={listItem.link}
@@ -247,14 +282,7 @@ export const Footer = () => {
           </div>
 
           <div className="mt-10 w-full text-center text-xs text-[#f2f2f2] opacity-75 lg:hidden">
-            <p className="mb-4">
-              ©2024 Moxion Power / Manufactured in the USA
-            </p>
-
-            <p>
-              1414 Harbour Way S #1201, <br />
-              Richmond, CA 94804, USA
-            </p>
+            <p className="mb-4">@ 2024 WAE Ltd.</p>
           </div>
         </div>
       </div>
