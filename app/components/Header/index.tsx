@@ -46,7 +46,7 @@ export const Header = () => {
                 <NavLink to={"/careers"}>Career</NavLink>
               </li>
               <li>
-                <NavLink to={"/blog"}>News & Updates</NavLink>
+                <NavLink to={"/blogs"}>News & Updates</NavLink>
               </li>
             </ul>
           </nav>
