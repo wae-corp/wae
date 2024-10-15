@@ -13,8 +13,8 @@ export const meta: MetaFunction = () => {
 export default function Careers() {
   return (
     <>
-      <main className="flex flex-col items-center bg-black pt-[var(--header-height)] text-white">
-        <div className="container flex max-w-[1100px] items-end pb-10 xl:min-h-[550px]">
+      <main className="bg-hands-pointing-on-table flex flex-col items-center bg-black bg-cover bg-no-repeat pt-[var(--header-height)] text-white">
+        <div className="container flex max-w-[1100px] items-center pb-10 xl:min-h-[550px]">
           <div
             className="text-center"
             data-aos="fade-down"
@@ -33,8 +33,10 @@ export default function Careers() {
             </p>
           </div>
         </div>
+      </main>
 
-        <div className="wae-pb-lg wae-pt-lg container flex items-center 2xl:min-h-screen">
+      <div className="wae-pb-lg wae-pt-lg flex items-center bg-black text-white">
+        <div className="container">
           <div className="flex flex-col gap-8 lg:flex-row">
             <div data-aos="fade-right">
               <h3 className="wae-h4 mb-10 font-secondary">Life at WAE</h3>
@@ -45,9 +47,6 @@ export default function Careers() {
                 well-being. Enjoy a work environment that fosters creativity,
                 supports balance, and celebrates every success. At WAE, your
                 journey is our story.
-              </p>
-              <p className="uppercase">
-                <span className="prefix-dot"></span> You discover Life at WAE
               </p>
             </div>
             <div
@@ -65,7 +64,7 @@ export default function Careers() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
       <section className="wae-pt-md wae-pb-md bg-window-pattern bg-cover bg-no-repeat md:py-40">
         <Carousel
@@ -95,7 +94,7 @@ export default function Careers() {
           })}
         </Carousel>
 
-        <div className="wae-mt-lg container">
+        <section className="wae-mt-lg container max-w-[1080px]">
           <div
             className="mb-16 max-w-[670px] md:mb-36"
             data-aos="fade-in"
@@ -113,32 +112,51 @@ export default function Careers() {
             </p>
           </div>
 
-          <div className="grid gap-12 md:grid-cols-2 md:gap-32">
+          <div className="wae-gap-lg flex flex-col">
             {careers.map((career, idx) => {
               return (
                 <div
                   key={career.id}
-                  className="md:even:!-translate-y-20"
-                  data-aos="fade-down"
-                  data-aos-delay={`${idx}00`}
+                  className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
                 >
-                  <h5 className="wae-h6-lg mb-6 font-extrabold uppercase">
-                    {career.type}
-                  </h5>
-
-                  <p className="mb-6">{career.details}</p>
-
-                  <Link
-                    to={career.link}
-                    className="wae-btn wae-btn-md min-w-[200px] border-black"
+                  <div
+                    className="flex-shrink-0 md:basis-1/2"
+                    data-aos="fade-down"
                   >
-                    Explore
-                  </Link>
+                    <img
+                      src={career.image}
+                      alt="Career Poster"
+                      className="aspect-square object-cover group-even:ml-auto max-sm:w-full"
+                      width="500"
+                      height="500"
+                    />
+                  </div>
+                  <div
+                    className="md:basis-1/2"
+                    data-aos="fade-down"
+                    data-aos-delay="100"
+                  >
+                    <div className="mb-14 flex flex-col gap-8 lg:gap-10">
+                      <h5 className="wae-h6-lg font-extrabold uppercase">
+                        {career.type}
+                      </h5>
+
+                      <p className="fw-light text-sm uppercase">
+                        {career.details}
+                      </p>
+                    </div>
+                    <Link
+                      to={career.link}
+                      className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
+                    >
+                      Explore
+                    </Link>
+                  </div>
                 </div>
               );
             })}
           </div>
-        </div>
+        </section>
       </section>
     </>
   );

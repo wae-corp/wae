@@ -5,7 +5,7 @@ import type {ActionFunction, MetaFunction} from "@remix-run/node";
 import {Form, json, Link, useActionData, useSubmit} from "@remix-run/react";
 import clsx from "clsx";
 import {useEffect, useState} from "react";
-import {OurProductsSlider, ProjectSlider} from "~/components";
+import {BrandSlider, OurProductsSlider, ProjectSlider} from "~/components";
 import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
 import {
   ActionData,
@@ -167,6 +167,24 @@ export default function Index() {
     }
   };
 
+  const specifications = [
+    {
+      id: 1,
+      title: "1,012,120.25",
+      details: "Tonnes CO2 Emissions Saved",
+    },
+    {
+      id: 2,
+      title: "12,185.43",
+      details: "million gallons Water Saved",
+    },
+    {
+      id: 3,
+      title: "22,253.65",
+      details: "Tonnes Plastic Removed",
+    },
+  ];
+
   return (
     <>
       <main className="relative flex h-screen flex-col items-center justify-center pb-10 pt-[var(--header-height)]">
@@ -300,11 +318,67 @@ export default function Index() {
               DISCOVER SUSTAINABILITY
             </p>
           </div>
+
+          <div className="mb-20 flex flex-wrap items-start justify-center gap-8 max-sm:justify-center lg:flex-nowrap">
+            {specifications.map((spec, idx) => {
+              return (
+                <div
+                  key={spec.id}
+                  className="lg:w-full"
+                  data-aos="fade-in"
+                  data-aos-delay={`${idx}00`}
+                >
+                  <div className="wae-h2 mb-5 font-secondary">{spec.title}</div>
+
+                  <div className="font-extralight uppercase">
+                    {spec.details}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
-        <ProjectSlider
-          productList={SecondaryProducts}
-          arrows={true}
-        />
+        <div className="mt-20 xl:mt-60">
+          <BrandSlider
+            brandsList={[
+              "/images/logos/cbre.png",
+              "/images/logos/samsung.png",
+              "/images/logos/netflix.png",
+              "/images/logos/google.png",
+              "/images/logos/cbre.png",
+              "/images/logos/samsung.png",
+              "/images/logos/netflix.png",
+              "/images/logos/google.png",
+            ]}
+          />
+        </div>
+      </section>
+
+      <section className="wae-pb-lg wae-pt-lg bg-man-in-shadow bg-cover bg-no-repeat text-white 2xl:min-h-screen">
+        <div className="container">
+          <div className="flex flex-col gap-8 lg:w-full lg:flex-row lg:justify-between lg:gap-[140px]">
+            <div data-aos="fade-right">
+              <h3 className="wae-h4 mb-10 font-secondary">Life @ wae</h3>
+              <div className="flex items-center gap-4">
+                <div className="prefix-dot"></div>
+                <p className="uppercase">Explore Careers</p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              className="flex-shrink-0 lg:max-w-[400px]"
+            >
+              <p className="wae-h6 uppercase">
+                Life at WAE is all about bringing your whole self to work. Our
+                diverse and inclusive culture thrives on the unique perspectives
+                of our team, making every day an opportunity to learn, connect,
+                and grow together. It’s a place where your ideas shine, your
+                voice is heard, and you feel right at home no matter where
+                you’re from.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="md:flex">

@@ -12,6 +12,9 @@ export default {
         secondary: ["Monschone"],
       },
       backgroundImage: {
+        "man-in-shadow": "url('/images/covers/man-in-shadow.jpg')",
+        "hands-pointing-on-table":
+          "url('/images/covers/hands-pointing-on-table.jpg')",
         "earth-from-space": "url('/images/covers/earth-from-space.jpg')",
         "water-splash": "url('/images/covers/water-splash.jpg')",
         "window-pattern": "url('/images/covers/window-bg-pattern.jpg')",

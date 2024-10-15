@@ -127,7 +127,7 @@ export default function ProductDetails() {
             Specifications
           </div>
 
-          <div className="mb-20 flex flex-wrap items-start justify-center gap-8 max-sm:justify-start lg:flex-nowrap">
+          <div className="mb-20 flex flex-wrap items-start justify-center gap-8 max-sm:justify-center lg:flex-nowrap">
             {specifications.map((spec, idx) => {
               return (
                 <div

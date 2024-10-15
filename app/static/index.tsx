@@ -343,6 +343,7 @@ export const careers = [
     details:
       "Step into the professional world with hands-on experience and expert mentorship. Ideal for those eager to learn and grow.",
     link: "/careers/apprenticeship",
+    image: "/images/covers/bridge.jpg",
   },
   {
     id: 2,
@@ -350,6 +351,7 @@ export const careers = [
     details:
       "Dive into diverse roles that challenge and excite you. From engineering to marketing, we are on the lookout for passionate professionals ready to innovate.",
     link: "/careers/full-time",
+    image: "/images/covers/curves.jpg",
   },
   {
     id: 3,
@@ -357,6 +359,7 @@ export const careers = [
     details:
       "Our internships offer more than just experience. They're gateways to your future career, providing real-world skills and professional development.",
     link: "/careers/internship",
+    image: "/images/covers/straight-road.jpg",
   },
   {
     id: 4,
@@ -364,6 +367,7 @@ export const careers = [
     details:
       "Engage in unique, high-impact projects. Perfect for specialists looking to contribute their expertise on a flexible basis.",
     link: "/careers/short-term",
+    image: "/images/covers/road-stop.jpg",
   },
 ];
 
