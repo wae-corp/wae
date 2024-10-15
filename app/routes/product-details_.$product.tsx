@@ -4,17 +4,19 @@ import {ProductImageSlider, ProjectSlider} from "~/components";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {
   Icons,
+  productData,
   ProductImageSliderData,
   ProductList,
   ProductsPageListing,
   specifications,
 } from "~/static";
 type LoaderData = {
-  id: string;
-  name: string;
-  description: string;
-  types: string[];
-  image: string;
+  id?: string;
+  name?: string;
+  description?: string;
+  mountingType?: string;
+  types?: string[];
+  image?: string[];
 };
 export const meta: MetaFunction = () => {
   return [
@@ -25,29 +27,37 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader: LoaderFunction = async ({request, params}) => {
-  const productIdResult = getStringFromUnknown(params.productId);
+  const productIdResult = getStringFromUnknown(params.product);
+
   if (productIdResult.success === false) {
     return new Response(null, {status: 404});
   }
-  const productId = productIdResult.ok;
-  const product = ProductsPageListing.find(
-    (product) => product.id === productId,
+  const productName = productIdResult.ok;
+  const productDetails = productData?.map((cat) =>
+    cat?.productList?.find((prod) => prod.name === productName),
   );
-  if (!product) {
+  if (!productDetails) {
     return new Response(null, {status: 404});
   }
   const loaderData: LoaderData = {
-    id: product.id,
-    name: product.name,
-    description: product.description,
-    types: product.types,
-    image: product.image,
+    id: productDetails[0]?.id,
+    name: productDetails[0]?.name,
+    description: productDetails[0]?.description,
+    mountingType: productDetails[0]?.mountingType,
+    // types: productDetails[0]?.types,
+    image: productDetails[0]?.images,
   };
+
+  console.log(productDetails[0]);
   return json(loaderData);
 };
 
 export default function ProductDetails() {
-  const {id, name, description, types, image} = useLoaderData() as LoaderData;
+  const {id, name, description, mountingType, types, image} =
+    useLoaderData() as LoaderData;
+
+  console.log(id, name, description, types, image);
+
   return (
     <>
       <main className="flex min-h-[500px] items-center bg-product-details-banner bg-cover bg-no-repeat pb-12 pt-[var(--header-height)] text-white xl:min-h-screen xl:bg-center">
@@ -56,9 +66,7 @@ export default function ProductDetails() {
             className="max-w-3xl"
             data-aos="fade-down"
           >
-            <h6 className="wae-h6 mb-4 font-extrabold uppercase">
-              NEPTUNE DUO
-            </h6>
+            <h6 className="wae-h6 mb-4 font-extrabold uppercase">{name}</h6>
 
             <h1 className="wae-h3-lg font-secondary !leading-normal">
               Did you know? On average we use 5,500 liters of water a day! That
@@ -75,7 +83,7 @@ export default function ProductDetails() {
               className="flex max-w-[600px] flex-shrink-0 justify-center"
               data-aos="fade-right"
             >
-              <ProductImageSlider images={ProductImageSliderData} />
+              <ProductImageSlider images={image} />
             </div>
             <div data-aos="fade-left">
               <h6 className="wae-h6-lg mb-5 font-light md:mb-10">
@@ -83,7 +91,9 @@ export default function ProductDetails() {
               </h6>
 
               <div className="mb-6 flex items-center justify-between gap-2">
-                <h4 className="wae-h4 font-extrabold uppercase">NEPTUNE DUO</h4>
+                <h4 className="wae-h4 font-extrabold uppercase">
+                  {mountingType}
+                </h4>
 
                 <div className="flex items-center gap-5">
                   {Icons.Sun}
@@ -93,8 +103,7 @@ export default function ProductDetails() {
               </div>
 
               <div className="wae-h3 mb-5 font-light leading-tight md:mb-10">
-                Shallow, safe, surface-mounted ligature-resistant drinking water
-                tap.
+                {name}
               </div>
 
               <div className="mb-5 flex items-center gap-4 text-lg md:mb-10">
@@ -102,16 +111,7 @@ export default function ProductDetails() {
                 <span> - Totality</span>
               </div>
 
-              <p className="mb-10 text-sm uppercase md:mb-20">
-                Our planet and its globalizing economy face a worldwide resource
-                challenge. Survival in the long run presents a new set of
-                leadership challenges for both business and public institutions
-                to take on the impediments of coupling economic growth with the
-                millennium sustainable development goals. for both business and
-                public institutions to take on the impediments of coupling
-                economic growth with the millennium sustainable development
-                goals
-              </p>
+              <p className="mb-10 text-sm uppercase md:mb-20">{description}</p>
 
               <button className="wae-btn border-black px-6 py-2">
                 Get In Touch

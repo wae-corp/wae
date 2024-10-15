@@ -104,7 +104,7 @@ export const productsByApplication: Product[] = [
         </p>
 
         <Link
-          to={"/product-details"}
+          to={"/product-list/01"}
           className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
         >
           View All Products
@@ -124,7 +124,7 @@ export const productsByApplication: Product[] = [
         </p>
 
         <Link
-          to={"/product-details"}
+          to={"/product-list/01"}
           className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
         >
           View All Products
@@ -144,7 +144,7 @@ export const productsByApplication: Product[] = [
         </p>
 
         <Link
-          to={"/product-details"}
+          to={"/product-list/01"}
           className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
         >
           View All Products
@@ -164,7 +164,7 @@ export const productsByApplication: Product[] = [
         </p>
 
         <Link
-          to={"/product-details"}
+          to={"/product-list/01"}
           className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
         >
           View All Products
@@ -184,7 +184,7 @@ export const productsByApplication: Product[] = [
         </p>
 
         <Link
-          to={"/product-details"}
+          to={"/product-list/01"}
           className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
         >
           View All Products
@@ -204,7 +204,7 @@ export const productsByApplication: Product[] = [
         </p>
 
         <Link
-          to={"/product-details"}
+          to={"/product-list/01"}
           className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
         >
           View All Products
@@ -631,6 +631,718 @@ export const championsSpotlight = [
       },
     ],
     link: "/",
+  },
+];
+
+export interface ProductData {
+  id?: string;
+  categoryName?: string;
+  categoryImage?: string;
+  categoryDescription?: string;
+  categoryDescriptionTwo?: string;
+  categoryDescriptionThree?: string;
+  productList?: {
+    id?: string;
+    name?: string;
+    mountingType?: string;
+    description?: string;
+    images?: string[];
+  }[];
+}
+
+export const productData: ProductData[] = [
+  {
+    id: "01",
+    categoryName: "DRINKING WATER STATION - BLUWAE Series",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescription:
+      "Water dispensers with inbuilt purification —pure, safe water delivered efficiently. Designed to reduce plastic waste and energy consumption, making sustainability easy.",
+    categoryDescriptionTwo:
+      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
+    categoryDescriptionThree:
+      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
+    productList: [
+      {
+        id: "01",
+        name: "VAR",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "02",
+        name: "ENKI",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "03",
+        name: "POS",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "04",
+        name: "ROM GRANDE",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "05",
+        name: "REVA",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "06",
+        name: "ASSISTIFLOW",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "07",
+        name: "ENKI.CT",
+        mountingType: "Counter-Top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "08",
+        name: "VAR.CT",
+        mountingType: "Counter-Top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "09",
+        name: "ROM.CT",
+        mountingType: "Counter-Top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "02",
+    categoryName: "DRINKING WATER DISPENSER - TRUBLU Series",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescriptionTwo:
+      "Our Stainless Steel Water Dispensers aren’t just built to dispense water—they’re built to last. Crafted from durable stainless steel 304, they offer pure, refreshing water. Designed for sustainability, these dispensers help you cut down on waste while delivering energy-efficient performance that saves both the planet and your budget. It’s hydration that works smarter.",
+    categoryDescriptionThree:
+      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
+    categoryDescription:
+      "Stainless steel water dispensers give you fresh, clean water anytime. Compact, energy-efficient, and perfect for spaces where RO water is not readily available.",
+    productList: [
+      {
+        id: "01",
+        name: "ALFA.TL",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "02",
+        name: "ALFA.BL",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "03",
+        name: "ALFA",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "04",
+        name: "ALFA.CT",
+        mountingType: "Counter-Top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "05",
+        name: "BETA(ss model)",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "06",
+        name: "AENON",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "07",
+        name: "DELTA",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "08",
+        name: "GAMMA",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "09",
+        name: "BREEZE BLUE(usha)",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "10",
+        name: "LAGOON",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "03",
+    categoryName: "WATER COOLER & FOUNTAINS - ZVR Series",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescriptionTwo:
+      "Our Water Coolers and Fountains are designed to elevate hydration in high-traffic spaces like airports. Whether wall-mounted or floor-standing, each unit is customizable to provide pure, refreshing drinking water at the touch of a button. Built for convenience and durability, they seamlessly blend into any environment while delivering reliable hydration, making them a smart, eco-friendly choice for travelers on the go.",
+    categoryDescriptionThree:
+      "Customization meets innovation with our water coolers and fountains. Engineered for heavy use, these units offer advanced filtration and are crafted to minimize environmental impact. Whether you're looking for a sleek wall unit or a robust floor-standing option, they’re designed to deliver clean water efficiently, reducing plastic waste while keeping passengers refreshed and airports sustainable.",
+    categoryDescription:
+      "Water coolers cum bubblers provide chilled water on demand. Built to be energy-efficient, they’re ideal for public spaces, reducing both costs and plastic waste.",
+    productList: [
+      {
+        id: "01",
+        name: "ZALE",
+        mountingType: "On Wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "02",
+        name: "IBIS",
+        mountingType: "On Wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "03",
+        name: "CONTOUR",
+        mountingType: "On Wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "04",
+        name: "PLUS ULTRA",
+        mountingType: "On Wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "05",
+        name: "NT 01",
+        mountingType: "In wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "06",
+        name: "YAMI",
+        mountingType: "Floor-standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "07",
+        name: "VOLTURNUS",
+        mountingType: "Floor-standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "08",
+        name: "URB",
+        mountingType: "Outdoor",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "09",
+        name: "KANO",
+        mountingType: "Outdoor",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "10",
+        name: "KEMPTY",
+        mountingType: "Outdoor",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "10",
+        name: "PENGUIN",
+        mountingType: "Outdoor",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "04",
+    categoryName: "PUBLIC UTILITY SYSTEMS - PUS Series",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescriptionTwo:
+      "Our Public Utility Systems are built for scale, designed to meet the hydration needs of large public spaces with ease. Whether it’s parks, schools, or industrial areas, these systems provide reliable access to clean drinking water, reducing the reliance on bottled alternatives. Engineered for durability and efficiency, they’re made to handle high demand while lowering environmental impact. It's sustainable hydration on a grand scale.",
+    categoryDescriptionThree:
+      "Innovation doesn’t stop at convenience—it extends to responsibility. Our public utility systems not only deliver water where it’s needed most, but they do it with minimal waste. Crafted for long-term performance, these systems align with your commitment to a greener, more efficient future. Because when it comes to public spaces, clean water should be a given—not a challenge.",
+    categoryDescription:
+      "Designed for large public spaces, PUS systems ensure clean, accessible water. Engineered for durability and eco-friendliness, they support sustainable communities.",
+    productList: [
+      {
+        id: "01",
+        name: "HYDROBANK XL",
+        mountingType: "On Wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "02",
+        name: "HYDROBANK L",
+        mountingType: "On Wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "03",
+        name: "HYDROBANK M",
+        mountingType: "On Wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "04",
+        name: "HYDROBANK",
+        mountingType: "On Wall",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "05",
+        name: "AQUA",
+        mountingType: "Free Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "05",
+    categoryName: "DRINKING WATER FAUCETS - WATERMATIC Series",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescriptionTwo:
+      "Our Drinking Water Faucets are a perfect blend of elegance and functionality. With their minimalist design, these faucets deliver pure, refreshing water with effortless precision. Crafted to enhance any space, they offer a sleek, modern solution that not only looks good but performs exceptionally well. When paired with our UTC(under the counter) Units for water storage, you get seamless access to clean water—without the clutter.",
+    categoryDescriptionThree:
+      "The UTC Units are designed for those who value simplicity and efficiency. Compact yet powerful, they store water discreetly, ensuring a constant supply while keeping your space organized. Together, our faucets and UTC Units bring you an elegant, space-saving solution that’s both stylish and sustainable. Hydration has never looked—or worked—this good.",
+    categoryDescription:
+      "Drinking water faucets with under the counter storage units to make access to fresh water simple. Precision-engineered for smooth flow, with a focus on reducing waste and energy use.",
+    productList: [
+      {
+        id: "01",
+        name: "MOSES",
+        mountingType: "Counter-top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "02",
+        name: "PIPER",
+        mountingType: "Counter-top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "03",
+        name: "TOUCH",
+        mountingType: "Counter-top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "04",
+        name: "INDUS",
+        mountingType: "Counter-top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "05",
+        name: "TRX.TL",
+        mountingType: "Counter-top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "06",
+        name: "HKN",
+        mountingType: "Counter-top",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "06",
+    categoryName: "COMMERCIAL/INDUSTRIAL PLANTS",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescriptionTwo:
+      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
+    categoryDescriptionThree:
+      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
+    categoryDescription:
+      "Power your facility with our large-scale hydration plants. Scalable and efficient, they offer high-volume water solutions with a commitment to sustainability",
+    productList: [
+      {
+        id: "01",
+        name: "BLUEBOX",
+        mountingType: "Closed-skid",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "02",
+        name: "INRO",
+        mountingType: "Open-skid",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "03",
+        name: "WATERMAKER",
+        mountingType: "Free Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "07",
+    categoryName: "UTC UNITS",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescriptionTwo:
+      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
+    categoryDescriptionThree:
+      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
+    categoryDescription:
+      "UTC units provide a space-saving solution for clean water. Ideal for compact areas, they combine smart design with environmental responsibility.",
+    productList: [
+      {
+        id: "01",
+        name: "GRAND PRISMATIC",
+        mountingType: "Under Counter",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+      {
+        id: "02",
+        name: "NUMERO UNO",
+        mountingType: "Under Counter",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "08",
+    categoryName: "SMALL RO UNITS",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescriptionTwo:
+      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
+    categoryDescriptionThree:
+      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
+    categoryDescription:
+      "Maximize your space with our sleek wall hanging units. Perfect for areas with limited room, they deliver reliable, sustainable water access.",
+    productList: [
+      {
+        id: "01",
+        name: "ROBUSTO",
+        mountingType: "Wall Hanging",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "09",
+    categoryName: "COMMUNITY WATER SOLUTIONS",
+    categoryImage: "/images/covers/trublu.jpg",
+    categoryDescriptionTwo:
+      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
+    categoryDescriptionThree:
+      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
+    categoryDescription:
+      "Bringing clean water to communities, our solutions offer sustainable hydration for all. Designed to be efficient, reliable, and environmentally responsible.",
+    productList: [
+      {
+        id: "01",
+        name: "QUALEASE",
+        mountingType: "Under Discussion",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+          "/images/covers/trublu.jpg",
+        ],
+      },
+    ],
   },
 ];
 

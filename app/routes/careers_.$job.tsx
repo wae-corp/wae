@@ -1,7 +1,8 @@
 import {LoaderFunction} from "@remix-run/node";
 import {json, useLoaderData} from "@remix-run/react";
+import {useEffect, useState} from "react";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
-import {Icons} from "~/static";
+import {Icons, productData} from "~/static";
 
 type LoaderData = {
   job: string;

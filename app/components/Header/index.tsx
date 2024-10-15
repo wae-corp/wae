@@ -10,7 +10,7 @@ export const Header = () => {
   }
 
   return (
-    <header className="fixed left-0 top-0 z-40 flex h-[var(--header-height)] w-full items-center bg-black py-3">
+    <header className="fixed left-0 top-0 z-40 flex h-[var(--header-height)] w-full items-center bg-gradient-to-b from-black to-transparent py-3">
       <div className="container relative flex items-center">
         <Link
           to={"/"}
@@ -51,12 +51,12 @@ export const Header = () => {
             </ul>
           </nav>
 
-          <Link
+          {/* <Link
             to="/contact"
             className="wae-btn px-4 py-2 max-lg:border-black max-lg:text-black"
           >
             Get In Touch
-          </Link>
+          </Link> */}
         </div>
 
         <button

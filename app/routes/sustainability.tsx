@@ -13,10 +13,12 @@ export const meta: MetaFunction = () => {
 };
 
 interface CaseStudyCardProps extends SolutionItem {
+  id: number;
   reverse?: boolean;
 }
 
 const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
+  id,
   title,
   description,
   imageSrc,
@@ -29,14 +31,21 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
         reverse ? "flex-row-reverse" : "flex-row"
       } mx-auto max-w-screen-xl items-start gap-8`}
     >
-      <div className="flex aspect-square w-1/2 justify-center">
+      <div
+        className="flex aspect-square w-1/2 justify-center"
+        data-aos="fade-down"
+      >
         <img
           src={imageSrc}
           alt={imageAlt}
           className="h-full w-full object-cover"
         />
       </div>
-      <div className="flex max-h-[400px] w-1/2 flex-col justify-start">
+      <div
+        className="flex max-h-[400px] w-1/2 flex-col justify-start"
+        data-aos="fade-down"
+        data-aos-delay={`${id}00`}
+      >
         <h2 className="text-primary mb-4 text-left font-bold">{title}</h2>
         <p className="wae-p text-left">{description}</p>
       </div>
@@ -45,6 +54,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
 };
 
 CaseStudyCard.propTypes = {
+  id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
@@ -106,7 +116,7 @@ export default function Sustainability() {
   ];
   return (
     <>
-      <main className="bg-leaf-droplet relative flex min-h-screen items-center bg-cover bg-top bg-no-repeat pt-[var(--header-height)] text-white">
+      <main className="relative flex min-h-screen items-center bg-leaf-droplet bg-cover bg-top bg-no-repeat pt-[var(--header-height)] text-white">
         <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div>
         <div
           className="container isolate text-center"
@@ -148,11 +158,17 @@ export default function Sustainability() {
         <div className="mx-auto max-w-screen-xl">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
             <div className="md:col-span-2">
-              <h2 className="wae-p mb-4 font-medium">
+              <h2
+                className="wae-p mb-4 font-medium"
+                data-aos="fade-right"
+              >
                 <span className="prefix-dot"></span> WE LIVE AND BREATHE WATER
               </h2>
             </div>
-            <div className="space-y-6 md:col-span-3">
+            <div
+              className="space-y-6 md:col-span-3"
+              data-aos="fade-left"
+            >
               <p className="wae-p text-gray-600">
                 At WAE, our dedication to safeguarding natural water resources
                 is at the core of everything we do. For us, sustainability is
@@ -205,6 +221,7 @@ export default function Sustainability() {
         <div className="space-y-16">
           {solutionsData.map((solution, index) => (
             <CaseStudyCard
+              id={index}
               key={index}
               title={solution.title}
               description={solution.description}
@@ -217,7 +234,10 @@ export default function Sustainability() {
       </section>
       <section className="container mx-auto mt-16 px-4 py-16">
         <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-between md:flex-row">
-          <div className="pr-8 md:w-1/2">
+          <div
+            className="pr-8 md:w-1/2"
+            data-aos="fade-right"
+          >
             <h2 className="mb-6 font-secondary text-3xl font-semibold">
               OUR CULTURE
             </h2>
@@ -239,7 +259,10 @@ export default function Sustainability() {
               Know More <span className="ml-2">→</span>
             </button>
           </div>
-          <div className="mt-8 flex justify-center md:mt-0 md:w-1/2">
+          <div
+            className="mt-8 flex justify-center md:mt-0 md:w-1/2"
+            data-aos="fade-left"
+          >
             <img
               src="/images/covers/our-culture.png"
               alt="Team Culture"

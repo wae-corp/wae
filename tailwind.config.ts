@@ -12,6 +12,7 @@ export default {
         secondary: ["Monschone"],
       },
       backgroundImage: {
+        "earth-from-space": "url('/images/covers/earth-from-space.jpg')",
         "water-splash": "url('/images/covers/water-splash.jpg')",
         "window-pattern": "url('/images/covers/window-bg-pattern.jpg')",
         "water-drop": "url('/images/covers/water-drop.jpg')",

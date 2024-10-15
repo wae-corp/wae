@@ -1,18 +1,69 @@
-import type {MetaFunction} from "@remix-run/node";
-import {Link} from "@remix-run/react";
+import type {LoaderFunction, MetaFunction} from "@remix-run/node";
+import {json, Link, useLoaderData} from "@remix-run/react";
+import {useEffect, useState} from "react";
 import {ProjectSlider} from "~/components";
-import {
-  Icons,
-  productsByApplication,
-  ProductsPageListing,
-  SecondaryProducts,
-} from "~/static";
+import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
+import {ProductData, productData, productsByApplication} from "~/static";
+
+type LoaderData = {
+  category: string;
+};
+
+export const loader: LoaderFunction = async ({request, params}) => {
+  const categoryResult = getStringFromUnknown(params.category);
+  if (categoryResult.success === false) {
+    return new Response(null, {status: 404});
+  }
+  const categoryType = categoryResult.ok;
+
+  const loader: LoaderData = {
+    category: categoryType,
+  };
+
+  console.log(JSON.stringify(loader));
+  return json(loader);
+};
 
 export const meta: MetaFunction = () => {
   return [{title: "Browse Products"}];
 };
 
 export default function BrowseProducts() {
+  const [currentCategory, setCurrentCategory] = useState<ProductData>();
+  const {category} = useLoaderData() as LoaderData;
+
+  useEffect(() => {
+    setCurrentCategory(
+      productData && productData.find((c) => c.id === category),
+    );
+  }, []);
+
+  const getMountingTypes = () => {
+    const mountingTypeMap = new Map<
+      string,
+      {id: string; image: string; link: string; name: string}
+    >();
+
+    currentCategory?.productList?.forEach((product) => {
+      const mountingType = product.mountingType;
+      const image = product.images?.[0];
+      const id = product.id || "";
+      const name = mountingType || "";
+      const link = `/product-list/${mountingType}`;
+
+      if (mountingType && !mountingTypeMap.has(mountingType) && image) {
+        mountingTypeMap.set(mountingType, {id, image, link, name});
+      }
+    });
+
+    return Array.from(mountingTypeMap.entries()).map(
+      ([mountingType, details]) => ({
+        mountingType,
+        ...details,
+      }),
+    );
+  };
+
   return (
     <>
       <main className="relative flex min-h-screen items-center bg-washing-hands bg-cover bg-bottom bg-no-repeat pt-[var(--header-height)] text-white">
@@ -22,7 +73,7 @@ export default function BrowseProducts() {
           data-aos="fade-down"
         >
           <h6 className="wae-h6 mb-10 font-extrabold uppercase">
-            Drinking Water Solutions
+            {currentCategory?.categoryName}
           </h6>
 
           <p className="wae-h6 mb-10 font-secondary uppercase 2xl:text-3xl">
@@ -51,15 +102,10 @@ export default function BrowseProducts() {
               data-aos="fade-right"
             >
               <h3 className="wae-h4 mb-10 font-secondary">
-                Drinking Water Solutions
+                {currentCategory?.categoryName}
               </h3>
               <p className="mb-10 uppercase lg:max-w-[80%] xl:ml-28">
-                Life at WAE is vibrant and inspiring. Our culture is a tapestry
-                of collaboration, inclusivity, and continuous learning. Here,
-                your professional growth is as important as your personal
-                well-being. Enjoy a work environment that fosters creativity,
-                supports balance, and celebrates every success. At WAE, your
-                journey is our story.
+                {currentCategory?.categoryDescriptionTwo}
               </p>
               <p className="uppercase">
                 <span className="prefix-dot"></span> You discover Life at WAE
@@ -77,12 +123,7 @@ export default function BrowseProducts() {
               data-aos="fade-left"
             >
               <p className="wae-h6-lg uppercase">
-                WAE is more than a job - it's a journey. We offer competitive
-                benefits, a supportive and inclusive community, and countless
-                opportunities for personal and professional growth. Join us and
-                be part of a team that values your contributions and helps you
-                reach your full potential. Let's create a brighter future
-                together.
+                {currentCategory?.categoryDescriptionThree}
               </p>
             </div>
           </div>
@@ -103,11 +144,11 @@ export default function BrowseProducts() {
 
             <p className="uppercase">
               <span className="prefix-dot"></span>
-              You discover Doimo Kitchens
+              Check what fits your requirement
             </p>
           </div>
 
-          <ProjectSlider productList={SecondaryProducts} />
+          <ProjectSlider productList={getMountingTypes()} />
 
           <div className="container mt-20 flex items-center">
             <div className="gap-8 sm:flex">
@@ -154,13 +195,13 @@ export default function BrowseProducts() {
 
             <p className="uppercase">
               <span className="prefix-dot"></span>
-              You discover Doimo Kitchens
+              Explore the best suited designs for you
             </p>
           </div>
 
           <ProjectSlider productList={productsByApplication} />
 
-          <div className="wae-pt-lg container max-w-[1080px]">
+          {/* <div className="wae-pt-lg container max-w-[1080px]">
             <div className="flex flex-col gap-[120px]">
               {ProductsPageListing.map((product, idx) => {
                 return (
@@ -215,7 +256,7 @@ export default function BrowseProducts() {
                 );
               })}
             </div>
-          </div>
+          </div> */}
         </section>
       </section>
     </>

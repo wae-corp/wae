@@ -1,6 +1,11 @@
 import {Link, MetaFunction} from "@remix-run/react";
 import {ProjectSlider} from "~/components";
-import {Icons, ProductsPageListing, SecondaryProducts} from "~/static";
+import {
+  Icons,
+  productData,
+  ProductsPageListing,
+  SecondaryProducts,
+} from "~/static";
 
 export const meta: MetaFunction = () => {
   return [
@@ -41,7 +46,7 @@ export default function Products() {
 
           <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
             <h4
-              className="wae-h4 mb-12 font-secondary lg:mb-0"
+              className="wae-h4 mb-12 font-secondary !leading-[1.4] lg:mb-0"
               data-aos="fade-right"
             >
               At WAE, we're dedicated to developing solutions that are
@@ -81,10 +86,10 @@ export default function Products() {
         <section>
           <div className="container max-w-[1080px]">
             <div className="wae-gap-lg flex flex-col">
-              {ProductsPageListing.map((product, idx) => {
+              {productData.map((category, idx) => {
                 return (
                   <div
-                    key={product.id}
+                    key={category.id}
                     className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
                   >
                     <div
@@ -92,8 +97,8 @@ export default function Products() {
                       data-aos="fade-down"
                     >
                       <img
-                        src="/images/covers/trublu.jpg"
-                        alt="TruBlu"
+                        src={category.categoryImage}
+                        alt="Category Poster"
                         className="aspect-square object-cover group-even:ml-auto max-sm:w-full"
                         width="500"
                         height="500"
@@ -106,28 +111,28 @@ export default function Products() {
                     >
                       <div className="mb-14 flex flex-col gap-8 lg:gap-10">
                         <label className="text-xs font-bold">
-                          {product.id}
+                          {category.id}
                         </label>
 
                         <h5 className="font-extrabold uppercase">
-                          {product.name}
+                          {category.categoryName}
                         </h5>
 
                         <p className="fw-light text-sm uppercase">
-                          {product.description}
+                          {category.categoryDescription}
                         </p>
 
-                        <div className="flex items-center gap-5">
+                        {/* <div className="flex items-center gap-5">
                           {Icons.Sun}
                           {Icons.IceCrystal}
                           {Icons.LiquidDrop}
-                        </div>
+                        </div> */}
                       </div>
                       <Link
-                        to={"/product-details"}
+                        to={`/browse-products/${category.id}`}
                         className="inline-block rounded-full border border-black px-5 py-3 transition-colors hover:bg-white"
                       >
-                        View Details
+                        Know More
                       </Link>
                     </div>
                   </div>

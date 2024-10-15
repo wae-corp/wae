@@ -173,8 +173,8 @@ export default function Index() {
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <div className="absolute z-[1] h-full w-full bg-gradient-to-b from-black via-transparent to-black"></div>
           <img
-            src="/images/covers/earth-in-hands.jpg"
-            alt="Hands holding earth"
+            src="/images/covers/earth-from-space.jpg"
+            alt="earth-from-space"
             className="h-full w-full object-cover"
             width={1920}
             height={1080}
@@ -182,17 +182,12 @@ export default function Index() {
         </div>
 
         <div
-          className="mb-10 text-center text-white"
+          className="text-center text-white"
           data-aos="fade-up"
         >
-          <h1 className="wae-h1 font-secondary lg:mb-36">
+          <h1 className="wae-h1 font-secondary">
             Keeping The Blue Planet Green
           </h1>
-          <p className="mx-auto hidden max-w-[600px] font-normal uppercase md:block">
-            Nec massa viverra eget feugiat pellentesque. Feugiat adipiscing
-            massa vitae auctor mi massa. Sodales libero viverra cursus sed duis
-            luctus nulla. In malesuada.
-          </p>
         </div>
 
         <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
@@ -204,14 +199,16 @@ export default function Index() {
       <section className="flex min-h-screen items-center justify-center bg-black py-8 text-center text-white">
         <div className="container">
           <div
-            className="mx-auto max-w-3xl"
+            className="mx-auto max-w-4xl"
             data-aos="fade-up"
           >
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
             <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
-              Did you know? On average we use 5,500 liters of water a day! That
-              is a humungous amount of water!…
+              WAE embraces a commitment to sustainability, ensuring our blue
+              planet stays green for future generations. By championing
+              eco-friendly practices, we harmonize progress with nature's
+              preservation.
             </h2>
 
             <p className="uppercase">
@@ -232,26 +229,17 @@ export default function Index() {
 
           <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
             <h4
-              className="wae-h4 mb-12 max-w-[592px] font-secondary lg:mb-0"
+              className="wae-h4 mb-12 font-secondary lg:mb-0"
               data-aos="fade-right"
             >
-              We are thought that becomes action. Matter that transforms into
-              emotion. Invisible yet concrete values, to give a new meaning to
-              an interior place.
+              WAE is an activist company passionately committed to protecting
+              our most vital resource—water. We advocate for sustainable
+              development and implement innovative water solutions that balance
+              human needs with environmental stewardship. Our mission is to
+              ensure that every drop is preserved, cherished, and used
+              responsibly, paving the way for a future where water
+              sustainability is at the heart of global progress.
             </h4>
-            <p
-              className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base"
-              data-aos="fade-left"
-            >
-              <strong className="font-extrabold">
-                We are thought that becomes action.
-              </strong>{" "}
-              Matter that transforms into emotion. Invisible yet concrete
-              values,{" "}
-              <strong className="font-extrabold">
-                to give a new meaning to an interior place.
-              </strong>
-            </p>
           </div>
 
           <p
@@ -266,18 +254,14 @@ export default function Index() {
         <section className="container">
           <div className="flex flex-col gap-8 lg:flex-row">
             <div data-aos="fade-right">
-              <h3 className="wae-h4 mb-10 font-secondary">
-                A 100% Made in India
-              </h3>
+              <h3 className="wae-h4 mb-10 font-secondary">Made in India</h3>
               <p className="mb-10 uppercase md:ml-28 lg:max-w-[80%]">
-                Like the design, the production of our kitchens also takes place
-                entirely within our company and is the result of a process in
-                which human qualities are fundamental, together with the quality
-                of technologies and materials.
-              </p>
-
-              <p className="uppercase">
-                <span className="prefix-dot"></span> You discover Doimo Kitchens
+                WAE proudly represents India's spirit of innovation, combining
+                traditional wisdom with advanced technology to create solutions
+                that drive sustainable progress. Our 'Made in India' approach is
+                about more than just products—it's about building a better
+                future for communities and showcasing the true potential of
+                Indian ingenuity on a global scale.
               </p>
             </div>
             <div
@@ -285,8 +269,8 @@ export default function Index() {
               className="flex-shrink-0 pl-8 lg:max-w-[400px] lg:pl-0"
             >
               <img
-                src="/images/covers/bowl-with-chopsticks.jpg"
-                alt="bowl-with-chopsticks"
+                src="/images/covers/gray-meshed-backdrop.jpg"
+                alt="gray-meshed-backdrop"
                 width={370}
                 height={460}
                 className="ml-auto object-cover"
@@ -307,12 +291,13 @@ export default function Index() {
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
             <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
-              Projects created by our <br /> customers to draw inspiration from
+              WAE leads transformative projects and develops cutting-edge
+              purification systems, all aimed at ensuring a sustainable future.
             </h2>
 
             <p className="uppercase">
               <span className="prefix-dot"></span>
-              You Discover Demo Kitchens
+              DISCOVER SUSTAINABILITY
             </p>
           </div>
         </div>
