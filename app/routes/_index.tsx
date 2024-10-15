@@ -230,7 +230,7 @@ export default function Index() {
             </h2>
 
             <p className="uppercase">
-              <span className="prefix-dot"></span> EXPLORE THE SYSTEM ALL AROUND
+              <span className="prefix-dot"></span> EXPLORE SUSTAINABILITY
             </p>
           </div>
         </div>

@@ -2,14 +2,7 @@ import {LoaderFunction} from "@remix-run/node";
 import {json, MetaFunction, useLoaderData} from "@remix-run/react";
 import {ProductImageSlider, ProjectSlider} from "~/components";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
-import {
-  Icons,
-  productData,
-  ProductImageSliderData,
-  ProductList,
-  ProductsPageListing,
-  specifications,
-} from "~/static";
+import {Icons, productData, ProductList, specifications} from "~/static";
 type LoaderData = {
   id?: string;
   name?: string;
@@ -17,6 +10,7 @@ type LoaderData = {
   mountingType?: string;
   types?: string[];
   image?: string[];
+  features?: Array<{title: string; description: string}>;
 };
 export const meta: MetaFunction = () => {
   return [
@@ -33,9 +27,9 @@ export const loader: LoaderFunction = async ({request, params}) => {
     return new Response(null, {status: 404});
   }
   const productName = productIdResult.ok;
-  const productDetails = productData?.map((cat) =>
-    cat?.productList?.find((prod) => prod.name === productName),
-  );
+  const productDetails = productData
+    ?.map((cat) => cat?.productList?.find((prod) => prod.name === productName))
+    .filter((product) => product != null);
   if (!productDetails) {
     return new Response(null, {status: 404});
   }
@@ -46,17 +40,17 @@ export const loader: LoaderFunction = async ({request, params}) => {
     mountingType: productDetails[0]?.mountingType,
     // types: productDetails[0]?.types,
     image: productDetails[0]?.images,
+    features: productDetails[0]?.features,
   };
 
-  console.log(productDetails[0]);
   return json(loaderData);
 };
 
 export default function ProductDetails() {
-  const {id, name, description, mountingType, types, image} =
+  const {id, name, description, mountingType, types, image, features} =
     useLoaderData() as LoaderData;
 
-  console.log(id, name, description, types, image);
+  // console.log(id, name, description, types, image);
 
   return (
     <>
@@ -123,7 +117,32 @@ export default function ProductDetails() {
 
       <section className="wae-pt-lg wae-pb-lg bg-black text-white">
         <div className="container-lg">
-          <div className="wae-h3 mb-14 text-center font-light lg:text-left">
+          <div className="wae-h3 mb-14 text-center font-light uppercase lg:text-left">
+            Features
+          </div>
+          <div className="mb-20 grid grid-cols-2 gap-8">
+            {features?.map((feature, idx) => {
+              return (
+                <div
+                  key={feature.title}
+                  className="lg:w-full"
+                  data-aos="fade-in"
+                  data-aos-delay={`${idx}00`}
+                >
+                  <p className="mb-5 font-extralight uppercase">
+                    <span className="prefix-dot"></span>
+                    {feature.title}
+                  </p>
+                  <p className="mb-5 text-lg font-light leading-tight">
+                    {feature.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="container-lg">
+          <div className="wae-h3 mb-14 text-center font-light uppercase lg:text-left">
             Specifications
           </div>
 
@@ -145,8 +164,12 @@ export default function ProductDetails() {
               );
             })}
           </div>
-
-          <div className="flex justify-center">
+        </div>
+        <div className="container-lg">
+          <div className="wae-h3 mb-14 text-center font-light uppercase lg:text-left">
+            Downloads
+          </div>
+          <div className="">
             <a
               href="/"
               download
@@ -155,6 +178,10 @@ export default function ProductDetails() {
               Download Brochure
               {Icons.Download}
             </a>
+            <p className="wae-p mt-8 opacity-60">
+              Enter your email address to receive the brochure directly in your
+              inbox.
+            </p>
           </div>
         </div>
       </section>

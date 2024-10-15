@@ -651,6 +651,10 @@ export interface ProductData {
     mountingType?: string;
     description?: string;
     images?: string[];
+    features?: {
+      title: string;
+      description: string;
+    }[];
   }[];
 }
 
@@ -677,6 +681,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "02",
@@ -688,6 +714,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -701,6 +749,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "04",
@@ -712,6 +782,50 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -725,6 +839,50 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "06",
@@ -736,6 +894,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -749,6 +929,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "08",
@@ -761,6 +963,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "09",
@@ -772,6 +996,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
     ],
@@ -798,6 +1044,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "02",
@@ -809,6 +1077,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -822,6 +1112,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "04",
@@ -833,6 +1145,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -846,6 +1180,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "06",
@@ -857,6 +1213,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -870,6 +1248,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "08",
@@ -881,6 +1281,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -894,6 +1316,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "10",
@@ -905,6 +1349,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
     ],
@@ -931,6 +1397,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "02",
@@ -942,6 +1430,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -955,6 +1465,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "04",
@@ -966,6 +1498,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -979,6 +1533,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "06",
@@ -990,6 +1566,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -1003,6 +1601,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "08",
@@ -1014,6 +1634,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -1027,6 +1669,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "10",
@@ -1039,6 +1703,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "10",
@@ -1050,6 +1736,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
     ],
@@ -1076,6 +1784,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "02",
@@ -1087,6 +1817,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -1100,6 +1852,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "04",
@@ -1112,6 +1886,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "05",
@@ -1123,6 +1919,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
     ],
@@ -1149,6 +1967,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "02",
@@ -1160,6 +2000,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -1173,6 +2035,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "04",
@@ -1184,6 +2068,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
       {
@@ -1197,6 +2103,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "06",
@@ -1208,6 +2136,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
     ],
@@ -1234,6 +2184,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "02",
@@ -1246,6 +2218,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "03",
@@ -1257,6 +2251,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
     ],
@@ -1283,6 +2299,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
       {
         id: "02",
@@ -1294,6 +2332,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
     ],
@@ -1320,6 +2380,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
         ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
       },
     ],
   },
@@ -1344,6 +2426,28 @@ export const productData: ProductData[] = [
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
           "/images/covers/trublu.jpg",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
         ],
       },
     ],

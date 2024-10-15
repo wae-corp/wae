@@ -208,7 +208,7 @@ export default function Sustainability() {
                 comply with BIS 10500:2012 standards for drinking water.
               </p>
               <Link
-                to="/case-studies"
+                to="/sustainability-case-study"
                 className="mt-4 inline-block rounded-md border border-black bg-white px-4 py-2 text-base font-normal text-black transition-colors duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
               >
                 Explore Case Studies
