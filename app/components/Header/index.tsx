@@ -17,7 +17,7 @@ export const Header = () => {
           className="left-1/2 top-1/2 lg:absolute lg:-translate-x-1/2 lg:-translate-y-1/2"
         >
           <img
-            src="/images/logos/wae-logo.png"
+            src="/images/logos/wae-logo.svg"
             alt="Wae"
             width={120}
             height={60}

@@ -6,6 +6,7 @@ import {ProductSliderProps} from "~/typeDefinitions";
 export const ProjectSlider = ({
   productList,
   arrows = false,
+  centered,
 }: ProductSliderProps) => {
   const [embla, setEmbla] = useState<Embla | null>();
 
@@ -19,6 +20,7 @@ export const ProjectSlider = ({
             "basis-[240px] mr-4 min-w-[0] sm:basis-[350px] lg:basis-[500px] lg:mr-[60px] 2xl:basis-[600px] 2xl:mr-[100px]",
           controls: "hidden",
         }}
+        align={centered ? "center" : "start"}
       >
         {productList?.map((product, idx) => {
           return (

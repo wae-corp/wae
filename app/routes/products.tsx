@@ -35,7 +35,7 @@ export default function Products() {
         </div>
       </main>
 
-      <section className="bg-window-pattern bg-cover bg-left bg-no-repeat py-20 lg:py-72">
+      <section className="bg-window-pattern bg-cover bg-right bg-no-repeat py-20 lg:py-[180px]">
         <section className="container mb-20 lg:mb-[212px]">
           {/* <p
             className="mb-12 text-sm uppercase"
@@ -105,7 +105,7 @@ export default function Products() {
                       />
                     </div>
                     <div
-                      className="md:basis-1/2"
+                      className="flex flex-col items-start md:basis-1/2"
                       data-aos="fade-down"
                       data-aos-delay="100"
                     >
@@ -130,7 +130,7 @@ export default function Products() {
                       </div>
                       <Link
                         to={`/browse-products/${category.id}`}
-                        className="inline-block rounded-full border border-black px-5 py-3 transition-colors hover:bg-white"
+                        className="mt-auto inline-block rounded-lg border border-black px-5 py-3 transition-colors hover:bg-white"
                       >
                         Know More
                       </Link>
@@ -142,7 +142,7 @@ export default function Products() {
           </div>
         </section>
 
-        <section className="mb-10 flex items-center justify-center py-20 text-center text-black lg:py-40">
+        <section className="mb-5 mt-10 flex items-center justify-center py-20 text-center text-black lg:py-40">
           <div className="container">
             <div
               className="mx-auto max-w-[845px]"
@@ -150,14 +150,10 @@ export default function Products() {
             >
               <h6 className="uppercase">HOW DOES IT WORK?</h6>
 
-              <h2 className="wae-h2 mt-12 font-secondary leading-tight lg:mb-[100px]">
+              <h2 className="wae-h2 mt-12 font-secondary leading-tight">
                 Choose your product style or type, and let us customize it to
                 perfectly match your needs.
               </h2>
-
-              {/* <p className="uppercase">
-                <span className="prefix-dot"></span> Design freedom
-              </p> */}
             </div>
           </div>
         </section>
@@ -168,7 +164,18 @@ export default function Products() {
               Other Products
             </p>
           </div>
-          <ProjectSlider productList={SecondaryProducts} />
+          <ProjectSlider
+            productList={productData
+              .flatMap((cat) => cat.productList)
+              .map((p) => {
+                return {
+                  id: p?.id,
+                  image: p?.images ? p?.images[0] : "",
+                  link: `/product-details/${p?.id}`,
+                  name: p?.name,
+                };
+              })}
+          />
         </section>
       </section>
     </>

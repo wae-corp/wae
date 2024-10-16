@@ -19,7 +19,10 @@ export const BrandSlider = ({brandsList}: {brandsList: string[]}) => {
     >
       {brandsList.map((brand, idx) => {
         return (
-          <CarouselSlide className="mr-20 flex items-center justify-center">
+          <CarouselSlide
+            key={idx}
+            className="mr-20 flex items-center justify-center"
+          >
             <img
               src={brand}
               alt="Brand"

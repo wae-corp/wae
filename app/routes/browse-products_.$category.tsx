@@ -66,54 +66,25 @@ export default function BrowseProducts() {
 
   return (
     <>
-      <main className="relative flex min-h-screen items-center bg-washing-hands bg-cover bg-bottom bg-no-repeat pt-[var(--header-height)] text-white">
-        <div className="from- absolute inset-0 bg-gradient-to-t from-black to-[rgba(0,0,0,.6)]"></div>
-        <div
-          className="container isolate text-center"
-          data-aos="fade-down"
-        >
-          <h6 className="wae-h6 mb-10 font-extrabold uppercase">
-            {currentCategory?.categoryName}
-          </h6>
-
-          <p className="wae-h6 mb-10 font-secondary uppercase 2xl:text-3xl">
-            Imagine a workplace where your creativity meets innovation, where
-            your ideas drive change, and where every day is an opportunity to
-            make a real difference. Welcome to WAE. We're not just about
-            business; we're about building a better future. Join us and be a
-            part of a team that's passionate about sustainability, excellence,
-            and creating positive impacts in the world.
-          </p>
-
-          <Link
-            to={"/product-list"}
-            className="wae-btn wae-btn-md border-white px-6"
-          >
-            View All Products
-          </Link>
-        </div>
-      </main>
+      <main className="bg-water-machine-near-wall relative flex h-[640px] items-center bg-cover bg-bottom bg-no-repeat pt-[var(--header-height)] text-white"></main>
 
       <section className="wae-pt-md wae-pb-md bg-black text-white">
         <div className="container flex items-center">
-          <div className="gap-8 sm:flex">
+          <div className="gap-8 sm:flex lg:gap-[140px]">
             <div
               className="flex flex-col items-start justify-start md:col-span-8"
               data-aos="fade-right"
             >
-              <h3 className="wae-h4 mb-10 font-secondary">
+              <h3 className="wae-h4 mb-12 font-secondary">
                 {currentCategory?.categoryName}
               </h3>
-              <p className="mb-10 uppercase lg:max-w-[80%] xl:ml-28">
+              <p className="uppercase lg:max-w-[80%]">
                 {currentCategory?.categoryDescriptionTwo}
-              </p>
-              <p className="uppercase">
-                <span className="prefix-dot"></span> You discover Life at WAE
               </p>
 
               <Link
                 to={"/product-list"}
-                className="wae-btn wae-btn-pill mt-11 border-white px-6 py-2"
+                className="wae-btn mt-[60px] border-white px-6 py-2"
               >
                 View All Products
               </Link>
@@ -150,7 +121,7 @@ export default function BrowseProducts() {
 
           <ProjectSlider productList={getMountingTypes()} />
 
-          <div className="container mt-20 flex items-center">
+          {/* <div className="container mt-20 flex items-center">
             <div className="gap-8 sm:flex">
               <div
                 className="flex flex-col justify-start md:col-span-7"
@@ -179,7 +150,7 @@ export default function BrowseProducts() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
 
         <section className="wae-pt-lg">
@@ -199,7 +170,12 @@ export default function BrowseProducts() {
             </p>
           </div>
 
-          <ProjectSlider productList={productsByApplication} />
+          <ProjectSlider
+            productList={productsByApplication.map((p) => {
+              delete p.details;
+              return p;
+            })}
+          />
 
           {/* <div className="wae-pt-lg container max-w-[1080px]">
             <div className="flex flex-col gap-[120px]">

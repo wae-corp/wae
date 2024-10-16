@@ -1,12 +1,13 @@
 import {LoaderFunction} from "@remix-run/node";
 import {json, MetaFunction, useLoaderData} from "@remix-run/react";
+import {ReactNode} from "react";
 import {ProductImageSlider, ProjectSlider} from "~/components";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {Icons, productData, ProductList, specifications} from "~/static";
 type LoaderData = {
   id?: string;
   name?: string;
-  description?: string;
+  description?: string | ReactNode;
   mountingType?: string;
   types?: string[];
   image?: string[];
@@ -38,7 +39,7 @@ export const loader: LoaderFunction = async ({request, params}) => {
     name: productDetails[0]?.name,
     description: productDetails[0]?.description,
     mountingType: productDetails[0]?.mountingType,
-    // types: productDetails[0]?.types,
+    types: ["Water", "Ice", "Hot"],
     image: productDetails[0]?.images,
     features: productDetails[0]?.features,
   };
@@ -49,8 +50,6 @@ export const loader: LoaderFunction = async ({request, params}) => {
 export default function ProductDetails() {
   const {id, name, description, mountingType, types, image, features} =
     useLoaderData() as LoaderData;
-
-  // console.log(id, name, description, types, image);
 
   return (
     <>
@@ -88,26 +87,32 @@ export default function ProductDetails() {
                 <h4 className="wae-h4 font-extrabold uppercase">
                   {mountingType}
                 </h4>
-
-                <div className="flex items-center gap-5">
-                  {Icons.Sun}
-                  {Icons.IceCrystal}
-                  {Icons.LiquidDrop}
-                </div>
               </div>
 
               <div className="wae-h3 mb-5 font-light leading-tight md:mb-10">
                 {name}
               </div>
 
-              <div className="mb-5 flex items-center gap-4 text-lg md:mb-10">
-                <span>ProCore</span> <span>- DryChill</span>
-                <span> - Totality</span>
+              <div className="mb-5 flex items-center gap-4 text-lg md:mb-10 lg:gap-9">
+                <div className="flex flex-col items-center justify-center gap-3">
+                  {Icons.Sun}
+                  <h6 className="text-lg">Hot</h6>
+                </div>
+                <div className="flex flex-col items-center justify-center gap-3">
+                  {Icons.IceCrystal}
+                  <h6 className="text-lg">Cold</h6>
+                </div>
+                <div className="flex flex-col items-center justify-center gap-3">
+                  {Icons.LiquidDrop}
+                  <h6 className="text-lg">Ambient</h6>
+                </div>
               </div>
 
-              <p className="mb-10 text-sm uppercase md:mb-20">{description}</p>
+              <div className="mb-10 text-sm uppercase md:mb-20">
+                {description}
+              </div>
 
-              <button className="wae-btn border-black px-6 py-2">
+              <button className="wae-btn !rounded-lg border-black px-6 py-2">
                 Get In Touch
               </button>
             </div>
@@ -117,7 +122,7 @@ export default function ProductDetails() {
 
       <section className="wae-pt-lg wae-pb-lg bg-black text-white">
         <div className="container-lg">
-          <div className="wae-h3 mb-14 text-center font-light uppercase lg:text-left">
+          <div className="wae-h3 mb-14 text-center font-secondary font-light uppercase lg:text-left">
             Features
           </div>
           <div className="mb-20 grid grid-cols-2 gap-8">
@@ -142,7 +147,7 @@ export default function ProductDetails() {
           </div>
         </div>
         <div className="container-lg">
-          <div className="wae-h3 mb-14 text-center font-light uppercase lg:text-left">
+          <div className="wae-h3 mb-14 text-center font-secondary font-light uppercase lg:text-left">
             Specifications
           </div>
 
@@ -155,9 +160,11 @@ export default function ProductDetails() {
                   data-aos="fade-in"
                   data-aos-delay={`${idx}00`}
                 >
-                  <div className="mb-5 font-extralight">{spec.title}</div>
+                  <div className="mb-5 font-secondary">{spec.title}</div>
 
-                  <div className="wae-h2 mb-5">{spec.value}</div>
+                  <div className="wae-h2 mb-5 font-extralight">
+                    {spec.value}
+                  </div>
 
                   <div className="font-extralight">{spec.subtitle}</div>
                 </div>
@@ -166,7 +173,7 @@ export default function ProductDetails() {
           </div>
         </div>
         <div className="container-lg">
-          <div className="wae-h3 mb-14 text-center font-light uppercase lg:text-left">
+          <div className="wae-h3 mb-14 text-center font-secondary font-light uppercase lg:text-left">
             Downloads
           </div>
           <div className="">
@@ -187,12 +194,18 @@ export default function ProductDetails() {
       </section>
 
       <section className="wae-pt-lg wae-pb-lg">
-        <h6 className="mb-6 text-center text-sm uppercase">Other Products</h6>
+        <h6 className="mb-20 text-center text-sm uppercase">Other Products</h6>
         <ProjectSlider
-          productList={ProductList.map((p) => {
-            delete p.name;
-            return p;
-          })}
+          productList={productData
+            .flatMap((cat) => cat.productList)
+            .map((p) => {
+              return {
+                id: p?.id,
+                image: p?.images ? p?.images[0] : "",
+                link: `/product-details/${p?.id}`,
+                name: p?.name,
+              };
+            })}
         />
       </section>
 
@@ -240,28 +253,28 @@ export default function ProductDetails() {
             <form className="w-full">
               <input
                 type="text"
-                className="wae-input mb-10"
+                className="wae-input mb-10 placeholder-white"
                 name="name"
                 placeholder="Name"
                 required
               />
               <input
                 type="email"
-                className="wae-input mb-10"
+                className="wae-input mb-10 placeholder-white"
                 name="email"
                 placeholder="Your Email"
                 required
               />
               <input
                 type="tel"
-                className="wae-input mb-10"
+                className="wae-input mb-10 placeholder-white"
                 name="contact"
                 placeholder="Contact No."
                 required
               />
               <input
                 type="text"
-                className="wae-input mb-10"
+                className="wae-input mb-10 placeholder-white"
                 name="company"
                 placeholder="Company Name"
               />

@@ -208,7 +208,7 @@ export default function Index() {
           </h1>
         </div>
 
-        <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
+        <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
           {Icons.ArrowDown}
           Scroll
         </div>
@@ -236,7 +236,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-72">
+      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-[180px]">
         <section className="container">
           <p
             className="mb-12 text-sm uppercase"
@@ -270,7 +270,7 @@ export default function Index() {
         </section>
 
         <section className="container">
-          <div className="flex flex-col gap-8 lg:flex-row">
+          <div className="flex flex-col gap-8 lg:flex-row lg:gap-[120px]">
             <div data-aos="fade-right">
               <h3 className="wae-h4 mb-10 font-secondary">Made in India</h3>
               <p className="mb-10 uppercase md:ml-28 lg:max-w-[80%]">
@@ -381,7 +381,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="md:flex">
+      {/* <section className="md:flex">
         <div className="bg-white py-20 md:w-1/2 md:px-14 md:py-20 xl:px-40 xl:py-36">
           <div
             className="container"
@@ -410,7 +410,6 @@ export default function Index() {
               className="isolate"
               data-aos="fade-in"
             >
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
               <div className="mb-8 text-sm lg:text-base">We're looking for</div>
               <Link
                 to={"/"}
@@ -440,7 +439,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="wae-pt-lg wae-pb-lg bg-[#e0e0e0]">
         <div className="container">
@@ -551,7 +550,7 @@ export default function Index() {
                           />
                           <label
                             htmlFor={`${type}-enquiry`}
-                            className="flex h-full w-full items-center justify-center rounded-xl border border-black transition-colors hover:bg-gray-500 hover:text-white peer-checked:bg-black peer-checked:text-white"
+                            className="flex h-full w-full items-center justify-center rounded-xl border border-black bg-white transition-colors hover:bg-black hover:text-white peer-checked:bg-black peer-checked:text-white"
                           >
                             A {type}
                           </label>

@@ -13,9 +13,8 @@ export const meta: MetaFunction = () => {
 export default function Company() {
   return (
     <>
-      <main className="relative flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center">
-        <div className="absolute inset-0 h-full w-full bg-black/60"></div>
-        <div className="container isolate">
+      <main className="bg-above-the-cloud relative flex min-h-screen items-center justify-center bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center">
+        {/* <div className="container isolate">
           <div
             className="mx-auto mt-40 max-w-[1080px] text-white"
             data-aos="fade-down"
@@ -32,7 +31,7 @@ export default function Company() {
               sustainable development is unwavering.
             </h2>
           </div>
-        </div>
+        </div> */}
       </main>
 
       <section className="wae-pt-lg wae-pb-lg bg-white">
@@ -46,9 +45,12 @@ export default function Company() {
                 Mission & Vision
               </label>
 
-              <p className="uppercase">
-                <span className="prefix-dot"></span>You discover wae vision
-              </p>
+              <div className="flex items-center uppercase">
+                <div className="prefix-dot"></div>
+                <div>
+                  The WAE's Vision <br /> Towards Sustainable <br /> Development
+                </div>
+              </div>
             </div>
             <div
               className="max-w-[650px]"
@@ -99,8 +101,7 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="relative flex min-h-screen items-center justify-center bg-black bg-washing-hands bg-cover bg-no-repeat py-8 text-center text-black">
-        <div className="absolute inset-0 h-full w-full bg-black/60"></div>
+      <section className="bg-granite-river relative flex min-h-[640px] items-end justify-center bg-cover bg-no-repeat py-24 text-center text-black">
         <div
           className="container isolate"
           data-aos="fade-down"
@@ -110,7 +111,7 @@ export default function Company() {
               Journey and Transformation
             </h2>
 
-            <p className="wae-h6-lg mt-10 font-secondary uppercase leading-tight">
+            <p className="wae-h6-lg mt-10 font-secondary uppercase !leading-normal">
               Our journey has been a rewarding one, contributing to a
               sustainable planet where everyone can thrive. Looking ahead, our
               transformation will be guided by our capabilities, strategic
@@ -121,6 +122,7 @@ export default function Company() {
             </p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 h-[100px] w-full bg-gradient-to-b from-transparent to-black"></div>
       </section>
 
       <section className="bg-black py-36 text-white">

@@ -54,21 +54,21 @@ export default function Blogs() {
           <img
             src="/images/covers/blog-hero-banner.png"
             alt="Blog hero banner"
-            className="min-h-3/5 w-full"
+            className="min-h-3/5 mb-6 w-full"
           />
-          <div className="mt-4 flex flex-col">
-            <h3 className="mb-6 align-middle font-medium uppercase">
+          <div className="flex flex-col">
+            <h3 className="mb-10 align-middle font-medium uppercase xl:mb-[60px]">
               <span className="prefix-dot pl-4"></span> General / 24 aug 2024
             </h3>
-            <h2 className="wae-h5 my-6 font-secondary">
+            <h2 className="wae-h5 mb-6 font-secondary">
               Nec massa viverra eget feugiat pellentesque.
             </h2>
-            <p className="wae-h6 mb-4 text-sm">
+            <p className="wae-h6 mb-10 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a
               justo auctor, vehicula sem et, tristique mi. Aenean cursus turpis
               ut erat suscipit, ac imperdiet nibh facilisis.
             </p>
-            <p className="my-2 text-sm font-normal">
+            <p className="text-sm font-normal">
               Read More <span className="pl-4">→</span>
             </p>
           </div>
@@ -108,13 +108,13 @@ function BlogCard({
   imageUrl,
 }: BlogCardProps) {
   return (
-    <div className="flex h-[500px] w-full flex-col border-b-2 border-gray-300 md:h-[500px]">
+    <div className="flex w-full flex-col border-b-2 border-gray-300">
       <img
         src={imageUrl}
         alt={title}
-        className="h-[50%] w-full object-cover"
+        className="aspect-[21/9] w-full object-cover"
       />
-      <div className="flex h-[50%] flex-col justify-between p-4">
+      <div className="flex flex-1 flex-col justify-between py-4">
         <div className="flex flex-col space-y-4">
           <h3 className="text-base font-medium uppercase">
             <span className="prefix-dot pl-4"></span> {category} / {date}

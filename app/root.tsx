@@ -35,7 +35,7 @@ export function Layout({children}: {children: React.ReactNode}) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="overflow-x-hidden">
         <MantineProvider defaultColorScheme="light">
           <Notifications
             position="top-right"

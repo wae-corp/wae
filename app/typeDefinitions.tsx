@@ -3,6 +3,7 @@ import {ReactNode} from "react";
 export interface ProductSliderProps {
   productList: Product[];
   arrows?: boolean;
+  centered?: boolean;
 }
 
 export interface ProductDetailImageSliderProps {
@@ -11,7 +12,7 @@ export interface ProductDetailImageSliderProps {
 }
 
 export interface Product {
-  id: string;
+  id?: string;
   image?: string;
   link?: string;
   name?: string;

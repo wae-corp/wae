@@ -8,10 +8,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Inter"],
+        primary: ["Poppins"],
         secondary: ["Monschone"],
       },
       backgroundImage: {
+        "water-machine-near-wall":
+          "url('/images/covers/water-machine-near-wall.jpg')",
+        "granite-river": "url('/images/covers/granite-river.jpg')",
+        "above-the-cloud": "url('/images/covers/above-the-clouds.jpg')",
         "man-in-shadow": "url('/images/covers/man-in-shadow.jpg')",
         "hands-pointing-on-table":
           "url('/images/covers/hands-pointing-on-table.jpg')",

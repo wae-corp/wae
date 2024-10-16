@@ -96,24 +96,25 @@ export default function Sustainability() {
       title: "ACHIEVING WATER NEUTRALITY",
       description:
         "Despite a worsening water crisis, more companies are drawing excessive amounts of water from natural sources. WAE is driving a movement towards water neutrality by helping organizations replace bottled water with sustainable hydration systems. This transition enables them to become water-positive, drastically reducing their water footprint and supporting global sustainability efforts.",
-      imageSrc: "/images/cards/card-5.png",
+      imageSrc: "/images/cards/card-5.jpg",
       imageAlt: "Water droplets on a green leaf",
     },
     {
       title: "LEADING WATER RESTORATION EFFORTS",
       description:
         "By 2025, it is anticipated that around 2 billion people will face severe water scarcity, with over half of the global population living under conditions of water stress. WAE’s Water Restoration Program equips businesses with innovative and sustainable solutions designed to mitigate their water impact. Through forward-thinking practices, we work to restore equilibrium to vital water resources and build resilience for the future.",
-      imageSrc: "/images/cards/card-6.png",
+      imageSrc: "/images/cards/card-6.jpg",
       imageAlt: "Water droplets on a green leaf",
     },
     {
       title: "EMBRACING SUSTAINABLE RESPONSIBILITY",
       description:
         "The future demands that businesses and institutions step up to the challenge of sustainable growth. WAE embraces this responsibility by aligning our efforts with the Sustainable Development Goals (SDGs), fostering a leadership mindset that integrates economic growth with long-term water management solutions.",
-      imageSrc: "/images/cards/card-7.png",
+      imageSrc: "/images/cards/card-7.jpg",
       imageAlt: "Water droplets on a green leaf",
     },
   ];
+
   return (
     <>
       <main className="relative flex min-h-screen items-center bg-leaf-droplet bg-cover bg-top bg-no-repeat pt-[var(--header-height)] text-white">
@@ -154,7 +155,8 @@ export default function Sustainability() {
           </div>
         </div>
       </main>
-      <section className="container mx-auto mt-16 px-4 py-16">
+
+      <section className="container mx-auto mt-16 overflow-x-hidden px-4 py-16">
         <div className="mx-auto max-w-screen-xl">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
             <div className="md:col-span-2">
@@ -217,22 +219,51 @@ export default function Sustainability() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto mt-16 px-4 py-16">
-        <div className="space-y-16">
-          {solutionsData.map((solution, index) => (
-            <CaseStudyCard
-              id={index}
-              key={index}
-              title={solution.title}
-              description={solution.description}
-              imageSrc={solution.imageSrc}
-              imageAlt={solution.imageAlt}
-              reverse={index % 2 !== 0}
-            />
-          ))}
+
+      <section className="overflow-x-hidden">
+        <div className="container max-w-[1080px]">
+          <div className="wae-gap-lg flex flex-col">
+            {solutionsData.map((solution, idx) => {
+              return (
+                <div
+                  key={idx}
+                  className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
+                >
+                  <div
+                    className="flex-shrink-0 md:basis-1/2"
+                    data-aos="fade-down"
+                  >
+                    <img
+                      src={solution.imageSrc}
+                      alt={solution.imageAlt}
+                      className="aspect-square object-cover group-even:ml-auto max-sm:w-full"
+                      width="500"
+                      height="500"
+                    />
+                  </div>
+                  <div
+                    className="flex flex-col items-start md:basis-1/2"
+                    data-aos="fade-down"
+                    data-aos-delay="100"
+                  >
+                    <div className="flex flex-col gap-8 lg:gap-10">
+                      <h5 className="font-extrabold uppercase">
+                        {solution.title}
+                      </h5>
+
+                      <p className="fw-light text-sm uppercase">
+                        {solution.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
-      <section className="container mx-auto mt-16 px-4 py-16">
+
+      <section className="container mx-auto mt-16 overflow-x-hidden px-4 py-16">
         <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-between md:flex-row">
           <div
             className="pr-8 md:w-1/2"
@@ -266,7 +297,7 @@ export default function Sustainability() {
             <img
               src="/images/covers/our-culture.png"
               alt="Team Culture"
-              className="w-full max-w-md rounded-md shadow-lg"
+              className="w-full max-w-md shadow-lg"
             />
           </div>
         </div>
