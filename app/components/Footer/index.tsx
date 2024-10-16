@@ -27,7 +27,7 @@ const footerLinks: {
       },
       {
         id: "1-2",
-        link: "/company",
+        link: "/brand",
         name: "Brand",
       },
       {
