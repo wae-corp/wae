@@ -199,7 +199,7 @@ export default function Brand() {
       <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-28">
         <div className="container py-20">
           <div
-            className="flex flex-col"
+            className="flex flex-col items-center"
             style={{rowGap: "100px"}}
           >
             <div
