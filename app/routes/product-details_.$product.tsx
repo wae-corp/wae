@@ -202,7 +202,7 @@ export default function ProductDetails() {
               return {
                 id: p?.id,
                 image: p?.images ? p?.images[0] : "",
-                link: `/product-details/${p?.id}`,
+                link: `/product-details/${p?.name}`,
                 name: p?.name,
               };
             })}
