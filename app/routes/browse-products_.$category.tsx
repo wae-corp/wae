@@ -2,6 +2,7 @@ import type {LoaderFunction, MetaFunction} from "@remix-run/node";
 import {json, Link, useLoaderData} from "@remix-run/react";
 import {useEffect, useState} from "react";
 import {ProjectSlider} from "~/components";
+import {BrowseBySlider} from "~/components/Slider/BrowseBySlider";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {ProductData, productData, productsByApplication} from "~/static";
 
@@ -66,7 +67,7 @@ export default function BrowseProducts() {
 
   return (
     <>
-      <main className="bg-water-machine-near-wall relative flex h-[640px] items-center bg-cover bg-bottom bg-no-repeat pt-[var(--header-height)] text-white"></main>
+      <main className="relative flex h-[640px] items-center bg-water-machine-near-wall bg-cover bg-bottom bg-no-repeat pt-[var(--header-height)] text-white"></main>
 
       <section className="wae-pt-md wae-pb-md bg-black text-white">
         <div className="container flex items-center">
@@ -119,38 +120,7 @@ export default function BrowseProducts() {
             </p>
           </div>
 
-          <ProjectSlider productList={getMountingTypes()} />
-
-          {/* <div className="container mt-20 flex items-center">
-            <div className="gap-8 sm:flex">
-              <div
-                className="flex flex-col justify-start md:col-span-7"
-                data-aos="fade-right"
-              >
-                <p className="mb-10 uppercase lg:max-w-[80%] xl:ml-28">
-                  Life at WAE is vibrant and inspiring. Our culture is a
-                  tapestry of collaboration, inclusivity, and continuous
-                  learning. Here, your professional growth is as important as
-                  your personal well-being. Enjoy a work environment that
-                  fosters creativity, supports balance, and celebrates every
-                  success. At WAE, your journey is our story.
-                </p>
-              </div>
-              <div
-                className="mt-10 sm:mt-0 lg:max-w-[400px]"
-                data-aos="fade-left"
-              >
-                <p className="wae-h6-lg uppercase">
-                  WAE is more than a job - it's a journey. We offer competitive
-                  benefits, a supportive and inclusive community, and countless
-                  opportunities for personal and professional growth. Join us
-                  and be part of a team that values your contributions and helps
-                  you reach your full potential. Let's create a brighter future
-                  together.
-                </p>
-              </div>
-            </div>
-          </div> */}
+          <BrowseBySlider productList={getMountingTypes()} />
         </section>
 
         <section className="wae-pt-lg">
@@ -170,69 +140,12 @@ export default function BrowseProducts() {
             </p>
           </div>
 
-          <ProjectSlider
+          <BrowseBySlider
             productList={productsByApplication.map((p) => {
               delete p.details;
               return p;
             })}
           />
-
-          {/* <div className="wae-pt-lg container max-w-[1080px]">
-            <div className="flex flex-col gap-[120px]">
-              {ProductsPageListing.map((product, idx) => {
-                return (
-                  <div
-                    key={product.id}
-                    className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
-                  >
-                    <div
-                      className="flex-shrink-0 md:basis-1/2"
-                      data-aos="fade-down"
-                    >
-                      <img
-                        src="/images/covers/trublu.jpg"
-                        alt="TruBlu"
-                        className="aspect-square object-cover group-even:ml-auto max-sm:w-full"
-                        width="500"
-                        height="500"
-                      />
-                    </div>
-                    <div
-                      className="md:basis-1/2"
-                      data-aos="fade-down"
-                      data-aos-delay={`${idx}00`}
-                    >
-                      <div className="mb-14 flex flex-col gap-8 lg:gap-10">
-                        <label className="text-xs font-bold">
-                          {product.id}
-                        </label>
-
-                        <h5 className="font-extrabold uppercase">
-                          {product.name}
-                        </h5>
-
-                        <p className="fw-light text-sm uppercase">
-                          {product.description}
-                        </p>
-
-                        <div className="flex items-center gap-5">
-                          {Icons.Sun}
-                          {Icons.IceCrystal}
-                          {Icons.LiquidDrop}
-                        </div>
-                      </div>
-                      <Link
-                        to={"/product-list"}
-                        className="rounded-full border border-black px-5 py-3 transition-colors hover:bg-white"
-                      >
-                        View Details
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div> */}
         </section>
       </section>
     </>

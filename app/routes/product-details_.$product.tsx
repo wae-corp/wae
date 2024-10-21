@@ -3,7 +3,7 @@ import {json, MetaFunction, useLoaderData} from "@remix-run/react";
 import {ReactNode} from "react";
 import {ProductImageSlider, ProjectSlider} from "~/components";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
-import {Icons, productData, ProductList, specifications} from "~/static";
+import {Icons, productData, specifications} from "~/static";
 type LoaderData = {
   id?: string;
   name?: string;

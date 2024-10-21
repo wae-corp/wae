@@ -2,16 +2,16 @@ import {faCheckCircle, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {notifications} from "@mantine/notifications";
 import type {ActionFunction, MetaFunction} from "@remix-run/node";
-import {Form, json, Link, useActionData, useSubmit} from "@remix-run/react";
+import {Form, json, useActionData, useSubmit} from "@remix-run/react";
 import clsx from "clsx";
 import {useEffect, useState} from "react";
-import {BrandSlider, OurProductsSlider, ProjectSlider} from "~/components";
+import {BrandSlider, OurProductsSlider} from "~/components";
 import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
 import {
   ActionData,
   EnquiryType as EnquiryTypeOne,
 } from "~/backend/typeDefinations";
-import {Icons, ProductList, SecondaryProducts} from "~/static";
+import {Icons, ProductList} from "~/static";
 import {getErrorFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {appendLandingLeadIntoSheet} from "~/backend/googleSheet.server";
 import {z} from "zod";
@@ -297,7 +297,9 @@ export default function Index() {
           </div>
         </section>
 
-        <OurProductsSlider productList={ProductList} />
+        <section className="container">
+          <OurProductsSlider productList={ProductList} />
+        </section>
       </section>
 
       <section className="wae-pt-lg wae-pb-lg bg-black text-center text-white">
@@ -550,7 +552,7 @@ export default function Index() {
                           />
                           <label
                             htmlFor={`${type}-enquiry`}
-                            className="flex h-full w-full items-center justify-center rounded-xl border border-black bg-white transition-colors hover:bg-black hover:text-white peer-checked:bg-black peer-checked:text-white"
+                            className="flex h-full w-full cursor-pointer items-center justify-center rounded-xl border border-black bg-transparent transition-colors hover:bg-black hover:text-white peer-checked:bg-black peer-checked:text-white"
                           >
                             A {type}
                           </label>

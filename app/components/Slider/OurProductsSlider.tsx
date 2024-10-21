@@ -22,8 +22,8 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
   return (
     <section>
       <div
-        style={{paddingLeft: containerOffset}}
-        className="max-lg:!pl-3"
+      // style={{paddingLeft: containerOffset}}
+      // className="max-lg:!pl-3"
       >
         <h5
           className="mb-8 text-center text-sm md:text-left"

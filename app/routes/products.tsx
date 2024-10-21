@@ -109,7 +109,7 @@ export default function Products() {
                       data-aos="fade-down"
                       data-aos-delay="100"
                     >
-                      <div className="mb-14 flex flex-col gap-8 lg:gap-10">
+                      <div className="mb-14 flex flex-col gap-6">
                         <label className="text-xs font-bold">
                           {category.id}
                         </label>
@@ -121,12 +121,6 @@ export default function Products() {
                         <p className="fw-light text-sm uppercase">
                           {category.categoryDescription}
                         </p>
-
-                        {/* <div className="flex items-center gap-5">
-                          {Icons.Sun}
-                          {Icons.IceCrystal}
-                          {Icons.LiquidDrop}
-                        </div> */}
                       </div>
                       <Link
                         to={`/browse-products/${category.id}`}
