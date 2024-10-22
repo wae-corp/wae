@@ -104,30 +104,36 @@ export const FullscreenSlider = ({items}: SliderProps) => {
 
             <div
               data-aos="fade-up"
-              className="isolate z-[2] mx-auto max-w-[850px] text-center text-white"
+              className={clsx("isolate z-[2] mx-auto text-center text-white", {
+                "max-w-[850px]": !item.isHeadingMax,
+                "max-w-[1200px]": item.isHeadingMax,
+              })}
             >
               <div className="mb-10">
                 {item.subtitle && (
                   <h3 className="wae-h6 mb-6 font-black">{item.subtitle}</h3>
                 )}
                 {item.title && (
-                  <h1 className="wae-h3 font-secondary !leading-normal lg:text-[48px]">
+                  <h1
+                    className={clsx("wae-h3 font-secondary !leading-normal", {
+                      "lg:text-[72px]": item.isHeadingMax,
+                      "lg:text-[48px]": !item.isHeadingMax,
+                    })}
+                  >
                     {item.title}
                   </h1>
                 )}
               </div>
 
-              <Link
-                to={"/contact"}
-                className="wae-btn-light wae-btn wae-btn-lg !border-none px-10"
-              >
-                Get in Touch
-              </Link>
+              {item.isButton && (
+                <Link
+                  to={"/contact"}
+                  className="wae-btn-light wae-btn wae-btn-lg!border-none px-10"
+                >
+                  Get in Touch
+                </Link>
+              )}
             </div>
-            {/* <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
-              {Icons.ArrowDown}
-              Scroll
-            </div> */}
           </Carousel.Slide>
         );
       })}
@@ -140,6 +146,8 @@ interface SliderItem {
   title?: string;
   subtitle?: string;
   align: "center" | "end";
+  isButton: boolean;
+  isHeadingMax: boolean;
 }
 
 interface SliderProps {

@@ -28,11 +28,20 @@ type ErrorObject = {
 
 const sliderItemList = [
   {
-    image: "/images/covers/above-the-clouds.jpg",
-    title:
-      "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
+    image: "/images/covers/earth-from-space.jpg",
+    title: "Keeping The Blue Planet Green",
+    // subtitle: "NEPTUNE DUO",
+    align: "center",
+    isButton: false,
+    isHeadingMax: true,
+  },
+  {
+    image: "/images/covers/earth-from-space.jpg",
+    title: "Keeping The Blue Planet Green",
     subtitle: "NEPTUNE DUO",
     align: "end",
+    isButton: true,
+    isHeadingMax: false,
   },
   {
     image: "/images/covers/brand-bg.jpg",
@@ -40,13 +49,8 @@ const sliderItemList = [
       "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
     subtitle: "NEPTUNE DUO",
     align: "center",
-  },
-  {
-    image: "/images/covers/earth-from-space.jpg",
-    title:
-      "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
-    subtitle: "NEPTUNE DUO",
-    align: "center",
+    isButton: true,
+    isHeadingMax: false,
   },
   {
     image: "/images/covers/above-the-clouds.jpg",
@@ -54,6 +58,8 @@ const sliderItemList = [
       "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
     subtitle: "NEPTUNE DUO",
     align: "center",
+    isButton: true,
+    isHeadingMax: false,
   },
 ];
 
@@ -219,6 +225,19 @@ export default function Index() {
   return (
     <>
       <FullscreenSlider items={sliderItemList} />
+      {/* <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
+              {Icons.ArrowDown}
+              Scroll
+            </div> */}
+      <section className="bg-black py-12">
+        <div
+          className="flex flex-col items-center justify-center text-center text-white"
+          // data-aos="fade-down"
+        >
+          {Icons.ArrowDown}
+          <p className="wae-p pt-2">Scroll</p>
+        </div>
+      </section>
 
       <section className="flex min-h-screen items-center justify-center bg-black py-8 text-center text-white">
         <div className="container">
