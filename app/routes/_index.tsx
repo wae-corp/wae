@@ -5,7 +5,7 @@ import type {ActionFunction, MetaFunction} from "@remix-run/node";
 import {Form, json, useActionData, useSubmit} from "@remix-run/react";
 import clsx from "clsx";
 import {useEffect, useState} from "react";
-import {BrandSlider, OurProductsSlider} from "~/components";
+import {BrandSlider, FullscreenSlider, OurProductsSlider} from "~/components";
 import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
 import {
   ActionData,
@@ -25,6 +25,37 @@ type ErrorObject = {
   // city?: string | null;
   message?: string | null;
 };
+
+const sliderItemList = [
+  {
+    image: "/images/covers/above-the-clouds.jpg",
+    title:
+      "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
+    subtitle: "NEPTUNE DUO",
+    align: "end",
+  },
+  {
+    image: "/images/covers/brand-bg.jpg",
+    title:
+      "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
+    subtitle: "NEPTUNE DUO",
+    align: "center",
+  },
+  {
+    image: "/images/covers/earth-from-space.jpg",
+    title:
+      "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
+    subtitle: "NEPTUNE DUO",
+    align: "center",
+  },
+  {
+    image: "/images/covers/above-the-clouds.jpg",
+    title:
+      "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
+    subtitle: "NEPTUNE DUO",
+    align: "center",
+  },
+];
 
 export const meta: MetaFunction = () => {
   return [
@@ -187,32 +218,7 @@ export default function Index() {
 
   return (
     <>
-      <main className="relative flex h-screen flex-col items-center justify-center pb-10 pt-[var(--header-height)]">
-        <div className="absolute inset-0 -z-[1] h-full w-full">
-          <div className="absolute z-[1] h-full w-full bg-gradient-to-b from-black via-transparent to-black"></div>
-          <img
-            src="/images/covers/earth-from-space.jpg"
-            alt="earth-from-space"
-            className="h-full w-full object-cover"
-            width={1920}
-            height={1080}
-          />
-        </div>
-
-        <div
-          className="text-center text-white"
-          data-aos="fade-up"
-        >
-          <h1 className="wae-h1 font-secondary">
-            Keeping The Blue Planet Green
-          </h1>
-        </div>
-
-        <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
-          {Icons.ArrowDown}
-          Scroll
-        </div>
-      </main>
+      <FullscreenSlider items={sliderItemList} />
 
       <section className="flex min-h-screen items-center justify-center bg-black py-8 text-center text-white">
         <div className="container">
