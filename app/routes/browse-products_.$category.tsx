@@ -1,7 +1,6 @@
 import type {LoaderFunction, MetaFunction} from "@remix-run/node";
 import {json, Link, useLoaderData} from "@remix-run/react";
 import {useEffect, useState} from "react";
-import {ProjectSlider} from "~/components";
 import {BrowseBySlider} from "~/components/Slider/BrowseBySlider";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {ProductData, productData, productsByApplication} from "~/static";

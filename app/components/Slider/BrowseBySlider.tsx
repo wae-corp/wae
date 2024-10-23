@@ -47,7 +47,10 @@ export const BrowseBySlider = ({
                   {product?.details && <div>{product?.details}</div>}
                 </Link>
               ) : (
-                <div data-aos="fade-in">
+                <Link
+                  data-aos="fade-in"
+                  to={"/product-list/Closed-skid"}
+                >
                   <img
                     src={product?.image}
                     alt={product?.name}
@@ -59,7 +62,7 @@ export const BrowseBySlider = ({
                     <h5 className="mt-5 text-start">{product?.name}</h5>
                   )}
                   {product?.details && <div>{product?.details}</div>}
-                </div>
+                </Link>
               )}
             </Carousel.Slide>
           );
