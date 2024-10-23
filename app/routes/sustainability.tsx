@@ -162,14 +162,14 @@ export default function Sustainability() {
             <div className="md:col-span-2">
               <h2
                 className="wae-p mb-4 font-medium"
-                data-aos="fade-right"
+                // data-aos="fade-right"
               >
                 <span className="prefix-dot"></span> WE LIVE AND BREATHE WATER
               </h2>
             </div>
             <div
               className="space-y-6 md:col-span-3"
-              data-aos="fade-left"
+              // data-aos="fade-left"
             >
               <p className="wae-p text-gray-600">
                 At WAE, our dedication to safeguarding natural water resources
@@ -231,7 +231,7 @@ export default function Sustainability() {
                 >
                   <div
                     className="flex-shrink-0 md:basis-1/2"
-                    data-aos="fade-down"
+                    data-aos="zoom-in"
                   >
                     <img
                       src={solution.imageSrc}
@@ -243,7 +243,7 @@ export default function Sustainability() {
                   </div>
                   <div
                     className="flex flex-col items-start md:basis-1/2"
-                    data-aos="fade-down"
+                    // data-aos="fade-down"
                     data-aos-delay="100"
                   >
                     <div className="flex flex-col gap-8 lg:gap-10">
@@ -267,7 +267,7 @@ export default function Sustainability() {
         <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-between md:flex-row">
           <div
             className="pr-8 md:w-1/2"
-            data-aos="fade-right"
+            // data-aos="fade-right"
           >
             <h2 className="mb-6 font-secondary text-3xl font-semibold">
               OUR CULTURE
@@ -292,7 +292,7 @@ export default function Sustainability() {
           </div>
           <div
             className="mt-8 flex justify-center md:mt-0 md:w-1/2"
-            data-aos="fade-left"
+            data-aos="zoom-in"
           >
             <img
               src="/images/covers/our-culture.png"

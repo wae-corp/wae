@@ -28,11 +28,13 @@ export default function Job() {
   return (
     <>
       <main className="mt-[var(--header-height)]">
-        <div
-          className="container pb-[60px] pt-[90px] text-center"
-          data-aos="fade-down"
-        >
-          <h2 className="wae-h2 mb-4 font-secondary">Join Our Team</h2>
+        <div className="container pb-[60px] pt-[90px] text-center">
+          <h2
+            className="wae-h2 mb-4 font-secondary"
+            data-aos="fade-down"
+          >
+            Join Our Team
+          </h2>
           <p className="wae-h6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo
             auctor, vehicula sem et, tristique mi. Aenean cursus turpis ut erat
@@ -66,7 +68,9 @@ export default function Job() {
                 Apply Now {Icons.ArrowTopRight}
               </button>
             </div>
-            <div data-aos="fade-down">
+            <div
+            // data-aos="fade-down"
+            >
               <div className="mb-10 lg:mb-[60px]">
                 <h6 className="wae-h6 mb-5 font-extrabold">Job Description</h6>
                 <p className="wae-h6">

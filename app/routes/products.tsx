@@ -1,11 +1,6 @@
 import {Link, MetaFunction} from "@remix-run/react";
 import {ProjectSlider} from "~/components";
-import {
-  Icons,
-  productData,
-  ProductsPageListing,
-  SecondaryProducts,
-} from "~/static";
+import {productData} from "~/static";
 
 export const meta: MetaFunction = () => {
   return [
@@ -47,7 +42,7 @@ export default function Products() {
           <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
             <h4
               className="wae-h4 mb-12 font-secondary !leading-[1.4] lg:mb-0"
-              data-aos="fade-right"
+              // data-aos="fade-right"
             >
               At WAE, we're dedicated to developing solutions that are
               fundamentally aligned with the principles of SDG 6: Clean Water
@@ -106,7 +101,7 @@ export default function Products() {
                     </div>
                     <div
                       className="flex flex-col items-start md:basis-1/2"
-                      data-aos="fade-down"
+                      // data-aos="fade-down"
                       data-aos-delay="100"
                     >
                       <div className="mb-14 flex flex-col gap-6">

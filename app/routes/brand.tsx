@@ -158,7 +158,7 @@ export default function Brand() {
         <div className="container grid grid-cols-2 gap-24">
           <div
             className="flex flex-col gap-10 px-4 text-left text-white"
-            data-aos="fade-right"
+            // data-aos="fade-right"
           >
             <h2 className="wae-h3 font-secondary">
               WAE: A Symbol of Unity and Progress
@@ -179,7 +179,7 @@ export default function Brand() {
           </div>
           <div
             className="px-4 text-white"
-            data-aos="fade-left"
+            // data-aos="fade-left"
           >
             <p
               className="wae-h6 max-w-xl text-left font-light uppercase leading-relaxed"
@@ -204,7 +204,7 @@ export default function Brand() {
           >
             <div
               className="flex max-w-screen-lg items-center justify-center gap-x-2"
-              data-aos="fade-down"
+              // data-aos="fade-down"
             >
               <p className="prefix-dot"></p>
               <p className="wae-p text-center text-base uppercase">
@@ -217,18 +217,19 @@ export default function Brand() {
               className="h-full w-full object-cover"
               width={1920}
               height={1080}
-              data-aos="fade-up"
+              data-aos="zoom-in"
+              data-aos-duration="500"
             />
             <div className="grid grid-cols-2 gap-14">
               <h2
                 className="wae-h3 font-secondary uppercase"
-                data-aos="fade-right"
+                // data-aos="fade-right"
               >
                 Gaols of six sigma
               </h2>
               <p
                 className="wae-p"
-                data-aos="fade-left"
+                // data-aos="fade-left"
               >
                 The Six Sigma principles embedded in our logo highlight our
                 dedication to quality and excellence. By reducing defects and
@@ -245,7 +246,7 @@ export default function Brand() {
                 width={540}
                 height={540}
                 className="block shrink-0 object-cover max-xl:mx-auto"
-                data-aos="fade-in"
+                data-aos="zoom-in"
               />
               <div className="flex flex-col justify-between gap-8">
                 {featuresArray.map((feature, idx) => {

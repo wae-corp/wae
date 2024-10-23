@@ -29,7 +29,9 @@ export default function SustainabilityCaseStudy() {
         <div className="container">
           <div className="wae-pb-lg wae-pt-lg container flex items-center 2xl:min-h-screen">
             <div className="flex flex-col gap-8 lg:flex-row lg:gap-[140px]">
-              <div data-aos="fade-right">
+              <div
+              // data-aos="fade-right"
+              >
                 <h3 className="wae-h4 mb-10 font-secondary">
                   Transforming Hydration in the BFSI Sector
                 </h3>
@@ -43,7 +45,7 @@ export default function SustainabilityCaseStudy() {
                 </div>
               </div>
               <div
-                data-aos="fade-left"
+                // data-aos="fade-left"
                 className="flex-shrink-0 lg:max-w-[400px]"
               >
                 <p className="wae-h6 uppercase">
@@ -83,7 +85,9 @@ export default function SustainabilityCaseStudy() {
           >
             <div className="container">
               <div className="wae-mb-lg flex flex-col items-start gap-8 lg:flex-row lg:gap-14">
-                <div data-aos="fade-right">
+                <div
+                // data-aos="fade-right"
+                >
                   <h3 className="wae-h3 mb-8 font-secondary uppercase !leading-normal lg:mb-10 lg:text-[44px]">
                     {champion.title}
                   </h3>
@@ -99,7 +103,7 @@ export default function SustainabilityCaseStudy() {
                   width={600}
                   height={384}
                   className="block shrink-0 object-cover max-xl:mx-auto"
-                  data-aos="fade-in"
+                  data-aos="zoom-in"
                 />
               </div>
 
@@ -134,7 +138,7 @@ export default function SustainabilityCaseStudy() {
 
               <div
                 className="flex justify-center"
-                data-aos="fade-in"
+                // data-aos="fade-in"
                 data-aos-delay="100"
               >
                 <Link
@@ -156,7 +160,7 @@ export default function SustainabilityCaseStudy() {
           <div className="mb-10 flex items-center justify-center py-20 text-center text-black lg:py-40">
             <div
               className="mx-auto"
-              data-aos="fade-down"
+              // data-aos="fade-down"
             >
               <h6 className="uppercase">Why WAE's Green Machines Matter</h6>
 
@@ -173,13 +177,15 @@ export default function SustainabilityCaseStudy() {
           </div>
 
           <h5
-            data-aos="fade-right"
+            // data-aos="fade-right"
             className="wae-h5-lg mb-8 !leading-normal lg:mb-10"
           >
             The Value Proposition:
           </h5>
           <div className="wae-mb-lg wae-gap-lg flex flex-col items-start lg:flex-row">
-            <div data-aos="fade-right">
+            <div
+            // data-aos="fade-right"
+            >
               <div className="mb-8 flex items-start gap-4 lg:mb-[60px]">
                 <div className="prefix-dot mr-0 mt-2"></div>
                 <div>
@@ -214,7 +220,7 @@ export default function SustainabilityCaseStudy() {
               width={500}
               height={384}
               className="block shrink-0 object-cover max-xl:mx-auto"
-              data-aos="fade-in"
+              data-aos="zoom-in"
             />
           </div>
         </div>

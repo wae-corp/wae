@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Company() {
   return (
     <>
-      <main className="bg-above-the-cloud relative flex min-h-screen items-center justify-center bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center">
+      <main className="relative flex min-h-screen items-center justify-center bg-above-the-cloud bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center">
         {/* <div className="container isolate">
           <div
             className="mx-auto mt-40 max-w-[1080px] text-white"
@@ -39,7 +39,7 @@ export default function Company() {
           <div className="lg:wae-gap-lg mx-auto mb-16 flex max-w-[1080px] flex-col justify-between gap-6 sm:flex-row lg:mb-36">
             <div
               className="flex-shrink-0"
-              data-aos="fade-right"
+              // data-aos="fade-right"
             >
               <label className="mb-5 block text-sm uppercase">
                 Mission & Vision
@@ -54,7 +54,7 @@ export default function Company() {
             </div>
             <div
               className="max-w-[650px]"
-              data-aos="fade-left"
+              // data-aos="fade-left"
             >
               <p className="wae-h6">
                 At WAE, we're driven by an audacious and inspiring mission: to
@@ -101,10 +101,10 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="bg-granite-river relative flex min-h-[640px] items-end justify-center bg-cover bg-no-repeat py-24 text-center text-black">
+      <section className="relative flex min-h-[640px] items-end justify-center bg-granite-river bg-cover bg-no-repeat py-24 text-center text-black">
         <div
           className="container isolate"
-          data-aos="fade-down"
+          // data-aos="fade-down"
         >
           <div className="mx-auto max-w-[1080px] text-white 2xl:mt-40">
             <h2 className="mb-8 font-extrabold uppercase">
@@ -129,7 +129,7 @@ export default function Company() {
         <div className="container">
           <div
             className="flex flex-col justify-center gap-6 sm:flex-row lg:justify-between"
-            data-aos="fade-down"
+            // data-aos="fade-down"
           >
             <div className="flex-shrink-0">
               <h4 className="wae-h4 font-secondary uppercase">Brand Purpose</h4>
@@ -152,11 +152,16 @@ export default function Company() {
 
       <section className="wae-pt-lg wae-pb-lg container">
         <div className="flex flex-col gap-8 sm:flex-row">
-          <div data-aos="fade-right">
+          <div
+          // data-aos="fade-right"
+          >
             <h3 className="wae-h4 mb-10 font-secondary">
               Journey and Transformation
             </h3>
-            <p className="mb-10 uppercase lg:ml-28 lg:max-w-[80%]">
+            <p
+              className="mb-10 uppercase lg:ml-28 lg:max-w-[80%]"
+              data-aos="fade-right"
+            >
               Our journey has been a rewarding one, contributing to a
               sustainable planet where everyone can thrive. Looking ahead, our
               transformation will be guided by our capabilities, strategic
@@ -172,7 +177,7 @@ export default function Company() {
           </div>
           <div
             className="max-w-[400px] flex-shrink-0"
-            data-aos="fade-left"
+            data-aos="zoom-in"
           >
             <img
               src="/images/covers/bowl-with-chopsticks.jpg"

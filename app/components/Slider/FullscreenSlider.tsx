@@ -103,7 +103,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
             />
 
             <div
-              data-aos="fade-up"
+              data-aos="zoom-in"
               className={clsx("isolate z-[2] mx-auto text-center text-white", {
                 "max-w-[850px]": !item.isHeadingMax,
                 "max-w-[1200px]": item.isHeadingMax,

@@ -55,6 +55,7 @@ export default function Blogs() {
             src="/images/covers/blog-hero-banner.png"
             alt="Blog hero banner"
             className="min-h-3/5 mb-6 w-full"
+            data-aos="zoom-in"
           />
           <div className="flex flex-col">
             <h3 className="mb-10 align-middle font-medium uppercase xl:mb-[60px]">

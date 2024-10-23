@@ -74,7 +74,7 @@ export default function BrowseProducts() {
           <div className="gap-8 sm:flex lg:gap-[140px]">
             <div
               className="flex flex-col items-start justify-start md:col-span-8"
-              data-aos="fade-right"
+              // data-aos="fade-right"
             >
               <h3 className="wae-h4 mb-12 font-secondary">
                 {currentCategory?.categoryName}
@@ -92,7 +92,7 @@ export default function BrowseProducts() {
             </div>
             <div
               className="mt-10 sm:mt-0 lg:max-w-[400px]"
-              data-aos="fade-left"
+              // data-aos="fade-left"
             >
               <p className="wae-h6-lg uppercase">
                 {currentCategory?.categoryDescriptionThree}

@@ -265,7 +265,7 @@ export default function Index() {
         <section className="container">
           <p
             className="mb-12 text-sm uppercase"
-            data-aos="fade-right"
+            // data-aos="fade-right"
           >
             WHO WE ARE
           </p>
@@ -273,7 +273,7 @@ export default function Index() {
           <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
             <h4
               className="wae-h4 mb-12 font-secondary lg:mb-0"
-              data-aos="fade-right"
+              // data-aos="fade-right"
             >
               WAE is an activist company passionately committed to protecting
               our most vital resource—water. We advocate for sustainable
@@ -296,9 +296,12 @@ export default function Index() {
 
         <section className="container">
           <div className="flex flex-col gap-8 lg:flex-row lg:gap-[120px]">
-            <div data-aos="fade-right">
+            <div>
               <h3 className="wae-h4 mb-10 font-secondary">Made in India</h3>
-              <p className="mb-10 uppercase md:ml-28 lg:max-w-[80%]">
+              <p
+                className="mb-10 uppercase md:ml-28 lg:max-w-[80%]"
+                data-aos="fade-right"
+              >
                 WAE proudly represents India's spirit of innovation, combining
                 traditional wisdom with advanced technology to create solutions
                 that drive sustainable progress. Our 'Made in India' approach is
@@ -308,7 +311,7 @@ export default function Index() {
               </p>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="zoom-in"
               className="flex-shrink-0 pl-8 lg:max-w-[400px] lg:pl-0"
             >
               <img
@@ -384,7 +387,9 @@ export default function Index() {
       <section className="wae-pb-lg wae-pt-lg bg-man-in-shadow bg-cover bg-no-repeat text-white 2xl:min-h-screen">
         <div className="container">
           <div className="flex flex-col gap-8 lg:w-full lg:flex-row lg:justify-between lg:gap-[140px]">
-            <div data-aos="fade-right">
+            <div
+            // data-aos="fade-right"
+            >
               <h3 className="wae-h4 mb-10 font-secondary">Life @ wae</h3>
               <div className="flex items-center gap-4">
                 <div className="prefix-dot"></div>
@@ -392,7 +397,7 @@ export default function Index() {
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              // data-aos="fade-left"
               className="flex-shrink-0 lg:max-w-[400px]"
             >
               <p className="wae-h6 uppercase">

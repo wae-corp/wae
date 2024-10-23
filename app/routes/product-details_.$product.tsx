@@ -57,7 +57,7 @@ export default function ProductDetails() {
         <div className="container-lg">
           <div
             className="max-w-3xl"
-            data-aos="fade-down"
+            // data-aos="fade-down"
           >
             <h6 className="wae-h6 mb-4 font-extrabold uppercase">{name}</h6>
 
@@ -74,11 +74,13 @@ export default function ProductDetails() {
           <div className="flex flex-col items-center gap-10 xl:flex-row xl:items-start xl:justify-start">
             <div
               className="flex max-w-[600px] flex-shrink-0 justify-center"
-              data-aos="fade-right"
+              // data-aos="zoom-in"
             >
               <ProductImageSlider images={image} />
             </div>
-            <div data-aos="fade-left">
+            <div
+            // data-aos="fade-left"
+            >
               <h6 className="wae-h6-lg mb-5 font-light md:mb-10">
                 Ligature-resistant
               </h6>

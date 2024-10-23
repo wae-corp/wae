@@ -30,6 +30,7 @@ export const ProductImageSlider = ({images}: ProductDetailImageSliderProps) => {
                 src={image}
                 alt={`Product ${idx}`}
                 className="mx-auto block aspect-square object-cover"
+                data-aos="zoom-in"
               />
             </Carousel.Slide>
           );

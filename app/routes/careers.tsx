@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Careers() {
   return (
     <>
-      <main className="bg-hands-pointing-on-table flex flex-col items-center bg-black bg-cover bg-no-repeat pt-[var(--header-height)] text-white">
+      <main className="flex flex-col items-center bg-black bg-hands-pointing-on-table bg-cover bg-no-repeat pt-[var(--header-height)] text-white">
         <div className="container flex max-w-[1100px] items-center pb-10 xl:min-h-[550px]">
           <div
             className="text-center"
@@ -38,7 +38,9 @@ export default function Careers() {
       <div className="wae-pb-lg wae-pt-lg flex items-center bg-black text-white">
         <div className="container">
           <div className="flex flex-col gap-8 lg:flex-row">
-            <div data-aos="fade-right">
+            <div
+            // data-aos="fade-right"
+            >
               <h3 className="wae-h4 mb-10 font-secondary">Life at WAE</h3>
               <p className="mb-10 uppercase lg:ml-28 lg:max-w-[80%]">
                 Life at WAE is vibrant and inspiring. Our culture is a tapestry
@@ -50,7 +52,7 @@ export default function Careers() {
               </p>
             </div>
             <div
-              data-aos="fade-left"
+              // data-aos="fade-left"
               className="flex-shrink-0 lg:max-w-[400px] lg:pl-8"
             >
               <p className="wae-h6-lg uppercase">
@@ -121,7 +123,7 @@ export default function Careers() {
                 >
                   <div
                     className="flex-shrink-0 md:basis-1/2"
-                    data-aos="fade-down"
+                    data-aos="zoom-in"
                   >
                     <img
                       src={career.image}
@@ -133,8 +135,8 @@ export default function Careers() {
                   </div>
                   <div
                     className="md:basis-1/2"
-                    data-aos="fade-down"
-                    data-aos-delay="100"
+                    // data-aos="fade-down"
+                    // data-aos-delay="100"
                   >
                     <div className="mb-14 flex flex-col gap-8 lg:gap-10">
                       <h5 className="wae-h6-lg font-extrabold uppercase">

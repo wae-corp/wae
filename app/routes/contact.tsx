@@ -190,7 +190,7 @@ export default function Contact() {
           <section className="wae-mb-md wae-pt-md">
             <div
               className="text-center"
-              data-aos="fade-down"
+              // data-aos="fade-down"
             >
               <h6 className="wae-h6 mb-8">Contact Us</h6>
 
@@ -212,7 +212,7 @@ export default function Contact() {
           <section className="mb-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 sm:gap-y-[100px] md:mb-[100px]">
             <div
               className="text-center"
-              data-aos="fade-down"
+              // data-aos="fade-down"
             >
               <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
                 Noida Office
@@ -225,7 +225,7 @@ export default function Contact() {
             </div>
             <div
               className="text-center"
-              data-aos="fade-down"
+              // data-aos="fade-down"
             >
               <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
                 Mumbai Office
@@ -241,7 +241,7 @@ export default function Contact() {
             </div>
             <div
               className="text-center"
-              data-aos="fade-down"
+              // data-aos="fade-down"
             >
               <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
                 Hyderabad Office
@@ -256,7 +256,7 @@ export default function Contact() {
             </div>
             <div
               className="text-center"
-              data-aos="fade-down"
+              // data-aos="fade-down"
             >
               <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
                 Bengaluru Office
@@ -294,6 +294,7 @@ export default function Contact() {
               className="mx-auto object-contain"
               width={1920}
               height={532}
+              data-aos="zoom-in"
             />
           </section>
         </div>
