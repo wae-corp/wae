@@ -89,7 +89,7 @@ export default function Products() {
                   >
                     <div
                       className="flex-shrink-0 md:basis-1/2"
-                      data-aos="fade-down"
+                      data-aos="zoom-in"
                     >
                       <img
                         src={category.categoryImage}
