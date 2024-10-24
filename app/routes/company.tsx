@@ -179,7 +179,7 @@ export default function Company() {
             </h3>
             <p
               className="mb-10 uppercase lg:ml-28 lg:max-w-[80%]"
-              data-aos="fade-right"
+              // data-aos="fade-right"
             >
               Our journey has been a rewarding one, contributing to a
               sustainable planet where everyone can thrive. Looking ahead, our
