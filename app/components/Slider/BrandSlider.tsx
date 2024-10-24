@@ -3,7 +3,7 @@ import Autoplay from "embla-carousel-autoplay";
 import {useRef} from "react";
 
 export const BrandSlider = ({brandsList}: {brandsList: string[]}) => {
-  const autoplay = useRef(Autoplay({delay: 1500}));
+  const autoplay = useRef(Autoplay({delay: 2500}));
 
   return (
     <Carousel

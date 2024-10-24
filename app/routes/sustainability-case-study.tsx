@@ -1,5 +1,6 @@
 import {Link, MetaFunction} from "@remix-run/react";
 import clsx from "clsx";
+import {Counter} from "~/components/Counter";
 import {championsSpotlight, Icons} from "~/static";
 
 export const meta: MetaFunction = () => {
@@ -103,7 +104,10 @@ export default function SustainabilityCaseStudy() {
                   width={600}
                   height={384}
                   className="block shrink-0 object-cover max-xl:mx-auto"
-                  data-aos="zoom-in"
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-offset="200"
+                  data-aos-duration="500"
                 />
               </div>
 
@@ -122,7 +126,12 @@ export default function SustainabilityCaseStudy() {
                     data-aos-delay={`${idx}00`}
                   >
                     <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
-                      {achievment.title}
+                      <Counter
+                        end={achievment.title}
+                        duration={1}
+                        separator=","
+                      />{" "}
+                      {achievment.unit}
                     </h2>
                     <p className="uppercase">{achievment.subtitle}</p>
                   </div>
@@ -220,7 +229,10 @@ export default function SustainabilityCaseStudy() {
               width={500}
               height={384}
               className="block shrink-0 object-cover max-xl:mx-auto"
-              data-aos="zoom-in"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="200"
+              data-aos-duration="500"
             />
           </div>
         </div>

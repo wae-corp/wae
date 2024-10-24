@@ -16,6 +16,7 @@ export default {
           "url('/images/covers/water-machine-near-wall.jpg')",
         "granite-river": "url('/images/covers/granite-river.jpg')",
         "above-the-cloud": "url('/images/covers/above-the-clouds.jpg')",
+        "company-banner": "url('/images/covers/company-banner.jpg')",
         "man-in-shadow": "url('/images/covers/man-in-shadow.jpg')",
         "hands-pointing-on-table":
           "url('/images/covers/hands-pointing-on-table.jpg')",

@@ -217,7 +217,9 @@ export default function Brand() {
               className="h-full w-full object-cover"
               width={1920}
               height={1080}
-              data-aos="zoom-in"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="200"
               data-aos-duration="500"
             />
             <div className="grid grid-cols-2 gap-14">
@@ -246,7 +248,10 @@ export default function Brand() {
                 width={540}
                 height={540}
                 className="block shrink-0 object-cover max-xl:mx-auto"
-                data-aos="zoom-in"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-offset="200"
+                data-aos-duration="500"
               />
               <div className="flex flex-col justify-between gap-8">
                 {featuresArray.map((feature, idx) => {

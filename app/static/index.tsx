@@ -426,17 +426,20 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "14,173 kg",
+        title: 14173,
+        unit: "kg",
         subtitle: "plastic waste Removed",
       },
       {
         id: 2,
-        title: "16.5m litres",
+        title: 16.5,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 3,
-        title: "94,000 kg",
+        title: 94000,
+        unit: "kg",
         subtitle: "CO2 emissions reduced",
       },
     ],
@@ -452,12 +455,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "17m litres",
+        title: 17,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 2,
-        title: "98,000 kg",
+        title: 98000,
+        unit: "kg",
         subtitle: "CO2 emissions reduced",
       },
     ],
@@ -473,12 +478,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "23m litres",
+        title: 23,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 2,
-        title: "132,000 kg",
+        title: 132000,
+        unit: "kg",
         subtitle: "CO2 emissions reduced",
       },
     ],
@@ -495,12 +502,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "55m litres",
+        title: 55,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 2,
-        title: "315,000 kg",
+        title: 315000,
+        unit: "kg",
         subtitle: "CO2 emissions reduced",
       },
     ],
@@ -516,12 +525,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "53m litres",
+        title: 53,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 2,
-        title: "299,000 kg",
+        title: 299000,
+        unit: "kg",
         subtitle: "CO2 emissions reduced",
       },
     ],
@@ -538,12 +549,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "105m litres",
+        title: 105,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 2,
-        title: "90,288 kg",
+        title: 90288,
+        unit: "kg",
         subtitle: "plastic waste Removed",
       },
     ],
@@ -560,12 +573,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "50m litres",
+        title: 50,
+        unit: "m litres",
         subtitle: "plastic waste Removed",
       },
       {
         id: 2,
-        title: "283,000 kg",
+        title: 283000,
+        unit: "kg",
         subtitle: "Water saved annually",
       },
     ],
@@ -582,12 +597,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "18m litres",
+        title: 18,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 2,
-        title: "103,000 kg",
+        title: 103000,
+        unit: "kg",
         subtitle: "CO2 emissions reduced",
       },
     ],
@@ -604,12 +621,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "26m litres",
+        title: 26,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 2,
-        title: "21,978 kg",
+        title: 21978,
+        unit: "kg",
         subtitle: "plastic waste Removed",
       },
     ],
@@ -626,12 +645,14 @@ export const championsSpotlight = [
     achievments: [
       {
         id: 1,
-        title: "27m litres",
+        title: 27,
+        unit: "m litres",
         subtitle: "Water saved annually",
       },
       {
         id: 2,
-        title: "154,000 kg",
+        title: 154000,
+        unit: "kg",
         subtitle: "CO2 emissions reduced",
       },
     ],

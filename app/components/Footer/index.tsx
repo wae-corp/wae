@@ -216,7 +216,8 @@ export const Footer = () => {
                 className="mb-6 block font-secondary text-base uppercase"
               >
                 Join our community to stay updated on our latest news and
-                innovative water projects. Subscribe to Our Newsletter
+                innovative <br />
+                water projects. Subscribe to Our Newsletter
               </label>
 
               <formFetcher.Form

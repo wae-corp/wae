@@ -76,7 +76,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
       className="relative"
       classNames={{
         indicators: "gap-3",
-        indicator: "indicator-dot w-3 h-3 bg-[#666666]",
+        indicator: "indicator-dot w-2 h-2 bg-[#666666]",
         control: "bg-transparent text-white border-none opacity-100",
       }}
     >

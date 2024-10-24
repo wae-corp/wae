@@ -15,6 +15,8 @@ import {Icons, ProductList} from "~/static";
 import {getErrorFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {appendLandingLeadIntoSheet} from "~/backend/googleSheet.server";
 import {z} from "zod";
+import CountUp from "react-countup";
+import {Counter} from "~/components/Counter";
 
 type EnquiryType = "Corporate" | "Architect" | "Consultant" | "Curious" | null;
 
@@ -207,17 +209,17 @@ export default function Index() {
   const specifications = [
     {
       id: 1,
-      title: "1,012,120.25",
+      title: 1012120.25,
       details: "Tonnes CO2 Emissions Saved",
     },
     {
       id: 2,
-      title: "12,185.43",
+      title: 12185.43,
       details: "million gallons Water Saved",
     },
     {
       id: 3,
-      title: "22,253.65",
+      title: 22253.65,
       details: "Tonnes Plastic Removed",
     },
   ];
@@ -300,7 +302,7 @@ export default function Index() {
               <h3 className="wae-h4 mb-10 font-secondary">Made in India</h3>
               <p
                 className="mb-10 uppercase md:ml-28 lg:max-w-[80%]"
-                data-aos="fade-right"
+                // data-aos="fade-right"
               >
                 WAE proudly represents India's spirit of innovation, combining
                 traditional wisdom with advanced technology to create solutions
@@ -311,7 +313,10 @@ export default function Index() {
               </p>
             </div>
             <div
-              data-aos="zoom-in"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="200"
+              data-aos-duration="500"
               className="flex-shrink-0 pl-8 lg:max-w-[400px] lg:pl-0"
             >
               <img
@@ -358,7 +363,16 @@ export default function Index() {
                   data-aos="fade-in"
                   data-aos-delay={`${idx}00`}
                 >
-                  <div className="wae-h2 mb-5 font-secondary">{spec.title}</div>
+                  <div className="wae-h2 mb-5 font-secondary">
+                    {/* {spec.title} */}
+                    <Counter
+                      end={spec.title}
+                      duration={0.8}
+                      separator=","
+                      decimals={2}
+                      decimal="."
+                    />
+                  </div>
 
                   <div className="font-extralight uppercase">
                     {spec.details}
@@ -584,7 +598,13 @@ export default function Index() {
                             htmlFor={`${type}-enquiry`}
                             className="flex h-full w-full cursor-pointer items-center justify-center rounded-xl border border-black bg-transparent transition-colors hover:bg-black hover:text-white peer-checked:bg-black peer-checked:text-white"
                           >
-                            A {type}
+                            {type === "Corporate"
+                              ? "A Corporate"
+                              : type === "Architect"
+                                ? "An Architect"
+                                : type === "Consultant"
+                                  ? "A Consultant"
+                                  : "Just Curious"}
                           </label>
                         </div>
                       ),

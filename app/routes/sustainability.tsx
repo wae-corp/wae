@@ -1,5 +1,6 @@
 import {Link, MetaFunction} from "@remix-run/react";
 import PropTypes from "prop-types";
+import {Counter} from "~/components/Counter";
 
 type SolutionItem = {
   title: string;
@@ -132,21 +133,41 @@ export default function Sustainability() {
               </div>
 
               <div className="text-center">
-                <p className="wae-h2 font-secondary">57,36,591 KG</p>
+                <p className="wae-h2 font-secondary">
+                  <Counter
+                    end={5736591}
+                    duration={0.8}
+                    separator=","
+                  />{" "}
+                  KG
+                </p>
                 <p className="mt-2 text-xl font-light uppercase">
                   CO2E EMISSIONS ELIMINATED
                 </p>
               </div>
 
               <div className="text-center">
-                <p className="wae-h2 font-secondary">9,00,000</p>
+                <p className="wae-h2 font-secondary">
+                  <Counter
+                    end={900000}
+                    duration={0.8}
+                    separator=","
+                  />
+                </p>
                 <p className="mt-2 text-xl font-light uppercase">
                   PLASTIC WATER JARS ERADICATED
                 </p>
               </div>
 
               <div className="text-center md:col-span-2 lg:col-span-1">
-                <p className="wae-h2 font-secondary">92M LITERS</p>
+                <p className="wae-h2 font-secondary">
+                  <Counter
+                    end={92}
+                    duration={0.8}
+                    separator=","
+                  />
+                  M LITERS
+                </p>
                 <p className="mt-2 text-xl font-light uppercase">
                   OF WATER CONSERVED
                 </p>
@@ -231,7 +252,10 @@ export default function Sustainability() {
                 >
                   <div
                     className="flex-shrink-0 md:basis-1/2"
-                    data-aos="zoom-in"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-offset="200"
+                    data-aos-duration="500"
                   >
                     <img
                       src={solution.imageSrc}
@@ -292,7 +316,10 @@ export default function Sustainability() {
           </div>
           <div
             className="mt-8 flex justify-center md:mt-0 md:w-1/2"
-            data-aos="zoom-in"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="200"
+            data-aos-duration="500"
           >
             <img
               src="/images/covers/our-culture.png"

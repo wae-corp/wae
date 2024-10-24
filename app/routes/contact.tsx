@@ -294,7 +294,10 @@ export default function Contact() {
               className="mx-auto object-contain"
               width={1920}
               height={532}
-              data-aos="zoom-in"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="200"
+              data-aos-duration="500"
             />
           </section>
         </div>

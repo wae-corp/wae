@@ -1,5 +1,6 @@
 import {MetaFunction} from "@remix-run/react";
 import {ProjectSlider} from "~/components";
+import {Counter} from "~/components/Counter";
 import {coreValues, SecondaryProducts} from "~/static";
 
 export const meta: MetaFunction = () => {
@@ -13,7 +14,7 @@ export const meta: MetaFunction = () => {
 export default function Company() {
   return (
     <>
-      <main className="relative flex min-h-screen items-center justify-center bg-above-the-cloud bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center">
+      <main className="relative flex min-h-screen items-center justify-center bg-company-banner bg-cover bg-no-repeat py-8 pt-[var(--header-height)] text-center">
         {/* <div className="container isolate">
           <div
             className="mx-auto mt-40 max-w-[1080px] text-white"
@@ -75,7 +76,13 @@ export default function Company() {
               data-aos="fade-up"
             >
               <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
-                1,012,120.25
+                <Counter
+                  end={1012120.25}
+                  duration={0.8}
+                  separator=","
+                  decimals={2}
+                  decimal="."
+                />
               </h2>
               <p className="uppercase">Tonnes CO2 Emissions Saved</p>
             </div>
@@ -84,7 +91,13 @@ export default function Company() {
               data-aos="fade-up"
             >
               <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
-                12,185.43
+                <Counter
+                  end={12185.43}
+                  duration={0.8}
+                  separator=","
+                  decimals={2}
+                  decimal="."
+                />
               </h2>
               <p className="uppercase">million gallons Water Saved</p>
             </div>
@@ -93,7 +106,13 @@ export default function Company() {
               data-aos="fade-up"
             >
               <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
-                22,253.65
+                <Counter
+                  end={22253.65}
+                  duration={0.8}
+                  separator=","
+                  decimals={2}
+                  decimal="."
+                />
               </h2>
               <p className="uppercase">Tonnes Plastic Removed</p>
             </div>
@@ -177,7 +196,10 @@ export default function Company() {
           </div>
           <div
             className="max-w-[400px] flex-shrink-0"
-            data-aos="zoom-in"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="200"
+            data-aos-duration="500"
           >
             <img
               src="/images/covers/bowl-with-chopsticks.jpg"

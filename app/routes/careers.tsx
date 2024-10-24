@@ -11,6 +11,12 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Careers() {
+  const images = [
+    "career-1.png",
+    "career-2.png",
+    "career-3.png",
+    "career-4.png",
+  ];
   return (
     <>
       <main className="flex flex-col items-center bg-black bg-hands-pointing-on-table bg-cover bg-no-repeat pt-[var(--header-height)] text-white">
@@ -71,29 +77,29 @@ export default function Careers() {
       <section className="wae-pt-md wae-pb-md bg-window-pattern bg-cover bg-no-repeat md:py-40">
         <Carousel
           align={"start"}
+          slidesToScroll={1}
           loop={true}
+          slideSize="25%"
           classNames={{
-            slide: "basis-[370px] mr-14",
+            slide: "mr-8",
             controls: "hidden",
           }}
         >
-          {new Array(10).fill("").map((slide, idx) => {
-            return (
-              <Carousel.Slide
-                key={idx}
-                data-aos="fade-in"
-                data-aos-delay={`${idx}00`}
-              >
-                <img
-                  src={"/images/covers/bowl-with-chopsticks.jpg"}
-                  width={370}
-                  height={450}
-                  className="object-cover"
-                  alt=""
-                />
-              </Carousel.Slide>
-            );
-          })}
+          {images.concat(images).map((image, idx) => (
+            <Carousel.Slide
+              key={idx}
+              data-aos="fade-in"
+              data-aos-delay={`${idx}00`}
+            >
+              <img
+                src={`/images/cards/` + image}
+                width={370}
+                height={450}
+                className="object-cover"
+                alt={image}
+              />
+            </Carousel.Slide>
+          ))}
         </Carousel>
 
         <section className="wae-mt-lg container max-w-[1080px]">
@@ -123,7 +129,10 @@ export default function Careers() {
                 >
                   <div
                     className="flex-shrink-0 md:basis-1/2"
-                    data-aos="zoom-in"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-offset="200"
+                    data-aos-duration="500"
                   >
                     <img
                       src={career.image}
