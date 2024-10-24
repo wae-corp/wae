@@ -136,7 +136,7 @@ export default function Sustainability() {
                 <p className="wae-h2 font-secondary">
                   <Counter
                     end={5736591}
-                    duration={0.8}
+                    duration={1}
                     separator=","
                   />{" "}
                   KG
@@ -150,7 +150,7 @@ export default function Sustainability() {
                 <p className="wae-h2 font-secondary">
                   <Counter
                     end={900000}
-                    duration={0.8}
+                    duration={1}
                     separator=","
                   />
                 </p>
@@ -163,7 +163,7 @@ export default function Sustainability() {
                 <p className="wae-h2 font-secondary">
                   <Counter
                     end={92}
-                    duration={0.8}
+                    duration={1}
                     separator=","
                   />
                   M LITERS

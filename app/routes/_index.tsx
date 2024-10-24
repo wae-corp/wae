@@ -367,7 +367,7 @@ export default function Index() {
                     {/* {spec.title} */}
                     <Counter
                       end={spec.title}
-                      duration={0.8}
+                      duration={1}
                       separator=","
                       decimals={2}
                       decimal="."

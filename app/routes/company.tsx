@@ -78,7 +78,7 @@ export default function Company() {
               <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
                 <Counter
                   end={1012120.25}
-                  duration={0.8}
+                  duration={1}
                   separator=","
                   decimals={2}
                   decimal="."
@@ -93,7 +93,7 @@ export default function Company() {
               <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
                 <Counter
                   end={12185.43}
-                  duration={0.8}
+                  duration={1}
                   separator=","
                   decimals={2}
                   decimal="."
@@ -108,7 +108,7 @@ export default function Company() {
               <h2 className="mb-5 font-secondary text-4xl uppercase lg:text-[50px]">
                 <Counter
                   end={22253.65}
-                  duration={0.8}
+                  duration={1}
                   separator=","
                   decimals={2}
                   decimal="."
