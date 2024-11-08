@@ -42,7 +42,7 @@ export default function Job() {
           </p>
         </div>
         <img
-          src="/images/covers/washing-hands.jpg"
+          src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d460dc5c-4c38-421d-befc-c6b02c473900/public"
           alt="Washing Hands"
           width={1920}
           height={450}

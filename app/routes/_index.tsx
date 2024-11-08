@@ -46,7 +46,8 @@ const sliderItemList = [
     isHeadingMax: false,
   },
   {
-    image: "/images/covers/brand-bg.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4a6698c-b208-4a19-0de1-33dace0f1200/public",
     title:
       "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
     subtitle: "NEPTUNE DUO",
@@ -55,7 +56,8 @@ const sliderItemList = [
     isHeadingMax: false,
   },
   {
-    image: "/images/covers/above-the-clouds.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f96667c7-d0bb-48fe-9108-a8420e88dd00/public",
     title:
       "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
     subtitle: "NEPTUNE DUO",
@@ -320,7 +322,7 @@ export default function Index() {
               className="flex-shrink-0 pl-8 lg:max-w-[400px] lg:pl-0"
             >
               <img
-                src="/images/covers/gray-meshed-backdrop.jpg"
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dbf8595a-24c0-49f4-883a-0692dd6a8500/public"
                 alt="gray-meshed-backdrop"
                 width={370}
                 height={460}

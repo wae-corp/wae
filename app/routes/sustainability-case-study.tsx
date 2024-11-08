@@ -224,7 +224,7 @@ export default function SustainabilityCaseStudy() {
               </div>
             </div>
             <img
-              src="/images/covers/beaker-on-table.jpg"
+              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cc74550e-f3cc-43d5-f17c-c308b81ab800/public"
               alt="Beaker on table"
               width={500}
               height={384}

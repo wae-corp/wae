@@ -202,7 +202,7 @@ export default function Company() {
             data-aos-duration="500"
           >
             <img
-              src="/images/covers/bowl-with-chopsticks.jpg"
+              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/aa47da1c-d5f9-452e-d43e-9c6f19b75500/public"
               alt="bowl-with-chopsticks"
               width={370}
               height={460}

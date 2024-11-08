@@ -47,7 +47,7 @@ export default function Brand() {
       <main className="relative flex h-screen flex-col items-center justify-end pb-10 pt-[var(--header-height)]">
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <img
-            src="/images/covers/brand-bg.jpg"
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4a6698c-b208-4a19-0de1-33dace0f1200/public"
             alt="brand background"
             className="h-full w-full object-cover"
             width={1920}
@@ -148,7 +148,7 @@ export default function Brand() {
       <section className="relative flex h-screen flex-col items-center justify-center pb-10 pt-[var(--header-height)]">
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <img
-            src="/images/covers/brand-symbol.jpg"
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0c48a418-ce7a-4020-6be9-d6f8f399a000/public"
             alt="brand symbol"
             className="h-full w-full object-cover"
             width={1920}
@@ -212,7 +212,7 @@ export default function Brand() {
               </p>
             </div>
             <img
-              src="/images/covers/core-values.png"
+              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f78f2987-6585-44e5-40c9-3fb1ac0acc00/public"
               alt="brand background"
               className="h-full w-full object-cover"
               width={1920}

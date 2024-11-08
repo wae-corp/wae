@@ -289,7 +289,9 @@ export default function Contact() {
             </div>
 
             <img
-              src={"/images/covers/map.png"}
+              src={
+                "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/71d65005-cecd-4cd1-c00d-d86785514700/public"
+              }
               alt="Map of countries where we have presence"
               className="mx-auto object-contain"
               width={1920}

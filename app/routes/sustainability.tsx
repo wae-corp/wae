@@ -322,7 +322,7 @@ export default function Sustainability() {
             data-aos-duration="500"
           >
             <img
-              src="/images/covers/our-culture.png"
+              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ca3b50b9-5e3d-4344-732e-f4fb5f975400/public"
               alt="Team Culture"
               className="w-full max-w-md shadow-lg"
             />

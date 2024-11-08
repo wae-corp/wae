@@ -17,7 +17,8 @@ export default function Blogs() {
       category: "General",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo auctor, vehicula sem et, tristique mi. Aenean cursus turpis ut erat suscipit, ac imperdiet nibh facilisis.",
-      imageUrl: "/images/covers/blog-card.png",
+      imageUrl:
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
     },
     {
       id: 2,
@@ -26,7 +27,8 @@ export default function Blogs() {
       category: "Technology",
       description:
         "Pellentesque nec libero sed nisl lacinia feugiat. Donec ac lacus ultricies, gravida metus vitae, pharetra felis.",
-      imageUrl: "/images/covers/blog-card.png",
+      imageUrl:
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
     },
     {
       id: 3,
@@ -35,7 +37,8 @@ export default function Blogs() {
       category: "General",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo auctor, vehicula sem et, tristique mi. Aenean cursus turpis ut erat suscipit, ac imperdiet nibh facilisis.",
-      imageUrl: "/images/covers/blog-card.png",
+      imageUrl:
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
     },
     {
       id: 4,
@@ -44,7 +47,8 @@ export default function Blogs() {
       category: "Management",
       description:
         "Pellentesque nec libero sed nisl lacinia feugiat. Donec ac lacus ultricies, gravida metus vitae, pharetra felis.",
-      imageUrl: "/images/covers/blog-card.png",
+      imageUrl:
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
     },
   ];
   return (
@@ -52,7 +56,7 @@ export default function Blogs() {
       <div className="container my-14 flex max-w-screen-xl flex-col justify-center">
         <section>
           <img
-            src="/images/covers/blog-hero-banner.png"
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/7470b245-fdde-4302-b0af-00d7dc136a00/public"
             alt="Blog hero banner"
             className="min-h-3/5 mb-6 w-full"
             data-aos="fade-zoom-in"

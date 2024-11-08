@@ -7,43 +7,50 @@ export const ProductList: Product[] = [
     id: "1",
     name: "Drinking Water Station",
     link: "/",
-    image: "/images/covers/drinking-water-station.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
   },
   {
     id: "2",
     name: "Drinking Water Station",
     link: "/",
-    image: "/images/covers/drinking-water-station.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
   },
   {
     id: "3",
     name: "Drinking Water Station",
     link: "/",
-    image: "/images/covers/drinking-water-station.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
   },
   {
     id: "4",
     name: "Drinking Water Station",
     link: "/",
-    image: "/images/covers/drinking-water-station.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
   },
   {
     id: "5",
     name: "Drinking Water Station",
     link: "/",
-    image: "/images/covers/drinking-water-station.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
   },
   {
     id: "6",
     name: "Drinking Water Station",
     link: "/",
-    image: "/images/covers/drinking-water-station.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
   },
   {
     id: "7",
     name: "Drinking Water Station",
     link: "/",
-    image: "/images/covers/drinking-water-station.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
   },
 ];
 
@@ -52,50 +59,58 @@ export const SecondaryProducts: Product[] = [
     id: "1",
     name: "YOU SEE EVERYONE",
     link: "/",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
   },
   {
     id: "2",
     name: "YOU SEE EVERYONE",
     link: "/",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
   },
   {
     id: "3",
     name: "YOU SEE EVERYONE",
     link: "/",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
   },
   {
     id: "4",
     name: "YOU SEE EVERYONE",
     link: "/",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
   },
   {
     id: "5",
     name: "YOU SEE EVERYONE",
     link: "/",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
   },
   {
     id: "6",
     name: "YOU SEE EVERYONE",
     link: "/",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
   },
   {
     id: "7",
     name: "YOU SEE EVERYONE",
     link: "/",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
   },
 ];
 
 export const productsByApplication: Product[] = [
   {
     id: "1",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
     details: (
       <div className="mt-5">
@@ -115,7 +130,8 @@ export const productsByApplication: Product[] = [
   },
   {
     id: "2",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
     details: (
       <div className="mt-5">
@@ -135,7 +151,8 @@ export const productsByApplication: Product[] = [
   },
   {
     id: "3",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
     details: (
       <div className="mt-5">
@@ -155,7 +172,8 @@ export const productsByApplication: Product[] = [
   },
   {
     id: "4",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
     details: (
       <div className="mt-5">
@@ -175,7 +193,8 @@ export const productsByApplication: Product[] = [
   },
   {
     id: "5",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
     details: (
       <div className="mt-5">
@@ -195,7 +214,8 @@ export const productsByApplication: Product[] = [
   },
   {
     id: "6",
-    image: "/images/covers/vending-machine-near-wall.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
     details: (
       <div className="mt-5">
@@ -300,8 +320,8 @@ export const ProductsPageListing = [
 ];
 
 export const ProductImageSliderData = [
-  "/images/covers/trublu.jpg",
-  "/images/covers/trublu.jpg",
+  "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+  "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
 ];
 
 export const specifications = [
@@ -344,7 +364,8 @@ export const careers = [
     details:
       "Step into the professional world with hands-on experience and expert mentorship. Ideal for those eager to learn and grow.",
     link: "/careers/apprenticeship",
-    image: "/images/covers/bridge.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3101c190-ebdc-4e39-16d0-a79cef6a0e00/public",
   },
   {
     id: 2,
@@ -352,7 +373,8 @@ export const careers = [
     details:
       "Dive into diverse roles that challenge and excite you. From engineering to marketing, we are on the lookout for passionate professionals ready to innovate.",
     link: "/careers/full-time",
-    image: "/images/covers/curves.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dc8fc541-4998-4084-1d3f-620b9d5e1f00/public",
   },
   {
     id: 3,
@@ -360,7 +382,8 @@ export const careers = [
     details:
       "Our internships offer more than just experience. They're gateways to your future career, providing real-world skills and professional development.",
     link: "/careers/internship",
-    image: "/images/covers/straight-road.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e7c9f066-cf23-4012-2342-0161f4f52b00/public",
   },
   {
     id: 4,
@@ -368,7 +391,8 @@ export const careers = [
     details:
       "Engage in unique, high-impact projects. Perfect for specialists looking to contribute their expertise on a flexible basis.",
     link: "/careers/short-term",
-    image: "/images/covers/road-stop.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3a620cb2-0eb9-41e1-b854-85428c926d00/public",
   },
 ];
 
@@ -418,7 +442,8 @@ export const coreValues = [
 export const championsSpotlight = [
   {
     id: 1,
-    image: "/images/covers/citibank.png",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/02e2d2f7-c2d4-4d19-be69-1684be511000/public",
     title: "Citibank: Banking on a Greener Tomorrow",
     subtitle:
       "Citibank has deployed 105 water-refill stations across its Indian offices, turning everyday hydration into an act of environmental stewardship.",
@@ -447,7 +472,8 @@ export const championsSpotlight = [
   },
   {
     id: 2,
-    image: "/images/covers/credit-suisse.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b0b9d990-4e76-4efa-7339-b9452dff1a00/public",
     title: "Credit Suisse: A Fresh Start for a Sustainable Future",
     subtitle:
       "Credit Suisse has integrated 70 refill stations in Pune, Gurgaon, and Mumbai, making clean, green hydration accessible to its workforce.",
@@ -470,7 +496,8 @@ export const championsSpotlight = [
   },
   {
     id: 3,
-    image: "/images/covers/deutsche-bank.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/357b68ab-9cf2-4f08-dd98-a6f2f5617700/public",
     title: "Deutsche Bank: Banking on Blue",
     subtitle:
       "Deutsche Bank's 73 refill stations are reducing reliance on bottled water across India.",
@@ -493,7 +520,8 @@ export const championsSpotlight = [
   },
   {
     id: 4,
-    image: "/images/covers/ericsson.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5df4da60-914c-4da4-ca96-be24e6a1d300/public",
     title: "Ericsson: Connecting the Dots to a Greener Future",
     subtitle:
       "Ericsson's installation of 138 water-refill stations across India showcases their commitment to sustainable practices",
@@ -517,7 +545,8 @@ export const championsSpotlight = [
   },
   {
     id: 5,
-    image: "/images/covers/icici.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d17954d5-2247-42eb-1929-d19645ec7700/public",
     title: "ICICI Bank: A Ripple of Change",
     subtitle:
       "ICICI Bank leads the pack with 624 water-refill stations across India.",
@@ -540,7 +569,8 @@ export const championsSpotlight = [
   },
   {
     id: 6,
-    image: "/images/covers/jp-morgan.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6e4d9ec6-c406-4210-0a2d-7b3f1f565300/public",
     title: "J.P. Morgan: Investing in a Greener Tomorrow",
     subtitle:
       "J.P. Morgan has turned 241 locations into green spaces with their water-refill stations.",
@@ -564,7 +594,8 @@ export const championsSpotlight = [
   },
   {
     id: 7,
-    image: "/images/covers/max-life.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/61fc43fb-c3e1-476e-e4d9-acb357351900/public",
     title: "Max Life: Securing a Greener Future",
     subtitle:
       "Max Life has installed 323 refill stations, securing their commitment to sustainability.",
@@ -588,7 +619,8 @@ export const championsSpotlight = [
   },
   {
     id: 8,
-    image: "/images/covers/morgan-stanley.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/865a532f-8c29-47ca-0728-e7e928016600/public",
     title: "Morgan Stanley: Reimagining Impact",
     subtitle:
       "Morgan Stanley's 47 refill stations in Mumbai and Bangalore are more than water sources—they're symbols of change.",
@@ -612,7 +644,8 @@ export const championsSpotlight = [
   },
   {
     id: 9,
-    image: "/images/covers/rbs.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c90562f2-1332-4cf4-6463-de6782ba7700/public",
     title: "RBS (Royal Bank of Scotland): A Fresh Take on Finance",
     subtitle:
       "RBS has implemented 127 refill stations across major Indian cities, championing a fresh approach to hydration.",
@@ -636,7 +669,8 @@ export const championsSpotlight = [
   },
   {
     id: 10,
-    image: "/images/covers/citibank.png",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/02e2d2f7-c2d4-4d19-be69-1684be511000/public",
     title: "Sapient: Redefining Smart Solutions",
     subtitle:
       "Sapient's 103 refill stations in Gurgaon are helping redefine what it means to be a smart, sustainable business.",
@@ -684,7 +718,8 @@ export const productData: ProductData[] = [
   {
     id: "01",
     categoryName: "DRINKING WATER STATION - BLUWAE Series",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescription:
       "Water dispensers with inbuilt purification —pure, safe water delivered efficiently. Designed to reduce plastic waste and energy consumption, making sustainability easy.",
     categoryDescriptionTwo:
@@ -699,9 +734,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -733,9 +768,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -767,9 +802,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -801,9 +836,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -835,9 +870,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -869,9 +904,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -903,9 +938,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -937,9 +972,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -971,9 +1006,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1003,7 +1038,8 @@ export const productData: ProductData[] = [
   {
     id: "02",
     categoryName: "DRINKING WATER DISPENSER - TRUBLU Series",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescriptionTwo:
       "Our Stainless Steel Water Dispensers aren’t just built to dispense water—they’re built to last. Crafted from durable stainless steel 304, they offer pure, refreshing water. Designed for sustainability, these dispensers help you cut down on waste while delivering energy-efficient performance that saves both the planet and your budget. It’s hydration that works smarter.",
     categoryDescriptionThree:
@@ -1018,9 +1054,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1052,9 +1088,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1086,9 +1122,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1120,9 +1156,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1154,9 +1190,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1188,9 +1224,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1222,9 +1258,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1256,9 +1292,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1290,9 +1326,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1324,9 +1360,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1356,7 +1392,8 @@ export const productData: ProductData[] = [
   {
     id: "03",
     categoryName: "WATER COOLER & FOUNTAINS - ZVR Series",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescriptionTwo:
       "Our Water Coolers and Fountains are designed to elevate hydration in high-traffic spaces like airports. Whether wall-mounted or floor-standing, each unit is customizable to provide pure, refreshing drinking water at the touch of a button. Built for convenience and durability, they seamlessly blend into any environment while delivering reliable hydration, making them a smart, eco-friendly choice for travelers on the go.",
     categoryDescriptionThree:
@@ -1371,9 +1408,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1405,9 +1442,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1439,9 +1476,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1473,9 +1510,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1507,9 +1544,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1541,9 +1578,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1575,9 +1612,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1609,9 +1646,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1643,9 +1680,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1677,9 +1714,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1711,9 +1748,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1743,7 +1780,8 @@ export const productData: ProductData[] = [
   {
     id: "04",
     categoryName: "PUBLIC UTILITY SYSTEMS - PUS Series",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescriptionTwo:
       "Our Public Utility Systems are built for scale, designed to meet the hydration needs of large public spaces with ease. Whether it’s parks, schools, or industrial areas, these systems provide reliable access to clean drinking water, reducing the reliance on bottled alternatives. Engineered for durability and efficiency, they’re made to handle high demand while lowering environmental impact. It's sustainable hydration on a grand scale.",
     categoryDescriptionThree:
@@ -1758,9 +1796,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1792,9 +1830,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1826,9 +1864,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1860,9 +1898,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1894,9 +1932,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1926,7 +1964,8 @@ export const productData: ProductData[] = [
   {
     id: "05",
     categoryName: "DRINKING WATER FAUCETS - WATERMATIC Series",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescriptionTwo:
       "Our Drinking Water Faucets are a perfect blend of elegance and functionality. With their minimalist design, these faucets deliver pure, refreshing water with effortless precision. Crafted to enhance any space, they offer a sleek, modern solution that not only looks good but performs exceptionally well. When paired with our UTC(under the counter) Units for water storage, you get seamless access to clean water—without the clutter.",
     categoryDescriptionThree:
@@ -1941,9 +1980,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1975,9 +2014,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2009,9 +2048,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2043,9 +2082,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2077,9 +2116,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2111,9 +2150,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2143,7 +2182,8 @@ export const productData: ProductData[] = [
   {
     id: "06",
     categoryName: "COMMERCIAL/INDUSTRIAL PLANTS",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescriptionTwo:
       "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
     categoryDescriptionThree:
@@ -2158,9 +2198,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2192,9 +2232,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2226,9 +2266,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2258,7 +2298,8 @@ export const productData: ProductData[] = [
   {
     id: "07",
     categoryName: "UTC UNITS",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescriptionTwo:
       "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
     categoryDescriptionThree:
@@ -2273,9 +2314,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2307,9 +2348,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2339,7 +2380,8 @@ export const productData: ProductData[] = [
   {
     id: "08",
     categoryName: "SMALL RO UNITS",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescriptionTwo:
       "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
     categoryDescriptionThree:
@@ -2354,9 +2396,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -2386,7 +2428,8 @@ export const productData: ProductData[] = [
   {
     id: "09",
     categoryName: "COMMUNITY WATER SOLUTIONS",
-    categoryImage: "/images/covers/trublu.jpg",
+    categoryImage:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
     categoryDescriptionTwo:
       "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
     categoryDescriptionThree:
@@ -2401,9 +2444,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
-          "/images/covers/trublu.jpg",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
