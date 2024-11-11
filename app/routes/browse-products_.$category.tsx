@@ -83,7 +83,7 @@ export default function BrowseProducts() {
               </p>
 
               <Link
-                to={"/product-list"}
+                to={"/product-list/" + currentCategory?.id}
                 className="wae-btn mt-[60px] border-white px-6 py-2"
               >
                 View All Products

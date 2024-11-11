@@ -30,7 +30,8 @@ type ErrorObject = {
 
 const sliderItemList = [
   {
-    image: "/images/covers/earth-from-space.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25cd406c-a8e7-449b-30ec-4824b6426800/public",
     title: "Keeping The Blue Planet Green",
     // subtitle: "NEPTUNE DUO",
     align: "center",
@@ -38,7 +39,8 @@ const sliderItemList = [
     isHeadingMax: true,
   },
   {
-    image: "/images/covers/earth-from-space.jpg",
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25cd406c-a8e7-449b-30ec-4824b6426800/public",
     title: "Keeping The Blue Planet Green",
     subtitle: "NEPTUNE DUO",
     align: "end",

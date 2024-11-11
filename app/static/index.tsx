@@ -701,16 +701,19 @@ export interface ProductData {
   categoryDescription?: string;
   categoryDescriptionTwo?: string;
   categoryDescriptionThree?: string;
-  productList?: {
-    id?: string;
-    name?: string;
-    mountingType?: string;
-    description?: string | ReactNode;
-    images?: string[];
-    features?: {
-      title: string;
-      description: string;
-    }[];
+  productList?: ProductList[];
+}
+
+export interface ProductList {
+  id?: string;
+  thumbnailUrl?: string;
+  name?: string;
+  mountingType?: string;
+  description?: string | ReactNode;
+  images?: string[];
+  features?: {
+    title: string;
+    description: string;
   }[];
 }
 
@@ -729,14 +732,16 @@ export const productData: ProductData[] = [
     productList: [
       {
         id: "01",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c71da7df-b279-441d-63ca-cab312e82600/public",
         name: "VAR",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4f8921a-e7a7-42c4-e262-6f9c6d027b00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/17f24c63-1749-4fda-fc44-7b30aac2bd00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/236d75bb-7256-4b8c-837c-834515144200/public",
         ],
         features: [
           {
@@ -763,14 +768,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "02",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/699b0801-c2dc-41d0-136f-0b5d54990b00/public",
         name: "ENKI",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/bfc477ef-9633-42cb-2059-00898188c200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6fc445ac-0336-4f77-7e19-983923501a00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4fde63dc-3340-4d08-e45d-bc81f5232000/public",
         ],
         features: [
           {
@@ -797,14 +804,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "03",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b173ac87-c1ea-4c9b-b4dc-9dfe9d7e4100/public",
         name: "POS",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/60624bcd-8cdd-4a32-9b52-20f1c69e9c00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/7ab00856-13bf-49cc-1d90-90574762c500/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0c68e87a-ef91-4741-d3e4-6db5abb44e00/public",
         ],
         features: [
           {
@@ -831,14 +840,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "04",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9df2b276-67da-412e-b944-137e68fa3500/public",
         name: "ROM GRANDE",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/804b5858-eda8-484c-f194-08c421e1d400/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4dd89f6a-b1ea-46ed-86e5-8747b5432100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e6718c14-1c8a-432f-17d5-31c0f4f51800/public",
         ],
         features: [
           {
@@ -865,14 +876,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "05",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52cfd172-76d2-4471-8083-4a8d9a8caf00/public",
         name: "REVA",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9b7a8014-1ca5-4095-2753-ba366ec52100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25e93e1d-1cd8-47e2-16d5-957e84a9f400/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/539051e8-c36f-4ea5-f1b3-d337cb2e4100/public",
         ],
         features: [
           {
@@ -899,14 +912,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "06",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ec6c91fe-22a7-45bb-3aee-5e6720147000/public",
         name: "ASSISTIFLOW",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/58af2736-2da1-4a98-cfc0-7b1a76125600/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9a20872c-9962-4ec0-2110-e4fee558c700/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5bd1f03d-81b3-47e8-56d0-e6f594ca2800/public",
         ],
         features: [
           {
@@ -933,14 +948,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "07",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6865cefc-5a2e-43c5-5d73-438cfac6c800/public",
         name: "ENKI.CT",
         mountingType: "Counter-Top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/332d6670-16ff-49da-e386-748fe618ff00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/adfff61c-94be-410f-f389-21510a0a2800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f78f518e-87fc-4884-d1b7-530193737400/public",
         ],
         features: [
           {
@@ -967,14 +984,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "08",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/54008031-5666-4934-a9d4-6fdc01030e00/public",
         name: "VAR.CT",
         mountingType: "Counter-Top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/19fa333f-7d0e-4108-5640-9679d8d0ad00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/231a38c3-97b7-4d4b-85a7-cdc42584c100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4d4be20d-fe61-44bc-18c5-b66877c46700/public",
         ],
         features: [
           {
@@ -1001,14 +1020,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "09",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52dd58ea-1d30-4397-6ba0-df78adaeaa00/public",
         name: "ROM.CT",
         mountingType: "Counter-Top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/bfbf1885-b5d9-483d-0137-0a78cf5fed00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8f660606-e5e1-4be5-4358-aa9e93e87000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/aa9f4a85-2918-4429-5834-9f9510b0fb00/public",
         ],
         features: [
           {
@@ -1049,14 +1070,16 @@ export const productData: ProductData[] = [
     productList: [
       {
         id: "01",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         name: "ALFA.TL",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6dbddbd4-1786-42d8-16f2-ab78afe10100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3f6a334f-3ab9-42b1-a732-cbc289ab9000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/11628173-98f1-4dd8-3209-cd5b7fbd2400/public",
         ],
         features: [
           {
@@ -1083,14 +1106,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "02",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         name: "ALFA.BL",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6232b01c-a47f-460c-455c-6b083de73900/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4418b950-683f-43ff-416b-a8594738fb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/20c55d69-f031-4a70-1c50-03d0002a7100/public",
         ],
         features: [
           {
@@ -1117,14 +1142,19 @@ export const productData: ProductData[] = [
       },
       {
         id: "03",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         name: "ALFA",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8b6f2fee-336a-4736-bd52-230ae7f15900/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c2fc11a1-dbb6-49cc-1dd2-cffbcfe4d300/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/de420d3a-dc02-4df1-d78d-293893cba500/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cb2a8039-3c66-4c54-d029-0b3fa4f63d00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/33949b56-807e-4cef-93a0-db7e189f8400/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4cbb98a1-d2e7-4e8c-3ff6-9028f7b55400/public",
         ],
         features: [
           {
@@ -1151,14 +1181,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "04",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         name: "ALFA.CT",
         mountingType: "Counter-Top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ed60afe4-3381-4dd8-38a6-21a600df4000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47685348-649b-4234-fd99-b1bd4fa74800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/94046aa6-df9e-429e-d03d-11ff25706a00/public",
         ],
         features: [
           {
@@ -1184,7 +1216,10 @@ export const productData: ProductData[] = [
         ],
       },
       {
+        // missing images
         id: "05",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         name: "BETA(ss model)",
         mountingType: "Free-Standing",
         description:
@@ -1219,14 +1254,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "06",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e670b1ee-b32c-4a6a-5d51-ed03fa81c400/public",
         name: "AENON",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9fa50ce5-7fc6-4260-4546-3b009f3d8100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/13f45d36-c6c9-43e4-7079-fa7860877800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8676f367-6f7d-4ab4-324c-f97fcf5a4b00/public",
         ],
         features: [
           {
@@ -1253,14 +1290,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "07",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f339b126-7cad-4942-91ee-8f535507f600/public",
         name: "DELTA",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e464f3c6-cb5d-448c-da7a-0c6c5c4d9500/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a661576f-abcf-4d53-b111-35d7660d1600/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a8aca47b-7fcd-4037-0afe-66ac58720300/public",
         ],
         features: [
           {
@@ -1287,14 +1326,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "08",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c16970c2-a74d-4b1e-b0b0-e88ee58be000/public",
         name: "GAMMA",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3934c66e-2576-4aea-714f-d11f6cd10200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/15a33428-ea01-4719-1066-428a16b9fc00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6d12257c-d3c3-48b0-f944-6ac2867af200/public",
         ],
         features: [
           {
@@ -1321,14 +1362,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "09",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9fabbc11-9a7d-4170-ba47-9f20621fb500/public",
         name: "BREEZE BLUE(usha)",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/60abc267-69cc-4696-1726-ddc460dbb500/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9c437901-5173-40be-175e-5233a8654700/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c92b73ed-a8ad-4976-4460-cfdd8ef4f200/public",
         ],
         features: [
           {
@@ -1355,14 +1398,16 @@ export const productData: ProductData[] = [
       },
       {
         id: "10",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b92f8428-83ae-45b4-fccf-465b18193500/public",
         name: "LAGOON",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6b93eb3c-5858-4baf-e08c-d8c2afe65800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/92c186cd-310f-4f6b-edd7-31c488d7f600/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b66d148e-af49-4a90-02a8-3518b2106f00/public",
         ],
         features: [
           {

@@ -1,14 +1,15 @@
 import {Accordion} from "@mantine/core";
 import {json, Link, MetaFunction, useLoaderData} from "@remix-run/react";
-import {Icons, productData, ProductsPageListing} from "~/static";
+import {Icons, productData} from "~/static";
 import {Checkbox} from "~/components";
 import {useEffect, useState} from "react";
 import clsx from "clsx";
 import {LoaderFunction} from "@remix-run/node";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
+import type {ProductList as ProductListDTO} from "~/static";
 
 type LoaderData = {
-  products: string;
+  products: ProductListDTO[];
 };
 
 const filters = [
@@ -130,8 +131,15 @@ export const loader: LoaderFunction = async ({request, params}) => {
   }
   const categoryType = productsResult.ok;
 
+  const categorizedProducts = productData.filter(
+    (p) => p.id === categoryType,
+  )[0];
+  if (categorizedProducts?.productList == undefined) {
+    throw new Error("Product List is undefined");
+  }
+
   const loader: LoaderData = {
-    products: categoryType,
+    products: categorizedProducts?.productList,
   };
 
   console.log(JSON.stringify(loader));
@@ -141,14 +149,16 @@ export const loader: LoaderFunction = async ({request, params}) => {
 export default function ProductList() {
   const {products} = useLoaderData() as LoaderData;
   const [filterOpen, setFilterOpen] = useState(false);
-  const [currentProducts, setCurrentProducts] = useState([]);
+  const [currentProducts, setCurrentProducts] =
+    useState<ProductListDTO[]>(products);
 
   useEffect(() => {
-    setCurrentProducts(
-      productData?.flatMap((cat) =>
-        cat?.productList?.filter((prod) => prod.mountingType === products),
-      ),
-    );
+    // setCurrentProducts(
+    //   productData?.flatMap((cat) =>
+    //     cat?.productList?.filter((prod) => prod.mountingType === products),
+    //   ),
+    // );
+    setCurrentProducts(products);
   }, []);
 
   console.log(products, currentProducts);
@@ -234,7 +244,7 @@ export default function ProductList() {
                   data-aos-delay={`${idx}00`}
                 >
                   <img
-                    src={prod?.images[0]}
+                    src={prod?.thumbnailUrl}
                     alt={prod?.name}
                     className="mb-1 aspect-square object-cover sm:mb-6"
                   />
