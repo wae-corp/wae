@@ -73,7 +73,7 @@ export default function ProductDetails() {
         <div className="container">
           <div className="flex flex-col items-center gap-10 xl:flex-row xl:items-start xl:justify-start">
             <div
-              className="flex max-w-[600px] flex-shrink-0 justify-center"
+              className="flex w-[600px] flex-shrink-0 justify-center"
               // data-aos="zoom-in"
             >
               <ProductImageSlider images={image} />
