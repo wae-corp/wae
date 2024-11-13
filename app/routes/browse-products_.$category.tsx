@@ -49,7 +49,7 @@ export default function BrowseProducts() {
       const image = product.images?.[0];
       const id = product.id || "";
       const name = mountingType || "";
-      const link = `/product-list/${mountingType}`;
+      const link = `/product-list/${id}`;
 
       if (mountingType && !mountingTypeMap.has(mountingType) && image) {
         mountingTypeMap.set(mountingType, {id, image, link, name});
