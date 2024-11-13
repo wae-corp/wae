@@ -8,25 +8,25 @@ export const ProductList: Product[] = [
     name: "Drinking Water Station",
     link: "/",
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52cfd172-76d2-4471-8083-4a8d9a8caf00/public",
   },
   {
     id: "2",
-    name: "Drinking Water Station",
+    name: "Water Dispenser",
     link: "/",
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c71da7df-b279-441d-63ca-cab312e82600/public",
   },
   {
     id: "3",
-    name: "Drinking Water Station",
+    name: "PUS (Public Utility Series)",
     link: "/",
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/83142f24-ef73-4e1a-ae83-f863dff91b00/public",
   },
   {
     id: "4",
-    name: "Drinking Water Station",
+    name: "Drinking Water Faucets",
     link: "/",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cecde014-4dfc-4dae-42aa-9a381a59a000/public",
