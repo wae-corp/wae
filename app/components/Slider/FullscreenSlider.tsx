@@ -117,7 +117,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                   <h1
                     className={clsx("wae-h3 font-secondary !leading-normal", {
                       "lg:text-[72px]": item.isHeadingMax,
-                      "lg:text-[48px]": !item.isHeadingMax,
+                      "md:text-[48px]": !item.isHeadingMax,
                     })}
                   >
                     {item.title}

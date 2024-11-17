@@ -123,16 +123,16 @@ const footerLinks: {
         link: "/contact",
         name: "Office Locations",
       },
-      {
-        id: "4-3",
-        link: "/blogs",
-        name: "News",
-      },
-      {
-        id: "4-4",
-        link: "/contact",
-        name: "Waitlist",
-      },
+      // {
+      //   id: "4-3",
+      //   link: "/blogs",
+      //   name: "News",
+      // },
+      // {
+      //   id: "4-4",
+      //   link: "/contact",
+      //   name: "Waitlist",
+      // },
     ],
   },
 ];
@@ -195,7 +195,7 @@ export const Footer = () => {
         className="l-0 absolute top-0"
       /> */}
       <div className="border-t-white/40 lg:border-t">
-        <div className="mx-auto flex flex-col items-start justify-between gap-24 lg:max-w-[85%] lg:flex-row">
+        <div className="mx-auto flex flex-col items-center justify-between gap-24 lg:max-w-[85%] lg:flex-row xl:items-start">
           <div className="max-lg:w-full lg:-mt-16">
             <Link
               to={"/"}
@@ -255,11 +255,14 @@ export const Footer = () => {
               <p className="mb-4">@ 2024 WAE Ltd.</p>
             </div>
           </div>
-          <div className="flex flex-wrap justify-between gap-14 max-lg:w-full lg:-mt-10 lg:flex-nowrap">
+          <div className="grid grid-cols-4 gap-6 lg:-mt-20 xl:-mt-10 xl:gap-14">
             {footerLinks.map((col) => {
               return (
-                <div key={col.id}>
-                  <h6 className="mb-5 text-base sm:mb-10">{col.title}</h6>
+                <div
+                  key={col.id}
+                  className="col-span-2 sm:col-span-1"
+                >
+                  <h6 className="mb-5 text-base xl:mb-10">{col.title}</h6>
                   <ul key={col.id}>
                     {col.list.map((listItem) => {
                       return (

@@ -49,7 +49,7 @@ body {
 }
 
 .wae-h2 {
-  @apply text-[32px] leading-normal lg:text-[58px];
+  @apply text-[32px] leading-normal md:text-4xl lg:text-[58px];
 }
 
 .wae-h3-lg {

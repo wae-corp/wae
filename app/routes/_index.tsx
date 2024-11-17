@@ -15,7 +15,6 @@ import {Icons, ProductList} from "~/static";
 import {getErrorFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {appendLandingLeadIntoSheet} from "~/backend/googleSheet.server";
 import {z} from "zod";
-import CountUp from "react-countup";
 import {Counter} from "~/components/Counter";
 
 type EnquiryType = "Corporate" | "Architect" | "Consultant" | "Curious" | null;
@@ -253,7 +252,7 @@ export default function Index() {
           >
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
-            <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
+            <h2 className="wae-h2 mb-10 mt-10 font-secondary !leading-none lg:mb-[100px]">
               WAE embraces a commitment to sustainability, ensuring our blue
               planet stays green for future generations. By championing
               eco-friendly practices, we harmonize progress with nature's
@@ -301,11 +300,11 @@ export default function Index() {
         </section>
 
         <section className="container">
-          <div className="flex flex-col gap-8 lg:flex-row lg:gap-[120px]">
+          <div className="flex flex-col gap-8 xl:flex-row xl:gap-[120px]">
             <div>
               <h3 className="wae-h4 mb-10 font-secondary">Made in India</h3>
               <p
-                className="mb-10 uppercase md:ml-28 lg:max-w-[80%]"
+                className="mb-10 uppercase md:ml-28 xl:max-w-[80%]"
                 // data-aos="fade-right"
               >
                 WAE proudly represents India's spirit of innovation, combining
@@ -321,14 +320,14 @@ export default function Index() {
               data-aos-easing="ease-in-back"
               data-aos-offset="200"
               data-aos-duration="500"
-              className="flex-shrink-0 pl-8 lg:max-w-[400px] lg:pl-0"
+              className="flex-shrink-0 pl-8 xl:max-w-[400px] xl:pl-0"
             >
               <img
                 src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dbf8595a-24c0-49f4-883a-0692dd6a8500/public"
                 alt="gray-meshed-backdrop"
                 width={370}
                 height={460}
-                className="ml-auto object-cover"
+                className="ml-auto object-cover md:mr-auto xl:mr-0"
               />
             </div>
           </div>
@@ -347,7 +346,7 @@ export default function Index() {
           >
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
-            <h2 className="wae-h2 mb-10 mt-10 font-secondary leading-tight lg:mb-[100px]">
+            <h2 className="wae-h2 mb-10 mt-10 font-secondary !leading-none lg:mb-[100px]">
               WAE leads transformative projects and develops cutting-edge
               purification systems, all aimed at ensuring a sustainable future.
             </h2>
@@ -358,7 +357,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="mb-20 flex flex-wrap items-start justify-center gap-8 max-sm:justify-center lg:flex-nowrap">
+          <div className="mb-20 flex flex-col flex-wrap justify-center gap-8 max-sm:items-center lg:flex-nowrap xl:flex-row">
             {specifications.map((spec, idx) => {
               return (
                 <div
@@ -367,7 +366,7 @@ export default function Index() {
                   data-aos="fade-in"
                   data-aos-delay={`${idx}00`}
                 >
-                  <div className="wae-h2 mb-5 font-secondary">
+                  <div className="mb-5 font-secondary text-4xl md:text-5xl xl:text-[64px]">
                     {/* {spec.title} */}
                     <Counter
                       end={spec.title}
@@ -520,10 +519,10 @@ export default function Index() {
                     />
                   </svg>
                   <a
-                    href="tel:+91120687068"
+                    href="tel:+91 1204069800"
                     className="mb-6 hover:underline"
                   >
-                    +91 120687068
+                    +91 1204069800
                   </a>
                 </div>
                 <div className="flex">
@@ -547,16 +546,16 @@ export default function Index() {
 
                   <div>
                     <a
-                      href="mailTo:xyzwae@gmail.com"
-                      className="block hover:underline"
+                      href="mailTo:info@waecorp.com"
+                      className="block underline hover:no-underline"
                     >
-                      xyz@gmail.com
+                      info@waecorp.com
                     </a>
                     <a
-                      href="mailTo:xyzwae@gmail.com"
-                      className="block hover:underline"
+                      href="mailTo:marketing@waecorp.com"
+                      className="block underline hover:no-underline"
                     >
-                      xyzwae@gmail.com
+                      marketing@waecorp.com
                     </a>
                   </div>
                 </div>
@@ -600,7 +599,7 @@ export default function Index() {
                           />
                           <label
                             htmlFor={`${type}-enquiry`}
-                            className="flex h-full w-full cursor-pointer items-center justify-center rounded-xl border border-black bg-transparent transition-colors hover:bg-black hover:text-white peer-checked:bg-black peer-checked:text-white"
+                            className="group flex h-full w-full cursor-pointer flex-col items-center justify-center rounded-xl border border-black bg-transparent transition-colors hover:bg-black hover:text-white peer-checked:bg-black peer-checked:text-white"
                           >
                             {type === "Corporate"
                               ? "A Corporate"
@@ -609,6 +608,21 @@ export default function Index() {
                                 : type === "Consultant"
                                   ? "A Consultant"
                                   : "Just Curious"}
+
+                            <div className="mt-2 hidden group-hover:block">
+                              <svg
+                                width="42"
+                                height="16"
+                                viewBox="0 0 42 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M41.2071 8.70711C41.5976 8.31658 41.5976 7.68342 41.2071 7.29289L34.8431 0.928932C34.4526 0.538408 33.8195 0.538408 33.4289 0.928932C33.0384 1.31946 33.0384 1.95262 33.4289 2.34315L39.0858 8L33.4289 13.6569C33.0384 14.0474 33.0384 14.6805 33.4289 15.0711C33.8195 15.4616 34.4526 15.4616 34.8431 15.0711L41.2071 8.70711ZM0.5 9H40.5V7H0.5V9Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </div>
                           </label>
                         </div>
                       ),
