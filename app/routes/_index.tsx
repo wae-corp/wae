@@ -357,7 +357,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="mb-20 flex flex-col flex-wrap justify-center gap-8 max-sm:items-center lg:flex-nowrap xl:flex-row">
+          <div className="mb-20 flex flex-col flex-wrap justify-center gap-8 max-sm:items-center md:flex-nowrap lg:flex-row">
             {specifications.map((spec, idx) => {
               return (
                 <div
@@ -492,7 +492,7 @@ export default function Index() {
 
       <section className="wae-pt-lg wae-pb-lg bg-[#e0e0e0]">
         <div className="container">
-          <div className="grid grid-cols-1 gap-[60px] sm:grid-cols-2 lg:gap-0">
+          <div className="grid grid-cols-1 gap-[60px] lg:grid-cols-2 lg:gap-0">
             <div data-aos="fade-in">
               <h3 className="wae-h3 mb-4 font-secondary">
                 Get in Touch with Us
@@ -562,7 +562,7 @@ export default function Index() {
               </div>
             </div>
             <div
-              className="mx-auto w-full"
+              className="mx-auto w-full max-lg:order-first"
               data-aos="fade-in"
             >
               <Form
@@ -576,11 +576,11 @@ export default function Index() {
                 >
                   <h5 className="lg:wae-h6-lg mb-5 text-2xl">I am</h5>
 
-                  <div className="col grid grid-cols-[repeat(2,130px)] grid-rows-[repeat(2,130px)] gap-5 lg:grid-cols-[repeat(2,200px)] lg:grid-rows-[repeat(2,200px)]">
+                  <div className="col grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(2,1fr)] justify-center gap-5 md:grid-cols-[repeat(2,240px)] lg:grid-rows-[repeat(2,240px)] lg:justify-start">
                     {["Corporate", "Architect", "Consultant", "Curious"].map(
                       (type) => (
                         <div
-                          className="aspect-square max-w-[200px]"
+                          className="aspect-square lg:max-w-[240px]"
                           key={type}
                         >
                           <input
