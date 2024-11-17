@@ -14,12 +14,12 @@ export default {
       backgroundImage: {
         "water-machine-near-wall":
           "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6e97d643-8468-4a4f-8cb3-62577cc81000/public')",
-        "granite-river":
-          "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5391c0de-af7f-4e40-6ef0-884cab310800/public')",
+        footprint:
+          "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a5b5a4c4-26e1-4b5e-4700-7cef8fb94900/public')",
         "above-the-cloud":
           "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f96667c7-d0bb-48fe-9108-a8420e88dd00/public')",
         "company-banner":
-          "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0c0809ed-6e42-407a-142e-452074924c00/public')",
+          "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/be6724ec-9dd5-4059-d13e-2e3ac5aafb00/public')",
         "man-in-shadow":
           "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f75719cb-555c-4140-dda8-3a10e84a7d00/public')",
         "hands-pointing-on-table":
