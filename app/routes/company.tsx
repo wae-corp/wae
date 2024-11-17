@@ -120,7 +120,7 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="relative flex min-h-[640px] items-end justify-center bg-granite-river bg-cover bg-no-repeat py-24 text-center text-black">
+      <section className="bg-footprint relative flex min-h-[640px] items-end justify-center bg-cover bg-no-repeat py-24 text-center text-black">
         <div
           className="container isolate"
           // data-aos="fade-down"
@@ -202,7 +202,7 @@ export default function Company() {
             data-aos-duration="500"
           >
             <img
-              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/aa47da1c-d5f9-452e-d43e-9c6f19b75500/public"
+              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b122394b-da4c-4757-c125-9d9b77503900/public"
               alt="bowl-with-chopsticks"
               width={370}
               height={460}

@@ -47,7 +47,7 @@ export default function Brand() {
       <main className="relative flex h-screen flex-col items-center justify-end pb-10 pt-[var(--header-height)]">
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <img
-            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4a6698c-b208-4a19-0de1-33dace0f1200/public"
+            src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6afd4297-696e-44ee-7303-1b50a5262200/public"
             alt="brand background"
             className="h-full w-full object-cover"
             width={1920}
@@ -58,7 +58,7 @@ export default function Brand() {
           className="flex flex-col gap-4 text-center text-white"
           data-aos="fade-up"
         >
-          <h1 className="wae-h2 font-secondary">
+          <h1 className="wae-h2 font-secondary ">
             WAE:
             <br /> A Brand Committed to Innovation and Transformation
           </h1>
