@@ -141,7 +141,7 @@ export default function Products() {
             >
               <h6 className="text-xs font-bold uppercase">HOW DOES IT WORK?</h6>
 
-              <h2 className="wae-h2 mt-12 font-secondary leading-tight">
+              <h2 className="wae-h2 mt-12 font-secondary !leading-tight">
                 Choose your product style or type, and let us customize it to
                 perfectly match your needs.
               </h2>
