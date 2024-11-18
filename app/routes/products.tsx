@@ -21,7 +21,7 @@ export default function Products() {
           >
             <h6 className="uppercase">SUSTAINABILITY</h6>
 
-            <h2 className="wae-h2 mt-10 font-secondary leading-tight lg:mb-[100px]">
+            <h2 className="wae-h2 mt-10 font-secondary lg:mb-[100px] lg:leading-tight">
               At WAE,
               <br /> we craft bespoke, sustainable hydration solutions with
               unmatched integrity and innovation
@@ -41,18 +41,17 @@ export default function Products() {
 
           <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
             <h4
-              className="wae-h4 mb-12 font-secondary !leading-[1.4] lg:mb-0"
+              className="wae-h4 mb-12 font-secondary !leading-[1.4] md:text-2xl lg:mb-0 lg:text-[32px]"
               // data-aos="fade-right"
             >
-              At WAE, we're dedicated to developing solutions that are
-              fundamentally aligned with the principles of SDG 6: Clean Water
-              and Sanitation. Every water system we craft is designed not only
-              to provide pure hydration but also to drastically reduce reliance
-              on single-use plastics. Built entirely from metal, our products
-              contribute to zero landfill waste, combining sustainability with
-              energy efficiency. Choosing WAE means making a meaningful
-              commitment to a smarter, greener future, where hydration meets
-              ecological responsibility.
+              We're on a mission to eliminate single-use plastics with
+              sustainable designs that make a real impact. Our water systems are
+              meticulously crafted to not just deliver pure hydration but also
+              to shrink your ecological footprint. Each device is engineered to
+              reduce your reliance on single-use plastics while maximizing
+              energy efficiency, delivering sustainability that saves both the
+              planet and your costs. WAE isn't just a choice—it's a commitment
+              to a greener, smarter future.
             </h4>
             {/* <p
               className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base"
@@ -79,7 +78,7 @@ export default function Products() {
         </section>
 
         <section>
-          <div className="container max-w-[1080px]">
+          <div className="container xl:max-w-[1080px]">
             <div className="wae-gap-lg flex flex-col">
               {productData.map((category, idx) => {
                 return (
@@ -88,7 +87,7 @@ export default function Products() {
                     className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
                   >
                     <div
-                      className="flex-shrink-0 md:basis-1/2"
+                      className="w-full flex-shrink-0 sm:w-[350px] xl:w-auto xl:basis-1/2"
                       data-aos="fade-zoom-in"
                       data-aos-easing="ease-in-back"
                       data-aos-offset="200"
@@ -97,13 +96,13 @@ export default function Products() {
                       <img
                         src={category.categoryImage}
                         alt="Category Poster"
-                        className="aspect-square object-cover group-even:ml-auto max-sm:w-full"
+                        className="aspect-square flex-shrink-0 object-cover group-even:ml-auto"
                         width="500"
                         height="500"
                       />
                     </div>
                     <div
-                      className="flex flex-col items-start md:basis-1/2"
+                      className="flex flex-col items-start xl:basis-1/2"
                       // data-aos="fade-down"
                       data-aos-delay="100"
                     >
@@ -112,11 +111,11 @@ export default function Products() {
                           {category.id}
                         </label>
 
-                        <h5 className="font-extrabold uppercase">
+                        <h5 className="text-sm font-extrabold uppercase xl:text-base">
                           {category.categoryName}
                         </h5>
 
-                        <p className="fw-light text-sm uppercase">
+                        <p className="fw-light text-xs uppercase leading-loose sm:text-sm">
                           {category.categoryDescription}
                         </p>
                       </div>
@@ -140,7 +139,7 @@ export default function Products() {
               className="mx-auto max-w-[845px]"
               data-aos="fade-down"
             >
-              <h6 className="uppercase">HOW DOES IT WORK?</h6>
+              <h6 className="text-xs font-bold uppercase">HOW DOES IT WORK?</h6>
 
               <h2 className="wae-h2 mt-12 font-secondary leading-tight">
                 Choose your product style or type, and let us customize it to
@@ -150,9 +149,9 @@ export default function Products() {
           </div>
         </section>
 
-        <section>
+        <section className="px-3 sm:px-0">
           <div className="container">
-            <p className="mb-6 text-center uppercase lg:text-sm">
+            <p className="mb-10 text-center text-sm uppercase md:mb-[60px] xl:mb-20">
               Other Products
             </p>
           </div>

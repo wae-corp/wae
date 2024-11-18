@@ -73,7 +73,7 @@ body {
 }
 
 .wae-h6-lg {
-  @apply text-base lg:text-2xl;
+  @apply text-base md:text-xl lg:text-2xl;
 }
 
 .wae-h6 {

@@ -9,7 +9,7 @@ export default {
     extend: {
       fontFamily: {
         primary: ["Poppins"],
-        secondary: ["Monschone"],
+        secondary: ["Poppins"],
       },
       backgroundImage: {
         "water-machine-near-wall":
@@ -66,10 +66,10 @@ export default {
             maxWidth: "640px",
           },
           "@screen md": {
-            maxWidth: "768px",
+            maxWidth: "672px",
           },
           "@screen lg": {
-            maxWidth: "1024px",
+            maxWidth: "920px",
           },
           "@screen xl": {
             maxWidth: "1080px",

@@ -21,13 +21,13 @@ export const Header = () => {
             alt="Wae"
             width={120}
             height={60}
-            className="object-contain"
+            className="object-contain max-lg:w-20"
           />
         </Link>
 
         <div
           className={clsx(
-            "fixed flex flex-1 items-center gap-10 transition-transform max-md:inset-0 max-md:h-screen max-md:w-screen max-md:flex-col max-md:justify-center max-md:bg-white md:static md:text-white",
+            "fixed flex flex-1 items-center gap-10 transition-transform max-lg:text-sm max-md:inset-0 max-md:h-screen max-md:w-screen max-md:flex-col max-md:justify-center max-md:bg-white md:static md:text-white",
             {
               "max-md:translate-x-0": menuOpen,
               "max-md:translate-x-full": !menuOpen,
