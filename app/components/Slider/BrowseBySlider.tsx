@@ -49,7 +49,7 @@ export const BrowseBySlider = ({
               ) : (
                 <Link
                   data-aos="fade-in"
-                  to={"/product-list/Closed-skid"}
+                  to={`/product-list/${product?.id}`}
                 >
                   <img
                     src={product?.image}

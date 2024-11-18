@@ -108,7 +108,7 @@ export const SecondaryProducts: Product[] = [
 
 export const productsByApplication: Product[] = [
   {
-    id: "1",
+    id: "01",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
@@ -129,7 +129,7 @@ export const productsByApplication: Product[] = [
     ),
   },
   {
-    id: "2",
+    id: "02",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
@@ -150,7 +150,7 @@ export const productsByApplication: Product[] = [
     ),
   },
   {
-    id: "3",
+    id: "03",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
@@ -171,7 +171,7 @@ export const productsByApplication: Product[] = [
     ),
   },
   {
-    id: "4",
+    id: "04",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
@@ -192,7 +192,7 @@ export const productsByApplication: Product[] = [
     ),
   },
   {
-    id: "5",
+    id: "05",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
@@ -213,7 +213,7 @@ export const productsByApplication: Product[] = [
     ),
   },
   {
-    id: "6",
+    id: "06",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
     name: "YOU SEE EVERYONE",
@@ -706,6 +706,7 @@ export interface ProductData {
 
 export interface ProductList {
   id?: string;
+  bannerImageUrl?: string;
   thumbnailUrl?: string;
   name?: string;
   mountingType?: string;
@@ -722,7 +723,7 @@ export const productData: ProductData[] = [
     id: "01",
     categoryName: "DRINKING WATER STATION - BLUWAE Series",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/989b9ed7-8668-4a62-7bf6-f32a540d2f00/public",
     categoryDescription:
       "Water dispensers with inbuilt purification —pure, safe water delivered efficiently. Designed to reduce plastic waste and energy consumption, making sustainability easy.",
     categoryDescriptionTwo:
@@ -734,6 +735,8 @@ export const productData: ProductData[] = [
         id: "01",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c71da7df-b279-441d-63ca-cab312e82600/public",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a23ea67a-98f7-4be1-c5da-ea1fe5f99700/public",
         name: "VAR",
         mountingType: "Free-Standing",
         description:
@@ -770,6 +773,7 @@ export const productData: ProductData[] = [
         id: "02",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/699b0801-c2dc-41d0-136f-0b5d54990b00/public",
+        bannerImageUrl: "",
         name: "ENKI",
         mountingType: "Free-Standing",
         description:
@@ -806,6 +810,7 @@ export const productData: ProductData[] = [
         id: "03",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b173ac87-c1ea-4c9b-b4dc-9dfe9d7e4100/public",
+        bannerImageUrl: "",
         name: "POS",
         mountingType: "Free-Standing",
         description:
@@ -842,6 +847,7 @@ export const productData: ProductData[] = [
         id: "04",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9df2b276-67da-412e-b944-137e68fa3500/public",
+        bannerImageUrl: "",
         name: "ROM GRANDE",
         mountingType: "Free-Standing",
         description:
@@ -878,6 +884,7 @@ export const productData: ProductData[] = [
         id: "05",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52cfd172-76d2-4471-8083-4a8d9a8caf00/public",
+        bannerImageUrl: "",
         name: "REVA",
         mountingType: "Free-Standing",
         description:
@@ -914,6 +921,7 @@ export const productData: ProductData[] = [
         id: "06",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ec6c91fe-22a7-45bb-3aee-5e6720147000/public",
+        bannerImageUrl: "",
         name: "ASSISTIFLOW",
         mountingType: "Free-Standing",
         description:
@@ -950,6 +958,7 @@ export const productData: ProductData[] = [
         id: "07",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6865cefc-5a2e-43c5-5d73-438cfac6c800/public",
+        bannerImageUrl: "",
         name: "ENKI.CT",
         mountingType: "Counter-Top",
         description:
@@ -986,6 +995,7 @@ export const productData: ProductData[] = [
         id: "08",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/54008031-5666-4934-a9d4-6fdc01030e00/public",
+        bannerImageUrl: "",
         name: "VAR.CT",
         mountingType: "Counter-Top",
         description:
@@ -1022,6 +1032,7 @@ export const productData: ProductData[] = [
         id: "09",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52dd58ea-1d30-4397-6ba0-df78adaeaa00/public",
+        bannerImageUrl: "",
         name: "ROM.CT",
         mountingType: "Counter-Top",
         description:
@@ -1060,7 +1071,7 @@ export const productData: ProductData[] = [
     id: "02",
     categoryName: "DRINKING WATER DISPENSER - TRUBLU Series",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/708253cf-b3b1-4b4c-e9ed-73f9c05aa400/public",
     categoryDescriptionTwo:
       "Our Stainless Steel Water Dispensers aren’t just built to dispense water—they’re built to last. Crafted from durable stainless steel 304, they offer pure, refreshing water. Designed for sustainability, these dispensers help you cut down on waste while delivering energy-efficient performance that saves both the planet and your budget. It’s hydration that works smarter.",
     categoryDescriptionThree:
@@ -1072,6 +1083,7 @@ export const productData: ProductData[] = [
         id: "01",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         name: "ALFA.TL",
         mountingType: "Free-Standing",
         description:
@@ -1108,6 +1120,7 @@ export const productData: ProductData[] = [
         id: "02",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         name: "ALFA.BL",
         mountingType: "Free-Standing",
         description:
@@ -1144,6 +1157,7 @@ export const productData: ProductData[] = [
         id: "03",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         name: "ALFA",
         mountingType: "Free-Standing",
         description:
@@ -1183,6 +1197,7 @@ export const productData: ProductData[] = [
         id: "04",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         name: "ALFA.CT",
         mountingType: "Counter-Top",
         description:
@@ -1220,6 +1235,7 @@ export const productData: ProductData[] = [
         id: "05",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         name: "BETA(ss model)",
         mountingType: "Free-Standing",
         description:
@@ -1256,6 +1272,7 @@ export const productData: ProductData[] = [
         id: "06",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e670b1ee-b32c-4a6a-5d51-ed03fa81c400/public",
+        bannerImageUrl: "",
         name: "AENON",
         mountingType: "Free-Standing",
         description:
@@ -1292,6 +1309,7 @@ export const productData: ProductData[] = [
         id: "07",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f339b126-7cad-4942-91ee-8f535507f600/public",
+        bannerImageUrl: "",
         name: "DELTA",
         mountingType: "Free-Standing",
         description:
@@ -1328,6 +1346,7 @@ export const productData: ProductData[] = [
         id: "08",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c16970c2-a74d-4b1e-b0b0-e88ee58be000/public",
+        bannerImageUrl: "",
         name: "GAMMA",
         mountingType: "Free-Standing",
         description:
@@ -1364,6 +1383,7 @@ export const productData: ProductData[] = [
         id: "09",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9fabbc11-9a7d-4170-ba47-9f20621fb500/public",
+        bannerImageUrl: "",
         name: "BREEZE BLUE(usha)",
         mountingType: "Free-Standing",
         description:
@@ -1400,6 +1420,7 @@ export const productData: ProductData[] = [
         id: "10",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b92f8428-83ae-45b4-fccf-465b18193500/public",
+        bannerImageUrl: "",
         name: "LAGOON",
         mountingType: "Free-Standing",
         description:
@@ -1436,11 +1457,11 @@ export const productData: ProductData[] = [
   },
   {
     id: "03",
-    categoryName: "WATER COOLER & FOUNTAINS - ZVR Series",
+    categoryName: "DRINKING WATER FAUCETS - WATERMATIC Series",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac71707c-d21b-4121-80b9-26e66359d100/public",
     categoryDescriptionTwo:
-      "Our Water Coolers and Fountains are designed to elevate hydration in high-traffic spaces like airports. Whether wall-mounted or floor-standing, each unit is customizable to provide pure, refreshing drinking water at the touch of a button. Built for convenience and durability, they seamlessly blend into any environment while delivering reliable hydration, making them a smart, eco-friendly choice for travelers on the go.",
+      "Drinking water faucets with under the counter storage units to make access to fresh water simple. Precision-engineered for smooth flow, with a focus on reducing waste and energy use.",
     categoryDescriptionThree:
       "Customization meets innovation with our water coolers and fountains. Engineered for heavy use, these units offer advanced filtration and are crafted to minimize environmental impact. Whether you're looking for a sleek wall unit or a robust floor-standing option, they’re designed to deliver clean water efficiently, reducing plastic waste while keeping passengers refreshed and airports sustainable.",
     categoryDescription:
@@ -1448,7 +1469,10 @@ export const productData: ProductData[] = [
     productList: [
       {
         id: "01",
-        name: "ZALE",
+        name: "Piper",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/14dbff34-7f49-49a5-3837-64b6880ac000/public",
+        bannerImageUrl: "",
         mountingType: "On Wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1482,14 +1506,17 @@ export const productData: ProductData[] = [
       },
       {
         id: "02",
-        name: "IBIS",
+        name: "Indus",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/530b6e77-4a94-4c07-5fe6-e7a902d39200/public",
+        bannerImageUrl: "",
         mountingType: "On Wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/02dfe0c0-93c7-4086-6508-6ea0bc1b2a00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/27e09afa-2851-4872-bb0a-29b397568000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/1a765a6d-b8e2-457a-150d-efcbe1fffa00/public",
         ],
         features: [
           {
@@ -1516,14 +1543,17 @@ export const productData: ProductData[] = [
       },
       {
         id: "03",
-        name: "CONTOUR",
+        name: "Touch",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/32cdc632-c6bd-4d5a-a851-993f0b468600/public",
+        bannerImageUrl: "",
         mountingType: "On Wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3b24c06b-1752-47a0-4499-be61a2497800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0b994225-97de-4679-daf1-8e5008e73500/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a1a596c2-4a97-4da4-72a4-577ccb20a900/public",
         ],
         features: [
           {
@@ -1550,14 +1580,17 @@ export const productData: ProductData[] = [
       },
       {
         id: "04",
-        name: "PLUS ULTRA",
+        name: "Moses",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2f8b4ab6-9dde-4f8b-4ac8-795976314100/public",
+        bannerImageUrl: "",
         mountingType: "On Wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47b3d27b-b65b-4e94-26d1-ac8bb35afd00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0a6c1075-ac97-4c46-d1b9-42d3b6d82900/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8440a366-f65d-40b0-7b2c-582ad7f8cc00/public",
         ],
         features: [
           {
@@ -1584,14 +1617,17 @@ export const productData: ProductData[] = [
       },
       {
         id: "05",
-        name: "NT 01",
+        name: "TRX.TL",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/213a7aa6-0b7c-466a-1583-353000287100/public",
+        bannerImageUrl: "",
         mountingType: "In wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0a63f294-a33c-470e-8aba-f6bef589a600/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5a89b2db-4c37-4e75-40cc-0d5afa2fac00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e0460e14-5904-4c18-9dc4-1cf913d7da00/public",
         ],
         features: [
           {
@@ -1618,178 +1654,11 @@ export const productData: ProductData[] = [
       },
       {
         id: "06",
-        name: "YAMI",
+        name: "HKN",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a1d7989c-aec8-48b3-9c33-5ed1f22b0700/public",
+        bannerImageUrl: "",
         mountingType: "Floor-standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "07",
-        name: "VOLTURNUS",
-        mountingType: "Floor-standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "08",
-        name: "URB",
-        mountingType: "Outdoor",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "09",
-        name: "KANO",
-        mountingType: "Outdoor",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "10",
-        name: "KEMPTY",
-        mountingType: "Outdoor",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "10",
-        name: "PENGUIN",
-        mountingType: "Outdoor",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
@@ -1824,11 +1693,11 @@ export const productData: ProductData[] = [
   },
   {
     id: "04",
-    categoryName: "PUBLIC UTILITY SYSTEMS - PUS Series",
+    categoryName: "WATER COOLER & FOUNTAINS - ZVR Series",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac71707c-d21b-4121-80b9-26e66359d100/public",
     categoryDescriptionTwo:
-      "Our Public Utility Systems are built for scale, designed to meet the hydration needs of large public spaces with ease. Whether it’s parks, schools, or industrial areas, these systems provide reliable access to clean drinking water, reducing the reliance on bottled alternatives. Engineered for durability and efficiency, they’re made to handle high demand while lowering environmental impact. It's sustainable hydration on a grand scale.",
+      "Water coolers cum bubblers provide chilled water on demand. Built to be energy-efficient, they’re ideal for public spaces, reducing both costs and plastic waste.",
     categoryDescriptionThree:
       "Innovation doesn’t stop at convenience—it extends to responsibility. Our public utility systems not only deliver water where it’s needed most, but they do it with minimal waste. Crafted for long-term performance, these systems align with your commitment to a greener, more efficient future. Because when it comes to public spaces, clean water should be a given—not a challenge.",
     categoryDescription:
@@ -1837,6 +1706,9 @@ export const productData: ProductData[] = [
       {
         id: "01",
         name: "HYDROBANK XL",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "On Wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1871,6 +1743,9 @@ export const productData: ProductData[] = [
       {
         id: "02",
         name: "HYDROBANK L",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "On Wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1905,6 +1780,9 @@ export const productData: ProductData[] = [
       {
         id: "03",
         name: "HYDROBANK M",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "On Wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1939,6 +1817,9 @@ export const productData: ProductData[] = [
       {
         id: "04",
         name: "HYDROBANK",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "On Wall",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1973,6 +1854,9 @@ export const productData: ProductData[] = [
       {
         id: "05",
         name: "AQUA",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Free Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2008,11 +1892,11 @@ export const productData: ProductData[] = [
   },
   {
     id: "05",
-    categoryName: "DRINKING WATER FAUCETS - WATERMATIC Series",
+    categoryName: "PUBLIC UTILITY SYSTEMS - PUS Series",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac71707c-d21b-4121-80b9-26e66359d100/public",
     categoryDescriptionTwo:
-      "Our Drinking Water Faucets are a perfect blend of elegance and functionality. With their minimalist design, these faucets deliver pure, refreshing water with effortless precision. Crafted to enhance any space, they offer a sleek, modern solution that not only looks good but performs exceptionally well. When paired with our UTC(under the counter) Units for water storage, you get seamless access to clean water—without the clutter.",
+      "Designed for large public spaces, PUS systems ensure clean, accessible water. Engineered for durability and eco-friendliness, they support sustainable communities.",
     categoryDescriptionThree:
       "The UTC Units are designed for those who value simplicity and efficiency. Compact yet powerful, they store water discreetly, ensuring a constant supply while keeping your space organized. Together, our faucets and UTC Units bring you an elegant, space-saving solution that’s both stylish and sustainable. Hydration has never looked—or worked—this good.",
     categoryDescription:
@@ -2021,6 +1905,9 @@ export const productData: ProductData[] = [
       {
         id: "01",
         name: "MOSES",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Counter-top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2055,6 +1942,9 @@ export const productData: ProductData[] = [
       {
         id: "02",
         name: "PIPER",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Counter-top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2089,6 +1979,9 @@ export const productData: ProductData[] = [
       {
         id: "03",
         name: "TOUCH",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Counter-top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2123,6 +2016,9 @@ export const productData: ProductData[] = [
       {
         id: "04",
         name: "INDUS",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Counter-top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2157,6 +2053,9 @@ export const productData: ProductData[] = [
       {
         id: "05",
         name: "TRX.TL",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Counter-top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2191,6 +2090,9 @@ export const productData: ProductData[] = [
       {
         id: "06",
         name: "HKN",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Counter-top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2228,9 +2130,9 @@ export const productData: ProductData[] = [
     id: "06",
     categoryName: "COMMERCIAL/INDUSTRIAL PLANTS",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac71707c-d21b-4121-80b9-26e66359d100/public",
     categoryDescriptionTwo:
-      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
+      "Power your facility with our large-scale hydration plants. Scalable and efficient, they offer high-volume water solutions with a commitment to sustainability.",
     categoryDescriptionThree:
       "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
     categoryDescription:
@@ -2239,6 +2141,9 @@ export const productData: ProductData[] = [
       {
         id: "01",
         name: "BLUEBOX",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Closed-skid",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2273,6 +2178,9 @@ export const productData: ProductData[] = [
       {
         id: "02",
         name: "INRO",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Open-skid",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -2307,185 +2215,10 @@ export const productData: ProductData[] = [
       {
         id: "03",
         name: "WATERMAKER",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        bannerImageUrl: "",
         mountingType: "Free Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: "07",
-    categoryName: "UTC UNITS",
-    categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-    categoryDescriptionTwo:
-      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
-    categoryDescriptionThree:
-      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
-    categoryDescription:
-      "UTC units provide a space-saving solution for clean water. Ideal for compact areas, they combine smart design with environmental responsibility.",
-    productList: [
-      {
-        id: "01",
-        name: "GRAND PRISMATIC",
-        mountingType: "Under Counter",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "02",
-        name: "NUMERO UNO",
-        mountingType: "Under Counter",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: "08",
-    categoryName: "SMALL RO UNITS",
-    categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-    categoryDescriptionTwo:
-      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
-    categoryDescriptionThree:
-      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
-    categoryDescription:
-      "Maximize your space with our sleek wall hanging units. Perfect for areas with limited room, they deliver reliable, sustainable water access.",
-    productList: [
-      {
-        id: "01",
-        name: "ROBUSTO",
-        mountingType: "Wall Hanging",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: "09",
-    categoryName: "COMMUNITY WATER SOLUTIONS",
-    categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-    categoryDescriptionTwo:
-      "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
-    categoryDescriptionThree:
-      "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
-    categoryDescription:
-      "Bringing clean water to communities, our solutions offer sustainable hydration for all. Designed to be efficient, reliable, and environmentally responsible.",
-    productList: [
-      {
-        id: "01",
-        name: "QUALEASE",
-        mountingType: "Under Discussion",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [

@@ -290,7 +290,7 @@ export default function Contact() {
 
             <img
               src={
-                "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0a410594-fbe2-4af2-13a6-7a5226b3b700/public"
+                "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dcf2bf23-343f-4c08-5f4f-bf51106cf100/public"
               }
               alt="Map of countries where we have presence"
               className="mx-auto object-contain"
