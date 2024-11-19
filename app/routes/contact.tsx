@@ -187,173 +187,228 @@ export default function Contact() {
     <>
       <main className="wae-pb-md pt-[var(--header-height)]">
         <div className="container">
-          <section className="wae-mb-md wae-pt-md">
-            <div
-              className="text-center"
-              // data-aos="fade-down"
-            >
-              <h6 className="wae-h6 mb-8">Contact Us</h6>
-
-              <a
-                href="mailTo:info@waecorp.com"
-                className="mb-4 block font-secondary text-xl hover:underline md:mb-8 md:text-[32px]"
+          <section className="pt-10 xl:pt-20">
+            <h5 className="mb-10 text-center text-sm md:mb-[60px] md:text-base xl:mb-20 xl:text-xl">
+              Locate Us
+            </h5>
+            <div className="mb-20 grid gap-y-10 sm:grid-cols-2 md:mb-[120px] md:gap-x-10 md:gap-y-20">
+              <div
+                className="text-center"
+                // data-aos="fade-down"
               >
-                info@waecorp.com
-              </a>
-              <a
-                href="mailTo:marketing@waecorp.com"
-                className="mb-4 block font-secondary text-xl hover:underline md:mb-8 md:text-[32px]"
+                <h5 className="mb-5 flex min-h-[52px] items-center justify-center bg-black text-center text-xl font-extrabold text-white sm:mb-5 md:min-h-[58px] md:text-2xl md:text-[32px] xl:min-h-[70px] xl:text-[32px]">
+                  Noida Office
+                </h5>
+                <div className="text-sm md:text-base xl:text-xl">
+                  <address className="font-secondary not-italic">
+                    WAE Ltd. <br /> WAE Corp India Ltd. <br /> H-18, Sector 63,
+                    <br /> Noida, Uttar Pradesh 201301
+                    <br /> Tel.
+                  </address>
+
+                  <a
+                    href="tel:9101204069800"
+                    className="mt-5 inline-flex gap-3"
+                  >
+                    <img
+                      src="/images/icons/dialer.svg"
+                      alt="Dialer"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />{" "}
+                    +91 01204069800
+                  </a>
+                </div>
+              </div>
+              <div
+                className="text-center"
+                // data-aos="fade-down"
               >
-                marketing@waecorp.com
-              </a>
-            </div>
-          </section>
+                <h5 className="mb-5 flex min-h-[52px] items-center justify-center bg-black text-center text-xl font-extrabold text-white sm:mb-5 md:min-h-[58px] md:text-2xl md:text-[32px] xl:min-h-[70px] xl:text-[32px]">
+                  Mumbai Office
+                </h5>
+                <div className="text-sm md:text-base xl:text-xl">
+                  <address className="font-secondary not-italic">
+                    WAE Corp India Ltd. <br /> 91 Springboard Business Hub{" "}
+                    <br /> Godrej & Boyce, Gate no. 2
+                    <br />
+                    LBS Marg, Vikhroli
+                    <br /> Mumbai - 400079
+                  </address>
+                  <a
+                    href="tel:9101204069800"
+                    className="mt-5 inline-flex gap-3"
+                  >
+                    <img
+                      src="/images/icons/dialer.svg"
+                      alt="Dialer"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />{" "}
+                    +91 01204069800
+                  </a>
+                </div>
+              </div>
 
-          <section className="mb-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 sm:gap-y-[100px] md:mb-[100px]">
-            <div
-              className="text-center"
-              // data-aos="fade-down"
-            >
-              <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
-                Noida Office
-              </h5>
-              <address className="wae-h6 font-secondary not-italic">
-                WAE Ltd. <br /> WAE Corp India Ltd. <br /> H-18, Sector 63,
-                <br /> Noida, Uttar Pradesh 201301
-                <br /> Tel. +91 01204069800
-              </address>
-            </div>
-            <div
-              className="text-center"
-              // data-aos="fade-down"
-            >
-              <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
-                Mumbai Office
-              </h5>
+              <div
+                className="text-center"
+                // data-aos="fade-down"
+              >
+                <h5 className="mb-5 flex min-h-[52px] items-center justify-center bg-black text-center text-xl font-extrabold text-white sm:mb-5 md:min-h-[58px] md:text-2xl md:text-[32px] xl:min-h-[70px] xl:text-[32px]">
+                  Bengaluru Office
+                </h5>
+                <div className="text-sm md:text-base xl:text-xl">
+                  <address className="font-secondary not-italic">
+                    WAE Corp India Ltd. <br /> 91, springboard George Thangaiah
+                    <br /> Complex. 13. 80 Feet Rd. near Sir CV
+                    <br /> Roman Hospital Indiranagar
+                    <br />
+                    Bengaluru, Karnataka 560038
+                  </address>
 
-              <address className="wae-h6 font-secondary not-italic">
-                WAE Corp India Ltd. <br /> 91 Springboard Business Hub <br />{" "}
-                Godrej & Boyce, Gate no. 2
-                <br />
-                LBS Marg, Vikhroli
-                <br /> Mumbai - 400079
-              </address>
-            </div>
-            <div
-              className="text-center"
-              // data-aos="fade-down"
-            >
-              <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
-                Hyderabad Office
-              </h5>
-              <address className="wae-h6 font-secondary not-italic">
-                WAE Corp India Ltd.
-                <br /> Survey No. 55, Plot No. 108, <br /> NYN Arcade, 3rd Floor
-                Lumbini Society <br /> Off, Hitech City Main Rd,
-                <br /> next to Euro School, Gachibowli,
-                <br /> Hyderabad Telangana 500032
-              </address>
-            </div>
-            <div
-              className="text-center"
-              // data-aos="fade-down"
-            >
-              <h5 className="mb-2 text-base text-lg font-extrabold sm:mb-5 md:text-[32px]">
-                Bengaluru Office
-              </h5>
-              <address className="wae-h6 font-secondary not-italic">
-                WAE Corp India Ltd. <br /> 91, springboard George Thangaiah
-                <br /> Complex. 13. 80 Feet Rd. near Sir CV
-                <br /> Roman Hospital Indiranagar
-                <br />
-                Bengaluru, Karnataka 560038
-              </address>
+                  <a
+                    href="tel:9101204069800"
+                    className="mt-5 inline-flex gap-3"
+                  >
+                    <img
+                      src="/images/icons/dialer.svg"
+                      alt="Dialer"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />{" "}
+                    +91 01204069800
+                  </a>
+                </div>
+              </div>
+              <div
+                className="text-center"
+                // data-aos="fade-down"
+              >
+                <h5 className="mb-5 flex min-h-[52px] items-center justify-center bg-black text-center text-xl font-extrabold text-white sm:mb-5 md:min-h-[58px] md:text-2xl md:text-[32px] xl:min-h-[70px] xl:text-[32px]">
+                  Hyderabad Office
+                </h5>
+
+                <div className="text-sm md:text-base xl:text-xl">
+                  <address className="font-secondary not-italic">
+                    WAE Corp India Ltd.
+                    <br /> Survey No. 55, Plot No. 108, <br /> NYN Arcade, 3rd
+                    Floor Lumbini Society <br /> Off, Hitech City Main Rd,
+                    <br /> next to Euro School, Gachibowli,
+                    <br /> Hyderabad Telangana 500032
+                  </address>
+
+                  <a
+                    href="tel:9101204069800"
+                    className="mt-5 inline-flex gap-3"
+                  >
+                    <img
+                      src="/images/icons/dialer.svg"
+                      alt="Dialer"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />{" "}
+                    +91 01204069800
+                  </a>
+                </div>
+              </div>
             </div>
           </section>
 
           <section>
-            <div className="mb-14 flex flex-wrap gap-8 sm:flex-nowrap md:mb-[100px]">
-              <div className="flex w-full items-center text-sm sm:items-start sm:text-base">
-                <div className="mr-3 h-8 w-8 flex-shrink-0 bg-black sm:mr-5 md:h-14 md:w-14"></div>
-                Manufacturing hubs- India, China and S. Korea
+            <div
+              className="text-center"
+              // data-aos="fade-down"
+            >
+              <h5 className="mb-10 text-center text-sm md:mb-[60px] md:text-base xl:mb-20 xl:text-xl">
+                Write to Us
+              </h5>
+
+              <div className="mb-[60px] flex flex-col items-center justify-between md:mb-[120px] lg:flex-row xl:mb-[170px]">
+                <a
+                  href="mailTo:info@waecorp.com"
+                  className="flex items-center gap-5 font-secondary text-xl underline hover:no-underline md:mb-8 md:text-2xl xl:text-[32px]"
+                >
+                  <img
+                    src="/images/icons/envelope.svg"
+                    alt="EMail"
+                    width={24}
+                    height={24}
+                    className="object-contain md:w-6 lg:w-9"
+                  />
+                  info@waecorp.com
+                </a>
+                <a
+                  href="mailTo:marketing@waecorp.com"
+                  className="flex items-center gap-5 font-secondary text-xl underline hover:no-underline md:mb-8 md:text-2xl xl:text-[32px]"
+                >
+                  <img
+                    src="/images/icons/envelope.svg"
+                    alt="EMail"
+                    width={24}
+                    height={24}
+                    className="object-contain md:w-6 lg:w-9"
+                  />
+                  marketing@waecorp.com
+                </a>
               </div>
-              <div className="flex w-full items-center text-sm sm:items-start sm:text-base">
-                <div className="mr-3 h-8 w-8 flex-shrink-0 bg-[#4d4d4d] sm:mr-5 md:h-14 md:w-14"></div>
-                Existing Markets- India, U.S, China, Europe, Africa and Middle
-                East
-              </div>
-              <div className="flex w-full items-center text-sm sm:items-start sm:text-base">
-                <div className="mr-3 h-8 w-8 flex-shrink-0 bg-[#999999] sm:mr-5 md:h-14 md:w-14"></div>
-                Emerging Markets- S. America, Canada, Russia and Oceania
+
+              <div className="relative">
+                <img
+                  src={
+                    "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dcf2bf23-343f-4c08-5f4f-bf51106cf100/public"
+                  }
+                  alt="Map of countries where we have presence"
+                  className="mx-auto object-contain"
+                  width={1920}
+                  height={532}
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-offset="200"
+                  data-aos-duration="500"
+                />
+
+                {/* <div>
+                  <div>
+                    <img
+                      src="/images/icons/location-marker.svg"
+                      alt="Marker"
+                      className="mr-3 aspect-square w-[22px] md:w-9"
+                    />
+                    <div>
+                      <strong>Office </strong>
+                      <div>Locations</div>
+                    </div>
+                  </div>
+                </div> */}
               </div>
             </div>
-
-            <img
-              src={
-                "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dcf2bf23-343f-4c08-5f4f-bf51106cf100/public"
-              }
-              alt="Map of countries where we have presence"
-              className="mx-auto object-contain"
-              width={1920}
-              height={532}
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
-              data-aos-offset="200"
-              data-aos-duration="500"
-            />
           </section>
         </div>
       </main>
 
       <section className="wae-pt-lg wae-pb-lg bg-black text-white">
-        <div className="container sm:flex">
-          <div className="mb-12 sm:mb-0 sm:w-1/2">
-            <div className="mb-12 max-w-[360px]">
-              <h3 className="wae-h3 mb-5 font-secondary">
-                For more info/site assessment
-              </h3>
-            </div>
-
-            <div className="mt-10 text-xl">
-              <p className="mb-8">Talk to our Water Expert</p>
-              <div className="flex">
-                {Icons.Dialer}
-                <a
-                  href="tel:+91120687068"
-                  className="mb-6 ml-3 hover:underline"
-                >
-                  +91 120687068
-                </a>
-              </div>
-              <div className="flex">
-                {Icons.Envelope}
-
-                <div className="ml-3">
-                  <a
-                    href="mailTo:xyzwae@gmail.com"
-                    className="block hover:underline"
-                  >
-                    xyz@gmail.com
-                  </a>
-                  <a
-                    href="mailTo:xyzwae@gmail.com"
-                    className="block hover:underline"
-                  >
-                    xyzwae@gmail.com
-                  </a>
-                </div>
-              </div>
-            </div>
+        <div className="container">
+          <div className="mb-10 text-center md:mb-[60px] xl:mb-[100px]">
+            <h3 className="mb-4 font-secondary text-2xl md:mb-6 md:text-[32px] md:leading-normal xl:text-[40px]">
+              For more info/site assessment
+            </h3>
+            <p className="mb-8 text-sm xl:text-base">
+              Talk to our Water Expert
+            </p>
           </div>
-          <div className="flex bg-opacity-40 sm:w-1/2">
+          <div className="mx-auto max-w-[800px]">
             <Tabs
               variant="pills"
               defaultValue="distributor"
-              className="wae-tabs w-full max-w-xl"
+              className="wae-tabs w-full"
             >
               <Tabs.List>
-                <Tabs.Tab value="distributor">Distributor</Tabs.Tab>
-                <Tabs.Tab value="supplier">Supplier</Tabs.Tab>
+                <Tabs.Tab value="distributor">Sales</Tabs.Tab>
+                <Tabs.Tab value="supplier">Service & Support</Tabs.Tab>
               </Tabs.List>
 
               <Tabs.Panel value="distributor">
@@ -409,9 +464,9 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="wae-btn wae-btn-lg mt-3 w-full md:mt-12"
+                    className="wae-btn wae-btn-lg mt-3 w-full gap-3 md:mt-12"
                   >
-                    Contact Us {Icons.ChevronRight}
+                    Contact Us {Icons.ArrowRightLong}
                   </button>
                 </Form>
               </Tabs.Panel>
@@ -468,9 +523,9 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="wae-btn wae-btn-lg mt-3 w-full md:mt-12"
+                    className="wae-btn wae-btn-lg mt-3 w-full gap-3 md:mt-12"
                   >
-                    Contact Us {Icons.ChevronRight}
+                    Contact Us {Icons.ArrowRightLong}
                   </button>
                 </Form>
               </Tabs.Panel>

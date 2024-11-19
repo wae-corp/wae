@@ -253,7 +253,7 @@ export default function SustainabilityCaseStudy() {
             <h5 className="wae-h5-lg mt-10 font-secondary uppercase leading-tight">
               The BFSI sector is showing that sustainable choices have a ripple
               effect. By embracing WAE's innovative hydration solutions, these
-              organizations are not just quenching thirst—they're feeding a
+              organizations are not just quenching thirst they're feeding a
               movement toward a greener future.
             </h5>
           </div>
