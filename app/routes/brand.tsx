@@ -44,7 +44,7 @@ export default function Brand() {
 
   return (
     <>
-      <main className="relative flex h-screen flex-col items-center justify-end pb-10 pt-[var(--header-height)]">
+      <main className="relative flex h-screen flex-col items-center justify-end pb-10 pt-[var(--header-height)] md:h-[640px] md:pb-[120px]">
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <img
             src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6afd4297-696e-44ee-7303-1b50a5262200/public"
@@ -54,36 +54,37 @@ export default function Brand() {
             height={1080}
           />
         </div>
-        <div
-          className="flex flex-col gap-4 text-center text-white"
-          data-aos="fade-up"
-        >
-          <h1 className="wae-h2 font-secondary ">
-            WAE:
-            <br /> A Brand Committed to Innovation and Transformation
-          </h1>
-          <p className="wae-h6 max-w-screen-xl text-center">
-            At WAE, our brand embodies more than just products; it represents a
-            belief in possibilities. Our commitment to innovation, quality, and
-            making a positive impact on people's lives through technology drives
-            us forward. This philosophy is at the heart of everything we do,
-            guiding our efforts to bring transformative solutions to the world.
-          </p>
+        <div className="container">
+          <div
+            className="flex flex-col gap-10 text-center text-white"
+            data-aos="fade-up"
+          >
+            <h1 className="font-secondary text-[32px] leading-normal">
+              WAE:
+              <br /> A Brand Committed to Innovation and Transformation
+            </h1>
+            <p className="wae-h6 max-w-screen-xl text-center font-light">
+              At WAE, our brand embodies more than just products; it represents
+              a belief in possibilities. Our commitment to innovation, quality,
+              and making a positive impact on people's lives through technology
+              drives us forward. This philosophy is at the heart of everything
+              we do, guiding our efforts to bring transformative solutions to
+              the world.
+            </p>
+          </div>
         </div>
       </main>
-      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-28">
-        <section
-          className="container grid grid-cols-2 gap-x-8 gap-y-14 pt-20"
-          style={{rowGap: "7rem"}}
-        >
+
+      <section className="flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 md:py-[120px]">
+        <div className="container grid gap-x-8 gap-y-[60px] md:grid-cols-2 md:gap-x-10">
           <div
-            className="flex flex-col gap-6"
+            className="flex flex-col"
             data-aos="fade-right"
           >
-            <h6 className="wae-h6-lg font-extrabold uppercase">
+            <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
               Belief in Possibilities!
             </h6>
-            <p className="fw-light max-w-xl text-sm">
+            <p className="fw-light mb-10 max-w-xl text-sm">
               At WAE, we believe in the potential for change and progress. Our
               brand is a testament to this belief, showcasing our dedication to
               creating technologies that transform lives. We are more than a
@@ -93,20 +94,20 @@ export default function Brand() {
             <div>
               <Link
                 to="#"
-                className="mt-4 inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
+                className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
               >
                 Explore
               </Link>
             </div>
           </div>
           <div
-            className="flex flex-col gap-6"
+            className="flex flex-col"
             data-aos="fade-left"
           >
-            <h6 className="wae-h6-lg font-extrabold uppercase">
+            <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
               Commitment to Quality!
             </h6>
-            <p className="fw-light max-w-xl text-sm">
+            <p className="fw-light mb-10 max-w-xl text-sm">
               Quality is the cornerstone of our brand. Every product we create
               is a reflection of our relentless pursuit of excellence. We ensure
               that our solutions not only meet but exceed expectations,
@@ -115,20 +116,20 @@ export default function Brand() {
             <div>
               <Link
                 to="#"
-                className="mt-4 inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
+                className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
               >
                 Explore
               </Link>
             </div>
           </div>
           <div
-            className="flex flex-col gap-6"
+            className="flex flex-col"
             data-aos="fade-up"
           >
-            <h6 className="wae-h6-lg font-extrabold uppercase">
+            <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
               Transformation Through Technology!
             </h6>
-            <p className="fw-light max-w-xl text-sm">
+            <p className="fw-light mb-10 max-w-xl text-sm">
               Our mission is to leverage technology to bring about meaningful
               transformation. Whether it's through our advanced water solutions
               or our commitment to sustainability, we strive to create a better,
@@ -137,15 +138,16 @@ export default function Brand() {
             <div>
               <Link
                 to="#"
-                className="mt-4 inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
+                className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
               >
                 Explore
               </Link>
             </div>
           </div>
-        </section>
+        </div>
       </section>
-      <section className="relative flex h-screen flex-col items-center justify-center pb-10 pt-[var(--header-height)]">
+
+      <section className="md:[120px] relative flex min-h-screen flex-col items-center justify-center py-20">
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <img
             src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0c48a418-ce7a-4020-6be9-d6f8f399a000/public"
@@ -155,36 +157,35 @@ export default function Brand() {
             height={1080}
           />
         </div>
-        <div className="container grid grid-cols-2 gap-24">
+        <div className="container grid md:grid-cols-2">
           <div
-            className="flex flex-col gap-10 px-4 text-left text-white"
+            className="mb-[60px] flex flex-col gap-x-10 text-left text-white"
             // data-aos="fade-right"
           >
-            <h2 className="wae-h3 font-secondary">
+            <h2 className="mb-10 font-secondary text-2xl">
               WAE: A Symbol of Unity and Progress
             </h2>
-            <p className="wae-p">
+
+            <div className="mb-12 flex max-w-screen-lg items-center gap-x-2 font-semibold">
+              <p className="prefix-dot"></p>
+              <p className="text-sm uppercase">
+                Explore each element of our logo which represents our core
+                values at WAE
+              </p>
+            </div>
+
+            <p className="pl-20 text-sm">
               Our new logo is a key part of our updated brand identity, designed
               to drive consistency and focus. Its simple, bold design makes it
               instantly recognizable and versatile across various marketing
               mediums, from billboards to mobile screens.
             </p>
-            <div className="flex max-w-screen-lg items-center gap-x-2">
-              <p className="prefix-dot"></p>
-              <p className="wae-p text-base uppercase">
-                Explore each element of our logo which represents our core
-                values at WAE
-              </p>
-            </div>
           </div>
           <div
-            className="px-4 text-white"
+            className="text-white"
             // data-aos="fade-left"
           >
-            <p
-              className="wae-h6 max-w-xl text-left font-light uppercase leading-relaxed"
-              style={{lineHeight: "2rem"}}
-            >
+            <p className="max-w-xl text-left text-base font-light uppercase leading-relaxed">
               The logo features an illustration of six hands moving in harmony,
               symbolizing our commitment to making the earth a better and more
               sustainable place. These hands also represent teamwork and
@@ -196,18 +197,16 @@ export default function Brand() {
           </div>
         </div>
       </section>
+
       <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-28">
-        <div className="container py-20">
-          <div
-            className="flex flex-col items-center"
-            style={{rowGap: "100px"}}
-          >
+        <div className="container">
+          <div className="flex flex-col items-center">
             <div
-              className="flex max-w-screen-lg items-center justify-center gap-x-2"
+              className="mb-[60px] flex max-w-screen-lg items-center justify-center gap-x-2"
               // data-aos="fade-down"
             >
               <p className="prefix-dot"></p>
-              <p className="wae-p text-center text-base uppercase">
+              <p className="text-xs uppercase md:text-center xl:text-base">
                 Each of the six hands represents a core value of WAE:
               </p>
             </div>
@@ -222,15 +221,15 @@ export default function Brand() {
               data-aos-offset="200"
               data-aos-duration="500"
             />
-            <div className="grid grid-cols-2 gap-14">
+            <div className="my-20 grid gap-[60px] md:grid-cols-2">
               <h2
-                className="wae-h3 font-secondary uppercase"
+                className="font-secondary text-2xl uppercase"
                 // data-aos="fade-right"
               >
                 Gaols of six sigma
               </h2>
               <p
-                className="wae-p"
+                className="text-sm uppercase"
                 // data-aos="fade-left"
               >
                 The Six Sigma principles embedded in our logo highlight our
@@ -241,23 +240,22 @@ export default function Brand() {
                 excellence.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-14">
+            <div className="grid gap-10 md:grid-cols-2">
               <img
                 src="/images/cards/VAR_Product.png"
                 alt="Beaker on table"
                 width={540}
                 height={540}
-                className="block shrink-0 object-cover max-xl:mx-auto"
+                className="block aspect-square shrink-0 object-cover max-xl:mx-auto"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
-                data-aos-offset="200"
                 data-aos-duration="500"
               />
-              <div className="flex flex-col justify-between gap-8">
+              <div className="flex flex-col justify-between gap-5 md:gap-8">
                 {featuresArray.map((feature, idx) => {
                   return (
                     <div
-                      className="flex items-center gap-4"
+                      className="flex items-center gap-6 md:gap-4"
                       key={idx}
                       data-aos="fade-in"
                       data-aos-delay={`${idx}00`}
@@ -267,7 +265,7 @@ export default function Brand() {
                         alt={feature.title}
                         width={36}
                         height={36}
-                        className="block shrink-0"
+                        className="block aspect-square h-6 w-6 shrink-0 object-contain"
                       />
                       <h3 className="wae-p">{feature.title}</h3>
                     </div>
