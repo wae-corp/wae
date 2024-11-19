@@ -59,11 +59,11 @@ export default function Brand() {
             className="flex flex-col gap-10 text-center text-white"
             data-aos="fade-up"
           >
-            <h1 className="font-secondary text-[32px] leading-normal">
+            <h1 className="font-secondary text-[32px] leading-normal xl:text-[40px]">
               WAE:
               <br /> A Brand Committed to Innovation and Transformation
             </h1>
-            <p className="wae-h6 max-w-screen-xl text-center font-light">
+            <p className="wae-h6 text-center font-light">
               At WAE, our brand embodies more than just products; it represents
               a belief in possibilities. Our commitment to innovation, quality,
               and making a positive impact on people's lives through technology
@@ -75,8 +75,8 @@ export default function Brand() {
         </div>
       </main>
 
-      <section className="flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 md:py-[120px]">
-        <div className="container grid gap-x-8 gap-y-[60px] md:grid-cols-2 md:gap-x-10">
+      <section className="flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 md:py-[120px] xl:py-[180px]">
+        <div className="container grid gap-x-8 gap-y-[60px] md:grid-cols-2 md:gap-x-10 xl:gap-x-[120px] xl:gap-y-[180px]">
           <div
             className="flex flex-col"
             data-aos="fade-right"
@@ -84,7 +84,7 @@ export default function Brand() {
             <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
               Belief in Possibilities!
             </h6>
-            <p className="fw-light mb-10 max-w-xl text-sm">
+            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[60px] xl:text-base">
               At WAE, we believe in the potential for change and progress. Our
               brand is a testament to this belief, showcasing our dedication to
               creating technologies that transform lives. We are more than a
@@ -107,7 +107,7 @@ export default function Brand() {
             <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
               Commitment to Quality!
             </h6>
-            <p className="fw-light mb-10 max-w-xl text-sm">
+            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[60px] xl:text-base">
               Quality is the cornerstone of our brand. Every product we create
               is a reflection of our relentless pursuit of excellence. We ensure
               that our solutions not only meet but exceed expectations,
@@ -129,7 +129,7 @@ export default function Brand() {
             <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
               Transformation Through Technology!
             </h6>
-            <p className="fw-light mb-10 max-w-xl text-sm">
+            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[60px] xl:text-base">
               Our mission is to leverage technology to bring about meaningful
               transformation. Whether it's through our advanced water solutions
               or our commitment to sustainability, we strive to create a better,
@@ -147,7 +147,7 @@ export default function Brand() {
         </div>
       </section>
 
-      <section className="md:[120px] relative flex min-h-screen flex-col items-center justify-center py-20">
+      <section className="md:[120px] relative flex flex-col items-center justify-center py-20 md:py-[120px] xl:py-[180px]">
         <div className="absolute inset-0 -z-[1] h-full w-full">
           <img
             src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0c48a418-ce7a-4020-6be9-d6f8f399a000/public"
@@ -157,56 +157,55 @@ export default function Brand() {
             height={1080}
           />
         </div>
-        <div className="container grid md:grid-cols-2">
+        <div className="container flex flex-col xl:flex-row xl:gap-[140px]">
           <div
             className="mb-[60px] flex flex-col gap-x-10 text-left text-white"
             // data-aos="fade-right"
           >
-            <h2 className="mb-10 font-secondary text-2xl">
+            <h2 className="mb-10 font-secondary text-2xl uppercase xl:mb-[60px] xl:text-4xl">
               WAE: A Symbol of Unity and Progress
             </h2>
 
-            <div className="mb-12 flex max-w-screen-lg items-center gap-x-2 font-semibold">
+            <div className="mb-12 flex max-w-screen-lg items-center gap-x-2 font-semibold md:order-last md:mb-0 md:mt-6 xl:mt-12">
               <p className="prefix-dot"></p>
-              <p className="text-sm uppercase">
+              <p className="text-sm uppercase xl:text-base">
                 Explore each element of our logo which represents our core
                 values at WAE
               </p>
             </div>
 
-            <p className="pl-20 text-sm">
+            <p className="pl-20 text-sm xl:text-base">
               Our new logo is a key part of our updated brand identity, designed
               to drive consistency and focus. Its simple, bold design makes it
               instantly recognizable and versatile across various marketing
               mediums, from billboards to mobile screens.
             </p>
           </div>
-          <div
-            className="text-white"
+
+          <p
+            className="text-left text-base font-light uppercase leading-relaxed text-white md:text-xl xl:max-w-[400px] xl:text-2xl"
             // data-aos="fade-left"
           >
-            <p className="max-w-xl text-left text-base font-light uppercase leading-relaxed">
-              The logo features an illustration of six hands moving in harmony,
-              symbolizing our commitment to making the earth a better and more
-              sustainable place. These hands also represent teamwork and
-              cooperation, essential values that drive our success in all
-              endeavors. The number six signifies perfection and completion,
-              reflecting our goal to achieve the highest standards in everything
-              we do.
-            </p>
-          </div>
+            The logo features an illustration of six hands moving in harmony,
+            symbolizing our commitment to making the earth a better and more
+            sustainable place. These hands also represent teamwork and
+            cooperation, essential values that drive our success in all
+            endeavors. The number six signifies perfection and completion,
+            reflecting our goal to achieve the highest standards in everything
+            we do.
+          </p>
         </div>
       </section>
 
-      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-28">
+      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 md:py-[120px]">
         <div className="container">
           <div className="flex flex-col items-center">
             <div
-              className="mb-[60px] flex max-w-screen-lg items-center justify-center gap-x-2"
+              className="mb-[60px] flex max-w-screen-lg items-center justify-center gap-x-2 xl:mb-[100px]"
               // data-aos="fade-down"
             >
               <p className="prefix-dot"></p>
-              <p className="text-xs uppercase md:text-center xl:text-base">
+              <p className="text-xs uppercase md:text-center md:text-sm xl:text-base">
                 Each of the six hands represents a core value of WAE:
               </p>
             </div>
@@ -221,15 +220,15 @@ export default function Brand() {
               data-aos-offset="200"
               data-aos-duration="500"
             />
-            <div className="my-20 grid gap-[60px] md:grid-cols-2">
+            <div className="my-20 flex w-full max-w-[1080px] flex-col items-start gap-[60px] md:my-[120px] md:flex-row md:gap-10">
               <h2
-                className="font-secondary text-2xl uppercase"
+                className="font-secondary text-2xl uppercase md:flex-shrink-0"
                 // data-aos="fade-right"
               >
                 Gaols of six sigma
               </h2>
               <p
-                className="text-sm uppercase"
+                className="text-sm uppercase xl:ml-auto xl:max-w-[545px]"
                 // data-aos="fade-left"
               >
                 The Six Sigma principles embedded in our logo highlight our
@@ -240,7 +239,7 @@ export default function Brand() {
                 excellence.
               </p>
             </div>
-            <div className="grid gap-10 md:grid-cols-2">
+            <div className="grid gap-10 md:grid-cols-2 xl:gap-[60px]">
               <img
                 src="/images/cards/VAR_Product.png"
                 alt="Beaker on table"
@@ -251,7 +250,7 @@ export default function Brand() {
                 data-aos-easing="ease-in-back"
                 data-aos-duration="500"
               />
-              <div className="flex flex-col justify-between gap-5 md:gap-8">
+              <div className="flex flex-col gap-5 md:gap-8 xl:gap-14">
                 {featuresArray.map((feature, idx) => {
                   return (
                     <div
@@ -265,9 +264,11 @@ export default function Brand() {
                         alt={feature.title}
                         width={36}
                         height={36}
-                        className="block aspect-square h-6 w-6 shrink-0 object-contain"
+                        className="block aspect-square shrink-0 object-contain max-sm:h-6 max-sm:w-6"
                       />
-                      <h3 className="wae-p">{feature.title}</h3>
+                      <h3 className="wae-p md:text-sm xl:text-base">
+                        {feature.title}
+                      </h3>
                     </div>
                   );
                 })}
