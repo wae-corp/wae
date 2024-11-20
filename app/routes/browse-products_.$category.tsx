@@ -66,25 +66,25 @@ export default function BrowseProducts() {
 
   return (
     <>
-      <main className="relative flex h-[640px] items-center bg-water-machine-near-wall bg-cover bg-bottom bg-no-repeat pt-[var(--header-height)] text-white"></main>
+      <main className="relative flex h-[640px] items-center bg-water-machine-near-wall bg-cover bg-center bg-no-repeat pt-[var(--header-height)] text-white"></main>
 
-      <section className="wae-pt-md wae-pb-md bg-black text-white">
+      <section className="bg-black py-20 text-white md:py-[120px]">
         <div className="container flex items-center">
-          <div className="gap-8 sm:flex lg:gap-[140px]">
+          <div className="gap-8 lg:gap-[140px] xl:flex">
             <div
-              className="flex flex-col items-start justify-start md:col-span-8"
+              className="flex flex-col items-start justify-start md:col-span-8 md:mb-10 xl:mb-0"
               // data-aos="fade-right"
             >
-              <h3 className="wae-h4 mb-12 font-secondary">
+              <h3 className="mb-12 font-secondary text-2xl md:mb-10 md:text-[32px] md:leading-normal xl:text-4xl">
                 {currentCategory?.categoryName}
               </h3>
-              <p className="uppercase lg:max-w-[80%]">
+              <p className="pl-20 text-sm uppercase xl:text-base">
                 {currentCategory?.categoryDescriptionTwo}
               </p>
 
               <Link
                 to={"/product-list/" + currentCategory?.id}
-                className="wae-btn mt-[60px] border-white px-6 py-2"
+                className="wae-btn mt-12 border-white px-6 py-2 max-lg:mx-auto"
               >
                 View All Products
               </Link>
@@ -93,7 +93,7 @@ export default function BrowseProducts() {
               className="mt-10 sm:mt-0 lg:max-w-[400px]"
               // data-aos="fade-left"
             >
-              <p className="wae-h6-lg uppercase">
+              <p className="text-base uppercase md:text-2xl">
                 {currentCategory?.categoryDescriptionThree}
               </p>
             </div>
@@ -101,19 +101,21 @@ export default function BrowseProducts() {
         </div>
       </section>
 
-      <section className="wae-pt-lg wae-pb-lg">
+      <section className="py-20 md:py-[120px]">
         <section>
           <div
-            className="container mb-20 text-center"
+            className="container mb-10 text-center md:mb-20"
             data-aos="fade-down"
           >
-            <h6 className="mb-12 font-light">Products</h6>
+            <h6 className="mb-xl:mb-12 mb-8 text-xs font-light md:text-sm">
+              Products
+            </h6>
 
-            <h2 className="wae-h2 mb-12 font-secondary">
+            <h2 className="wae-h2 mb-8 font-secondary md:mb-[60px] xl:mb-12">
               Browse by Product Type
             </h2>
 
-            <p className="uppercase">
+            <p className="text-xs uppercase md:text-sm">
               <span className="prefix-dot"></span>
               Check what fits your requirement
             </p>
@@ -127,13 +129,15 @@ export default function BrowseProducts() {
             className="container mb-20 text-center"
             data-aos="fade-down"
           >
-            <h6 className="mb-12 font-light">Products</h6>
+            <h6 className="mb-8 text-xs font-light md:text-sm xl:mb-12">
+              Products
+            </h6>
 
-            <h2 className="wae-h2 mb-12 font-secondary">
+            <h2 className="wae-h2 mb-8 font-secondary xl:mb-12">
               Browse by Application
             </h2>
 
-            <p className="uppercase">
+            <p className="text-xs uppercase md:text-sm">
               <span className="prefix-dot"></span>
               Explore the best suited designs for you
             </p>

@@ -53,15 +53,17 @@ export default function ProductDetails() {
 
   return (
     <>
-      <main className="flex min-h-[500px] items-center bg-product-details-banner bg-cover bg-no-repeat pb-12 pt-[var(--header-height)] text-white xl:min-h-screen xl:bg-center">
+      <main className="flex h-screen items-end bg-product-details-banner bg-cover bg-no-repeat pb-20 pt-[var(--header-height)] text-white md:pb-[120px] xl:min-h-[640px] xl:bg-center xl:pb-[140px]">
         <div className="container-lg">
           <div
             className="max-w-3xl"
             // data-aos="fade-down"
           >
-            <h6 className="wae-h6 mb-4 font-extrabold uppercase">{name}</h6>
+            <h6 className="mb-4 text-base font-extrabold uppercase md:text-xl">
+              {name}
+            </h6>
 
-            <h1 className="wae-h3-lg font-secondary !leading-normal">
+            <h1 className="font-secondary text-2xl md:text-[32px] md:leading-normal xl:text-5xl">
               Did you know? On average we use 5,500 liters of water a day! That
               is a humungous amount of water!…
             </h1>
@@ -69,11 +71,11 @@ export default function ProductDetails() {
         </div>
       </main>
 
-      <section className="wae-pt-lg wae-pb-lg">
+      <section className="py-20 md:py-[120px] xl:py-[180px]">
         <div className="container">
-          <div className="flex flex-col items-center gap-10 xl:flex-row xl:items-start xl:justify-start">
+          <div className="flex flex-col items-center gap-10 md:flex-row md:items-start md:justify-start">
             <div
-              className="flex w-[600px] flex-shrink-0 justify-center"
+              className="flex flex-shrink-0 justify-center md:w-[600px]"
               // data-aos="zoom-in"
             >
               <ProductImageSlider images={image} />
