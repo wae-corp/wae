@@ -133,41 +133,41 @@ export default function Sustainability() {
               </div>
 
               <div className="text-center">
-                <p className="wae-h2 font-secondary">
+                <div className="wae-h2 font-secondary">
                   <Counter
                     end={5736591}
                     duration={1}
                     separator=","
                   />{" "}
                   KG
-                </p>
+                </div>
                 <p className="mt-2 text-xl font-light uppercase">
                   CO2E EMISSIONS ELIMINATED
                 </p>
               </div>
 
               <div className="text-center">
-                <p className="wae-h2 font-secondary">
+                <div className="wae-h2 font-secondary">
                   <Counter
                     end={900000}
                     duration={1}
                     separator=","
                   />
-                </p>
+                </div>
                 <p className="mt-2 text-xl font-light uppercase">
                   PLASTIC WATER JARS ERADICATED
                 </p>
               </div>
 
               <div className="text-center md:col-span-2 lg:col-span-1">
-                <p className="wae-h2 font-secondary">
+                <div className="wae-h2 font-secondary">
                   <Counter
                     end={92}
                     duration={1}
                     separator=","
                   />
                   M LITERS
-                </p>
+                </div>
                 <p className="mt-2 text-xl font-light uppercase">
                   OF WATER CONSERVED
                 </p>

@@ -68,9 +68,9 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="wae-pt-lg wae-pb-lg bg-white">
+      <section className="wae-pt-lg wae-pb-lg bg-white max-sm:pb-0">
         <div className="container">
-          <div className="mx-auto flex max-w-[1080px] flex-col justify-between gap-12 md:mb-[60px] md:gap-10 lg:mb-36 xl:flex-row">
+          <div className="mx-auto flex flex-col justify-between gap-12 md:mb-[60px] md:gap-10 lg:mb-36 xl:flex-row">
             <div
               className="flex-shrink-0"
               // data-aos="fade-right"
@@ -102,7 +102,7 @@ export default function Company() {
             </div>
           </div>
 
-          <div className="mb:mt-0 mt-20 flex flex-col flex-wrap justify-center gap-[60px] bg-[#f1f1f1] pt-20 max-sm:items-center md:flex-nowrap md:gap-10 md:bg-transparent md:pt-0 lg:flex-row xl:justify-between">
+          <div className="mb:mt-0 mt-20 flex flex-col flex-wrap justify-center gap-[60px] bg-[#f1f1f1] py-20 max-sm:items-center md:flex-nowrap md:gap-10 md:bg-transparent md:pb-0 md:pt-0 lg:flex-row xl:justify-between">
             <div
               className="text-center"
               data-aos="fade-up"
@@ -215,49 +215,50 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="wae-pt-lg wae-pb-lg">
-        {/* <div className="flex flex-col gap-8 sm:flex-row">
-          <div
-          // data-aos="fade-right"
-          >
-            <h3 className="wae-h4 mb-10 font-secondary">
-              Journey and Transformation
-            </h3>
-            <p
-              className="mb-10 uppercase lg:ml-28 lg:max-w-[80%]"
-              // data-aos="fade-right"
-            >
-              Our journey has been a rewarding one, contributing to a
-              sustainable planet where everyone can thrive. Looking ahead, our
-              transformation will be guided by our capabilities, strategic
-              vision, and commitment to creating enduring value for all
-              stakeholders. We invite ongoing support as we embrace new
-              opportunities and challenges, dedicated to making a positive
-              impact on the environment and society.
-            </p>
-
-            <p className="uppercase">
-              <span className="prefix-dot"></span> You discover Doimo Kitchens
-            </p>
-          </div>
-          <div
-            className="max-w-[400px] flex-shrink-0"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-offset="200"
-            data-aos-duration="500"
-          >
-            <img
-              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b122394b-da4c-4757-c125-9d9b77503900/public"
-              alt="bowl-with-chopsticks"
-              width={370}
-              height={460}
-              className="ml-auto object-cover"
-            />
-          </div>
-        </div> */}
-
+      <section className="py-20 md:py-[120px] xl:py-[180px]">
         <div className="container">
+          <div className="mb-20 flex flex-col gap-[40px] md:mb-[120px] md:gap-[60px] xl:mb-[180px] xl:flex-row xl:gap-[160px]">
+            <div
+            // data-aos="fade-right"
+            >
+              <h3 className="mb-[60px] font-secondary text-2xl md:text-[32px] md:leading-normal xl:mb-[60px] xl:text-4xl">
+                Journey and Transformation
+              </h3>
+              <p
+                className="mb-12 md:mb-[60px] md:pl-20 md:text-sm xl:mb-12 xl:text-base"
+                // data-aos="fade-right"
+              >
+                Our journey has been a rewarding one, contributing to a
+                sustainable planet where everyone can thrive. Looking ahead, our
+                transformation will be guided by our capabilities, strategic
+                vision, and commitment to creating enduring value for all
+                stakeholders. We invite ongoing support as we embrace new
+                opportunities and challenges, dedicated to making a positive
+                impact on the environment and society.
+              </p>
+
+              <p className="text-sm uppercase xl:text-base">
+                <span className="prefix-dot"></span> Our journey is focused
+                towards a sustainable planet
+              </p>
+            </div>
+            <div
+              className="flex-shrink-0 xl:max-w-[400px]"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="200"
+              data-aos-duration="500"
+            >
+              <img
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b122394b-da4c-4757-c125-9d9b77503900/public"
+                alt="bowl-with-chopsticks"
+                width={370}
+                height={460}
+                className="mx-auto object-cover max-sm:mr-0 max-sm:w-[260px] xl:mr-0"
+              />
+            </div>
+          </div>
+
           <div className="mb-20 max-w-[670px] md:mb-[120px] lg:mb-36">
             <h4 className="mb-5 font-secondary text-2xl uppercase xl:text-[30px]">
               Core Values and Beliefs
@@ -276,7 +277,7 @@ export default function Company() {
                 <div
                   key={v.id}
                   className="sm:even:!-translate-y-20"
-                  data-aos="fade-down"
+                  data-aos="fade-up"
                   data-aos-delay={`${idx}00`}
                 >
                   <img

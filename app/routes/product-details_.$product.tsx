@@ -53,7 +53,7 @@ export default function ProductDetails() {
 
   return (
     <>
-      <main className="flex h-screen items-end bg-product-details-banner bg-cover bg-no-repeat pb-20 pt-[var(--header-height)] text-white md:pb-[120px] xl:min-h-[640px] xl:bg-center xl:pb-[140px]">
+      <main className="bg-man-filling-bottle flex h-screen items-end bg-cover bg-no-repeat pb-20 pt-[var(--header-height)] text-white md:pb-[120px] xl:min-h-[640px] xl:bg-center xl:pb-[140px]">
         <div className="container-lg">
           <div
             className="max-w-3xl"
@@ -63,7 +63,7 @@ export default function ProductDetails() {
               {name}
             </h6>
 
-            <h1 className="font-secondary text-2xl md:text-[32px] md:leading-normal xl:text-5xl">
+            <h1 className="font-secondary text-2xl md:text-[32px] md:!leading-normal xl:text-5xl">
               Did you know? On average we use 5,500 liters of water a day! That
               is a humungous amount of water!…
             </h1>
@@ -75,7 +75,7 @@ export default function ProductDetails() {
         <div className="container">
           <div className="flex flex-col items-center gap-10 md:flex-row md:items-start md:justify-start">
             <div
-              className="flex flex-shrink-0 justify-center md:w-[600px]"
+              className="flex flex-shrink-0 justify-center xl:w-[600px]"
               // data-aos="zoom-in"
             >
               <ProductImageSlider images={image} />
@@ -227,10 +227,10 @@ export default function ProductDetails() {
               <div className="flex">
                 {Icons.Dialer}
                 <a
-                  href="tel:+91120687068"
+                  href="tel:+911204069800"
                   className="mb-6 ml-3 hover:underline"
                 >
-                  +91 120687068
+                  +91 1204069800
                 </a>
               </div>
               <div className="flex">
@@ -238,16 +238,16 @@ export default function ProductDetails() {
 
                 <div className="ml-3">
                   <a
-                    href="mailTo:xyzwae@gmail.com"
+                    href="mailTo:info@waecorp.com"
                     className="block hover:underline"
                   >
-                    xyz@gmail.com
+                    info@waecorp.com
                   </a>
                   <a
-                    href="mailTo:xyzwae@gmail.com"
+                    href="mailTo:marketing@waecorp.com"
                     className="block hover:underline"
                   >
-                    xyzwae@gmail.com
+                    marketing@waecorp.com
                   </a>
                 </div>
               </div>

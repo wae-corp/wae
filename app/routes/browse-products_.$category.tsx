@@ -66,7 +66,7 @@ export default function BrowseProducts() {
 
   return (
     <>
-      <main className="relative flex h-[640px] items-center bg-water-machine-near-wall bg-cover bg-center bg-no-repeat pt-[var(--header-height)] text-white"></main>
+      <main className="bg-man-filling-glass relative flex h-[640px] items-center bg-cover bg-center bg-no-repeat pt-[var(--header-height)] text-white"></main>
 
       <section className="bg-black py-20 text-white md:py-[120px]">
         <div className="container flex items-center">

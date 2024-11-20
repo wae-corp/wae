@@ -43,7 +43,7 @@ const footerLinks: {
       {
         id: "1-5",
         link: "/",
-        name: "News & Updated",
+        name: "News & Updates",
       },
     ],
   },
@@ -202,7 +202,7 @@ export const Footer = () => {
               className="mx-auto mb-6 block lg:mr-0"
             >
               <img
-                src="/images/logos/wae-logo.png"
+                src="/images/logos/wae-logo.svg"
                 alt="Wae"
                 width={120}
                 height={60}

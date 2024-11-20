@@ -1,5 +1,6 @@
 import {Carousel, CarouselSlide, Embla} from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
 import {useRef} from "react";
 
 export const BrandSlider = ({brandsList}: {brandsList: string[]}) => {
@@ -13,7 +14,7 @@ export const BrandSlider = ({brandsList}: {brandsList: string[]}) => {
         controls: "hidden",
       }}
       draggable={false}
-      plugins={[autoplay.current]}
+      plugins={[autoplay.current, AutoScroll({playOnInit: true})]}
       data-aos="fade-in"
       align={"start"}
     >

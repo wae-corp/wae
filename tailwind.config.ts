@@ -12,6 +12,10 @@ export default {
         secondary: ["Poppins"],
       },
       backgroundImage: {
+        "man-filling-glass":
+          "url(https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2b135fa2-9139-4b6c-0517-b63ba7a1a600/public)",
+        "man-filling-bottle":
+          "url(https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e74621c8-4c5d-42a1-b566-5cc9af63c700/public)",
         "water-machine-near-wall":
           "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6e97d643-8468-4a4f-8cb3-62577cc81000/public')",
         footprint:

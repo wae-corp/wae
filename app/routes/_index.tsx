@@ -2,7 +2,7 @@ import {faCheckCircle, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {notifications} from "@mantine/notifications";
 import type {ActionFunction, MetaFunction} from "@remix-run/node";
-import {Form, json, useActionData, useSubmit} from "@remix-run/react";
+import {Form, json, Link, useActionData, useSubmit} from "@remix-run/react";
 import clsx from "clsx";
 import {useEffect, useState} from "react";
 import {BrandSlider, FullscreenSlider, OurProductsSlider} from "~/components";
@@ -11,7 +11,7 @@ import {
   ActionData,
   EnquiryType as EnquiryTypeOne,
 } from "~/backend/typeDefinations";
-import {Icons, ProductList} from "~/static";
+import {Icons, productData, ProductList} from "~/static";
 import {getErrorFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {appendLandingLeadIntoSheet} from "~/backend/googleSheet.server";
 import {z} from "zod";
@@ -35,7 +35,6 @@ const sliderItemList = [
     // subtitle: "NEPTUNE DUO",
     align: "center",
     isButton: false,
-    isHeadingMax: true,
   },
   {
     image:
@@ -44,7 +43,6 @@ const sliderItemList = [
     subtitle: "NEPTUNE DUO",
     align: "end",
     isButton: true,
-    isHeadingMax: false,
   },
   {
     image:
@@ -54,7 +52,6 @@ const sliderItemList = [
     subtitle: "NEPTUNE DUO",
     align: "center",
     isButton: true,
-    isHeadingMax: false,
   },
   {
     image:
@@ -64,7 +61,6 @@ const sliderItemList = [
     subtitle: "NEPTUNE DUO",
     align: "center",
     isButton: true,
-    isHeadingMax: false,
   },
 ];
 
@@ -234,7 +230,7 @@ export default function Index() {
               {Icons.ArrowDown}
               Scroll
             </div> */}
-      <section className="bg-black py-12">
+      <section className="bg-black xl:py-12">
         <div
           className="flex flex-col items-center justify-center text-center text-white"
           // data-aos="fade-down"
@@ -244,40 +240,45 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="flex min-h-screen items-center justify-center bg-black py-8 text-center text-white">
+      <section className="flex items-center justify-center bg-black pb-20 pt-10 text-center text-white md:py-[100px]">
         <div className="container">
           <div
             className="mx-auto max-w-4xl"
             data-aos="fade-up"
           >
-            <h6 className="uppercase">SUSTAINABILITY</h6>
+            <h6 className="uppercase md:text-sm xl:text-base">
+              SUSTAINABILITY
+            </h6>
 
-            <h2 className="wae-h2 mb-10 mt-10 font-secondary !leading-none lg:mb-[100px]">
+            <h2 className="my-12 font-secondary text-[32px] font-light leading-normal md:text-4xl md:leading-relaxed xl:mt-[52px] xl:text-5xl xl:leading-relaxed">
               WAE embraces a commitment to sustainability, ensuring our blue
               planet stays green for future generations. By championing
               eco-friendly practices, we harmonize progress with nature's
               preservation.
             </h2>
 
-            <p className="uppercase">
+            <Link
+              to="/sustainability"
+              className="uppercase hover:underline md:text-sm xl:text-base"
+            >
               <span className="prefix-dot"></span> EXPLORE SUSTAINABILITY
-            </p>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="wae-gap-lg flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 lg:py-[180px]">
+      <section className="flex flex-col gap-20 bg-window-pattern bg-cover bg-no-repeat py-20 md:gap-[120px] md:py-[120px] xl:py-[180px]">
         <section className="container">
           <p
-            className="mb-12 text-sm uppercase"
+            className="mb-14 text-sm uppercase xl:mb-12"
             // data-aos="fade-right"
           >
             WHO WE ARE
           </p>
 
-          <div className="flex flex-col items-center justify-between lg:mb-8 lg:flex-row">
+          <div className="mb-12 flex flex-col items-center justify-between md:mb-8 lg:flex-row">
             <h4
-              className="wae-h4 mb-12 font-secondary lg:mb-0"
+              className="font-secondary text-2xl md:text-[32px] md:leading-normal xl:text-4xl xl:leading-relaxed"
               // data-aos="fade-right"
             >
               WAE is an activist company passionately committed to protecting
@@ -290,21 +291,23 @@ export default function Index() {
             </h4>
           </div>
 
-          <p
-            className="uppercase"
-            data-aos="fade-right"
+          <Link
+            to={"/brand"}
+            className="text-sm uppercase hover:underline xl:text-base"
           >
             <span className="prefix-dot"></span>
-            You Discover Demo Kitchens
-          </p>
+            DISCOVER BRAND
+          </Link>
         </section>
 
-        <section className="container">
-          <div className="flex flex-col gap-8 xl:flex-row xl:gap-[120px]">
+        <section className="container mb-5 md:mb-0">
+          <div className="flex flex-col gap-10 md:gap-[60px] xl:flex-row xl:gap-[120px]">
             <div>
-              <h3 className="wae-h4 mb-10 font-secondary">Made in India</h3>
+              <h3 className="mb-[60px] font-secondary text-2xl md:mb-10 md:text-[32px] md:leading-normal">
+                Made in India
+              </h3>
               <p
-                className="mb-10 uppercase md:ml-28 xl:max-w-[80%]"
+                className="uppercase md:pl-20 md:text-sm xl:text-base"
                 // data-aos="fade-right"
               >
                 WAE proudly represents India's spirit of innovation, combining
@@ -320,21 +323,21 @@ export default function Index() {
               data-aos-easing="ease-in-back"
               data-aos-offset="200"
               data-aos-duration="500"
-              className="flex-shrink-0 pl-8 xl:max-w-[400px] xl:pl-0"
+              className="flex-shrink-0 xl:max-w-[400px] xl:pl-0"
             >
               <img
                 src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dbf8595a-24c0-49f4-883a-0692dd6a8500/public"
                 alt="gray-meshed-backdrop"
                 width={370}
                 height={460}
-                className="ml-auto object-cover md:mr-auto xl:mr-0"
+                className="ml-auto object-cover max-sm:w-[260px] md:mr-auto xl:mr-0"
               />
             </div>
           </div>
         </section>
 
         <section className="container">
-          <OurProductsSlider productList={ProductList} />
+          <OurProductsSlider productList={productData} />
         </section>
       </section>
 
@@ -344,20 +347,25 @@ export default function Index() {
             className="wae-mb-lg mx-auto max-w-5xl"
             data-aos="fade-down"
           >
-            <h6 className="uppercase">SUSTAINABILITY</h6>
+            <h6 className="uppercase md:text-sm xl:text-base">
+              SUSTAINABILITY
+            </h6>
 
-            <h2 className="wae-h2 mb-10 mt-10 font-secondary !leading-none lg:mb-[100px]">
+            <h2 className="my-12 font-secondary text-[32px] font-light leading-normal md:text-4xl md:leading-relaxed xl:text-[56px]">
               WAE leads transformative projects and develops cutting-edge
               purification systems, all aimed at ensuring a sustainable future.
             </h2>
 
-            <p className="uppercase">
+            <Link
+              className="uppercase hover:underline md:text-sm xl:text-base"
+              to={"/insustainability-case-study"}
+            >
               <span className="prefix-dot"></span>
               DISCOVER SUSTAINABILITY
-            </p>
+            </Link>
           </div>
 
-          <div className="mb-20 flex flex-col flex-wrap justify-center gap-8 max-sm:items-center md:flex-nowrap lg:flex-row">
+          <div className="flex flex-col flex-wrap justify-center gap-[60px] max-sm:items-center md:flex-nowrap lg:flex-row">
             {specifications.map((spec, idx) => {
               return (
                 <div
@@ -366,7 +374,7 @@ export default function Index() {
                   data-aos="fade-in"
                   data-aos-delay={`${idx}00`}
                 >
-                  <div className="mb-5 font-secondary text-4xl md:text-5xl xl:text-[64px]">
+                  <div className="mb-5 font-secondary text-4xl font-semibold md:text-5xl xl:text-[64px]">
                     {/* {spec.title} */}
                     <Counter
                       end={spec.title}
@@ -377,7 +385,7 @@ export default function Index() {
                     />
                   </div>
 
-                  <div className="font-extralight uppercase">
+                  <div className="text-base font-extralight uppercase md:text-sm xl:text-xl">
                     {spec.details}
                   </div>
                 </div>
@@ -385,7 +393,7 @@ export default function Index() {
             })}
           </div>
         </div>
-        <div className="mt-20 xl:mt-60">
+        <div className="mt-[160px] md:mt-[60px] xl:mt-60">
           <BrandSlider
             brandsList={[
               "/images/logos/cbre.png",
@@ -401,23 +409,28 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="wae-pb-lg wae-pt-lg bg-man-in-shadow bg-cover bg-no-repeat text-white 2xl:min-h-screen">
+      <section className="wae-pb-lg wae-pt-lg bg-man-in-shadow bg-cover bg-no-repeat text-white">
         <div className="container">
-          <div className="flex flex-col gap-8 lg:w-full lg:flex-row lg:justify-between lg:gap-[140px]">
+          <div className="flex flex-col gap-12 md:gap-[60px] lg:w-full lg:flex-row lg:justify-between lg:gap-[140px]">
             <div
             // data-aos="fade-right"
             >
-              <h3 className="wae-h4 mb-10 font-secondary">Life @ wae</h3>
-              <div className="flex items-center gap-4">
+              <h3 className="mb-[60px] font-secondary text-[32px] leading-normal md:mb-9 md:text-4xl xl:mb-12">
+                Life @ wae
+              </h3>
+              <Link
+                to={"/careers"}
+                className="flex items-center gap-4 text-base hover:underline"
+              >
                 <div className="prefix-dot"></div>
                 <p className="uppercase">Explore Careers</p>
-              </div>
+              </Link>
             </div>
             <div
               // data-aos="fade-left"
               className="flex-shrink-0 lg:max-w-[400px]"
             >
-              <p className="wae-h6 uppercase">
+              <p className="text-base font-light uppercase md:text-xl">
                 Life at WAE is all about bringing your whole self to work. Our
                 diverse and inclusive culture thrives on the unique perspectives
                 of our team, making every day an opportunity to learn, connect,
@@ -430,76 +443,18 @@ export default function Index() {
         </div>
       </section>
 
-      {/* <section className="md:flex">
-        <div className="bg-white py-20 md:w-1/2 md:px-14 md:py-20 xl:px-40 xl:py-36">
-          <div
-            className="container"
-            data-aos="fade-in"
-          >
-            <p className="uppercase">LIFE @ WAE</p>
-
-            <div className="my-12 max-w-[360px]">
-              <h5 className="wae-h5 mb-5 font-secondary">Join Our Team</h5>
-              <p>
-                Stay connected with WAE Foundation. Get the latest news,
-                updates, and stories delivered straight to your inbox.
-              </p>
-            </div>
-
-            <button className="wae-btn wae-btn-md wae-btn-dark min-w-[200px]">
-              Join
-            </button>
-          </div>
-        </div>
-        <div className="relative flex flex-col justify-center bg-black bg-opacity-40 bg-water-drop bg-cover bg-bottom bg-no-repeat py-36 text-white md:w-1/2 md:px-14 md:py-28 xl:px-32 xl:py-28 2xl:px-40 2xl:py-36">
-          <div className="container">
-            <div className="absolute inset-0 bg-black opacity-60"></div>
-
-            <div
-              className="isolate"
-              data-aos="fade-in"
-            >
-              <div className="mb-8 text-sm lg:text-base">We're looking for</div>
-              <Link
-                to={"/"}
-                className="flex items-center justify-between border-b border-white pb-2 transition-colors hover:bg-gray-800"
-              >
-                <span className="wae-h6-lg font-secondary">
-                  Senior Corporate Manager
-                </span>
-                <span>
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 18.5L15 12.5L9 6.5"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section className="wae-pt-lg wae-pb-lg bg-[#e0e0e0]">
+      <section className="wae-pt-lg wae-pb-lg">
         <div className="container">
           <div className="grid grid-cols-1 gap-[60px] lg:grid-cols-2 lg:gap-0">
             <div data-aos="fade-in">
-              <h3 className="wae-h3 mb-4 font-secondary">
+              <h3 className="mb-4 font-secondary text-[32px] leading-normal xl:text-[40px]">
                 Get in Touch with Us
               </h3>
-              <p className="font-secondary">Talk to our Water Expert</p>
+              <p className="font-secondary text-sm xl:text-base">
+                Talk to our Water Expert
+              </p>
 
-              <div className="wae-h6 mt-10">
+              <div className="mt-10 text-base xl:text-xl">
                 <div className="flex">
                   <svg
                     width="32"

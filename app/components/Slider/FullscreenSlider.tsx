@@ -1,8 +1,7 @@
 import {Carousel} from "@mantine/carousel";
 import {Link} from "@remix-run/react";
 import clsx from "clsx";
-import {ReactNode} from "react";
-import {Icons} from "~/static";
+import {useMediaQuery} from "@mantine/hooks";
 
 {
   /* <main className="relative flex h-screen flex-col items-center justify-center pb-10 pt-[var(--header-height)]">
@@ -33,6 +32,7 @@ import {Icons} from "~/static";
 
 export const FullscreenSlider = ({items}: SliderProps) => {
   const sliderItems = items.length > 0 ? items : [];
+  const isMobile = useMediaQuery("(max-width: 1199px)");
 
   return (
     <Carousel
@@ -72,12 +72,13 @@ export const FullscreenSlider = ({items}: SliderProps) => {
         </svg>
       }
       loop
-      height={"100vh"}
+      height={isMobile ? "90vh" : "100vh"}
       className="relative"
       classNames={{
         indicators: "gap-3",
         indicator: "indicator-dot w-2 h-2 bg-[#666666]",
-        control: "bg-transparent text-white border-none opacity-100",
+        control:
+          "bg-transparent text-white max-sm:hidden border-none opacity-100",
       }}
     >
       {sliderItems.map((item, idx) => {
@@ -104,21 +105,17 @@ export const FullscreenSlider = ({items}: SliderProps) => {
 
             <div
               data-aos="zoom-in"
-              className={clsx("isolate z-[2] mx-auto text-center text-white", {
-                "max-w-[850px]": !item.isHeadingMax,
-                "max-w-[1200px]": item.isHeadingMax,
-              })}
+              className={"isolate z-[2] mx-auto text-center text-white"}
             >
-              <div className="mb-10">
+              <div className="mb-10 md:px-14">
                 {item.subtitle && (
                   <h3 className="wae-h6 mb-6 font-black">{item.subtitle}</h3>
                 )}
                 {item.title && (
                   <h1
-                    className={clsx("wae-h3 font-secondary !leading-normal", {
-                      "lg:text-[72px]": item.isHeadingMax,
-                      "md:text-[48px]": !item.isHeadingMax,
-                    })}
+                    className={
+                      "font-secondary text-2xl md:text-5xl xl:text-[90px] xl:leading-normal"
+                    }
                   >
                     {item.title}
                   </h1>
@@ -128,7 +125,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
               {item.isButton && (
                 <Link
                   to={"/contact"}
-                  className="wae-btn-light wae-btn wae-btn-lg!border-none px-10"
+                  className="wae-btn-light wae-btn wae-btn-lg !border-none px-10"
                 >
                   Get in Touch
                 </Link>
@@ -147,7 +144,6 @@ interface SliderItem {
   subtitle?: string;
   align: "center" | "end";
   isButton: boolean;
-  isHeadingMax: boolean;
 }
 
 interface SliderProps {

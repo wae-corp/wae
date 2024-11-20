@@ -169,7 +169,7 @@ export default function ProductList() {
 
   return (
     <>
-      <main className="relative flex h-screen items-end bg-washing-hands bg-cover bg-no-repeat pb-20 pt-[var(--header-height)] text-white md:pb-[120px] xl:min-h-[640px]">
+      <main className="bg-man-filling-glass relative flex h-screen items-end bg-cover bg-no-repeat pb-20 pt-[var(--header-height)] text-white md:pb-[120px] xl:min-h-[640px]">
         <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black to-transparent"></div>
         <div
           className="container isolate text-center"
