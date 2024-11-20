@@ -731,50 +731,50 @@ export const productData: ProductData[] = [
     categoryDescriptionThree:
       "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
     productList: [
+      // {
+      //   id: "01",
+      //   thumbnailUrl:
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c71da7df-b279-441d-63ca-cab312e82600/public",
+      //   bannerImageUrl:
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a23ea67a-98f7-4be1-c5da-ea1fe5f99700/public",
+      //   name: "BLUWAE VAR",
+      //   mountingType: "Free-Standing",
+      //   description:
+      //     "A Floor-standing model designed for convenient placement on the ground.",
+      //   images: [
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4f8921a-e7a7-42c4-e262-6f9c6d027b00/public",
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/17f24c63-1749-4fda-fc44-7b30aac2bd00/public",
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/236d75bb-7256-4b8c-837c-834515144200/public",
+      //   ],
+      //   features: [
+      //     {
+      //       title: "Touch-Free Dispensing",
+      //       description:
+      //         "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+      //     },
+      //     {
+      //       title: "Effortless Integration",
+      //       description:
+      //         "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+      //     },
+      //     {
+      //       title: "Built Tough, Made to Last",
+      //       description:
+      //         "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+      //     },
+      //     {
+      //       title: "No Mess, No Stress",
+      //       description:
+      //         "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+      //     },
+      //   ],
+      // },
       {
         id: "01",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c71da7df-b279-441d-63ca-cab312e82600/public",
-        bannerImageUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a23ea67a-98f7-4be1-c5da-ea1fe5f99700/public",
-        name: "VAR",
-        mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4f8921a-e7a7-42c4-e262-6f9c6d027b00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/17f24c63-1749-4fda-fc44-7b30aac2bd00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/236d75bb-7256-4b8c-837c-834515144200/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "02",
-        thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/699b0801-c2dc-41d0-136f-0b5d54990b00/public",
         bannerImageUrl: "",
-        name: "ENKI",
+        name: "BLUWAE ENKI FS",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -807,11 +807,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "03",
+        id: "02",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b173ac87-c1ea-4c9b-b4dc-9dfe9d7e4100/public",
         bannerImageUrl: "",
-        name: "POS",
+        name: "BLUWAE POS",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -844,11 +844,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "04",
+        id: "03",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9df2b276-67da-412e-b944-137e68fa3500/public",
         bannerImageUrl: "",
-        name: "ROM GRANDE",
+        name: "BLUWAE ROM FS",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -881,11 +881,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "05",
+        id: "04",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52cfd172-76d2-4471-8083-4a8d9a8caf00/public",
         bannerImageUrl: "",
-        name: "REVA",
+        name: "BLUWAE REVA",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -918,11 +918,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "06",
+        id: "05",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ec6c91fe-22a7-45bb-3aee-5e6720147000/public",
         bannerImageUrl: "",
-        name: "ASSISTIFLOW",
+        name: "BLUWAE ASSISTIFLOW",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -955,11 +955,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "07",
+        id: "06",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6865cefc-5a2e-43c5-5d73-438cfac6c800/public",
         bannerImageUrl: "",
-        name: "ENKI.CT",
+        name: "BLUWAE ENKI CT",
         mountingType: "Counter-Top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -992,11 +992,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "08",
+        id: "07",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/54008031-5666-4934-a9d4-6fdc01030e00/public",
         bannerImageUrl: "",
-        name: "VAR.CT",
+        name: "BLUWAE VAR CT",
         mountingType: "Counter-Top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1029,11 +1029,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "09",
+        id: "08",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52dd58ea-1d30-4397-6ba0-df78adaeaa00/public",
         bannerImageUrl: "",
-        name: "ROM.CT",
+        name: "BLUWAE ROM CT",
         mountingType: "Counter-Top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1084,7 +1084,7 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         bannerImageUrl: "",
-        name: "ALFA.TL",
+        name: "TRUBLU ALFA TL",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1121,7 +1121,7 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         bannerImageUrl: "",
-        name: "ALFA.BL",
+        name: "TRUBLU ALFA BL",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1158,7 +1158,7 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         bannerImageUrl: "",
-        name: "ALFA",
+        name: "TRUBLU ALFA 100",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1198,7 +1198,7 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         bannerImageUrl: "",
-        name: "ALFA.CT",
+        name: "TRUBLU ALFA CT",
         mountingType: "Counter-Top",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1231,49 +1231,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        // missing images
         id: "05",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
-        bannerImageUrl: "",
-        name: "BETA(ss model)",
-        mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "06",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e670b1ee-b32c-4a6a-5d51-ed03fa81c400/public",
         bannerImageUrl: "",
-        name: "AENON",
+        name: "TRUBLU AENON",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1306,11 +1268,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "07",
+        id: "06",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f339b126-7cad-4942-91ee-8f535507f600/public",
         bannerImageUrl: "",
-        name: "DELTA",
+        name: "TRUBLU DELTA",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1343,11 +1305,11 @@ export const productData: ProductData[] = [
         ],
       },
       {
-        id: "08",
+        id: "07",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c16970c2-a74d-4b1e-b0b0-e88ee58be000/public",
         bannerImageUrl: "",
-        name: "GAMMA",
+        name: "TRUBLU GAMMA",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1379,49 +1341,49 @@ export const productData: ProductData[] = [
           },
         ],
       },
+      // {
+      //   id: "09",
+      //   thumbnailUrl:
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9fabbc11-9a7d-4170-ba47-9f20621fb500/public",
+      //   bannerImageUrl: "",
+      //   name: "BREEZE BLUE(usha)",
+      //   mountingType: "Free-Standing",
+      //   description:
+      //     "A Floor-standing model designed for convenient placement on the ground.",
+      //   images: [
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/60abc267-69cc-4696-1726-ddc460dbb500/public",
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9c437901-5173-40be-175e-5233a8654700/public",
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c92b73ed-a8ad-4976-4460-cfdd8ef4f200/public",
+      //   ],
+      //   features: [
+      //     {
+      //       title: "Touch-Free Dispensing",
+      //       description:
+      //         "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+      //     },
+      //     {
+      //       title: "Effortless Integration",
+      //       description:
+      //         "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+      //     },
+      //     {
+      //       title: "Built Tough, Made to Last",
+      //       description:
+      //         "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+      //     },
+      //     {
+      //       title: "No Mess, No Stress",
+      //       description:
+      //         "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+      //     },
+      //   ],
+      // },
       {
-        id: "09",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9fabbc11-9a7d-4170-ba47-9f20621fb500/public",
-        bannerImageUrl: "",
-        name: "BREEZE BLUE(usha)",
-        mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/60abc267-69cc-4696-1726-ddc460dbb500/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9c437901-5173-40be-175e-5233a8654700/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c92b73ed-a8ad-4976-4460-cfdd8ef4f200/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "10",
+        id: "08",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b92f8428-83ae-45b4-fccf-465b18193500/public",
         bannerImageUrl: "",
-        name: "LAGOON",
+        name: "TRUBLU LAGOON",
         mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
@@ -1477,9 +1439,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/55199965-30ce-4ef8-abf9-78a654bd3b00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/576c6473-9649-4eee-e31c-0e4ee5cc0d00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e4aee070-6aa9-430d-5009-f51a13b48800/public",
         ],
         features: [
           {
@@ -1662,9 +1624,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/76de532d-a762-4789-d348-ffa6ddab9700/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2e897fea-6219-4096-1989-ac1855719800/public",
+          // "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
         ],
         features: [
           {
@@ -1705,17 +1667,17 @@ export const productData: ProductData[] = [
     productList: [
       {
         id: "01",
-        name: "HYDROBANK XL",
+        name: "PENGUIN",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/187c4f6d-5652-4697-063b-74913cc85200/public",
         bannerImageUrl: "",
-        mountingType: "On Wall",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/11983264-8f58-4311-ec84-225eacf9c000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/972917c4-f986-4a07-11e3-4f5ad123cb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/41448980-c47f-4212-9bca-68bfd7c3db00/public",
         ],
         features: [
           {
@@ -1742,17 +1704,17 @@ export const productData: ProductData[] = [
       },
       {
         id: "02",
-        name: "HYDROBANK L",
+        name: "YAMI",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/1c00eef0-3d07-4b2a-d4fa-886365c43b00/public",
         bannerImageUrl: "",
-        mountingType: "On Wall",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4617ef86-d822-4f26-a0e8-d81be539da00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/85bdf8ae-9a9c-4e51-262c-3086fce40d00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/916a4dbf-24a7-4130-00bf-c35c5693ce00/public",
         ],
         features: [
           {
@@ -1779,17 +1741,17 @@ export const productData: ProductData[] = [
       },
       {
         id: "03",
-        name: "HYDROBANK M",
+        name: "PLUSULTA",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
         bannerImageUrl: "",
-        mountingType: "On Wall",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9db14c02-30db-4131-3b6d-7c5b2fa3fb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c274a381-1fe3-48ce-37e1-296ff4719900/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5fcb76d0-46a1-4f0e-37f0-a1b53c6b3600/public",
         ],
         features: [
           {
@@ -1816,17 +1778,17 @@ export const productData: ProductData[] = [
       },
       {
         id: "04",
-        name: "HYDROBANK",
+        name: "ZALE",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
         bannerImageUrl: "",
-        mountingType: "On Wall",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/11983264-8f58-4311-ec84-225eacf9c000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/972917c4-f986-4a07-11e3-4f5ad123cb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/41448980-c47f-4212-9bca-68bfd7c3db00/public",
         ],
         features: [
           {
@@ -1853,17 +1815,54 @@ export const productData: ProductData[] = [
       },
       {
         id: "05",
-        name: "AQUA",
+        name: "CONTOUR",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
         bannerImageUrl: "",
-        mountingType: "Free Standing",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/11983264-8f58-4311-ec84-225eacf9c000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/972917c4-f986-4a07-11e3-4f5ad123cb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/41448980-c47f-4212-9bca-68bfd7c3db00/public",
+        ],
+        features: [
+          {
+            title: "Touch-Free Dispensing",
+            description:
+              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+          },
+          {
+            title: "Effortless Integration",
+            description:
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+          },
+          {
+            title: "Built Tough, Made to Last",
+            description:
+              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+          },
+          {
+            title: "No Mess, No Stress",
+            description:
+              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
+      },
+      {
+        id: "06",
+        name: "IBIS",
+        thumbnailUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
+        bannerImageUrl: "",
+        mountingType: "Free-Standing",
+        description:
+          "A Floor-standing model designed for convenient placement on the ground.",
+        images: [
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/11983264-8f58-4311-ec84-225eacf9c000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/972917c4-f986-4a07-11e3-4f5ad123cb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/41448980-c47f-4212-9bca-68bfd7c3db00/public",
         ],
         features: [
           {
@@ -1904,17 +1903,17 @@ export const productData: ProductData[] = [
     productList: [
       {
         id: "01",
-        name: "MOSES",
+        name: "AQUA SERIES",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
         bannerImageUrl: "",
-        mountingType: "Counter-top",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/11983264-8f58-4311-ec84-225eacf9c000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/972917c4-f986-4a07-11e3-4f5ad123cb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/41448980-c47f-4212-9bca-68bfd7c3db00/public",
         ],
         features: [
           {
@@ -1941,159 +1940,11 @@ export const productData: ProductData[] = [
       },
       {
         id: "02",
-        name: "PIPER",
+        name: "HYDROBANKSERIES",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
         bannerImageUrl: "",
-        mountingType: "Counter-top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "03",
-        name: "TOUCH",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
-        bannerImageUrl: "",
-        mountingType: "Counter-top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "04",
-        name: "INDUS",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
-        bannerImageUrl: "",
-        mountingType: "Counter-top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "05",
-        name: "TRX.TL",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
-        bannerImageUrl: "",
-        mountingType: "Counter-top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "06",
-        name: "HKN",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
-        bannerImageUrl: "",
-        mountingType: "Counter-top",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
@@ -2140,91 +1991,17 @@ export const productData: ProductData[] = [
     productList: [
       {
         id: "01",
-        name: "BLUEBOX",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
-        bannerImageUrl: "",
-        mountingType: "Closed-skid",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "02",
-        name: "INRO",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
-        bannerImageUrl: "",
-        mountingType: "Open-skid",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-      },
-      {
-        id: "03",
         name: "WATERMAKER",
         thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6240473c-a65e-43cf-e01e-62974647f500/public",
         bannerImageUrl: "",
-        mountingType: "Free Standing",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8c012f39-61c7-4dec-42ff-e257d65f9100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cf295a79-b5ab-4529-e647-7f565151a900/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c3a75e54-c4e3-4b15-2e1c-94df658f8800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2156f3d9-8d99-482e-ec18-555c478ba900/public",
         ],
         features: [
           {
