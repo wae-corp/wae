@@ -169,7 +169,7 @@ export default function ProductList() {
 
   return (
     <>
-      <main className="relative flex min-h-[600px] items-end bg-washing-hands bg-cover bg-no-repeat pb-32 pt-[var(--header-height)] text-white">
+      <main className="relative flex h-screen items-end bg-washing-hands bg-cover bg-no-repeat pb-20 pt-[var(--header-height)] text-white md:pb-[120px] xl:min-h-[640px]">
         <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black to-transparent"></div>
         <div
           className="container isolate text-center"
@@ -181,28 +181,32 @@ export default function ProductList() {
           </h5>
         </div>
       </main>
-      <section className="py-16 2xl:py-32">
-        <button
-          onClick={toggleFilter}
-          title={filterOpen ? "Close Filter" : "Open Filter"}
-          className="fixed bottom-6 right-6 isolate z-[40] flex h-10 w-10 items-center justify-center rounded-md border border-white bg-black p-1 text-white sm:hidden"
-        >
-          {filterOpen ? Icons.Close : Icons.Filter}
-        </button>
-        <div className="container grid gap-8 sm:grid-cols-[240px,_1fr] lg:gap-14">
+
+      <section className="py-20 md:py-[120px] 2xl:py-32">
+        <div className="container grid gap-10 lg:gap-14 xl:grid-cols-[240px,_1fr]">
+          <button
+            onClick={toggleFilter}
+            title={filterOpen ? "Close Filter" : "Open Filter"}
+            className="wae-btn wae-btn-light col-span-full ml-auto gap-3 !rounded-lg px-4 py-3 xl:hidden"
+          >
+            Filter by {Icons.Filter}
+          </button>
           <aside
-            aria-expanded={filterOpen ? "true" : "false"}
             className={clsx(
-              "fixed inset-0 top-[var(--header-height)] z-[30] w-full max-w-[320px] overflow-y-auto overflow-x-hidden bg-white p-6 shadow-md transition-transform sm:sticky sm:top-[var(--header-height)] sm:h-screen sm:max-h-[700px] sm:!translate-x-0 sm:pr-1 sm:shadow-none",
+              "fixed inset-0 z-[30] w-full max-w-full overflow-y-auto overflow-x-hidden p-4 shadow-md transition-transform max-lg:bg-black max-lg:pt-[var(--header-height)] sm:max-w-[300px] xl:sticky xl:!translate-x-0 xl:pr-1 xl:shadow-none",
               {
                 "translate-x-0": filterOpen,
                 "-translate-x-full": !filterOpen,
               },
             )}
           >
-            <div>
-              <h6 className="mb-6 font-extrabold">Filter By</h6>
-            </div>
+            <button
+              onClick={toggleFilter}
+              title={filterOpen ? "Close Filter" : "Open Filter"}
+              className="isolate z-[40] mb-10 ml-auto flex h-10 w-10 items-center justify-center rounded-md border border-white bg-black p-1 text-white xl:hidden"
+            >
+              {filterOpen ? Icons.Close : Icons.Filter}
+            </button>
 
             <div>
               <Accordion
@@ -216,15 +220,21 @@ export default function ProductList() {
                 {filters.map((filter) => {
                   return (
                     <Accordion.Item
+                      key={filter.id}
                       value={`${filter.id}`}
                       className="mb-5 border-none"
                     >
-                      <Accordion.Control className="mb-4">
+                      <Accordion.Control className="mb-4 active:bg-transparent max-lg:text-white">
                         {filter.type}
                       </Accordion.Control>
                       <Accordion.Panel>
                         {filter.options.map((option) => {
-                          return <Checkbox label={option.name} />;
+                          return (
+                            <Checkbox
+                              key={option.id}
+                              label={option.name}
+                            />
+                          );
                         })}
                       </Accordion.Panel>
                     </Accordion.Item>
@@ -234,7 +244,7 @@ export default function ProductList() {
             </div>
           </aside>
 
-          <div className="grid grid-cols-2 gap-3 sm:gap-8 2xl:grid-cols-3 2xl:gap-[72px]">
+          <div className="grid gap-10 md:grid-cols-2 2xl:grid-cols-3 2xl:gap-[72px]">
             {currentProducts?.map((prod, idx) => {
               return (
                 <Link
@@ -246,12 +256,10 @@ export default function ProductList() {
                   <img
                     src={prod?.thumbnailUrl}
                     alt={prod?.name}
-                    className="mb-1 aspect-square object-cover sm:mb-6"
+                    className="mb-5 aspect-square w-full object-cover"
                   />
 
-                  <div className="wae-h6-lg text-center uppercase">
-                    {prod?.name}
-                  </div>
+                  <div className="text-center uppercase">{prod?.name}</div>
                 </Link>
               );
             })}

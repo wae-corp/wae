@@ -19,7 +19,7 @@ export const BrowseBySlider = ({
         getEmblaApi={setEmbla}
         loop={true}
         classNames={{
-          slide: "basis-1/2",
+          slide: "basis-[300px] md:basis-[40%]",
           controls: "hidden",
         }}
         align={centered ? "center" : "start"}

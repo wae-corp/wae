@@ -10,10 +10,11 @@ export const Checkbox = ({
     <MCheckbox
       label={label}
       color="#ffffff"
-      iconColor="#000"
+      iconColor="currentcolor"
       classNames={{
-        input: "border-2 !border-black/opacity-20 checked:!border-black",
-        label: "text-base text-right",
+        input:
+          "border-2 border-[#7f7f7f] checked:border-white checked:bg-black checked:text-white bg-transparent xl:!border-black/opacity-20 xl:checked:!border-black",
+        label: "text-base xl:text-black text-right",
         body: "flex items-center justify-between mb-4",
       }}
       checked={checked}
