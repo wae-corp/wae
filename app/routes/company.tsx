@@ -249,13 +249,15 @@ export default function Company() {
               data-aos-offset="200"
               data-aos-duration="500"
             >
-              <img
-                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b122394b-da4c-4757-c125-9d9b77503900/public"
-                alt="bowl-with-chopsticks"
-                width={370}
-                height={460}
-                className="mx-auto object-cover max-sm:mr-0 max-sm:w-[260px] xl:mr-0"
-              />
+              <div className="ml-auto w-[260px] overflow-hidden md:mr-auto md:w-[370px] xl:mr-0">
+                <img
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b122394b-da4c-4757-c125-9d9b77503900/public"
+                  alt="gray-meshed-backdrop"
+                  width={370}
+                  height={460}
+                  className="object-cover transition-transform duration-500 ease-in-out hover:scale-150"
+                />
+              </div>
             </div>
           </div>
 

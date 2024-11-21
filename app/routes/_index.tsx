@@ -325,13 +325,15 @@ export default function Index() {
               data-aos-duration="500"
               className="flex-shrink-0 xl:max-w-[400px] xl:pl-0"
             >
-              <img
-                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dbf8595a-24c0-49f4-883a-0692dd6a8500/public"
-                alt="gray-meshed-backdrop"
-                width={370}
-                height={460}
-                className="ml-auto object-cover max-sm:w-[260px] md:mr-auto xl:mr-0"
-              />
+              <div className="ml-auto w-[260px] overflow-hidden md:mr-auto md:w-[370px] xl:mr-0">
+                <img
+                  src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dbf8595a-24c0-49f4-883a-0692dd6a8500/public"
+                  alt="gray-meshed-backdrop"
+                  width={370}
+                  height={460}
+                  className="object-cover transition-transform duration-500 ease-in-out hover:scale-150"
+                />
+              </div>
             </div>
           </div>
         </section>
