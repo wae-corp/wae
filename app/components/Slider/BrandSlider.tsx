@@ -1,36 +1,32 @@
-import {Carousel, CarouselSlide, Embla} from "@mantine/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import {useRef} from "react";
+import Marquee from "react-fast-marquee";
+import {ClientOnly} from "remix-utils/client-only";
 
-export const BrandSlider = ({brandsList}: {brandsList: string[]}) => {
-  const autoplay = useRef(Autoplay({delay: 2500}));
-
+export const BrandSlider = () => {
   return (
-    <Carousel
-      loop={true}
-      classNames={{
-        slide: "basis-[140px] lg:basis-[400px]",
-        controls: "hidden",
-      }}
-      draggable={false}
-      plugins={[autoplay.current]}
-      data-aos="fade-in"
-      align={"start"}
-    >
-      {brandsList.map((brand, idx) => {
-        return (
-          <CarouselSlide
-            key={idx}
-            className="mr-20 flex items-center justify-center"
-          >
-            <img
-              src={brand}
-              alt="Brand"
-              className="object-contain"
-            />
-          </CarouselSlide>
-        );
-      })}
-    </Carousel>
+    <ClientOnly>
+      {() => (
+        <Marquee speed={100}>
+          {[
+            "/images/logos/cbre.png",
+            "/images/logos/samsung.png",
+            "/images/logos/netflix.png",
+            "/images/logos/google.png",
+            "/images/logos/cbre.png",
+            "/images/logos/samsung.png",
+            "/images/logos/netflix.png",
+            "/images/logos/google.png",
+          ].map((image, idx) => {
+            return (
+              <img
+                key={idx}
+                src={image}
+                alt={`Brand ${idx}`}
+                className="mx-8 block w-[150px] object-contain md:mx-[70px] md:w-[180px]"
+              />
+            );
+          })}
+        </Marquee>
+      )}
+    </ClientOnly>
   );
 };

@@ -11,7 +11,7 @@ import {
   ActionData,
   EnquiryType as EnquiryTypeOne,
 } from "~/backend/typeDefinations";
-import {Icons, productData, ProductList} from "~/static";
+import {Icons, productData} from "~/static";
 import {getErrorFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {appendLandingLeadIntoSheet} from "~/backend/googleSheet.server";
 import {z} from "zod";
@@ -394,18 +394,7 @@ export default function Index() {
           </div>
         </div>
         <div className="mt-[160px] md:mt-[60px] xl:mt-60">
-          <BrandSlider
-            brandsList={[
-              "/images/logos/cbre.png",
-              "/images/logos/samsung.png",
-              "/images/logos/netflix.png",
-              "/images/logos/google.png",
-              "/images/logos/cbre.png",
-              "/images/logos/samsung.png",
-              "/images/logos/netflix.png",
-              "/images/logos/google.png",
-            ]}
-          />
+          <BrandSlider />
         </div>
       </section>
 
