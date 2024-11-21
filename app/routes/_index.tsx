@@ -360,7 +360,7 @@ export default function Index() {
 
             <Link
               className="uppercase hover:underline md:text-sm xl:text-base"
-              to={"/insustainability-case-study"}
+              to={"/sustainability-case-study"}
             >
               <span className="prefix-dot"></span>
               DISCOVER SUSTAINABILITY

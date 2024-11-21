@@ -1,5 +1,5 @@
 import {MetaFunction} from "@remix-run/react";
-import {ProjectSlider} from "~/components";
+import {CaseStudySlider, ProjectSlider} from "~/components";
 import {Counter} from "~/components/Counter";
 import {coreValues, SecondaryProducts} from "~/static";
 
@@ -301,28 +301,20 @@ export default function Company() {
         </div>
       </section>
 
-      <section className="wae-pt-lg wae-pb-lg bg-black text-center text-white">
-        <div className="container">
-          <div
-            className="wae-mb-lg mx-auto mb-[60px] max-w-5xl text-center xl:mb-[75px]"
-            data-aos="fade-down"
-          >
-            <h6 className="text-sm uppercase xl:text-base">SUSTAINABILITY</h6>
+      <section className="bg-black py-20 text-white md:py-[120px] xl:py-[180px]">
+        <div className="container mb-[60px] text-center xl:mb-[75px]">
+          <div className="text-sm xl:text-base">SUSTAINABILITY</div>
 
-            <h2 className="wae-h2 my-10 font-secondary leading-tight md:my-6 lg:mb-[100px] xl:mb-12 xl:text-[58px] xl:leading-tight">
-              Projects created by our <br /> customers to draw inspiration from
-            </h2>
+          <h3 className="my-10 text-[32px] !leading-relaxed md:my-6 md:text-4xl xl:my-12 xl:text-[58px]">
+            Projects created by our customers to draw inspiration from
+          </h3>
 
-            <p className="text-sm uppercase xl:text-base">
-              <span className="prefix-dot"></span>
-              BRAND WAE
-            </p>
+          <div className="flex items-center justify-center text-sm xl:text-base">
+            <span className="prefix-dot"></span>
+            You discover SUSTAINABILITY
           </div>
         </div>
-        <ProjectSlider
-          productList={SecondaryProducts}
-          arrows={true}
-        />
+        <CaseStudySlider />
       </section>
     </>
   );

@@ -129,9 +129,9 @@ export default function Sustainability() {
               Transformation
             </h1>
 
-            <div className="grid items-center gap-[60px] md:grid-cols-3 md:gap-10 xl:gap-[150px]">
+            <div className="grid items-center gap-[60px] md:grid-cols-3 md:gap-10 xl:items-start 2xl:gap-[150px]">
               <div className="text-center">
-                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[50px]">
+                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[40px] 2xl:text-[50px]">
                   <Counter
                     end={5736591}
                     duration={1}
@@ -145,7 +145,7 @@ export default function Sustainability() {
               </div>
 
               <div className="text-center">
-                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[50px]">
+                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[40px] 2xl:text-[50px]">
                   <Counter
                     end={900000}
                     duration={1}
@@ -158,7 +158,7 @@ export default function Sustainability() {
               </div>
 
               <div className="text-center">
-                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[50px]">
+                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[40px] 2xl:text-[50px]">
                   <Counter
                     end={92}
                     duration={1}
@@ -175,9 +175,9 @@ export default function Sustainability() {
         </div>
       </main>
 
-      <section className="container mx-auto overflow-x-hidden px-4 py-16 xl:mt-16">
+      <section className="container mx-auto overflow-x-hidden py-20 md:py-[120px] xl:py-[180px]">
         <div className="mx-auto max-w-screen-xl">
-          <div className="grid gap-10 md:gap-[60px] xl:grid-cols-5">
+          <div className="grid gap-10 md:gap-[60px] xl:grid-cols-5 xl:gap-[180px]">
             <div className="md:col-span-2">
               <h2
                 className="text-xs font-medium xl:text-base"
@@ -186,11 +186,8 @@ export default function Sustainability() {
                 <span className="prefix-dot"></span> WE LIVE AND BREATHE WATER
               </h2>
             </div>
-            <div
-              className="space-y-6 md:col-span-3 md:pl-10"
-              // data-aos="fade-left"
-            >
-              <p className="mb-10 text-xl text-gray-600">
+            <div className="md:col-span-3">
+              <p className="mb-10 text-xl text-gray-600 md:pl-10 xl:pl-0">
                 At WAE, our dedication to safeguarding natural water resources
                 is at the core of everything we do. For us, sustainability is
                 not merely a target—it is{" "}
@@ -204,7 +201,7 @@ export default function Sustainability() {
                 </span>{" "}
                 and creating a better tomorrow.
               </p>
-              <p className="mb-10 text-xl text-gray-600">
+              <p className="mb-10 text-xl text-gray-600 md:pl-10 xl:pl-0">
                 For over a decade, WAE has been a trailblazer in{" "}
                 <span className="font-semibold text-black">
                   sustainable water management
@@ -218,7 +215,7 @@ export default function Sustainability() {
                 enables us to stay ahead of the curve, adapting our solutions to
                 meet the challenges of the future.
               </p>
-              <p className="mb-10 text-xl text-gray-600">
+              <p className="text-xl text-gray-600 md:pl-10 xl:pl-0">
                 Our{" "}
                 <span className="font-semibold text-black">
                   award-winning initiatives
@@ -231,7 +228,7 @@ export default function Sustainability() {
               </p>
               <Link
                 to="/sustainability-case-study"
-                className="inline-block rounded-md border border-black bg-white px-4 py-2 text-base font-normal text-black transition-colors duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                className="mt-10 inline-block rounded-md border border-black bg-white px-4 py-2 text-base font-normal text-black transition-colors duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 xl:mt-[60px]"
               >
                 Explore Case Studies
               </Link>
@@ -241,16 +238,16 @@ export default function Sustainability() {
       </section>
 
       <section className="overflow-x-hidden">
-        <div className="container max-w-[1080px]">
-          <div className="wae-gap-lg flex flex-col">
+        <div className="container xl:max-w-[1080px]">
+          <div className="flex flex-col gap-20 md:gap-[60px] xl:gap-[120px]">
             {solutionsData.map((solution, idx) => {
               return (
                 <div
                   key={idx}
-                  className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse lg:gap-[110px]"
+                  className="group flex flex-col gap-10 md:flex-row md:even:flex-row-reverse xl:gap-[110px]"
                 >
                   <div
-                    className="flex-shrink-0 md:basis-1/2"
+                    className="flex-shrink-0 md:w-[350px] xl:w-[500px]"
                     data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-back"
                     data-aos-offset="200"
@@ -269,12 +266,12 @@ export default function Sustainability() {
                     // data-aos="fade-down"
                     data-aos-delay="100"
                   >
-                    <div className="flex flex-col gap-8 lg:gap-10">
-                      <h5 className="font-extrabold uppercase">
+                    <div className="flex flex-col gap-5 md:gap-8 xl:gap-10">
+                      <h5 className="font-extrabold uppercase md:text-sm xl:text-base">
                         {solution.title}
                       </h5>
 
-                      <p className="fw-light text-sm uppercase">
+                      <p className="fw-light text-xs uppercase md:text-sm">
                         {solution.description}
                       </p>
                     </div>
@@ -286,35 +283,35 @@ export default function Sustainability() {
         </div>
       </section>
 
-      <section className="container mx-auto mt-16 overflow-x-hidden px-4 py-16">
-        <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-between md:flex-row">
+      <section className="container mx-auto overflow-x-hidden py-20 md:py-[120px] xl:py-[180px]">
+        <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-between md:flex-row md:items-start md:gap-10 xl:gap-[160px]">
           <div
-            className="pr-8 md:w-1/2"
+            className="md:w-1/2"
             // data-aos="fade-right"
           >
-            <h2 className="mb-6 font-secondary text-3xl font-semibold">
+            <h2 className="xl:text-4 mb-[60px] font-secondary text-2xl font-semibold">
               OUR CULTURE
             </h2>
-            <p className="wae-p mb-4">
+            <p className="mb-5 pl-20 md:mb-6 md:pl-10 md:text-sm xl:pl-20 xl:text-base">
               Our approach to water management fosters collaboration and
               co-existence, and this philosophy is mirrored in our business
               practices. We've removed hierarchical barriers to function as one
               cohesive team. We believe in complete transparency—extending this
               openness to our clients as well.
             </p>
-            <p className="wae-p mb-4">
+            <p className="pl-20 md:pl-10 md:text-sm xl:pl-20 xl:text-base">
               WAE was founded with the vision of providing sustainable water
               solutions to communities and businesses. Recognizing the growing
               demand for efficient water management, we expanded our operations
               to cater to diverse markets where the need for sustainable water
               infrastructure is critical.
             </p>
-            <button className="mt-6 inline-flex items-center rounded-md border border-black bg-white px-4 py-2 text-black transition duration-200 hover:bg-gray-100">
+            <button className="mt-10 inline-flex items-center rounded-md border border-black bg-white px-4 py-2 text-black transition duration-200 hover:bg-gray-100 md:mt-12">
               Know More <span className="ml-2">→</span>
             </button>
           </div>
           <div
-            className="mt-8 flex justify-center md:mt-0 md:w-1/2"
+            className="ml-auto mt-10 flex w-[260px] justify-center md:mt-0 md:w-[276px] xl:w-[370px]"
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-offset="200"

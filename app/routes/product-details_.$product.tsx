@@ -1,9 +1,16 @@
+import {Modal} from "@mantine/core";
 import {LoaderFunction} from "@remix-run/node";
 import {json, MetaFunction, useLoaderData} from "@remix-run/react";
-import {ReactNode} from "react";
-import {ProductImageSlider, ProjectSlider} from "~/components";
+import {ReactNode, useState} from "react";
+import {
+  ProductImageSlider,
+  ProjectSlider,
+  TestimonialSlider,
+} from "~/components";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {Icons, productData, specifications} from "~/static";
+import {useDisclosure} from "@mantine/hooks";
+
 type LoaderData = {
   id?: string;
   name?: string;
@@ -13,6 +20,7 @@ type LoaderData = {
   image?: string[];
   features?: Array<{title: string; description: string}>;
 };
+
 export const meta: MetaFunction = () => {
   return [
     {
@@ -48,6 +56,15 @@ export const loader: LoaderFunction = async ({request, params}) => {
 };
 
 export default function ProductDetails() {
+  const [
+    isDownloadFormOpen,
+    {open: openDownloadForm, close: closeDownloadForm},
+  ] = useDisclosure(false);
+  const [
+    isDownloadSuccessOpen,
+    {open: openDownloadSuccess, close: closeDownloadSuccess},
+  ] = useDisclosure(false);
+
   const {id, name, description, mountingType, types, image, features} =
     useLoaderData() as LoaderData;
 
@@ -151,6 +168,7 @@ export default function ProductDetails() {
               })}
             </div>
           </div>
+
           <div className="mb-[60px] xl:mb-20">
             <div className="mb-10 text-center font-secondary text-[32px] font-light uppercase leading-normal md:text-left xl:mb-[60px] xl:text-[40px]">
               Specifications
@@ -181,19 +199,28 @@ export default function ProductDetails() {
               })}
             </div>
           </div>
+
+          <div className="mb-[60px] xl:mb-20">
+            <div className="mb-10 text-center font-secondary text-[32px] font-light uppercase leading-normal md:text-left xl:mb-[60px] xl:text-[40px]">
+              Testimonials
+            </div>
+            <div>
+              <TestimonialSlider />
+            </div>
+          </div>
+
           <div>
             <div className="wae-h3 mb-14 text-center font-secondary font-light uppercase md:text-left">
               Downloads
             </div>
-            <div className="">
-              <a
-                href="/"
-                download
+            <div>
+              <button
+                onClick={openDownloadForm}
                 className="wae-btn wae-btn-md gap-4 px-6 py-2"
               >
                 Download Brochure
                 {Icons.Download}
-              </a>
+              </button>
               <p className="wae-p mt-8 opacity-60">
                 Enter your email address to receive the brochure directly in
                 your inbox.
@@ -221,7 +248,7 @@ export default function ProductDetails() {
         />
       </section>
 
-      <section className="wae-pt-lg bg-black pb-6 text-white">
+      {/* <section className="wae-pt-lg bg-black pb-6 text-white">
         <div className="container gap-4 sm:flex">
           <div className="mb-12 sm:mb-0 sm:w-1/2">
             <div data-aos="fade-in">
@@ -334,7 +361,82 @@ export default function ProductDetails() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <Modal
+        opened={isDownloadFormOpen}
+        onClose={closeDownloadForm}
+        withCloseButton={false}
+        classNames={{
+          body: "bg-black text-white p-8 xl:p-10 border border-[#DDE1E6]/50",
+          content: "w-full md:w-[400px] xl:w-[600px]",
+        }}
+        overlayProps={{
+          className: "bg-white/20 backdrop-blur-sm",
+        }}
+        size={"auto"}
+        centered
+      >
+        <h2 className="mb-10 text-center text-2xl xl:text-[40px] xl:leading-normal">
+          Download Brochure
+        </h2>
+
+        <form className="w-full">
+          <input
+            type="email"
+            className="wae-input mb-10 placeholder-white"
+            name="brochure-email"
+            placeholder="Enter Email Address"
+            required
+          />
+
+          <p className="text-lg text-white/50">
+            Enter your email address to receive the brochure directly in your
+            inbox.
+          </p>
+
+          <button
+            className="wae-btn wae-btn-light mt-10 w-full gap-5 py-3 md:mt-[60px]"
+            onClick={() => {
+              closeDownloadForm();
+              openDownloadSuccess();
+            }}
+          >
+            Download {Icons.ArrowRightLong}
+          </button>
+        </form>
+      </Modal>
+
+      <Modal
+        opened={isDownloadSuccessOpen}
+        onClose={closeDownloadSuccess}
+        withCloseButton={false}
+        classNames={{
+          body: "bg-black text-white p-8 xl:p-10 border border-[#DDE1E6]/50",
+          content: "w-full md:w-[400px] xl:w-[600px]",
+        }}
+        overlayProps={{
+          className: "bg-white/20 backdrop-blur-sm",
+        }}
+        size={"auto"}
+        centered
+      >
+        <h2 className="mb-10 text-center text-2xl xl:text-[40px] xl:leading-normal">
+          Brochure Successfully Sent!
+        </h2>
+
+        <p className="text-lg text-white/50">
+          Please check your email inbox in a few minutes to receive the
+          brochure.
+        </p>
+
+        <button
+          className="wae-btn mt-10 w-full py-3 md:mt-[60px]"
+          onClick={closeDownloadSuccess}
+        >
+          Close
+        </button>
+      </Modal>
     </>
   );
 }

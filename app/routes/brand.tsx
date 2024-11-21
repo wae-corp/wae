@@ -209,23 +209,34 @@ export default function Brand() {
                 Each of the six hands represents a core value of WAE:
               </p>
             </div>
-            <img
-              src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f78f2987-6585-44e5-40c9-3fb1ac0acc00/public"
-              alt="brand background"
-              className="h-full w-full object-cover"
-              width={1920}
-              height={1080}
+            <picture
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
               data-aos-offset="200"
               data-aos-duration="500"
-            />
+            >
+              <source
+                src=""
+                media="(max-width: 767px)"
+                className="h-full w-full object-cover"
+              />
+              <source
+                media="(min-width: 1199px)"
+                className="h-full w-full object-cover"
+              />
+              <img
+                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f78f2987-6585-44e5-40c9-3fb1ac0acc00/public"
+                alt="Core values of WAE"
+                className="h-full w-full object-cover"
+              />
+            </picture>
+
             <div className="my-20 flex w-full max-w-[1080px] flex-col items-start gap-[60px] md:my-[120px] md:flex-row md:gap-10">
               <h2
                 className="font-secondary text-2xl uppercase md:flex-shrink-0"
                 // data-aos="fade-right"
               >
-                Gaols of six sigma
+                Goals of six sigma
               </h2>
               <p
                 className="text-sm uppercase xl:ml-auto xl:max-w-[545px]"
@@ -257,6 +268,7 @@ export default function Brand() {
                       className="flex items-center gap-6 md:gap-4"
                       key={idx}
                       data-aos="fade-in"
+                      data-aos-offset="0"
                       data-aos-delay={`${idx}00`}
                     >
                       <img

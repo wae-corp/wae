@@ -37,16 +37,36 @@ export const Header = () => {
           <nav className="md:flex-1">
             <ul className="flex flex-col items-center gap-10 md:flex-row">
               <li>
-                <NavLink to={"/company"}>Company</NavLink>
+                <NavLink
+                  onClick={() => setMenuOpen(false)}
+                  to={"/company"}
+                >
+                  Company
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/products"}>Product & Solutions</NavLink>
+                <NavLink
+                  onClick={() => setMenuOpen(false)}
+                  to={"/products"}
+                >
+                  Product & Solutions
+                </NavLink>
               </li>
               <li className="md:ml-auto">
-                <NavLink to={"/careers"}>Career</NavLink>
+                <NavLink
+                  onClick={() => setMenuOpen(false)}
+                  to={"/careers"}
+                >
+                  Career
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/blogs"}>News & Updates</NavLink>
+                <NavLink
+                  onClick={() => setMenuOpen(false)}
+                  to={"/blogs"}
+                >
+                  News & Updates
+                </NavLink>
               </li>
             </ul>
           </nav>
