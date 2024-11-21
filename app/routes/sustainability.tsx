@@ -118,22 +118,20 @@ export default function Sustainability() {
 
   return (
     <>
-      <main className="relative flex min-h-screen items-center bg-leaf-droplet bg-cover bg-top bg-no-repeat pt-[var(--header-height)] text-white">
+      <main className="relative flex h-screen items-center bg-leaf-droplet bg-cover bg-top bg-no-repeat pt-[var(--header-height)] text-white md:h-[640px]">
         <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div>
         <div
           className="container isolate text-center"
           data-aos="fade-down"
         >
           <div className="container mx-auto h-full px-4">
-            <div className="grid h-full grid-cols-1 items-center gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <div className="text-center md:col-span-2 md:text-left lg:col-span-3">
-                <h1 className="mb-4 text-center text-2xl font-light uppercase">
-                  Transformation
-                </h1>
-              </div>
+            <h1 className="hidden text-center text-2xl font-light uppercase md:mb-10 md:block xl:mb-[60px]">
+              Transformation
+            </h1>
 
+            <div className="grid items-center gap-[60px] md:grid-cols-3 md:gap-10 xl:gap-[150px]">
               <div className="text-center">
-                <div className="wae-h2 font-secondary">
+                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[50px]">
                   <Counter
                     end={5736591}
                     duration={1}
@@ -141,26 +139,26 @@ export default function Sustainability() {
                   />{" "}
                   KG
                 </div>
-                <p className="mt-2 text-xl font-light uppercase">
+                <p className="uppercase md:text-sm xl:text-base">
                   CO2E EMISSIONS ELIMINATED
                 </p>
               </div>
 
               <div className="text-center">
-                <div className="wae-h2 font-secondary">
+                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[50px]">
                   <Counter
                     end={900000}
                     duration={1}
                     separator=","
                   />
                 </div>
-                <p className="mt-2 text-xl font-light uppercase">
+                <p className="uppercase md:text-sm xl:text-base">
                   PLASTIC WATER JARS ERADICATED
                 </p>
               </div>
 
-              <div className="text-center md:col-span-2 lg:col-span-1">
-                <div className="wae-h2 font-secondary">
+              <div className="text-center">
+                <div className="mb-5 font-secondary text-[40px] leading-normal md:mb-3 md:text-[32px] xl:mb-5 xl:text-[50px]">
                   <Counter
                     end={92}
                     duration={1}
@@ -168,7 +166,7 @@ export default function Sustainability() {
                   />
                   M LITERS
                 </div>
-                <p className="mt-2 text-xl font-light uppercase">
+                <p className="uppercase md:text-sm xl:text-base">
                   OF WATER CONSERVED
                 </p>
               </div>
@@ -177,22 +175,22 @@ export default function Sustainability() {
         </div>
       </main>
 
-      <section className="container mx-auto mt-16 overflow-x-hidden px-4 py-16">
+      <section className="container mx-auto overflow-x-hidden px-4 py-16 xl:mt-16">
         <div className="mx-auto max-w-screen-xl">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
+          <div className="grid gap-10 md:gap-[60px] xl:grid-cols-5">
             <div className="md:col-span-2">
               <h2
-                className="wae-p mb-4 font-medium"
+                className="text-xs font-medium xl:text-base"
                 // data-aos="fade-right"
               >
                 <span className="prefix-dot"></span> WE LIVE AND BREATHE WATER
               </h2>
             </div>
             <div
-              className="space-y-6 md:col-span-3"
+              className="space-y-6 md:col-span-3 md:pl-10"
               // data-aos="fade-left"
             >
-              <p className="wae-p text-gray-600">
+              <p className="mb-10 text-xl text-gray-600">
                 At WAE, our dedication to safeguarding natural water resources
                 is at the core of everything we do. For us, sustainability is
                 not merely a target—it is{" "}
@@ -205,8 +203,9 @@ export default function Sustainability() {
                   leading the charge for transformative change
                 </span>{" "}
                 and creating a better tomorrow.
-                <br />
-                <br /> For over a decade, WAE has been a trailblazer in{" "}
+              </p>
+              <p className="mb-10 text-xl text-gray-600">
+                For over a decade, WAE has been a trailblazer in{" "}
                 <span className="font-semibold text-black">
                   sustainable water management
                 </span>
@@ -218,8 +217,8 @@ export default function Sustainability() {
                 </span>{" "}
                 enables us to stay ahead of the curve, adapting our solutions to
                 meet the challenges of the future.
-                <br />
-                <br />
+              </p>
+              <p className="mb-10 text-xl text-gray-600">
                 Our{" "}
                 <span className="font-semibold text-black">
                   award-winning initiatives
@@ -232,7 +231,7 @@ export default function Sustainability() {
               </p>
               <Link
                 to="/sustainability-case-study"
-                className="mt-4 inline-block rounded-md border border-black bg-white px-4 py-2 text-base font-normal text-black transition-colors duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                className="inline-block rounded-md border border-black bg-white px-4 py-2 text-base font-normal text-black transition-colors duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
               >
                 Explore Case Studies
               </Link>
