@@ -69,7 +69,7 @@ export const OurProductsSlider = ({productList}: ProductSliderProps) => {
           loop={true}
           classNames={{
             slide:
-              "basis-[250px] md:basis-[280px] xl:basis-[500px] mr-4 md:mr-8",
+              "basis-[250px] transition-all xl:hover:w-[1000px] md:basis-[280px] xl:basis-[500px] mr-4 md:mr-8",
             controls: "hidden",
           }}
         >

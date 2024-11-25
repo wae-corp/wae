@@ -5,3 +5,4 @@ export * from "./BrandSlider";
 export * from "./FullscreenSlider";
 export * from "./TestimonialSlider";
 export * from "./CaseStudySlider";
+export * from "./ExpandingSlider";

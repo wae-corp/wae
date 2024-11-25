@@ -5,7 +5,12 @@ import type {ActionFunction, MetaFunction} from "@remix-run/node";
 import {Form, json, Link, useActionData, useSubmit} from "@remix-run/react";
 import clsx from "clsx";
 import {useEffect, useState} from "react";
-import {BrandSlider, FullscreenSlider, OurProductsSlider} from "~/components";
+import {
+  BrandSlider,
+  ExpandingSlider,
+  FullscreenSlider,
+  OurProductsSlider,
+} from "~/components";
 import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
 import {
   ActionData,
@@ -225,6 +230,7 @@ export default function Index() {
 
   return (
     <>
+      <ExpandingSlider />
       <FullscreenSlider items={sliderItemList} />
       {/* <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
               {Icons.ArrowDown}
@@ -245,6 +251,8 @@ export default function Index() {
           <div
             className="mx-auto max-w-4xl"
             data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="200"
           >
             <h6 className="uppercase md:text-sm xl:text-base">
               SUSTAINABILITY
@@ -271,7 +279,9 @@ export default function Index() {
         <section className="container">
           <p
             className="mb-14 text-sm uppercase xl:mb-12"
-            // data-aos="fade-right"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="200"
           >
             WHO WE ARE
           </p>
@@ -279,7 +289,9 @@ export default function Index() {
           <div className="mb-12 flex flex-col items-center justify-between md:mb-8 lg:flex-row">
             <h4
               className="font-secondary text-2xl md:text-[32px] md:leading-normal xl:text-4xl xl:leading-relaxed"
-              // data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="200"
             >
               WAE is an activist company passionately committed to protecting
               our most vital resource—water. We advocate for sustainable
@@ -308,7 +320,9 @@ export default function Index() {
               </h3>
               <p
                 className="uppercase md:pl-20 md:text-sm xl:text-base"
-                // data-aos="fade-right"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="200"
               >
                 WAE proudly represents India's spirit of innovation, combining
                 traditional wisdom with advanced technology to create solutions
@@ -348,6 +362,8 @@ export default function Index() {
           <div
             className="wae-mb-lg mx-auto max-w-5xl"
             data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="200"
           >
             <h6 className="uppercase md:text-sm xl:text-base">
               SUSTAINABILITY
@@ -407,7 +423,7 @@ export default function Index() {
             // data-aos="fade-right"
             >
               <h3 className="mb-[60px] font-secondary text-[32px] leading-normal md:mb-9 md:text-4xl xl:mb-12">
-                Life @ wae
+                Life @ WAE
               </h3>
               <Link
                 to={"/careers"}
