@@ -5,7 +5,12 @@ import type {ActionFunction, MetaFunction} from "@remix-run/node";
 import {Form, json, Link, useActionData, useSubmit} from "@remix-run/react";
 import clsx from "clsx";
 import {useEffect, useState} from "react";
-import {BrandSlider, FullscreenSlider, OurProductsSlider} from "~/components";
+import {
+  BrandSlider,
+  ExpandingSlider,
+  FullscreenSlider,
+  OurProductsSlider,
+} from "~/components";
 import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
 import {
   ActionData,
@@ -225,6 +230,7 @@ export default function Index() {
 
   return (
     <>
+      <ExpandingSlider />
       <FullscreenSlider items={sliderItemList} />
       {/* <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
               {Icons.ArrowDown}
