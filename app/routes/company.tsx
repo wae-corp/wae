@@ -1,4 +1,4 @@
-import {MetaFunction} from "@remix-run/react";
+import {Link, MetaFunction} from "@remix-run/react";
 import {CaseStudySlider, ProjectSlider} from "~/components";
 import {Counter} from "~/components/Counter";
 import {coreValues, SecondaryProducts} from "~/static";
@@ -194,10 +194,13 @@ export default function Company() {
                 Brand Purpose
               </h4>
 
-              <div className="flex items-center text-sm uppercase xl:text-base">
+              <Link
+                to="/brand"
+                className="flex items-center text-sm uppercase xl:text-base"
+              >
                 <div className="prefix-dot"></div>
                 Brand WAE
-              </div>
+              </Link>
             </div>
 
             <p className="max-w-[600px] pl-20 text-sm md:pl-0 md:text-base lg:text-xl">

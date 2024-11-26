@@ -287,7 +287,7 @@ export default function Index() {
 
           <div className="mb-12 flex flex-col items-center justify-between md:mb-8 lg:flex-row">
             <h4
-              className="font-secondary text-2xl md:text-[32px] md:leading-normal xl:text-4xl xl:leading-relaxed"
+              className="font-secondary text-2xl md:text-[32px] md:leading-normal xl:text-4xl xl:leading-[1.35]"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-offset="200"
@@ -369,7 +369,7 @@ export default function Index() {
               SUSTAINABILITY
             </h6>
 
-            <h2 className="my-12 font-secondary text-[32px] font-light leading-normal md:text-4xl md:leading-relaxed xl:text-[56px]">
+            <h2 className="my-12 font-secondary text-[32px] font-light leading-normal md:text-4xl md:leading-[1.35] xl:text-[56px]">
               WAE leads transformative projects and develops cutting-edge
               purification systems, all aimed at ensuring a sustainable future.
             </h2>
