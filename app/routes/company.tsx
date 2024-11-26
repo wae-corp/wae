@@ -35,7 +35,7 @@ export default function Company() {
         </div> */}
       </main>
 
-      <section className="md:[120px] relative flex flex-col items-center justify-center bg-black py-20 md:py-[120px] xl:py-[180px]">
+      {/* <section className="md:[120px] relative flex flex-col items-center justify-center bg-black py-20 md:py-[120px] xl:py-[180px]">
         <div className="container flex flex-col xl:flex-row xl:gap-[140px]">
           <div
             className="mb-[40px] flex flex-col gap-x-10 text-left text-white"
@@ -66,7 +66,7 @@ export default function Company() {
             your full potential. Let’s create a brighter future together.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <section className="wae-pt-lg wae-pb-lg bg-white max-sm:pb-0">
         <div className="container">
