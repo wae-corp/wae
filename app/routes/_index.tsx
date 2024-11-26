@@ -230,7 +230,6 @@ export default function Index() {
 
   return (
     <>
-      {/* <ExpandingSlider /> */}
       <FullscreenSlider items={sliderItemList} />
       {/* <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
               {Icons.ArrowDown}
@@ -353,7 +352,8 @@ export default function Index() {
         </section>
 
         <section className="container">
-          <OurProductsSlider productList={productData} />
+          {/* <OurProductsSlider productList={productData} /> */}
+          <ExpandingSlider />
         </section>
       </section>
 
