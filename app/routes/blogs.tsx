@@ -1,4 +1,4 @@
-import {MetaFunction} from "@remix-run/react";
+import {Link, MetaFunction} from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -7,51 +7,68 @@ export const meta: MetaFunction = () => {
     },
   ];
 };
+export type Blog = {
+  id: number;
+  title: string;
+  date: string;
+  category: string;
+  description: string;
+  imageUrl: string;
+  content: string;
+};
+
+export const blogPosts: Array<Blog> = [
+  {
+    id: 1,
+    title: "Nec massa viverra eget feugiat pellentesque.",
+    date: "24 Aug 2024",
+    category: "General",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo auctor, vehicula sem et, tristique mi. Aenean cursus turpis ut erat suscipit, ac imperdiet nibh facilisis.",
+    imageUrl:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa vel minima ipsum animi veniam pariatur odit assumenda nam hic possimus velit deserunt architecto neque quo recusandae accusamus facilis non quasi quos, quae autem delectus consequatur consectetur. Id, accusantium? Reiciendis consequuntur voluptate dolore beatae minus quam recusandae corporis nisi nihil.",
+  },
+  {
+    id: 2,
+    title: "Fusce ultricies dui eget velit fermentum.",
+    date: "18 Aug 2024",
+    category: "Technology",
+    description:
+      "Pellentesque nec libero sed nisl lacinia feugiat. Donec ac lacus ultricies, gravida metus vitae, pharetra felis.",
+    imageUrl:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa vel minima ipsum animi veniam pariatur odit assumenda nam hic possimus velit deserunt architecto neque quo recusandae accusamus facilis non quasi quos, quae autem delectus consequatur consectetur. Id, accusantium? Reiciendis consequuntur voluptate dolore beatae minus quam recusandae corporis nisi nihil.",
+  },
+  {
+    id: 3,
+    title: "Nec massa viverra eget feugiat pellentesque.",
+    date: "24 Aug 2024",
+    category: "General",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo auctor, vehicula sem et, tristique mi. Aenean cursus turpis ut erat suscipit, ac imperdiet nibh facilisis.",
+    imageUrl:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa vel minima ipsum animi veniam pariatur odit assumenda nam hic possimus velit deserunt architecto neque quo recusandae accusamus facilis non quasi quos, quae autem delectus consequatur consectetur. Id, accusantium? Reiciendis consequuntur voluptate dolore beatae minus quam recusandae corporis nisi nihil.",
+  },
+  {
+    id: 4,
+    title: "Fusce ultricies dui eget velit fermentum.",
+    date: "18 Aug 2024",
+    category: "Management",
+    description:
+      "Pellentesque nec libero sed nisl lacinia feugiat. Donec ac lacus ultricies, gravida metus vitae, pharetra felis.",
+    imageUrl:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa vel minima ipsum animi veniam pariatur odit assumenda nam hic possimus velit deserunt architecto neque quo recusandae accusamus facilis non quasi quos, quae autem delectus consequatur consectetur. Id, accusantium? Reiciendis consequuntur voluptate dolore beatae minus quam recusandae corporis nisi nihil.",
+  },
+];
 
 export default function Blogs() {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Nec massa viverra eget feugiat pellentesque.",
-      date: "24 Aug 2024",
-      category: "General",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo auctor, vehicula sem et, tristique mi. Aenean cursus turpis ut erat suscipit, ac imperdiet nibh facilisis.",
-      imageUrl:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
-    },
-    {
-      id: 2,
-      title: "Fusce ultricies dui eget velit fermentum.",
-      date: "18 Aug 2024",
-      category: "Technology",
-      description:
-        "Pellentesque nec libero sed nisl lacinia feugiat. Donec ac lacus ultricies, gravida metus vitae, pharetra felis.",
-      imageUrl:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
-    },
-    {
-      id: 3,
-      title: "Nec massa viverra eget feugiat pellentesque.",
-      date: "24 Aug 2024",
-      category: "General",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo auctor, vehicula sem et, tristique mi. Aenean cursus turpis ut erat suscipit, ac imperdiet nibh facilisis.",
-      imageUrl:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
-    },
-    {
-      id: 4,
-      title: "Fusce ultricies dui eget velit fermentum.",
-      date: "18 Aug 2024",
-      category: "Management",
-      description:
-        "Pellentesque nec libero sed nisl lacinia feugiat. Donec ac lacus ultricies, gravida metus vitae, pharetra felis.",
-      imageUrl:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b903776e-8e76-4c6c-972d-574ad3933a00/public",
-    },
-  ];
-
   const categories = [
     "Design",
     "Prototyping",
@@ -96,9 +113,12 @@ export default function Blogs() {
               justo auctor, vehicula sem et, tristique mi. Aenean cursus turpis
               ut erat suscipit, ac imperdiet nibh facilisis.
             </p>
-            <p className="text-sm font-normal xl:text-base">
+            <Link
+              className="text-sm font-normal xl:text-base"
+              to={`/blog/${"1"}`}
+            >
               Read More <span className="pl-4">→</span>
-            </p>
+            </Link>
           </div>
         </section>
         <hr className="border-t-1 my-10 border-black/20" />
@@ -107,6 +127,7 @@ export default function Blogs() {
             {blogPosts.map((post) => (
               <BlogCard
                 key={post.id}
+                id={post.id}
                 title={post.title}
                 date={post.date}
                 category={post.category}
@@ -122,13 +143,15 @@ export default function Blogs() {
 }
 
 interface BlogCardProps {
+  id: number;
   title: string;
   date: string;
   category: string;
   description: string;
   imageUrl: string;
 }
-function BlogCard({
+export function BlogCard({
+  id,
   title,
   date,
   category,
@@ -150,13 +173,16 @@ function BlogCard({
         <h3 className="mb-10 align-middle text-sm font-medium uppercase md:mb-6 md:text-xs xl:mb-8 xl:text-sm">
           <span className="prefix-dot pl-4"></span> {category} / {date}
         </h3>
-        <h2 className="mb-5 font-secondary text-xl font-semibold md:mb-3 md:text-base xl:mb-4 xl:text-xl">
+        <h2 className="mb-5 font-secondary text-xl font-normal md:mb-3 md:text-base xl:mb-4 xl:text-xl">
           {title}
         </h2>
         <p className="mb-5 text-xs md:mb-4 xl:mb-6 xl:text-sm">{description}</p>
-        <p className="text-sm font-normal xl:text-base">
+        <Link
+          className="text-sm font-normal xl:text-base"
+          to={`/blog/${id}`}
+        >
           Read More <span className="pl-4">→</span>
-        </p>
+        </Link>
       </div>
     </div>
   );
