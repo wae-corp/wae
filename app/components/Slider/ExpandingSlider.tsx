@@ -55,7 +55,7 @@ export const ExpandingSlider = () => {
         loop={true}
         classNames={{
           slide:
-            "group relative h-full flex-shrink-0 mr-4 md:mr-8 transition-all duration-500 hover:basis-[600px]",
+            "group relative h-full flex-shrink-0 mr-4 md:mr-8 transition-all duration-300 hover:basis-[600px]",
           viewport: "overflow-hidden",
           container: "flex",
           controls: "hidden",
@@ -67,7 +67,7 @@ export const ExpandingSlider = () => {
               to={`/browse-products/${product.id}`}
               className="relative flex h-full w-full flex-col overflow-hidden"
             >
-              <div className="absolute inset-0 h-full transition-opacity duration-500 group-hover:opacity-0">
+              <div className="absolute inset-0 h-full transition-opacity duration-300 group-hover:opacity-0">
                 {/* Small Image */}
                 <img
                   src={catImages[idx]?.image}
@@ -76,7 +76,7 @@ export const ExpandingSlider = () => {
                 />
               </div>
 
-              <div className="absolute inset-0 h-full opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+              <div className="absolute inset-0 h-full opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="relative h-[400px] w-[600px]">
                   <div className="absolute bottom-0 h-20 w-full bg-gradient-to-t from-black to-transparent"></div>
                   {/* Large Image */}

@@ -278,7 +278,7 @@ export default function Index() {
         <section className="container">
           <p
             className="mb-14 text-sm uppercase xl:mb-12"
-            data-aos="fade-right"
+            // data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-offset="200"
           >
@@ -288,7 +288,7 @@ export default function Index() {
           <div className="mb-12 flex flex-col items-center justify-between md:mb-8 lg:flex-row">
             <h4
               className="font-secondary text-2xl md:text-[32px] md:leading-normal xl:text-4xl xl:leading-[1.35]"
-              data-aos="fade-right"
+              // data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-offset="200"
             >
@@ -319,7 +319,7 @@ export default function Index() {
               </h3>
               <p
                 className="uppercase md:pl-20 md:text-sm xl:text-base"
-                data-aos="fade-right"
+                // data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-offset="200"
               >
@@ -419,9 +419,7 @@ export default function Index() {
       <section className="wae-pb-lg wae-pt-lg bg-man-in-shadow bg-cover bg-no-repeat text-white">
         <div className="container">
           <div className="flex flex-col gap-12 md:gap-[60px] lg:w-full lg:flex-row lg:justify-between lg:gap-[140px]">
-            <div
-            // data-aos="fade-right"
-            >
+            <div data-aos="fade-right">
               <h3 className="mb-[60px] font-secondary text-[32px] leading-normal md:mb-9 md:text-4xl xl:mb-12">
                 Life @ WAE
               </h3>

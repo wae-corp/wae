@@ -16,6 +16,7 @@ type LoaderData = {
   name?: string;
   description?: string | ReactNode;
   mountingType?: string;
+  keyPoints?: string[];
   types?: string[];
   image?: string[];
   features?: Array<{title: string; description: string}>;
@@ -31,6 +32,7 @@ export const meta: MetaFunction = () => {
 
 export const loader: LoaderFunction = async ({request, params}) => {
   const productIdResult = getStringFromUnknown(params.product);
+  console.log(productIdResult);
 
   if (productIdResult.success === false) {
     return new Response(null, {status: 404});
@@ -47,6 +49,7 @@ export const loader: LoaderFunction = async ({request, params}) => {
     name: productDetails[0]?.name,
     description: productDetails[0]?.description,
     mountingType: productDetails[0]?.mountingType,
+    keyPoints: productDetails[0]?.keyPoints,
     types: ["Water", "Ice", "Hot"],
     image: productDetails[0]?.images,
     features: productDetails[0]?.features,
@@ -65,8 +68,16 @@ export default function ProductDetails() {
     {open: openDownloadSuccess, close: closeDownloadSuccess},
   ] = useDisclosure(false);
 
-  const {id, name, description, mountingType, types, image, features} =
-    useLoaderData() as LoaderData;
+  const {
+    id,
+    name,
+    description,
+    mountingType,
+    keyPoints,
+    types,
+    image,
+    features,
+  } = useLoaderData() as LoaderData;
 
   return (
     <>
@@ -129,9 +140,25 @@ export default function ProductDetails() {
                 </div>
               </div>
 
-              <div className="mb-10 text-sm uppercase md:mb-[60px] xl:mb-[75px]">
+              <div className="mb-4 text-sm uppercase xl:mb-6">
                 {description}
               </div>
+
+              {keyPoints && (
+                <ul className="mb-10 md:mb-[60px] xl:mb-[75px]">
+                  {keyPoints.map((keyPoint, idx) => {
+                    return (
+                      <li
+                        key={idx}
+                        className="mb-3 flex items-center text-sm uppercase last:mb-0 xl:text-base"
+                      >
+                        <div className="mr-2 h-2 w-2 rounded-full bg-black xl:mr-4 xl:h-4 xl:w-4"></div>
+                        {keyPoint}
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
 
               <button className="wae-btn !rounded-lg border-black px-6 py-2">
                 Get In Touch
