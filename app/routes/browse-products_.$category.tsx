@@ -61,7 +61,7 @@ export default function BrowseProducts() {
       const mountingData = catData.mountingTypes.map((type) => ({
         id: type.type,
         image: type.image,
-        link: "/product-list/" + currentCategory?.id,
+        link: "/product-list/" + category,
         name: type.type,
       }));
       setMountingTypes(mountingData);

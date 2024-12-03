@@ -2058,7 +2058,7 @@ export const categoryMountingMap: CategoryMounting[] = [
     ],
   },
   {
-    categoryId: "WATER_COOLER_FOUNTAINS",
+    categoryId: "04",
     categoryName: "Water Cooler & Fountains - ZVR Series",
     mountingTypes: [
       {
@@ -2076,7 +2076,7 @@ export const categoryMountingMap: CategoryMounting[] = [
     ],
   },
   {
-    categoryId: "PUBLIC_UTILITY_SYSTEMS",
+    categoryId: "05",
     categoryName: "Public Utility Systems - PUS Series",
     mountingTypes: [
       {
@@ -2088,7 +2088,7 @@ export const categoryMountingMap: CategoryMounting[] = [
     ],
   },
   {
-    categoryId: "COMMERCIAL_INDUSTRIAL_PLANTS",
+    categoryId: "06",
     categoryName: "Commercial/Industrial Plants",
     mountingTypes: [
       {

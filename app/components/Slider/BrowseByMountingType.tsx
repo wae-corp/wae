@@ -11,9 +11,11 @@ export const BrowseByMountingType = ({
   const [embla, setEmbla] = useState<Embla | null>();
 
   const itemsToRender =
-    mountingTypes.length <= 2
-      ? [...mountingTypes, ...mountingTypes]
-      : mountingTypes;
+    mountingTypes.length === 1
+      ? [...mountingTypes, ...mountingTypes, ...mountingTypes] // Repeat single item three times
+      : mountingTypes.length <= 2
+        ? [...mountingTypes, ...mountingTypes] // Repeat if there are 2 or fewer items
+        : mountingTypes;
 
   return (
     <section className="container">
