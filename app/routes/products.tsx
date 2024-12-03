@@ -121,7 +121,7 @@ export default function Products() {
                       </div>
                       <Link
                         to={`/browse-products/${category.id}`}
-                        className="wae-btn-light wae-btn wae-btn-md mt-auto !py-4 px-6"
+                        className="mt-auto inline-block rounded-md border border-black px-5 py-3 transition-colors hover:border-white hover:bg-black hover:text-white"
                       >
                         Know More
                       </Link>
