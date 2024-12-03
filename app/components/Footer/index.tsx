@@ -186,7 +186,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-black px-4 pb-11 pt-20 text-white">
+    <footer className="relative bg-black px-4 pb-11 pt-32 text-white">
       {/* <img
         src="/images/logos/great-place.png"
         alt="Certificate of Great Place to Work"
@@ -199,7 +199,7 @@ export const Footer = () => {
           <div className="max-xl:w-full xl:-mt-16">
             <Link
               to={"/"}
-              className="mx-auto mb-6 block xl:mr-0"
+              className="mx-auto -mt-2 mb-12 block xl:mr-0"
             >
               <img
                 src="/images/logos/wae-logo.svg"

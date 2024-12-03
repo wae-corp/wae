@@ -96,7 +96,7 @@ export default function Products() {
                       <img
                         src={category.categoryImage}
                         alt="Category Poster"
-                        className="aspect-square flex-shrink-0 object-cover group-even:ml-auto"
+                        className="aspect-square flex-shrink-0 scale-110 object-cover group-even:ml-auto"
                         width="500"
                         height="500"
                       />
@@ -121,7 +121,7 @@ export default function Products() {
                       </div>
                       <Link
                         to={`/browse-products/${category.id}`}
-                        className="mt-auto inline-block rounded-lg border border-black px-5 py-3 transition-colors hover:bg-white"
+                        className="wae-btn-light wae-btn wae-btn-md mt-auto !py-4 px-6"
                       >
                         Know More
                       </Link>

@@ -162,7 +162,7 @@ export default function Careers() {
                     </div>
                     <Link
                       to={career.link}
-                      className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
+                      className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:border-white hover:bg-black hover:text-white"
                     >
                       Explore
                     </Link>

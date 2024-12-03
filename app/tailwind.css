@@ -123,7 +123,7 @@ body {
 }
 
 .wae-btn-light {
-  @apply border-black bg-white text-black hover:bg-gray-200 active:bg-gray-300;
+  @apply border-black bg-white text-black hover:bg-black hover:text-white active:bg-gray-300;
 }
 
 .wae-btn-pill {
