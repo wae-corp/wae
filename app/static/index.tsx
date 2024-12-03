@@ -1999,4 +1999,105 @@ export const productData: ProductData[] = [
   },
 ];
 
+type MountingType = "Free Standing" | "Counter Top" | "Fountain" | "Indoor";
+
+export interface MountingTypeInfo {
+  type: MountingType;
+  image: string;
+}
+
+export interface CategoryMounting {
+  categoryId: string;
+  categoryName: string;
+  mountingTypes: MountingTypeInfo[];
+}
+
+export const categoryMountingMap: CategoryMounting[] = [
+  {
+    categoryId: "01",
+    categoryName: "Drinking Water Station - BLUWAE Series",
+    mountingTypes: [
+      {
+        type: "Free Standing",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4e8f900d-ed31-40b1-1acb-a32b0a4d8800/public",
+      },
+      {
+        type: "Counter Top",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/159ba402-e1aa-494d-4e87-e0d55b0f4a00/public",
+      },
+    ],
+  },
+  {
+    categoryId: "02",
+    categoryName: "Water Dispenser (W/O RO) - TRUBLU Series",
+    mountingTypes: [
+      {
+        type: "Free Standing",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0fa34c2b-4dc1-47d4-e09e-709f52215800/public",
+      },
+      {
+        // TODO: REPLACE THIS WITH CORRECT IMAGE
+        type: "Counter Top",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0fa34c2b-4dc1-47d4-e09e-709f52215800/public",
+      },
+    ],
+  },
+  {
+    categoryId: "03",
+    categoryName: "Drinking Water Faucets - WATERMATIC Series",
+    mountingTypes: [
+      {
+        type: "Counter Top",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/fea50c0c-fbed-4995-fb0d-1833e624b000/public",
+      },
+    ],
+  },
+  {
+    categoryId: "WATER_COOLER_FOUNTAINS",
+    categoryName: "Water Cooler & Fountains - ZVR Series",
+    mountingTypes: [
+      {
+        // TODO: REPLACE THIS WITH CORRECT IMAGE
+        type: "Fountain",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/fea50c0c-fbed-4995-fb0d-1833e624b000/public",
+      },
+      {
+        // TODO: REPLACE THIS WITH CORRECT IMAGE
+        type: "Indoor",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/fea50c0c-fbed-4995-fb0d-1833e624b000/public",
+      },
+    ],
+  },
+  {
+    categoryId: "PUBLIC_UTILITY_SYSTEMS",
+    categoryName: "Public Utility Systems - PUS Series",
+    mountingTypes: [
+      {
+        // TODO: REPLACE THIS WITH CORRECT IMAGE
+        type: "Free Standing",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/fea50c0c-fbed-4995-fb0d-1833e624b000/public",
+      },
+    ],
+  },
+  {
+    categoryId: "COMMERCIAL_INDUSTRIAL_PLANTS",
+    categoryName: "Commercial/Industrial Plants",
+    mountingTypes: [
+      {
+        type: "Free Standing",
+        image:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/49e6178c-9578-4c43-471b-3172bad79600/public",
+      },
+    ],
+  },
+];
+
 export * from "./Icons";

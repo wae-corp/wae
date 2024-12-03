@@ -7,6 +7,17 @@ export interface ProductSliderProps {
   centered?: boolean;
 }
 
+export interface BrowseByMountingTypeProps {
+  mountingTypes: Array<{
+    id: string;
+    image: string;
+    link: string;
+    name: string;
+  }>;
+  arrows?: boolean;
+  centered?: boolean;
+}
+
 export interface ProductDetailImageSliderProps {
   images: string[];
   arrows?: boolean;

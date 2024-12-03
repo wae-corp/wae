@@ -1,9 +1,15 @@
 import type {LoaderFunction, MetaFunction} from "@remix-run/node";
 import {json, Link, useLoaderData} from "@remix-run/react";
 import {useEffect, useState} from "react";
+import {BrowseByMountingType} from "~/components/Slider/BrowseByMountingType";
 import {BrowseBySlider} from "~/components/Slider/BrowseBySlider";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
-import {ProductData, productData, productsByApplication} from "~/static";
+import {
+  categoryMountingMap,
+  ProductData,
+  productData,
+  productsByApplication,
+} from "~/static";
 
 type LoaderData = {
   category: string;
@@ -31,42 +37,40 @@ export const meta: MetaFunction = () => {
 export default function BrowseProducts() {
   const [currentCategory, setCurrentCategory] = useState<ProductData>();
   const {category} = useLoaderData() as LoaderData;
+  const [mountingTypes, setMountingTypes] = useState<
+    Array<{
+      id: string;
+      image: string;
+      link: string;
+      name: string;
+    }>
+  >([]);
 
   useEffect(() => {
     setCurrentCategory(
       productData && productData.find((c) => c.id === category),
     );
+    getMountingTypes();
   }, []);
 
   const getMountingTypes = () => {
-    const mountingTypeMap = new Map<
-      string,
-      {id: string; image: string; link: string; name: string}
-    >();
-
-    currentCategory?.productList?.forEach((product) => {
-      const mountingType = product.mountingType;
-      const image = product.images?.[0];
-      const id = product.id || "";
-      const name = mountingType || "";
-      const link = `/product-list/${id}`;
-
-      if (mountingType && !mountingTypeMap.has(mountingType) && image) {
-        mountingTypeMap.set(mountingType, {id, image, link, name});
-      }
-    });
-
-    return Array.from(mountingTypeMap.entries()).map(
-      ([mountingType, details]) => ({
-        mountingType,
-        ...details,
-      }),
+    const catData = categoryMountingMap.find(
+      (item) => item.categoryId === category,
     );
+    if (catData) {
+      const mountingData = catData.mountingTypes.map((type) => ({
+        id: type.type,
+        image: type.image,
+        link: "/product-list/" + currentCategory?.id,
+        name: type.type,
+      }));
+      setMountingTypes(mountingData);
+    }
   };
 
   return (
     <>
-      <main className="bg-man-filling-glass relative flex h-[640px] items-center bg-cover bg-center bg-no-repeat pt-[var(--header-height)] text-white"></main>
+      <main className="relative flex h-[640px] items-center bg-man-filling-glass bg-cover bg-center bg-no-repeat pt-[var(--header-height)] text-white"></main>
 
       <section className="bg-black py-20 text-white md:py-[120px]">
         <div className="container flex items-center">
@@ -121,7 +125,7 @@ export default function BrowseProducts() {
             </p>
           </div>
 
-          <BrowseBySlider productList={getMountingTypes()} />
+          <BrowseByMountingType mountingTypes={mountingTypes} />
         </section>
 
         <section className="wae-pt-lg">
