@@ -17,6 +17,7 @@ type LoaderData = {
   description?: string | ReactNode;
   mountingType?: string;
   keyPoints?: string[];
+  category: string;
   types?: string[];
   image?: string[];
   features?: Array<{title: string; description: string}>;
@@ -38,9 +39,18 @@ export const loader: LoaderFunction = async ({request, params}) => {
     return new Response(null, {status: 404});
   }
   const productName = productIdResult.ok;
+
   const productDetails = productData
-    ?.map((cat) => cat?.productList?.find((prod) => prod.name === productName))
+    ?.map((cat) =>
+      cat?.productList?.find((prod) => prod.name === productName)
+        ? {
+            ...cat?.productList?.find((prod) => prod.name === productName),
+            category: cat.categoryName,
+          }
+        : null,
+    )
     .filter((product) => product != null);
+
   if (!productDetails) {
     return new Response(null, {status: 404});
   }
@@ -48,6 +58,7 @@ export const loader: LoaderFunction = async ({request, params}) => {
     id: productDetails[0]?.id,
     name: productDetails[0]?.name,
     description: productDetails[0]?.description,
+    category: productDetails[0]?.category ?? "",
     mountingType: productDetails[0]?.mountingType,
     keyPoints: productDetails[0]?.keyPoints,
     types: ["Water", "Ice", "Hot"],
@@ -74,10 +85,13 @@ export default function ProductDetails() {
     description,
     mountingType,
     keyPoints,
+    category,
     types,
     image,
     features,
   } = useLoaderData() as LoaderData;
+
+  console.log(category);
 
   return (
     <>
@@ -112,7 +126,7 @@ export default function ProductDetails() {
             // data-aos="fade-left"
             >
               <h6 className="mb-5 text-base font-light md:mb-10 xl:mb-[68px] xl:text-2xl">
-                Ligature-resistant
+                {category}
               </h6>
 
               <div className="mb-6 flex items-center justify-between gap-2">
