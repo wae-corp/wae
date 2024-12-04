@@ -736,6 +736,11 @@ export const productData: ProductData[] = [
         id: "01",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/699b0801-c2dc-41d0-136f-0b5d54990b00/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "BLUWAE ENKI FS",
         mountingType: "Free-Standing",
@@ -773,6 +778,11 @@ export const productData: ProductData[] = [
         id: "02",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b173ac87-c1ea-4c9b-b4dc-9dfe9d7e4100/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "BLUWAE POS",
         mountingType: "Free-Standing",
@@ -810,6 +820,11 @@ export const productData: ProductData[] = [
         id: "03",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9df2b276-67da-412e-b944-137e68fa3500/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "BLUWAE ROM FS",
         mountingType: "Free-Standing",
@@ -847,6 +862,11 @@ export const productData: ProductData[] = [
         id: "04",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52cfd172-76d2-4471-8083-4a8d9a8caf00/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "BLUWAE REVA",
         mountingType: "Free-Standing",
@@ -884,6 +904,11 @@ export const productData: ProductData[] = [
         id: "05",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ec6c91fe-22a7-45bb-3aee-5e6720147000/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "BLUWAE ASSISTIFLOW",
         mountingType: "Free-Standing",
@@ -921,6 +946,11 @@ export const productData: ProductData[] = [
         id: "06",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6865cefc-5a2e-43c5-5d73-438cfac6c800/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "BLUWAE ENKI CT",
         mountingType: "Counter-Top",
@@ -958,6 +988,11 @@ export const productData: ProductData[] = [
         id: "07",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/54008031-5666-4934-a9d4-6fdc01030e00/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "BLUWAE VAR CT",
         mountingType: "Counter-Top",
@@ -995,6 +1030,11 @@ export const productData: ProductData[] = [
         id: "08",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52dd58ea-1d30-4397-6ba0-df78adaeaa00/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "BLUWAE ROM CT",
         mountingType: "Counter-Top",
@@ -1033,14 +1073,14 @@ export const productData: ProductData[] = [
         id: "09",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52dd58ea-1d30-4397-6ba0-df78adaeaa00/public",
-        bannerImageUrl: "",
-        name: "BLUWAE VAR FS",
-        mountingType: "Free-Standing",
         keyPoints: [
           "Plug and Play Operation.",
           "Inbuilt 5 stages of purification.",
           "Can be customized as per client needs.",
         ],
+        bannerImageUrl: "",
+        name: "BLUWAE VAR FS",
+        mountingType: "Free-Standing",
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
@@ -1089,6 +1129,11 @@ export const productData: ProductData[] = [
         id: "01",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "TRUBLU ALFA TL",
         mountingType: "Free-Standing",
@@ -1126,6 +1171,11 @@ export const productData: ProductData[] = [
         id: "02",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "TRUBLU ALFA BL",
         mountingType: "Free-Standing",
@@ -1163,6 +1213,11 @@ export const productData: ProductData[] = [
         id: "03",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "TRUBLU ALFA 100",
         mountingType: "Free-Standing",
@@ -1203,6 +1258,11 @@ export const productData: ProductData[] = [
         id: "04",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "TRUBLU ALFA CT",
         mountingType: "Counter-Top",
@@ -1240,6 +1300,11 @@ export const productData: ProductData[] = [
         id: "05",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e670b1ee-b32c-4a6a-5d51-ed03fa81c400/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "TRUBLU AENON",
         mountingType: "Free-Standing",
@@ -1277,6 +1342,11 @@ export const productData: ProductData[] = [
         id: "06",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f339b126-7cad-4942-91ee-8f535507f600/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "TRUBLU DELTA",
         mountingType: "Free-Standing",
@@ -1314,6 +1384,11 @@ export const productData: ProductData[] = [
         id: "07",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c16970c2-a74d-4b1e-b0b0-e88ee58be000/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "TRUBLU GAMMA",
         mountingType: "Free-Standing",
@@ -1351,6 +1426,11 @@ export const productData: ProductData[] = [
         id: "08",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b92f8428-83ae-45b4-fccf-465b18193500/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         name: "TRUBLU LAGOON",
         mountingType: "Free-Standing",
@@ -1403,6 +1483,11 @@ export const productData: ProductData[] = [
         name: "Piper",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/14dbff34-7f49-49a5-3837-64b6880ac000/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
         description:
@@ -1440,6 +1525,11 @@ export const productData: ProductData[] = [
         name: "Indus",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/530b6e77-4a94-4c07-5fe6-e7a902d39200/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
         description:
@@ -1477,6 +1567,11 @@ export const productData: ProductData[] = [
         name: "Touch",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/32cdc632-c6bd-4d5a-a851-993f0b468600/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
         description:
@@ -1514,6 +1609,11 @@ export const productData: ProductData[] = [
         name: "Moses",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2f8b4ab6-9dde-4f8b-4ac8-795976314100/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
         description:
@@ -1551,6 +1651,11 @@ export const productData: ProductData[] = [
         name: "TRX.TL",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/213a7aa6-0b7c-466a-1583-353000287100/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
         description:
@@ -1588,6 +1693,11 @@ export const productData: ProductData[] = [
         name: "HKN",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a1d7989c-aec8-48b3-9c33-5ed1f22b0700/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
         description:
@@ -1639,6 +1749,11 @@ export const productData: ProductData[] = [
         name: "PENGUIN",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/187c4f6d-5652-4697-063b-74913cc85200/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Fountain",
         description:
@@ -1676,6 +1791,11 @@ export const productData: ProductData[] = [
         name: "YAMI",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/1c00eef0-3d07-4b2a-d4fa-886365c43b00/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Free-Standing",
         description:
@@ -1713,6 +1833,11 @@ export const productData: ProductData[] = [
         name: "PLUSULTA",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Free-Standing",
         description:
@@ -1750,6 +1875,11 @@ export const productData: ProductData[] = [
         name: "ZALE",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Free-Standing",
         description:
@@ -1787,6 +1917,11 @@ export const productData: ProductData[] = [
         name: "CONTOUR",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Free-Standing",
         description:
@@ -1824,6 +1959,11 @@ export const productData: ProductData[] = [
         name: "IBIS",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Free-Standing",
         description:
@@ -1875,6 +2015,11 @@ export const productData: ProductData[] = [
         name: "AQUA SERIES",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6eb23111-0afb-443c-fc7b-9ace1c910700/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Free-Standing",
         description:
@@ -1912,6 +2057,11 @@ export const productData: ProductData[] = [
         name: "HYDROBANKSERIES",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Free-Standing",
         description:
@@ -1963,6 +2113,11 @@ export const productData: ProductData[] = [
         name: "WATERMAKER",
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6240473c-a65e-43cf-e01e-62974647f500/public",
+        keyPoints: [
+          "Plug and Play Operation.",
+          "Inbuilt 5 stages of purification.",
+          "Can be customized as per client needs.",
+        ],
         bannerImageUrl: "",
         mountingType: "Free-Standing",
         description:
