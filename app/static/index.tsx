@@ -1470,7 +1470,7 @@ export const productData: ProductData[] = [
     id: "03",
     categoryName: "DRINKING WATER FAUCETS - WATERMATIC Series",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac71707c-d21b-4121-80b9-26e66359d100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4cd452c-211e-455a-dad5-148c57878000/public",
     categoryDescriptionTwo:
       "Drinking water faucets with under the counter storage units to make access to fresh water simple. Precision-engineered for smooth flow, with a focus on reducing waste and energy use.",
     categoryDescriptionThree:
@@ -1736,7 +1736,7 @@ export const productData: ProductData[] = [
     id: "04",
     categoryName: "WATER COOLER & FOUNTAINS - ZVR Series",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac71707c-d21b-4121-80b9-26e66359d100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5b540d2d-79e7-4028-5ab8-a94abec08700/public",
     categoryDescriptionTwo:
       "Water coolers cum bubblers provide chilled water on demand. Built to be energy-efficient, they’re ideal for public spaces, reducing both costs and plastic waste.",
     categoryDescriptionThree:
@@ -2002,7 +2002,7 @@ export const productData: ProductData[] = [
     id: "05",
     categoryName: "PUBLIC UTILITY SYSTEMS - PUS Series",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac71707c-d21b-4121-80b9-26e66359d100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ea8e8ad2-6510-4b28-65df-3ad71fa75f00/public",
     categoryDescriptionTwo:
       "Designed for large public spaces, PUS systems ensure clean, accessible water. Engineered for durability and eco-friendliness, they support sustainable communities.",
     categoryDescriptionThree:
@@ -2100,7 +2100,7 @@ export const productData: ProductData[] = [
     id: "06",
     categoryName: "COMMERCIAL/INDUSTRIAL PLANTS",
     categoryImage:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ac71707c-d21b-4121-80b9-26e66359d100/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/72054beb-9d63-4ef9-e169-b7594a898f00/public",
     categoryDescriptionTwo:
       "Power your facility with our large-scale hydration plants. Scalable and efficient, they offer high-volume water solutions with a commitment to sustainability.",
     categoryDescriptionThree:
