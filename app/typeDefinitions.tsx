@@ -1,8 +1,8 @@
 import {ReactNode} from "react";
-import {ProductData} from "./static";
+import {ProductData, ProductList} from "./static";
 
 export interface ProductSliderProps {
-  productList: ProductData[];
+  productList: ProductList[];
   arrows?: boolean;
   centered?: boolean;
 }

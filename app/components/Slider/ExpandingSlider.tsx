@@ -39,6 +39,14 @@ export const ExpandingSlider = () => {
     },
   ];
 
+  const itemsToRender = [
+    ...productData,
+    ...productData,
+    ...productData,
+    ...productData,
+  ];
+  const catList = [...catImages, ...catImages, ...catImages, ...catImages];
+
   return (
     <>
       <h5
@@ -52,17 +60,18 @@ export const ExpandingSlider = () => {
         slideSize="300px"
         height={440}
         align={"start"}
-        loop={true}
+        skipSnaps={true}
+        loop={false}
         classNames={{
           slide:
-            "group relative h-full flex-shrink-0 mr-4 md:mr-8 transition-all duration-1000 hover:basis-[600px]",
+            "group relative h-full flex-shrink-0 mr-4 transition-[flex-basis] duration-1000 md:mr-8 hover:basis-[600px] will-change-[flex-basis]",
           viewport: "overflow-hidden",
           container: "flex",
           controls: "hidden",
         }}
       >
-        {productData.map((product, idx) => (
-          <Carousel.Slide key={product.id}>
+        {itemsToRender.map((product, idx) => (
+          <Carousel.Slide key={idx}>
             <Link
               to={`/browse-products/${product.id}`}
               className="relative flex h-full w-full flex-col overflow-hidden"
@@ -70,8 +79,7 @@ export const ExpandingSlider = () => {
               <div className="absolute inset-0 h-full transition-opacity duration-1000 group-hover:opacity-0">
                 {/* Small Image */}
                 <img
-                  src={catImages[idx]?.image}
-                  alt={product?.categoryName}
+                  src={catList[idx]?.image}
                   className="h-[400px] w-full object-cover"
                 />
               </div>
@@ -81,15 +89,10 @@ export const ExpandingSlider = () => {
                   <div className="absolute bottom-0 h-20 w-full bg-gradient-to-t from-black to-transparent"></div>
                   {/* Large Image */}
                   <img
-                    src={catImages[idx]?.image}
+                    src={catList[idx]?.image}
                     alt={product?.categoryName}
                     className="h-full w-full object-cover"
                   />
-                  <h6 className="absolute inset-5 top-auto text-sm text-white">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur corporis praesentium assumenda voluptatum sint
-                    eveniet repudiandae eligendi neque modi deserunt?
-                  </h6>
                 </div>
               </div>
 

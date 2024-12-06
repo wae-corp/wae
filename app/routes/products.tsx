@@ -156,6 +156,7 @@ export default function Products() {
             </p>
           </div>
           <ProjectSlider
+            arrows={true}
             productList={productData
               .flatMap((cat) => cat.productList)
               .map((p) => {

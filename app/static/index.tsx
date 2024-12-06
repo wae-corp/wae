@@ -109,9 +109,10 @@ export const SecondaryProducts: Product[] = [
 export const productsByApplication: Product[] = [
   {
     id: "01",
+    link: "/",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
-    name: "YOU SEE EVERYONE",
+    name: "Institution",
     details: (
       <div className="mt-5">
         <p className="text-sm uppercase leading-normal">
@@ -130,93 +131,10 @@ export const productsByApplication: Product[] = [
   },
   {
     id: "02",
+    link: "/",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
-    name: "YOU SEE EVERYONE",
-    details: (
-      <div className="mt-5">
-        <p className="text-sm uppercase leading-normal">
-          This is the All-arounD variant with an aluminum structure, 100%
-          recyclable, visible on the inside of the door.{" "}
-        </p>
-
-        <Link
-          to={"/product-list/01"}
-          className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
-        >
-          View All Products
-        </Link>
-      </div>
-    ),
-  },
-  {
-    id: "03",
-    image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
-    name: "YOU SEE EVERYONE",
-    details: (
-      <div className="mt-5">
-        <p className="text-sm uppercase leading-normal">
-          This is the All-arounD variant with an aluminum structure, 100%
-          recyclable, visible on the inside of the door.{" "}
-        </p>
-
-        <Link
-          to={"/product-list/01"}
-          className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
-        >
-          View All Products
-        </Link>
-      </div>
-    ),
-  },
-  {
-    id: "04",
-    image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
-    name: "YOU SEE EVERYONE",
-    details: (
-      <div className="mt-5">
-        <p className="text-sm uppercase leading-normal">
-          This is the All-arounD variant with an aluminum structure, 100%
-          recyclable, visible on the inside of the door.{" "}
-        </p>
-
-        <Link
-          to={"/product-list/01"}
-          className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
-        >
-          View All Products
-        </Link>
-      </div>
-    ),
-  },
-  {
-    id: "05",
-    image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
-    name: "YOU SEE EVERYONE",
-    details: (
-      <div className="mt-5">
-        <p className="text-sm uppercase leading-normal">
-          This is the All-arounD variant with an aluminum structure, 100%
-          recyclable, visible on the inside of the door.{" "}
-        </p>
-
-        <Link
-          to={"/product-list/01"}
-          className="wae-btn wae-btn-pill wae-btn-md mt-8 border-black px-12"
-        >
-          View All Products
-        </Link>
-      </div>
-    ),
-  },
-  {
-    id: "06",
-    image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47fb19bd-1386-4567-74c9-d49b3e49c500/public",
-    name: "YOU SEE EVERYONE",
+    name: "Corporates",
     details: (
       <div className="mt-5">
         <p className="text-sm uppercase leading-normal">

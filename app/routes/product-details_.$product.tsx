@@ -276,6 +276,7 @@ export default function ProductDetails() {
           Other Products
         </div>
         <ProjectSlider
+        arrows={true}
           productList={productData
             .flatMap((cat) => cat.productList)
             .map((p) => {

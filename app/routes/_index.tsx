@@ -16,7 +16,7 @@ import {
   ActionData,
   EnquiryType as EnquiryTypeOne,
 } from "~/backend/typeDefinations";
-import {Icons, productData} from "~/static";
+import {Icons} from "~/static";
 import {getErrorFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {appendLandingLeadIntoSheet} from "~/backend/googleSheet.server";
 import {z} from "zod";
@@ -278,7 +278,6 @@ export default function Index() {
         <section className="container">
           <p
             className="mb-14 text-sm uppercase xl:mb-12"
-            // data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-offset="200"
           >
@@ -352,7 +351,6 @@ export default function Index() {
         </section>
 
         <section className="container">
-          {/* <OurProductsSlider productList={productData} /> */}
           <ExpandingSlider />
         </section>
       </section>
