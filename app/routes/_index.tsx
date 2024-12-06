@@ -231,10 +231,7 @@ export default function Index() {
   return (
     <>
       <FullscreenSlider items={sliderItemList} />
-      {/* <div className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center text-center text-white">
-              {Icons.ArrowDown}
-              Scroll
-            </div> */}
+
       <section className="bg-black xl:py-12">
         <div
           className="flex flex-col items-center justify-center text-center text-white"
@@ -245,7 +242,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="flex items-center justify-center bg-black pb-20 pt-10 text-center text-white md:py-[100px]">
+      <section className="sticky top-0 -z-[1] flex items-center justify-center bg-black pb-20 pt-10 text-center text-white md:py-[100px]">
         <div className="container">
           <div
             className="mx-auto max-w-4xl"
@@ -446,7 +443,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="wae-pt-lg wae-pb-lg">
+      <section className="wae-pt-lg wae-pb-lg bg-white">
         <div className="container">
           <div className="grid grid-cols-1 gap-[60px] lg:grid-cols-2 lg:gap-0">
             <div data-aos="fade-in">
