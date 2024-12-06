@@ -631,6 +631,12 @@ export interface ProductList {
   description?: string | ReactNode;
   keyPoints?: string[];
   images?: string[];
+  specifications?: {
+    id: number;
+    title: string;
+    value: string;
+    subtitle: string;
+  }[];
   features?: {
     title: string;
     description: string;
@@ -691,6 +697,38 @@ export const productData: ProductData[] = [
               "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
           },
         ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "BLUWAE POS",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "950 ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
+          },
+        ],
       },
       {
         id: "02",
@@ -715,22 +753,54 @@ export const productData: ProductData[] = [
           {
             title: "Touch-Free Dispensing",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Experience seamless, sensor-based water dispensing that's hygienic and completely touchless.",
           },
           {
-            title: "Effortless Integration",
+            title: "Smooth, Splash-Free FLOW",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Designed for a clean, laminar water ow that minimizes spillage, paired with an efficient drainage system.",
           },
           {
-            title: "Built Tough, Made to Last",
+            title: "Powerful LED UV-C Purication",
             description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+              "Eliminates bacteria, viruses, and pathogens, ensuring water is purified up to 99.99% for safe, refreshing hydration.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Versatile Integration",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Effortlessly integrates with carbonated beverage dispensers and coffee/tea vending machines, providing a flexible, all-in-one hydration solution.",
+          },
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "BLUWAE POS",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "950 ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
           },
         ],
       },
@@ -775,6 +845,38 @@ export const productData: ProductData[] = [
               "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
           },
         ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "BLUWAE POS",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "950 ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
+          },
+        ],
       },
       {
         id: "04",
@@ -817,6 +919,38 @@ export const productData: ProductData[] = [
               "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
           },
         ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "BLUWAE POS",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "950 ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
+          },
+        ],
       },
       {
         id: "05",
@@ -839,24 +973,56 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Built to Last",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Steel (SS-304) and corrosion-resistant Galvanized Iron (GI), ensuring durability and safety with food-grade materials.",
           },
           {
             title: "Effortless Integration",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution",
           },
           {
-            title: "Built Tough, Made to Last",
+            title: "Advanced Purication",
             description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+              "LED UV-C technology neutralizes up to 99.99% of bacteria, viruses, and other pathogens, ensuring every sip is pure.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Designed for Everyone",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Thoughtfully engineered to be accessible for seniors, kids, and those with special needs, making hydration easy for all.",
+          },
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "ASSISTIFLOW",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "1000ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
       },
@@ -901,6 +1067,38 @@ export const productData: ProductData[] = [
               "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
           },
         ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "BLUWAE POS",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "950 ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
+          },
+        ],
       },
       {
         id: "07",
@@ -943,6 +1141,38 @@ export const productData: ProductData[] = [
               "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
           },
         ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "BLUWAE POS",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "950 ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
+          },
+        ],
       },
       {
         id: "08",
@@ -983,6 +1213,38 @@ export const productData: ProductData[] = [
             title: "No Mess, No Stress",
             description:
               "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+          },
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "BLUWAE POS",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "950 ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
           },
         ],
       },
@@ -1028,6 +1290,38 @@ export const productData: ProductData[] = [
               "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
           },
         ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "BLUWAE POS",
+          },
+          {
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "950 ml",
+            subtitle: "Milli Ltires",
+          },
+          {
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
+          },
+        ],
       },
     ],
   },
@@ -1048,9 +1342,9 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Modern and Compact Design.",
+          "Advanced 3 stage purification (UV, UF & LED-UVC)",
+          "Touchless/Sensor-based operation",
         ],
         bannerImageUrl: "",
         name: "TRUBLU ALFA TL",
@@ -1064,24 +1358,69 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Top-Load Ready",
             description:
               "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
           },
           {
+            title: "Sleek Design",
+            description:
+              "Modern, space-saving design that ts perfectly in any setting.",
+          },
+          {
+            title: "Power Saver",
+            description: "Consumes 25% less energy than regular dispensers.",
+          },
+          {
+            title: "Quick Clean",
+            description:
+              "Removable drip tray for easy cleaning and maintenance",
+          },
+          {
+            title: "Touch-Free Convenience",
+            description: "Effortless, hands-free dispensing for ultimate ease.",
+          },
+          {
+            title: "Clean and Carefree",
+            description:
+              "Dishwasher-safe drip  tray keeps maintenance to a minimum.",
+          },
+          {
             title: "Effortless Integration",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Connects seamlessly with coffee, tea, and beverage machines for a complete solution.",
+          },
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "FS",
+            subtitle: "ALFA.TL",
           },
           {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+            id: 2,
+            title: "Drip Tray Capacity",
+            value: "750 ml",
+            subtitle: "Milli Ltires",
           },
           {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+            id: 3,
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50°C",
+          },
+          {
+            id: 4,
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8°C",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a 1/8 HP",
           },
         ],
       },

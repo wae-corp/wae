@@ -21,6 +21,12 @@ type LoaderData = {
   types?: string[];
   image?: string[];
   features?: Array<{title: string; description: string}>;
+  specifications?: Array<{
+    id: number;
+    title: string;
+    value: string;
+    subtitle: string;
+  }>;
 };
 
 export const meta: MetaFunction = () => {
@@ -64,6 +70,7 @@ export const loader: LoaderFunction = async ({request, params}) => {
     types: ["Water", "Ice", "Hot"],
     image: productDetails[0]?.images,
     features: productDetails[0]?.features,
+    specifications: productDetails[0]?.specifications,
   };
 
   return json(loaderData);
@@ -87,6 +94,7 @@ export default function ProductDetails() {
     keyPoints,
     category,
     types,
+    specifications,
     image,
     features,
   } = useLoaderData() as LoaderData;
@@ -216,7 +224,7 @@ export default function ProductDetails() {
             </div>
 
             <div className="grid grid-cols-2 justify-center gap-10 md:grid-cols-3 md:gap-8 xl:grid-cols-5">
-              {specifications.map((spec, idx) => {
+              {specifications?.map((spec, idx) => {
                 return (
                   <div
                     key={spec.id}
@@ -276,7 +284,7 @@ export default function ProductDetails() {
           Other Products
         </div>
         <ProjectSlider
-        arrows={true}
+          arrows={true}
           productList={productData
             .flatMap((cat) => cat.productList)
             .map((p) => {
