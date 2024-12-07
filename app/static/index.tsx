@@ -626,6 +626,7 @@ export interface ProductData {
   categoryDescriptionTwo?: string;
   categoryDescriptionThree?: string;
   productList?: ProductList[];
+  categoryBanner: string;
 }
 
 export interface ProductList {
@@ -654,6 +655,8 @@ export const productData: ProductData[] = [
   {
     id: "01",
     categoryName: "DRINKING WATER STATION - BLUWAE Series",
+    categoryBanner:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/989b9ed7-8668-4a62-7bf6-f32a540d2f00/public",
     categoryDescription:
@@ -1380,6 +1383,8 @@ export const productData: ProductData[] = [
   {
     id: "02",
     categoryName: "DRINKING WATER DISPENSER - TRUBLU Series",
+    categoryBanner:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/708253cf-b3b1-4b4c-e9ed-73f9c05aa400/public",
     categoryDescriptionTwo:
@@ -2065,6 +2070,8 @@ export const productData: ProductData[] = [
   {
     id: "03",
     categoryName: "DRINKING WATER FAUCETS - WATERMATIC Series",
+    categoryBanner:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4cd452c-211e-455a-dad5-148c57878000/public",
     categoryDescriptionTwo:
@@ -2577,6 +2584,8 @@ export const productData: ProductData[] = [
   {
     id: "04",
     categoryName: "WATER COOLER & FOUNTAINS - ZVR Series",
+    categoryBanner:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5b540d2d-79e7-4028-5ab8-a94abec08700/public",
     categoryDescriptionTwo:
@@ -3078,6 +3087,8 @@ export const productData: ProductData[] = [
   {
     id: "05",
     categoryName: "PUBLIC UTILITY SYSTEMS - PUS Series",
+    categoryBanner:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ea8e8ad2-6510-4b28-65df-3ad71fa75f00/public",
     categoryDescriptionTwo:
@@ -3251,6 +3262,8 @@ export const productData: ProductData[] = [
   {
     id: "06",
     categoryName: "COMMERCIAL/INDUSTRIAL PLANTS",
+    categoryBanner:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/72054beb-9d63-4ef9-e169-b7594a898f00/public",
     categoryDescriptionTwo:

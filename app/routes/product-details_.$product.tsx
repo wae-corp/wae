@@ -8,12 +8,13 @@ import {
   TestimonialSlider,
 } from "~/components";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
-import {Icons, productData, specifications, Temprature} from "~/static";
+import {Icons, productData, Temprature} from "~/static";
 import {useDisclosure} from "@mantine/hooks";
 
 type LoaderData = {
   id?: string;
   name?: string;
+  categoryBanner: string;
   description?: string | ReactNode;
   mountingType?: string;
   keyPoints?: string[];
@@ -53,6 +54,7 @@ export const loader: LoaderFunction = async ({request, params}) => {
         ? {
             ...cat?.productList?.find((prod) => prod.name === productName),
             category: cat.categoryName,
+            categoryBanner: cat.categoryBanner,
           }
         : null,
     )
@@ -73,6 +75,7 @@ export const loader: LoaderFunction = async ({request, params}) => {
     features: productDetails[0]?.features,
     specifications: productDetails[0]?.specifications,
     tempratureOptions: productDetails[0]?.tempratureOptions,
+    categoryBanner: productDetails[0]?.categoryBanner,
   };
 
   return json(loaderData);
@@ -97,6 +100,7 @@ export default function ProductDetails() {
     category,
     types,
     specifications,
+    categoryBanner,
     image,
     features,
     tempratureOptions,
@@ -106,7 +110,12 @@ export default function ProductDetails() {
 
   return (
     <>
-      <main className="flex h-screen items-end bg-man-filling-bottle bg-cover bg-center bg-no-repeat pb-20 pt-[var(--header-height)] text-white md:pb-[120px] xl:min-h-[640px] xl:pb-[140px]">
+      <main
+        className={`flex h-screen items-end bg-cover bg-center bg-no-repeat pb-20 pt-[var(--header-height)] text-white md:pb-[120px] xl:min-h-[640px] xl:pb-[140px]`}
+        style={{
+          backgroundImage: `url(${categoryBanner})`,
+        }}
+      >
         <div className="container-lg">
           <div
             className="max-w-3xl"
