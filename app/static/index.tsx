@@ -736,6 +736,11 @@ export const productData: ProductData[] = [
             subtitle: "RZ 134a 1/8 HP",
           },
         ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
       },
       {
         id: "02",
@@ -809,6 +814,11 @@ export const productData: ProductData[] = [
             value: "220V/50 HZ",
             subtitle: "RZ 134a 1/8 HP",
           },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
         ],
       },
       {
@@ -884,6 +894,11 @@ export const productData: ProductData[] = [
             subtitle: "RZ 134a 1/8 HP",
           },
         ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
       },
       {
         id: "04",
@@ -957,6 +972,11 @@ export const productData: ProductData[] = [
             value: "220V/50 HZ",
             subtitle: "RZ 134a 1/8 HP",
           },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
         ],
       },
       {
@@ -1032,6 +1052,11 @@ export const productData: ProductData[] = [
             subtitle: "RZ 134a1/8 HP",
           },
         ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
       },
       {
         id: "06",
@@ -1105,6 +1130,11 @@ export const productData: ProductData[] = [
             value: "220V/50 HZ",
             subtitle: "RZ 134a 1/8 HP",
           },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
         ],
       },
       {
@@ -1180,6 +1210,11 @@ export const productData: ProductData[] = [
             subtitle: "RZ 134a 1/8 HP",
           },
         ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
       },
       {
         id: "08",
@@ -1253,6 +1288,11 @@ export const productData: ProductData[] = [
             value: "220V/50 HZ",
             subtitle: "RZ 134a 1/8 HP",
           },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
         ],
       },
       // Below product images and data are placeholder for VAR FS product
@@ -1328,6 +1368,11 @@ export const productData: ProductData[] = [
             value: "220V/50 HZ",
             subtitle: "RZ 134a 1/8 HP",
           },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
         ],
       },
     ],
@@ -1452,24 +1497,65 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Wall-Mount Option",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Perfectly ts on walls, ideal for indoor commercial environments.",
           },
           {
-            title: "Effortless Integration",
+            title: "Minimal Splashing",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Provides a clean, laminar flow to reduce splashing and water wastage.",
           },
           {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+            title: "Easy Installation & Integration",
+            description: "Quick setup with an option for backend purification.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Efficient Drainage",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Built-in drainage system effectively removes standing water.",
+          },
+          {
+            title: "Touchless Operation",
+            description:
+              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+          },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "Indoor",
+            subtitle: "Contour",
+          },
+          {
+            id: 2,
+            title: "UTC Variant",
+            value: "Contour",
+            subtitle: "Milli Liters",
+          },
+          {
+            id: 3,
+            title: "Shipping Weight",
+            value: "11.0/ 12.0",
+            subtitle: "Kilograms (packaged)",
+          },
+          {
+            id: 4,
+            title: "Water Dispenser",
+            value: "2l to 4l",
+            subtitle: "Per Minute",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
       },
@@ -1497,24 +1583,65 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Wall-Mount Option",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Perfectly ts on walls, ideal for indoor commercial environments.",
           },
           {
-            title: "Effortless Integration",
+            title: "Minimal Splashing",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Provides a clean, laminar flow to reduce splashing and water wastage.",
           },
           {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+            title: "Easy Installation & Integration",
+            description: "Quick setup with an option for backend purification.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Efficient Drainage",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Built-in drainage system effectively removes standing water.",
+          },
+          {
+            title: "Touchless Operation",
+            description:
+              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+          },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "Indoor",
+            subtitle: "Contour",
+          },
+          {
+            id: 2,
+            title: "UTC Variant",
+            value: "Contour",
+            subtitle: "Milli Liters",
+          },
+          {
+            id: 3,
+            title: "Shipping Weight",
+            value: "11.0/ 12.0",
+            subtitle: "Kilograms (packaged)",
+          },
+          {
+            id: 4,
+            title: "Water Dispenser",
+            value: "2l to 4l",
+            subtitle: "Per Minute",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
       },
@@ -1539,24 +1666,65 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Wall-Mount Option",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Perfectly ts on walls, ideal for indoor commercial environments.",
           },
           {
-            title: "Effortless Integration",
+            title: "Minimal Splashing",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Provides a clean, laminar flow to reduce splashing and water wastage.",
           },
           {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+            title: "Easy Installation & Integration",
+            description: "Quick setup with an option for backend purification.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Efficient Drainage",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Built-in drainage system effectively removes standing water.",
+          },
+          {
+            title: "Touchless Operation",
+            description:
+              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+          },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "Indoor",
+            subtitle: "Contour",
+          },
+          {
+            id: 2,
+            title: "UTC Variant",
+            value: "Contour",
+            subtitle: "Milli Liters",
+          },
+          {
+            id: 3,
+            title: "Shipping Weight",
+            value: "11.0/ 12.0",
+            subtitle: "Kilograms (packaged)",
+          },
+          {
+            id: 4,
+            title: "Water Dispenser",
+            value: "2l to 4l",
+            subtitle: "Per Minute",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
       },
@@ -1581,24 +1749,65 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Wall-Mount Option",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Perfectly ts on walls, ideal for indoor commercial environments.",
           },
           {
-            title: "Effortless Integration",
+            title: "Minimal Splashing",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Provides a clean, laminar flow to reduce splashing and water wastage.",
           },
           {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+            title: "Easy Installation & Integration",
+            description: "Quick setup with an option for backend purification.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Efficient Drainage",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Built-in drainage system effectively removes standing water.",
+          },
+          {
+            title: "Touchless Operation",
+            description:
+              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+          },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "Indoor",
+            subtitle: "Contour",
+          },
+          {
+            id: 2,
+            title: "UTC Variant",
+            value: "Contour",
+            subtitle: "Milli Liters",
+          },
+          {
+            id: 3,
+            title: "Shipping Weight",
+            value: "11.0/ 12.0",
+            subtitle: "Kilograms (packaged)",
+          },
+          {
+            id: 4,
+            title: "Water Dispenser",
+            value: "2l to 4l",
+            subtitle: "Per Minute",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
       },
@@ -1623,24 +1832,65 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Wall-Mount Option",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Perfectly ts on walls, ideal for indoor commercial environments.",
           },
           {
-            title: "Effortless Integration",
+            title: "Minimal Splashing",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Provides a clean, laminar flow to reduce splashing and water wastage.",
           },
           {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+            title: "Easy Installation & Integration",
+            description: "Quick setup with an option for backend purification.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Efficient Drainage",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Built-in drainage system effectively removes standing water.",
+          },
+          {
+            title: "Touchless Operation",
+            description:
+              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+          },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "Indoor",
+            subtitle: "Contour",
+          },
+          {
+            id: 2,
+            title: "UTC Variant",
+            value: "Contour",
+            subtitle: "Milli Liters",
+          },
+          {
+            id: 3,
+            title: "Shipping Weight",
+            value: "11.0/ 12.0",
+            subtitle: "Kilograms (packaged)",
+          },
+          {
+            id: 4,
+            title: "Water Dispenser",
+            value: "2l to 4l",
+            subtitle: "Per Minute",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
       },
@@ -1665,24 +1915,65 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Wall-Mount Option",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Perfectly ts on walls, ideal for indoor commercial environments.",
           },
           {
-            title: "Effortless Integration",
+            title: "Minimal Splashing",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Provides a clean, laminar flow to reduce splashing and water wastage.",
           },
           {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+            title: "Easy Installation & Integration",
+            description: "Quick setup with an option for backend purification.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Efficient Drainage",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Built-in drainage system effectively removes standing water.",
+          },
+          {
+            title: "Touchless Operation",
+            description:
+              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+          },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "Indoor",
+            subtitle: "Contour",
+          },
+          {
+            id: 2,
+            title: "UTC Variant",
+            value: "Contour",
+            subtitle: "Milli Liters",
+          },
+          {
+            id: 3,
+            title: "Shipping Weight",
+            value: "11.0/ 12.0",
+            subtitle: "Kilograms (packaged)",
+          },
+          {
+            id: 4,
+            title: "Water Dispenser",
+            value: "2l to 4l",
+            subtitle: "Per Minute",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
       },
@@ -1707,24 +1998,65 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Wall-Mount Option",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Perfectly ts on walls, ideal for indoor commercial environments.",
           },
           {
-            title: "Effortless Integration",
+            title: "Minimal Splashing",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Provides a clean, laminar flow to reduce splashing and water wastage.",
           },
           {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+            title: "Easy Installation & Integration",
+            description: "Quick setup with an option for backend purification.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Efficient Drainage",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Built-in drainage system effectively removes standing water.",
+          },
+          {
+            title: "Touchless Operation",
+            description:
+              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+          },
+        ],
+        tempratureOptions: [
+          Temprature.HOT,
+          Temprature.COLD,
+          Temprature.Ambient,
+        ],
+        specifications: [
+          {
+            id: 1,
+            title: "Variant",
+            value: "Indoor",
+            subtitle: "Contour",
+          },
+          {
+            id: 2,
+            title: "UTC Variant",
+            value: "Contour",
+            subtitle: "Milli Liters",
+          },
+          {
+            id: 3,
+            title: "Shipping Weight",
+            value: "11.0/ 12.0",
+            subtitle: "Kilograms (packaged)",
+          },
+          {
+            id: 4,
+            title: "Water Dispenser",
+            value: "2l to 4l",
+            subtitle: "Per Minute",
+          },
+          {
+            id: 5,
+            title: "Compressor",
+            value: "220V/50 HZ",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
       },
