@@ -8,7 +8,7 @@ import {
   TestimonialSlider,
 } from "~/components";
 import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
-import {Icons, productData, specifications} from "~/static";
+import {Icons, productData, specifications, Temprature} from "~/static";
 import {useDisclosure} from "@mantine/hooks";
 
 type LoaderData = {
@@ -20,6 +20,7 @@ type LoaderData = {
   category: string;
   types?: string[];
   image?: string[];
+  tempratureOptions?: Array<Temprature>;
   features?: Array<{title: string; description: string}>;
   specifications?: Array<{
     id: number;
@@ -71,6 +72,7 @@ export const loader: LoaderFunction = async ({request, params}) => {
     image: productDetails[0]?.images,
     features: productDetails[0]?.features,
     specifications: productDetails[0]?.specifications,
+    tempratureOptions: productDetails[0]?.tempratureOptions,
   };
 
   return json(loaderData);
@@ -97,6 +99,7 @@ export default function ProductDetails() {
     specifications,
     image,
     features,
+    tempratureOptions,
   } = useLoaderData() as LoaderData;
 
   console.log(category);
@@ -148,21 +151,28 @@ export default function ProductDetails() {
               </div>
 
               <div className="mb-5 flex items-center gap-4 text-lg md:mb-8 lg:gap-9 xl:mb-10">
-                <div className="flex flex-col items-center justify-center gap-3">
-                  {Icons.Sun}
-                  <h6 className="text-lg">Hot</h6>
-                </div>
-                <div className="flex flex-col items-center justify-center gap-3">
-                  {Icons.IceCrystal}
-                  <h6 className="text-lg">Cold</h6>
-                </div>
-                <div className="flex flex-col items-center justify-center gap-3">
-                  {Icons.LiquidDrop}
-                  <h6 className="text-lg">Ambient</h6>
-                </div>
+                {tempratureOptions?.map((temp) => (
+                  <div
+                    className="flex flex-col items-center justify-center gap-3"
+                    key={temp}
+                  >
+                    {temp === Temprature.HOT
+                      ? Icons.Sun
+                      : temp === Temprature.Ambient
+                        ? Icons.LiquidDrop
+                        : Icons.IceCrystal}
+                    <h6 className="text-lg">
+                      {temp === Temprature.HOT
+                        ? "Hot"
+                        : temp === Temprature.Ambient
+                          ? "Ambient"
+                          : "Cold"}
+                    </h6>
+                  </div>
+                ))}
               </div>
 
-              <div className="mb-4 text-sm uppercase xl:mb-6">
+              <div className="mb-4 text-sm uppercase xl:mb-6 xl:max-w-[60%]">
                 {description}
               </div>
 
