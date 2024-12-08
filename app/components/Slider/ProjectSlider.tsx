@@ -32,7 +32,7 @@ export const ProjectSlider = ({
                   data-aos="fade-in"
                 >
                   <img
-                    src={product?.image}
+                    src={product?.bannerImageUrl}
                     alt={product?.name}
                     width={600}
                     height={384}
@@ -46,7 +46,7 @@ export const ProjectSlider = ({
               ) : (
                 <div data-aos="fade-in">
                   <img
-                    src={product?.image}
+                    src={product?.bannerImageUrl}
                     alt={product?.name}
                     width={600}
                     height={384}

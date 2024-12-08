@@ -306,10 +306,13 @@ export default function ProductDetails() {
           arrows={true}
           productList={productData
             .flatMap((cat) => cat.productList)
+            .filter(
+              (item) => item?.bannerImageUrl && item?.bannerImageUrl !== "",
+            )
             .map((p) => {
               return {
                 id: p?.id,
-                image: p?.images ? p?.images[0] : "",
+                bannerImageUrl: p?.bannerImageUrl ? p?.bannerImageUrl : "",
                 link: `/product-details/${p?.name}`,
                 name: p?.name,
               };
