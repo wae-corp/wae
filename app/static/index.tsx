@@ -656,7 +656,7 @@ export const productData: ProductData[] = [
     id: "01",
     categoryName: "DRINKING WATER STATION - BLUWAE Series",
     categoryBanner:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e74621c8-4c5d-42a1-b566-5cc9af63c700/public",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/989b9ed7-8668-4a62-7bf6-f32a540d2f00/public",
     categoryDescription:
@@ -687,24 +687,24 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Touch free Operation",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Enjoy sensor-based, hygienic water dispensing that's quick, easy, and completely touchless.",
+          },
+          {
+            title: "Clean Flow, Minimal Splash",
+            description:
+              "Engineered for a smooth, laminar ow that minimizes spillage, complemented by an efficient drainage system.",
+          },
+          {
+            title: "LED UV-C Technology",
+            description:
+              "Advanced UV-C technology deactivates bacteria, viruses, and other pathogens, delivering water that's 99.99% pure.",
           },
           {
             title: "Effortless Integration",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Easily connects with carbonated beverage dispensers and coffee/tea vending machines, offering a versatile hydration solution.",
           },
         ],
         specifications: [
@@ -712,25 +712,25 @@ export const productData: ProductData[] = [
             id: 1,
             title: "Variant",
             value: "FS",
-            subtitle: "BLUWAE POS",
+            subtitle: "ENKI 25/50",
           },
           {
             id: 2,
             title: "Drip Tray Capacity",
-            value: "950 ml",
-            subtitle: "Milli Ltires",
+            value: "750 ml",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
             title: "Hot temperature",
             value: "30°C- 80°C",
-            subtitle: "Default 50°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
             title: "Cold temperature",
             value: "5°C- 24°C",
-            subtitle: "Default 8°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -797,7 +797,7 @@ export const productData: ProductData[] = [
             id: 2,
             title: "Drip Tray Capacity",
             value: "950 ml",
-            subtitle: "Milli Ltires",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
@@ -834,10 +834,10 @@ export const productData: ProductData[] = [
           "Can be customized as per client needs.",
         ],
         bannerImageUrl: "",
-        name: "BLUWAE ROM FS",
+        name: "BLUWAE ROM",
         mountingType: "Free-Standing",
         description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+          "A compact, counter-top model designed for easy placement on counters",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/804b5858-eda8-484c-f194-08c421e1d400/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4dd89f6a-b1ea-46ed-86e5-8747b5432100/public",
@@ -845,50 +845,45 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Sensor-Based Operation",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Touchless and hygienic dispensing ensures a seamless and safe user experience.",
           },
           {
-            title: "Effortless Integration",
+            title: "Effortless Drainage",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Equipped with a generous drip tray to efficiently collect accidental spillage, maintaining cleanliness.",
           },
           {
-            title: "Built Tough, Made to Last",
+            title: "LED UV-C Technology",
             description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Incorporates advanced UV-C technology that reduces the risk of bacteria, viruses, and other pathogens at the point of dispensing, ensuring water purity up to 99.99%.",
           },
         ],
         specifications: [
           {
             id: 1,
             title: "Variant",
-            value: "FS",
-            subtitle: "BLUWAE POS",
+            value: "CT",
+            subtitle: "ROM 25/50",
           },
           {
             id: 2,
             title: "Drip Tray Capacity",
-            value: "950 ml",
-            subtitle: "Milli Ltires",
+            value: "750 ml",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
             title: "Hot temperature",
             value: "30°C- 80°C",
-            subtitle: "Default 50°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
             title: "Cold temperature",
             value: "5°C- 24°C",
-            subtitle: "Default 8°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -915,8 +910,7 @@ export const productData: ProductData[] = [
         bannerImageUrl: "",
         name: "BLUWAE REVA",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9b7a8014-1ca5-4095-2753-ba366ec52100/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25e93e1d-1cd8-47e2-16d5-957e84a9f400/public",
@@ -924,24 +918,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Robust & Durable Build",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Constructed with premium Stainless Steel (SS-304) and corrosion-resistant GI, ensuring food-grade safety and long-lasting durability.",
           },
           {
-            title: "Effortless Integration",
+            title: "Touchless Dispensing",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Experience the convenience of sensor-based technology for hygienic, hands-free water dispensing.",
           },
           {
-            title: "Built Tough, Made to Last",
+            title: "Advanced LED UV-C Technology",
             description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+              "Effectively neutralizes bacteria, viruses, and other pathogens,  delivering water that's purified up to 99.99%.",
           },
           {
-            title: "No Mess, No Stress",
+            title: "Real-Time Monitoring",
             description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Stay informed with an intuitive IoT  display powered by CIRCLE OF BLUE, showcasing key data and performance metrics in real-time.",
+          },
+          {
+            title: "Effortless Integration ",
+            description:
+              "Seamlessly connects with  carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
           },
         ],
         specifications: [
@@ -949,25 +948,25 @@ export const productData: ProductData[] = [
             id: 1,
             title: "Variant",
             value: "FS",
-            subtitle: "BLUWAE POS",
+            subtitle: "REVA 50/100",
           },
           {
             id: 2,
             title: "Drip Tray Capacity",
-            value: "950 ml",
-            subtitle: "Milli Ltires",
+            value: "1000 ml",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
             title: "Hot temperature",
             value: "30°C- 80°C",
-            subtitle: "Default 50°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
             title: "Cold temperature",
             value: "5°C- 24°C",
-            subtitle: "Default 8°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -994,8 +993,7 @@ export const productData: ProductData[] = [
         bannerImageUrl: "",
         name: "BLUWAE ASSISTIFLOW",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/58af2736-2da1-4a98-cfc0-7b1a76125600/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9a20872c-9962-4ec0-2110-e4fee558c700/public",
@@ -1034,7 +1032,7 @@ export const productData: ProductData[] = [
             id: 2,
             title: "Drip Tray Capacity",
             value: "1000ml",
-            subtitle: "Milli Ltires",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
@@ -1074,7 +1072,7 @@ export const productData: ProductData[] = [
         name: "BLUWAE ENKI CT",
         mountingType: "Counter-Top",
         description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+          "A sleek, compact countertop model designed for convenient placement.",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/332d6670-16ff-49da-e386-748fe618ff00/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/adfff61c-94be-410f-f389-21510a0a2800/public",
@@ -1113,7 +1111,7 @@ export const productData: ProductData[] = [
             id: 2,
             title: "Drip Tray Capacity",
             value: "950 ml",
-            subtitle: "Milli Ltires",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
@@ -1185,32 +1183,32 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "FS",
-            subtitle: "BLUWAE POS",
+            value: "CT",
+            subtitle: "VAR 150/ 100/ 50",
           },
           {
             id: 2,
             title: "Drip Tray Capacity",
-            value: "950 ml",
-            subtitle: "Milli Ltires",
+            value: "1000ml",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
             title: "Hot temperature",
             value: "30°C- 80°C",
-            subtitle: "Default 50°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
             title: "Cold temperature",
             value: "5°C- 24°C",
-            subtitle: "Default 8°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
             title: "Compressor",
             value: "220V/50 HZ",
-            subtitle: "RZ 134a 1/8 HP",
+            subtitle: "RZ 134a1/8 HP",
           },
         ],
         tempratureOptions: [
@@ -1232,7 +1230,7 @@ export const productData: ProductData[] = [
         name: "BLUWAE ROM CT",
         mountingType: "Counter-Top",
         description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+          "A compact, counter-top model designed for easy placement on counters",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/bfbf1885-b5d9-483d-0137-0a78cf5fed00/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8f660606-e5e1-4be5-4358-aa9e93e87000/public",
@@ -1240,50 +1238,45 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Touch-Free Dispensing",
+            title: "Sensor-Based Operation",
             description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+              "Touchless and hygienic dispensing ensures a seamless and safe user experience.",
           },
           {
-            title: "Effortless Integration",
+            title: "Effortless Drainage",
             description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution.",
+              "Equipped with a generous drip tray to efficiently collect accidental spillage, maintaining cleanliness.",
           },
           {
-            title: "Built Tough, Made to Last",
+            title: "LED UV-C Technology",
             description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+              "Incorporates advanced UV-C technology that reduces the risk of bacteria, viruses, and other pathogens at the point of dispensing, ensuring water purity up to 99.99%.",
           },
         ],
         specifications: [
           {
             id: 1,
             title: "Variant",
-            value: "FS",
-            subtitle: "BLUWAE POS",
+            value: "CT",
+            subtitle: "ROM 25/50",
           },
           {
             id: 2,
             title: "Drip Tray Capacity",
-            value: "950 ml",
-            subtitle: "Milli Ltires",
+            value: "750 ml",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
             title: "Hot temperature",
             value: "30°C- 80°C",
-            subtitle: "Default 50°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
             title: "Cold temperature",
             value: "5°C- 24°C",
-            subtitle: "Default 8°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -1299,92 +1292,91 @@ export const productData: ProductData[] = [
         ],
       },
       // Below product images and data are placeholder for VAR FS product
-      {
-        id: "09",
-        thumbnailUrl:
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52dd58ea-1d30-4397-6ba0-df78adaeaa00/public",
-        keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
-        ],
-        bannerImageUrl: "",
-        name: "BLUWAE VAR FS",
-        mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
-        images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/bfbf1885-b5d9-483d-0137-0a78cf5fed00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8f660606-e5e1-4be5-4358-aa9e93e87000/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/aa9f4a85-2918-4429-5834-9f9510b0fb00/public",
-        ],
-        features: [
-          {
-            title: "Touch-Free Dispensing",
-            description:
-              "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution",
-          },
-          {
-            title: "Built Tough, Made to Last",
-            description:
-              "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
-          },
-          {
-            title: "No Mess, No Stress",
-            description:
-              "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
-          },
-        ],
-        specifications: [
-          {
-            id: 1,
-            title: "Variant",
-            value: "FS",
-            subtitle: "BLUWAE POS",
-          },
-          {
-            id: 2,
-            title: "Drip Tray Capacity",
-            value: "950 ml",
-            subtitle: "Milli Ltires",
-          },
-          {
-            id: 3,
-            title: "Hot temperature",
-            value: "30°C- 80°C",
-            subtitle: "Default 50°C",
-          },
-          {
-            id: 4,
-            title: "Cold temperature",
-            value: "5°C- 24°C",
-            subtitle: "Default 8°C",
-          },
-          {
-            id: 5,
-            title: "Compressor",
-            value: "220V/50 HZ",
-            subtitle: "RZ 134a 1/8 HP",
-          },
-        ],
-        tempratureOptions: [
-          Temprature.HOT,
-          Temprature.COLD,
-          Temprature.Ambient,
-        ],
-      },
+      // {
+      //   id: "09",
+      //   thumbnailUrl:
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/52dd58ea-1d30-4397-6ba0-df78adaeaa00/public",
+      //   keyPoints: [
+      //     "Plug and Play Operation.",
+      //     "Inbuilt 5 stages of purification.",
+      //     "Can be customized as per client needs.",
+      //   ],
+      //   bannerImageUrl: "",
+      //   name: "BLUWAE VAR FS",
+      //   mountingType: "Free-Standing",
+      //   description:
+      //     "A Floor-standing model designed for convenient placement on the ground.",
+      //   images: [
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/bfbf1885-b5d9-483d-0137-0a78cf5fed00/public",
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8f660606-e5e1-4be5-4358-aa9e93e87000/public",
+      //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/aa9f4a85-2918-4429-5834-9f9510b0fb00/public",
+      //   ],
+      //   features: [
+      //     {
+      //       title: "Touch-Free Dispensing",
+      //       description:
+      //         "Enjoy eortless, hygienic water access with sensor-based, touchless technology.",
+      //     },
+      //     {
+      //       title: "Effortless Integration",
+      //       description:
+      //         "Seamlessly connects with carbonated beverage dispensers and coffee/tea vending machines for a versatile, all-in-one solution",
+      //     },
+      //     {
+      //       title: "Built Tough, Made to Last",
+      //       description:
+      //         "Crafted from premium Stainless Steel (SS-304) and corrosion-resistant GI, this unit is food-grade approved and built for enduring performance.",
+      //     },
+      //     {
+      //       title: "No Mess, No Stress",
+      //       description:
+      //         "An efficient drip tray with generous capacity catches spills, keeping the space clean and orderly.",
+      //     },
+      //   ],
+      //   specifications: [
+      //     {
+      //       id: 1,
+      //       title: "Variant",
+      //       value: "FS",
+      //       subtitle: "BLUWAE POS",
+      //     },
+      //     {
+      //       id: 2,
+      //       title: "Drip Tray Capacity",
+      //       value: "950 ml",
+      //       subtitle: "Milli Litres",
+      //     },
+      //     {
+      //       id: 3,
+      //       title: "Hot temperature",
+      //       value: "30°C- 80°C",
+      //       subtitle: "Default 50°C",
+      //     },
+      //     {
+      //       id: 4,
+      //       title: "Cold temperature",
+      //       value: "5°C- 24°C",
+      //       subtitle: "Default 8°C",
+      //     },
+      //     {
+      //       id: 5,
+      //       title: "Compressor",
+      //       value: "220V/50 HZ",
+      //       subtitle: "RZ 134a 1/8 HP",
+      //     },
+      //   ],
+      //   tempratureOptions: [
+      //     Temprature.HOT,
+      //     Temprature.COLD,
+      //     Temprature.Ambient,
+      //   ],
+      // },
     ],
   },
   {
     id: "02",
     categoryName: "DRINKING WATER DISPENSER - TRUBLU Series",
-    categoryBanner:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
+    categoryBanner: "/images/banners/trublu-banner.jpg",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/708253cf-b3b1-4b4c-e9ed-73f9c05aa400/public",
     categoryDescriptionTwo:
@@ -1406,8 +1398,7 @@ export const productData: ProductData[] = [
         bannerImageUrl: "",
         name: "TRUBLU ALFA TL",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6dbddbd4-1786-42d8-16f2-ab78afe10100/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3f6a334f-3ab9-42b1-a732-cbc289ab9000/public",
@@ -1437,16 +1428,6 @@ export const productData: ProductData[] = [
             title: "Touch-Free Convenience",
             description: "Effortless, hands-free dispensing for ultimate ease.",
           },
-          {
-            title: "Clean and Carefree",
-            description:
-              "Dishwasher-safe drip  tray keeps maintenance to a minimum.",
-          },
-          {
-            title: "Effortless Integration",
-            description:
-              "Connects seamlessly with coffee, tea, and beverage machines for a complete solution.",
-          },
         ],
         specifications: [
           {
@@ -1459,7 +1440,7 @@ export const productData: ProductData[] = [
             id: 2,
             title: "Drip Tray Capacity",
             value: "750 ml",
-            subtitle: "Milli Ltires",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
@@ -1486,15 +1467,14 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Modern and Compact Design.",
+          "Advanced 3 stage purification (UV, UF & LED-UVC)",
+          "Touchless/Sensor-based operation",
         ],
         bannerImageUrl: "",
         name: "TRUBLU ALFA BL",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6232b01c-a47f-460c-455c-6b083de73900/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4418b950-683f-43ff-416b-a8594738fb00/public",
@@ -1502,28 +1482,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Pure Inside",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Lead-free, anti-corrosive tubing ensures clean, bacteria-free water flow.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Touch-Free Dispense",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Enjoy hassle-free, hygienic dispensing with a simple touch.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Boom-Load Ease",
+            description:
+              "Place jars or boles below for easy water collection and reduced lifting.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Spill-Free Design",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Dishwasher-safe drip tray minimizes spills, making cleanup a breeze.",
           },
           {
-            title: "Touchless Operation",
+            title: "Power Smart",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Cuts energy use by 25%, making it eco-friendly and cost-effective.",
           },
         ],
         tempratureOptions: [
@@ -1535,26 +1516,26 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "FS",
+            subtitle: "ALFA.BL",
           },
           {
             id: 2,
-            title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            title: "Drip Tray Capacity",
+            value: "750ml",
+            subtitle: "Milli Ltires",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -1569,15 +1550,14 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Modern and Compact Design.",
+          "Advanced 3 stage purification (UV, UF & LED-UVC)",
+          "Touchless/Sensor-based operation",
         ],
         bannerImageUrl: "",
         name: "TRUBLU ALFA 100",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8b6f2fee-336a-4736-bd52-230ae7f15900/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c2fc11a1-dbb6-49cc-1dd2-cffbcfe4d300/public",
@@ -1588,28 +1568,34 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Plumbed-In",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Can be directly connected to the input water supply (RO water).",
           },
           {
-            title: "Minimal Splashing",
+            title: "Built to Last",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Premium SS-304 stainless steel tank combines durability with sustainability.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Pure Inside Out",
+            description:
+              "Lead-free, corrosion-resistant tubing keeps water safe, fresh, and free from harmful bacteria.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Hygiene at Your Fingertips",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Experience effortless,  touch-free dispensing that puts cleanliness first.",
           },
           {
-            title: "Touchless Operation",
+            title: "Perfectly Paired",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Seamlessly integrates with coffee or tea vending machines.",
+          },
+          {
+            title: "Clean and Carefree",
+            description:
+              "Dishwasher-safe drip  tray keeps maintenance to a minimum.",
           },
         ],
         tempratureOptions: [
@@ -1655,15 +1641,14 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9422e84d-41cc-45bf-2b65-9e8cdfd68200/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Modern and Compact Design.",
+          "Advanced 3 stage purification (UV, UF & LED-UVC)",
+          "Touchless/Sensor-based operation",
         ],
         bannerImageUrl: "",
         name: "TRUBLU ALFA CT",
         mountingType: "Counter-Top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ed60afe4-3381-4dd8-38a6-21a600df4000/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47685348-649b-4234-fd99-b1bd4fa74800/public",
@@ -1671,28 +1656,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Counter-Top Friendly",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Compact design ts perfectly  on counters and in tight spaces.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Perfect Pairing",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Easily integrates with coffee and tea vending machines for a seamless setup.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Top-Load Flexibility",
+            description:
+              "Easily place a jar or bole on top for effortless water collection.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Spill-Proof Tray",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Dishwasher-safe drip tray minimizes spills and simplifies cleaning.",
           },
           {
-            title: "Touchless Operation",
+            title: "Power Saver",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Consumes 25% less energy, making it an eco-friendly choice.",
           },
         ],
         tempratureOptions: [
@@ -1704,26 +1690,26 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "FS",
+            subtitle: "ALFA.CT",
           },
           {
             id: 2,
-            title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            title: "Drip Tray Capacity",
+            value: "750ml",
+            subtitle: "Milli Ltires",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -1738,15 +1724,14 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e670b1ee-b32c-4a6a-5d51-ed03fa81c400/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Modern and Compact Design.",
+          "Advanced 3 stage purification (UV, UF & LED-UVC)",
+          "Touchless/Sensor-based operation",
         ],
         bannerImageUrl: "",
         name: "TRUBLU AENON",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9fa50ce5-7fc6-4260-4546-3b009f3d8100/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/13f45d36-c6c9-43e4-7079-fa7860877800/public",
@@ -1754,28 +1739,24 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Heavy-Duty Build",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Rugged stainless-steel construction ensures durability and zero landll impact.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Seamless Integration",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Effortlessly pairs with carbonated drink dispensers and coffee/tea machines.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Generous Drainage",
+            description:
+              "Large drip tray captures spills, reducing water waste and simplifying cleanup.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Energy Efficient",
             description:
-              "Built-in drainage system effectively removes standing water.",
-          },
-          {
-            title: "Touchless Operation",
-            description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Space-saving size ts neatly into any environment, from home counters to commercial settings.",
           },
         ],
         tempratureOptions: [
@@ -1787,26 +1768,26 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "FS",
+            subtitle: "AENON 36, 45,75",
           },
           {
             id: 2,
-            title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            title: "Drip Tray Capacity",
+            value: "1000ml",
+            subtitle: "Milli Ltires",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -1821,15 +1802,14 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f339b126-7cad-4942-91ee-8f535507f600/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Modern and Compact Design.",
+          "Advanced 3 stage purification (UV, UF & LED-UVC)",
+          "Touchless/Sensor-based operation",
         ],
         bannerImageUrl: "",
         name: "TRUBLU DELTA",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e464f3c6-cb5d-448c-da7a-0c6c5c4d9500/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a661576f-abcf-4d53-b111-35d7660d1600/public",
@@ -1837,28 +1817,27 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Pure Water flow",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Lead-free, bacteria-resistant tubings for safe, clean water.",
           },
           {
-            title: "Minimal Splashing",
-            description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+            title: "Energy Efficient",
+            description: "Uses 25% less power, saving on energy costs.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "fast TOUCHLESS DISPENSING",
+            description: "Delivers ice-cold and hot water twice as fast.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Seamless Integration",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Connects easily with coffee, tea, and beverage machines.",
           },
           {
-            title: "Touchless Operation",
+            title: "Easy Maintenance",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Spill-resistant, dishwasher-safe drip tray for hassle-free upkeep.",
           },
         ],
         tempratureOptions: [
@@ -1870,26 +1849,26 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "FS",
+            subtitle: "DELTA",
           },
           {
             id: 2,
-            title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            title: "Drip Tray Capacity",
+            value: "750ml",
+            subtitle: "Milli Ltires",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -1904,15 +1883,14 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c16970c2-a74d-4b1e-b0b0-e88ee58be000/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Modern and Compact Design.",
+          "Advanced 3 stage purification (UV, UF & LED-UVC)",
+          "Touchless/Sensor-based operation",
         ],
         bannerImageUrl: "",
         name: "TRUBLU GAMMA",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3934c66e-2576-4aea-714f-d11f6cd10200/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/15a33428-ea01-4719-1066-428a16b9fc00/public",
@@ -1920,28 +1898,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Clean and SAFE WATER",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Lead-free, bacteria-resistant tubing ensures pure and contaminant-free hydration.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Energy SMART",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Operates with 25% less power, reducing your energy expenses.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "RAPID TOUCHLESS DISPENSING",
+            description:
+              "Provides ice-cold and hot  water at twice the speed of standard models.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Effortless Integration",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Connects seamlessly with coffee, tea, and beverage machines for a complete solution.",
           },
           {
-            title: "Touchless Operation",
+            title: "Low-Maintenance Design",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Features a spill-resistant,  dishwasher-safe drip tray for easy, hassle-free cleaning.",
           },
         ],
         tempratureOptions: [
@@ -1953,26 +1932,26 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "FS",
+            subtitle: "GAMMA",
           },
           {
             id: 2,
-            title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            title: "Drip Tray Capacity",
+            value: "750ml",
+            subtitle: "Milli Ltires",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -1987,15 +1966,14 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b92f8428-83ae-45b4-fccf-465b18193500/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Modern and Compact Design.",
+          "Advanced 3 stage purification (UV, UF & LED-UVC)",
+          "Touchless/Sensor-based operation",
         ],
         bannerImageUrl: "",
         name: "TRUBLU LAGOON",
         mountingType: "Free-Standing",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6b93eb3c-5858-4baf-e08c-d8c2afe65800/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/92c186cd-310f-4f6b-edd7-31c488d7f600/public",
@@ -2003,28 +1981,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Premium Storage Tank",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "High-quality Stainless Steel (SS-304) for corrosion resistance and no bad odors or microbial growth.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Efficient Drainage System  ",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Dishwasher-safe drip tray minimizes spillage and simplifies cleaning.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Safe Internal Tubings",
+            description:
+              "Lead-free, bacteria-resistant, and corrosion-resistant for pure water.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Seamless Integration",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Connects effortlessly with carbonated beverage dispensers and coffee/tea machines.",
           },
           {
-            title: "Touchless Operation",
+            title: "Rapid Touchless Dispensing",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Fast, touchless access to chilled and hot water for enhanced convenience.",
           },
         ],
         tempratureOptions: [
@@ -2036,26 +2015,26 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "FS",
+            subtitle: "LAGOON",
           },
           {
             id: 2,
-            title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            title: "Drip Tray Capacity",
+            value: "750ml",
+            subtitle: "Milli Ltires",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Hot temperature",
+            value: "30°C- 80°C",
+            subtitle: "Default 50oC",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Cold temperature",
+            value: "5°C- 24°C",
+            subtitle: "Default 8oC",
           },
           {
             id: 5,
@@ -2070,8 +2049,7 @@ export const productData: ProductData[] = [
   {
     id: "03",
     categoryName: "DRINKING WATER FAUCETS - WATERMATIC Series",
-    categoryBanner:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
+    categoryBanner: "/images/banners/faucet-banner.jpg",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4cd452c-211e-455a-dad5-148c57878000/public",
     categoryDescriptionTwo:
@@ -2087,14 +2065,13 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/14dbff34-7f49-49a5-3837-64b6880ac000/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Built with durable SS-304 stainless steel for heavy-duty performance",
+          "Integrated with under the counter(UTC) storage unit - Hydropac and RO/booster unit(optional).",
+          "Designed as a zero-landfill product, prioritizing sustainability and environmental responsibility.",
         ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/55199965-30ce-4ef8-abf9-78a654bd3b00/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/576c6473-9649-4eee-e31c-0e4ee5cc0d00/public",
@@ -2102,28 +2079,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Built to Endure ",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Triple-coated galvanized iron with a protective powder finish.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Pure & Safe Storage",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Stainless steel tank guarantees 99.99% pure, contaminant-free water.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Extended Durability",
+            description:
+              "Optional anti-rust treatment and stainless steel 304 overhead protection.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Longer Lifespan",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Customizable design, easy maintenance, and energy-efficient operation.",
           },
           {
-            title: "Touchless Operation",
+            title: "High Capacity",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Designed to handle heavy water demand in busy environments.",
           },
         ],
         tempratureOptions: [
@@ -2135,32 +2113,32 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "Faucet",
+            subtitle: "AQUA 100 /200",
           },
           {
             id: 2,
             title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            value: "1000ml",
+            subtitle: "Hydropac Classic.TL",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Pressure",
+            value: "15-75 PSI",
+            subtitle: "PSI",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Height of spout",
+            value: "310 mm",
+            subtitle: "With Riser",
           },
           {
             id: 5,
-            title: "Compressor",
-            value: "220V/50 HZ",
-            subtitle: "RZ 134a1/8 HP",
+            title: "Height of spout",
+            value: "215 mm",
+            subtitle: "Without Riser",
           },
         ],
       },
@@ -2170,14 +2148,13 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/530b6e77-4a94-4c07-5fe6-e7a902d39200/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Built with durable SS-304 stainless steel for heavy-duty performance.",
+          "Integrated with under the counter(UTC) storage unit - Hydropac and RO/booster unit(optional).",
+          "Designed as a zero-landfill product, prioritizing sustainability and environmental responsibility.",
         ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/02dfe0c0-93c7-4086-6508-6ea0bc1b2a00/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/27e09afa-2851-4872-bb0a-29b397568000/public",
@@ -2185,28 +2162,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Touchless & TOUCH BASED OPERATION",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Equipped with three IR sensors and touch panels for a superior and flexible hydration experience.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Durable Construction",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Made from high-quality stainless steel for enduring performance and reliability.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Real-Time OLED Display",
+            description:
+              "Clearly shows the water temperature for accurate and convenient selection.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Spill-Proof Drip Tray",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Includes a spill-proof drip  tray to maintain a clean and dry area.",
           },
           {
-            title: "Touchless Operation",
+            title: "Adjustable Flow Control",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Tailor the water ow to your preference, from quick sips to lling larger containers.",
           },
         ],
         tempratureOptions: [
@@ -2218,32 +2196,32 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "Faucet",
+            subtitle: "AQUA 100 /200",
           },
           {
             id: 2,
             title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            value: "1000ml",
+            subtitle: "Hydropac Classic.TL",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Pressure",
+            value: "15-75 PSI",
+            subtitle: "PSI",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Height of spout",
+            value: "310 mm",
+            subtitle: "With Riser",
           },
           {
             id: 5,
-            title: "Compressor",
-            value: "220V/50 HZ",
-            subtitle: "RZ 134a1/8 HP",
+            title: "Height of spout",
+            value: "215 mm",
+            subtitle: "Without Riser",
           },
         ],
       },
@@ -2253,14 +2231,13 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/32cdc632-c6bd-4d5a-a851-993f0b468600/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Built with durable SS-304 stainless steel for heavy-duty performance",
+          "Integrated with under the counter(UTC) storage unit - Hydropac and RO/booster unit(optional).",
+          "Designed as a zero-landfill product, prioritizing sustainability and environmental responsibility.",
         ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3b24c06b-1752-47a0-4499-be61a2497800/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0b994225-97de-4679-daf1-8e5008e73500/public",
@@ -2268,28 +2245,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "TOUCH BASED OPERATION",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Enjoy 24*7 pure water with just a touch, providing an exceptional hydration experience.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Durable Construction",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "High-quality stainless steel material ensure long-lasting performance and reliability.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Real-Time OLED Display",
+            description:
+              "Easily see the dispensing water temperature for precise selection.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Spill-Proof Drip Tray",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Features a spill-proof drip tray to keep the area clean and dry.",
           },
           {
-            title: "Touchless Operation",
+            title: "Adjustable Flow Control",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Customize water ow to suit your needs, whether for a  quick sip or filling larger containers.",
           },
         ],
         tempratureOptions: [
@@ -2301,32 +2279,32 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "Faucet",
+            subtitle: "TOUCH",
           },
           {
             id: 2,
             title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            value: "1000ml",
+            subtitle: "Hydropac Classic.TL",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Pressure",
+            value: "15-75 PSI",
+            subtitle: "PSI",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Height of Spout",
+            value: "310 mm",
+            subtitle: "With Riser",
           },
           {
             id: 5,
             title: "Compressor",
-            value: "220V/50 HZ",
-            subtitle: "RZ 134a1/8 HP",
+            value: "215 mm",
+            subtitle: "Without Riser",
           },
         ],
       },
@@ -2336,14 +2314,13 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2f8b4ab6-9dde-4f8b-4ac8-795976314100/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Built with durable SS-304 stainless steel for heavy-duty performance",
+          "Integrated with under the counter(UTC) storage unit - Hydropac and RO/booster unit(optional).",
+          "Designed as a zero-landfill product, prioritizing sustainability and environmental responsibility.",
         ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47b3d27b-b65b-4e94-26d1-ac8bb35afd00/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0a6c1075-ac97-4c46-d1b9-42d3b6d82900/public",
@@ -2351,28 +2328,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Sensor Activated",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Touchless operation with auto shut-o for maximum hygiene.",
           },
           {
-            title: "Minimal Splashing",
+            title: "Anti-Splash Drip Tray",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Smart drip tray with sensors for mess-free dispensing of hot, cold, and ambient water.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Corrosion- Resistant",
+            description:
+              "Stainless steel built ensures clean, durable, and corrosion-free water.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Braille & Color Blind Friendly",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Features Braille and high- contrast colors for easy, inclusive use.",
           },
           {
-            title: "Touchless Operation",
+            title: "Accessible Design",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Easy for seniors, children, and those with special needs to use comfortably.",
           },
         ],
         tempratureOptions: [
@@ -2384,32 +2362,32 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "Faucet",
+            subtitle: "MOSES",
           },
           {
             id: 2,
             title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            value: "1000ml",
+            subtitle: "Hydropac Classic",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Pressure",
+            value: "15-75 PSI",
+            subtitle: "PSI",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Height of Spout",
+            value: "300 mm",
+            subtitle: "With Riser",
           },
           {
             id: 5,
-            title: "Compressor",
-            value: "220V/50 HZ",
-            subtitle: "RZ 134a1/8 HP",
+            title: "Tank Volume",
+            value: "10 L",
+            subtitle: "Cold and Hot",
           },
         ],
       },
@@ -2419,14 +2397,13 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/213a7aa6-0b7c-466a-1583-353000287100/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Built with durable SS-304 stainless steel for heavy-duty performance",
+          "Integrated with under the counter(UTC) storage unit - Hydropac and RO/booster unit(optional).",
+          "Designed as a zero-landfill product, prioritizing sustainability and environmental responsibility.",
         ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0a63f294-a33c-470e-8aba-f6bef589a600/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5a89b2db-4c37-4e75-40cc-0d5afa2fac00/public",
@@ -2434,28 +2411,29 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
-            description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
-          },
-          {
-            title: "Minimal Splashing",
-            description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
-          },
-          {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
-          },
-          {
-            title: "Efficient Drainage",
-            description:
-              "Built-in drainage system effectively removes standing water.",
-          },
-          {
             title: "Touchless Operation",
             description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+              "Sensor-activated taps with auto shut-o for a hygienic, hands-free experience.",
+          },
+          {
+            title: "Energy Efficient",
+            description:
+              "Low power consumption for cost-effective, sustainable performance.",
+          },
+          {
+            title: "Sleek & Compact",
+            description:
+              "Stylish, slim faucets that fit effortlessly into any indoor commercial space.",
+          },
+          {
+            title: "Easy Maintenance",
+            description:
+              "Quick installation and minimal upkeep for hassle-free operation.",
+          },
+          {
+            title: "Premium Build",
+            description:
+              "High-quality steel ensure durability and a modern aesthetic.",
           },
         ],
         tempratureOptions: [
@@ -2467,32 +2445,32 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "Faucet",
+            subtitle: "TRX.TL",
           },
           {
             id: 2,
             title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            value: "1000ml",
+            subtitle: "Hydropac Classic",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Pressure",
+            value: "15-75 PSI",
+            subtitle: "PSI",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Height of Spout",
+            value: "248 mm",
+            subtitle: "With Riser",
           },
           {
             id: 5,
-            title: "Compressor",
-            value: "220V/50 HZ",
-            subtitle: "RZ 134a1/8 HP",
+            title: "Tank Volume",
+            value: "10 L",
+            subtitle: "Cold and Hot",
           },
         ],
       },
@@ -2502,14 +2480,13 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a1d7989c-aec8-48b3-9c33-5ed1f22b0700/public",
         keyPoints: [
-          "Plug and Play Operation.",
-          "Inbuilt 5 stages of purification.",
-          "Can be customized as per client needs.",
+          "Built with durable SS-304 stainless steel for heavy-duty performance",
+          "Integrated with under the counter(UTC) storage unit - Hydropac and RO/booster unit(optional).",
+          "Designed as a zero-landfill product, prioritizing sustainability and environmental responsibility.",
         ],
         bannerImageUrl: "",
         mountingType: "Counter-Top",
-        description:
-          "A Floor-standing model designed for convenient placement on the ground.",
+        description: "",
         images: [
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/76de532d-a762-4789-d348-ffa6ddab9700/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2e897fea-6219-4096-1989-ac1855719800/public",
@@ -2517,28 +2494,28 @@ export const productData: ProductData[] = [
         ],
         features: [
           {
-            title: "Wall-Mount Option",
+            title: "Manual Operation",
             description:
-              "Perfectly ts on walls, ideal for indoor commercial environments.",
+              "Pure, sparkling water in chilled, hot, and ambient temperatures",
           },
           {
-            title: "Minimal Splashing",
+            title: "User-Friendly Controls",
             description:
-              "Provides a clean, laminar flow to reduce splashing and water wastage.",
+              "Easy-to-use knob for selecting and adjusting the water flow.",
           },
           {
-            title: "Easy Installation & Integration",
-            description: "Quick setup with an option for backend purification.",
+            title: "Convenient & Clean",
+            description:
+              "Drip-free and corrosion-  resistant trays to reduce spillage and waste.",
           },
           {
-            title: "Efficient Drainage",
+            title: "Sleek & Compact Design",
             description:
-              "Built-in drainage system effectively removes standing water.",
+              "Slim, stylish faucets perfect for any indoor commercial space.",
           },
           {
-            title: "Touchless Operation",
-            description:
-              "Infrared sensor-activated tap for hygienic, hands-free water dispensing.",
+            title: "Corrosion- Resistant & Food-Grade",
+            description: "SS-304 ensures pure, corrosion-free water 24/7.",
           },
         ],
         tempratureOptions: [
@@ -2550,32 +2527,32 @@ export const productData: ProductData[] = [
           {
             id: 1,
             title: "Variant",
-            value: "Indoor",
-            subtitle: "Contour",
+            value: "Faucet",
+            subtitle: "HKN",
           },
           {
             id: 2,
             title: "UTC Variant",
-            value: "Contour",
-            subtitle: "Milli Liters",
+            value: "1000ml",
+            subtitle: "Hydropac Classic.TL",
           },
           {
             id: 3,
-            title: "Shipping Weight",
-            value: "11.0/ 12.0",
-            subtitle: "Kilograms (packaged)",
+            title: "Pressure",
+            value: "15-75 PSI",
+            subtitle: "PSI",
           },
           {
             id: 4,
-            title: "Water Dispenser",
-            value: "2l to 4l",
-            subtitle: "Per Minute",
+            title: "Height of Spout",
+            value: "285 mm",
+            subtitle: "With Riser",
           },
           {
             id: 5,
-            title: "Compressor",
-            value: "220V/50 HZ",
-            subtitle: "RZ 134a1/8 HP",
+            title: "Tank Volume",
+            value: "10 L",
+            subtitle: "Cold and Hot",
           },
         ],
       },
@@ -2584,8 +2561,7 @@ export const productData: ProductData[] = [
   {
     id: "04",
     categoryName: "WATER COOLER & FOUNTAINS - ZVR Series",
-    categoryBanner:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
+    categoryBanner: "/images/banners/zvr-banner.jpg",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5b540d2d-79e7-4028-5ab8-a94abec08700/public",
     categoryDescriptionTwo:
@@ -3087,8 +3063,7 @@ export const productData: ProductData[] = [
   {
     id: "05",
     categoryName: "PUBLIC UTILITY SYSTEMS - PUS Series",
-    categoryBanner:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
+    categoryBanner: "/images/banners/pus-banner.jpg",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ea8e8ad2-6510-4b28-65df-3ad71fa75f00/public",
     categoryDescriptionTwo:
@@ -3156,7 +3131,7 @@ export const productData: ProductData[] = [
             id: 2,
             title: "Drip Tray Capacity",
             value: "1000ml",
-            subtitle: "Milli Ltires",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
@@ -3235,7 +3210,7 @@ export const productData: ProductData[] = [
             id: 2,
             title: "Drip Tray Capacity",
             value: "1000ml",
-            subtitle: "Milli Ltires",
+            subtitle: "Milli Litres",
           },
           {
             id: 3,
@@ -3262,8 +3237,7 @@ export const productData: ProductData[] = [
   {
     id: "06",
     categoryName: "COMMERCIAL/INDUSTRIAL PLANTS",
-    categoryBanner:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a0b94ed2-b259-493e-5f36-61699c8d1f00/public",
+    categoryBanner: "/images/banners/commercial-banner.jpg",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/72054beb-9d63-4ef9-e169-b7594a898f00/public",
     categoryDescriptionTwo:
