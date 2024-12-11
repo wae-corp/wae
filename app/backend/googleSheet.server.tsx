@@ -28,6 +28,14 @@ type ContactInfoFormArgs = {
   type: string;
 };
 
+type ProductContactFormArgs = {
+  name: string;
+  contact: string;
+  companyName: string;
+  email: string;
+  productName: string;
+};
+
 /**
  * Function to append an email, date, and time to the Google Sheet
  * @param {string} email - The email address to be written to the sheet
@@ -223,6 +231,64 @@ export async function appendContactInfoIntoSheet(
   } catch (error_) {
     const error = getErrorFromUnknown(error_);
     console.log("🤡 ~ file: googleSheet.server.tsx:169 ~ error:", error);
+    return errResult(error);
+  }
+}
+
+export async function appendProductContactInfoIntoSheet(
+  args: ProductContactFormArgs,
+): Promise<Result<boolean>> {
+  try {
+    console.log("Trying to append product contact information to sheet");
+    const serviceCredentialsFileContent = unwrap(
+      getStringFromUnknown(process.env.SERVICE_ACCOUNT_CREDENTIALS),
+      "cb74f72c-ab6c-46d7-afdf-a9a4bad818dc",
+    );
+    const credentials = JSON.parse(serviceCredentialsFileContent);
+    const sheetName = unwrap(
+      getStringFromUnknown(process.env.PRODUCT_ENQUIRY_SHEET_NAME),
+      "c338a901-7b1b-4729-9596-68a1b2555873",
+    );
+    const workbookId = unwrap(
+      getStringFromUnknown(process.env.WORKBOOK_ID),
+      "8942927d-1065-4ce2-8fb3-0f0362c8a991",
+    );
+    const authentication = new auth.GoogleAuth({
+      credentials: credentials,
+      scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+    });
+    const sheetsInstantiated = sheets({version: "v4", auth: authentication});
+    const now = DateTime.now();
+    const date = now.toISODate();
+    const time = now.toISOTime();
+    const values = [
+      [
+        time,
+        date,
+        args.name,
+        args.companyName,
+        args.contact,
+        args.email,
+        args.productName,
+      ],
+    ];
+    const response = await sheetsInstantiated.spreadsheets.values.append({
+      spreadsheetId: workbookId,
+      range: `${sheetName}!A:B`,
+      valueInputOption: "RAW",
+      requestBody: {
+        values,
+      },
+    });
+    if (response.status !== 200) {
+      throw new Error(
+        `Failed to append data to spreadsheet: ${response.statusText}`,
+      );
+    }
+    return okResult(true);
+  } catch (error_) {
+    const error = getErrorFromUnknown(error_);
+    console.log("🤡 ~ file: googleSheet.server.tsx:246 ~ error:", error);
     return errResult(error);
   }
 }

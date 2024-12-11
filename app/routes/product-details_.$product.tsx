@@ -1,15 +1,33 @@
 import {Modal} from "@mantine/core";
-import {LoaderFunction} from "@remix-run/node";
-import {json, MetaFunction, useLoaderData} from "@remix-run/react";
-import {ReactNode, useState} from "react";
+import {ActionFunction, LoaderFunction} from "@remix-run/node";
+import {
+  json,
+  MetaFunction,
+  useActionData,
+  useLoaderData,
+  useSubmit,
+  Form,
+} from "@remix-run/react";
+import {ReactNode, useEffect, useState} from "react";
 import {
   ProductImageSlider,
   ProjectSlider,
   TestimonialSlider,
 } from "~/components";
-import {getStringFromUnknown} from "~/global--common-typescript/utilities/typeValidationUtils";
+import {
+  getErrorFromUnknown,
+  getStringFromUnknown,
+} from "~/global--common-typescript/utilities/typeValidationUtils";
 import {Icons, productData, Temprature} from "~/static";
 import {useDisclosure} from "@mantine/hooks";
+import {unwrap} from "~/global--common-typescript/utilities/errorHandling";
+import {z} from "zod";
+import {ActionData} from "~/backend/typeDefinations";
+import {appendProductContactInfoIntoSheet} from "~/backend/googleSheet.server";
+import {notifications} from "@mantine/notifications";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCheckCircle, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
+import {indianPhoneNumberValidationRegex} from "~/global--common-typescript/typeDefinations";
 
 type LoaderData = {
   id?: string;
@@ -29,6 +47,13 @@ type LoaderData = {
     value: string;
     subtitle: string;
   }>;
+};
+
+type ErrorObject = {
+  name?: string | null;
+  email?: string | null;
+  contact?: string | null;
+  companyName?: string | null;
 };
 
 export const meta: MetaFunction = () => {
@@ -81,7 +106,155 @@ export const loader: LoaderFunction = async ({request, params}) => {
   return json(loaderData);
 };
 
+export const action: ActionFunction = async ({request, params}) => {
+  let error: string | null = null;
+  try {
+    const productNameRes = getStringFromUnknown(params.product);
+    if (productNameRes.success === false) {
+      return new Response(null, {status: 404});
+    }
+    const productName = productNameRes.ok;
+    const body = await request.formData();
+    const name = unwrap(
+      getStringFromUnknown(body.get("name")),
+      "383ce9f7-15d4-4537-8faf-0b88e2311193",
+    );
+    const email = unwrap(
+      getStringFromUnknown(body.get("email")),
+      "15351830-908d-4171-aa4c-2596c8656eb3",
+    );
+    const contact = unwrap(
+      getStringFromUnknown(body.get("contact")),
+      "259c4795-d03a-4851-b0bb-b98f31ed31c3",
+    );
+    const companyName = unwrap(
+      getStringFromUnknown(body.get("companyName")),
+      "8da118b1-40fa-47ea-bd64-2cb5e9ab6bea",
+    );
+    if (!name || !email || !contact || !companyName) {
+      throw new Error("All fields are required");
+    }
+    const formValues = {
+      name,
+      email,
+      contact,
+      companyName,
+      productName,
+    };
+    const schema = z.object({
+      name: z.string().min(1, {message: "Name is required"}),
+      email: z.string().email({message: "Invalid email"}),
+      contact: z.string().min(10, {message: "Contact number is required"}),
+      companyName: z.string().min(1, {message: "Company name is required"}),
+      productName: z.string().min(1, {message: "Product name is required"}),
+    });
+    const parsedData = schema.safeParse(formValues);
+    if (!parsedData.success) {
+      throw parsedData.error;
+    }
+    const response = await appendProductContactInfoIntoSheet(parsedData.data);
+    if (!response.success) {
+      throw response.err;
+    }
+    console.log("Form submitted successfully");
+    return {
+      status: 200,
+      body: json({message: "Form submitted successfully"}),
+    };
+  } catch (_error) {
+    const error_ = getErrorFromUnknown(_error);
+    error = error_.message;
+    console.log(
+      "🤡 ~ file: product-details.tsx:123 ~ const action: ActionFunction= ~ error:",
+      error,
+    );
+    const actionData: ActionData = {
+      error,
+    };
+    return json(actionData);
+  }
+};
+
 export default function ProductDetails() {
+  const [errors, setErrors] = useState<ErrorObject>({
+    name: null,
+    companyName: null,
+    contact: null,
+    email: null,
+  });
+  const actionData = useActionData() as ActionData;
+  const submit = useSubmit();
+  useEffect(() => {
+    if (actionData != null) {
+      if (actionData.error != null) {
+        notifications.show({
+          title: "Error",
+          message: actionData.error,
+          color: "red",
+          icon: (
+            <FontAwesomeIcon
+              icon={faTimesCircle}
+              style={{color: "red", fontSize: "18px"}}
+            />
+          ),
+        });
+      } else {
+        notifications.show({
+          title: "Success",
+          message: "Form submitted successfully",
+          color: "green",
+          icon: (
+            <FontAwesomeIcon
+              icon={faCheckCircle}
+              style={{color: "green", fontSize: "18px"}}
+            />
+          ),
+        });
+        const form = document.querySelector("form") as HTMLFormElement;
+        if (form) {
+          form.reset();
+        }
+      }
+      setErrors({
+        name: null,
+        companyName: null,
+        contact: null,
+        email: null,
+      });
+    }
+  }, [actionData]);
+
+  const validateForm = (formData: FormData) => {
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const contact = formData.get("contact") as string;
+    const companyName = formData.get("companyName") as string;
+
+    const newErrors = {
+      name: name ? null : "Name is required",
+      email: email ? null : "Email is required",
+      contact: contact
+        ? indianPhoneNumberValidationRegex.test(contact)
+          ? null
+          : "Invalid contact number"
+        : "Contact is required",
+      companyName: companyName ? null : "Company Name is required",
+    };
+
+    setErrors(newErrors);
+    return Object.values(newErrors).every((error) => error === null);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    if (validateForm(formData)) {
+      submit(form, {method: "post"});
+    }
+  };
+
   const [
     isDownloadFormOpen,
     {open: openDownloadForm, close: closeDownloadForm},
@@ -320,7 +493,7 @@ export default function ProductDetails() {
         />
       </section>
 
-      {/* <section className="wae-pt-lg bg-black pb-6 text-white">
+      <section className="wae-pt-lg bg-black pb-6 text-white">
         <div className="container gap-4 sm:flex">
           <div className="mb-12 sm:mb-0 sm:w-1/2">
             <div data-aos="fade-in">
@@ -395,7 +568,11 @@ export default function ProductDetails() {
             </div>
           </div>
           <div className="mx-auto flex max-w-[440px] bg-opacity-40 sm:w-1/2">
-            <form className="w-full">
+            <Form
+              className="w-full"
+              method="POST"
+              onSubmit={handleSubmit}
+            >
               <input
                 type="text"
                 className="wae-input mb-10 placeholder-white"
@@ -403,6 +580,9 @@ export default function ProductDetails() {
                 placeholder="Name"
                 required
               />
+              {errors.name && (
+                <p className="mb-2 text-red-500">{errors.name}</p>
+              )}
               <input
                 type="email"
                 className="wae-input mb-10 placeholder-white"
@@ -410,6 +590,9 @@ export default function ProductDetails() {
                 placeholder="Your Email"
                 required
               />
+              {errors.email && (
+                <p className="mb-2 text-red-500">{errors.email}</p>
+              )}
               <input
                 type="tel"
                 className="wae-input mb-10 placeholder-white"
@@ -417,12 +600,18 @@ export default function ProductDetails() {
                 placeholder="Contact No."
                 required
               />
+              {errors.contact && (
+                <p className="mb-2 text-red-500">{errors.contact}</p>
+              )}
               <input
                 type="text"
                 className="wae-input mb-10 placeholder-white"
-                name="company"
+                name="companyName"
                 placeholder="Company Name"
               />
+              {errors.companyName && (
+                <p className="mb-2 text-red-500">{errors.companyName}</p>
+              )}
 
               <button
                 type="submit"
@@ -430,10 +619,10 @@ export default function ProductDetails() {
               >
                 Contact Us {Icons.ChevronRight}
               </button>
-            </form>
+            </Form>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <Modal
         opened={isDownloadFormOpen}

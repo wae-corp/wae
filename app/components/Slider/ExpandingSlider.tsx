@@ -51,7 +51,7 @@ export const ExpandingSlider = () => {
     <>
       <h5
         className="mb-10 text-center text-sm md:text-left"
-        data-aos="fade-down"
+        // data-aos="fade-down"
       >
         OUR PRODUCTS
       </h5>
