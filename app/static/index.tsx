@@ -907,7 +907,8 @@ export const productData: ProductData[] = [
           "Inbuilt 5 stages of purification.",
           "Can be customized as per client needs.",
         ],
-        bannerImageUrl: "",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e176d978-6656-4570-d8f7-01bf8c822500/public",
         name: "BLUWAE REVA",
         mountingType: "Free-Standing",
         description: "",
@@ -1147,7 +1148,9 @@ export const productData: ProductData[] = [
           "Inbuilt 5 stages of purification.",
           "Can be customized as per client needs.",
         ],
-        bannerImageUrl: "",
+        // bannerImageUrl: "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0fa29c2f-fb31-4b18-a131-bdc52c514700/public",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4be2941-7f78-4327-4bb7-3fc4f4788000/public",
         name: "BLUWAE VAR CT",
         mountingType: "Counter-Top",
         description:
@@ -1728,7 +1731,8 @@ export const productData: ProductData[] = [
           "Advanced 3 stage purification (UV, UF & LED-UVC)",
           "Touchless/Sensor-based operation",
         ],
-        bannerImageUrl: "",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/1b7181e2-f370-4d0c-a50c-8e305347f700/public",
         name: "TRUBLU AENON",
         mountingType: "Free-Standing",
         description: "",
@@ -2069,7 +2073,8 @@ export const productData: ProductData[] = [
           "Integrated with under the counter(UTC) storage unit - Hydropac and RO/booster unit(optional).",
           "Designed as a zero-landfill product, prioritizing sustainability and environmental responsibility.",
         ],
-        bannerImageUrl: "",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b7008673-8a2f-4b22-94a4-a72513ceb300/public",
         mountingType: "Counter-Top",
         description: "",
         images: [
@@ -2235,7 +2240,8 @@ export const productData: ProductData[] = [
           "Integrated with under the counter(UTC) storage unit - Hydropac and RO/booster unit(optional).",
           "Designed as a zero-landfill product, prioritizing sustainability and environmental responsibility.",
         ],
-        bannerImageUrl: "",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b264d25e-1ff2-4916-1487-4a3b9fbfa500/public",
         mountingType: "Counter-Top",
         description: "",
         images: [
@@ -2741,7 +2747,8 @@ export const productData: ProductData[] = [
           "Traditional floor-standing unit for flexible placement.",
           "Optional integration with a remote water chiller.",
         ],
-        bannerImageUrl: "",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/be455110-a0e3-4ea9-2da6-090148dfac00/public",
         mountingType: "Free-Standing",
         // description:
         //   "A Floor-standing model designed for convenient placement on the ground.",
@@ -2985,7 +2992,8 @@ export const productData: ProductData[] = [
           "Built with heavy-duty SS-304 steel and galvanized iron.",
           "Sustainable and fully customizable to your needs.",
         ],
-        bannerImageUrl: "",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/7dea3faf-3dbe-42e6-b02a-6b7fb105e200/public",
         mountingType: "Free-Standing",
         // description:
         //   "A Floor-standing model designed for convenient placement on the ground.",
@@ -3253,7 +3261,8 @@ export const productData: ProductData[] = [
         thumbnailUrl:
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6240473c-a65e-43cf-e01e-62974647f500/public",
         keyPoints: [],
-        bannerImageUrl: "",
+        bannerImageUrl:
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/37bfd514-b180-45cf-1585-4dee3a381e00/public",
         mountingType: "Free-Standing",
         description:
           "A quick clean water bole ll Integrated with optional purication ideal for waiting areas, pantries, lobbies & break rooms",
