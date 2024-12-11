@@ -4,7 +4,7 @@ import {notifications} from "@mantine/notifications";
 import type {ActionFunction, MetaFunction} from "@remix-run/node";
 import {Form, json, Link, useActionData, useSubmit} from "@remix-run/react";
 import clsx from "clsx";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {
   BrandSlider,
   ExpandingSlider,
@@ -140,6 +140,8 @@ export default function Index() {
   });
   const actionData = useActionData() as ActionData;
   const submit = useSubmit();
+  const stickySectionRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (actionData != null) {
       if (actionData.error != null) {
@@ -174,6 +176,35 @@ export default function Index() {
       }
     }
   }, [actionData]);
+
+  useEffect(() => {
+    let hasBeenSticky = false;
+    function handleScroll() {
+      const sectionRect = stickySectionRef.current?.getBoundingClientRect();
+      const viewportHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+
+      if (!hasBeenSticky && sectionRect && sectionRect.top <= 0) {
+        hasBeenSticky = true;
+      }
+
+      if (
+        sectionRect &&
+        hasBeenSticky &&
+        sectionRect.top > 0 &&
+        sectionRect.top < viewportHeight &&
+        stickySectionRef.current
+      ) {
+        stickySectionRef.current.style.position = "static";
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const validateForm = (formData: FormData) => {
     const name = formData.get("name") as string;
@@ -242,7 +273,12 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="sticky top-0 -z-[1] flex items-center justify-center bg-black pb-20 pt-10 text-center text-white md:py-[100px]">
+      <section
+        ref={stickySectionRef}
+        className={
+          "sticky top-0 -z-[1] flex items-center justify-center bg-black pb-20 pt-10 text-center text-white md:py-[100px]"
+        }
+      >
         <div className="container">
           <div
             className="mx-auto max-w-4xl"
