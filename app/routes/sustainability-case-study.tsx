@@ -280,7 +280,7 @@ export default function SustainabilityCaseStudy() {
             </p>
 
             <Link
-              to={"/"}
+              to={"/contact"}
               className="wae-btn wae-btn-md mt-10 gap-3 border-white px-6 py-3 max-md:w-full xl:mt-[100px]"
             >
               Contact Us {Icons.ArrowRightLong}
