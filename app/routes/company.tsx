@@ -312,10 +312,10 @@ export default function Company() {
             Projects created by our customers to draw inspiration from
           </h3>
 
-          <div className="flex items-center justify-center text-sm xl:text-base">
+          {/* <div className="flex items-center justify-center text-sm xl:text-base">
             <span className="prefix-dot"></span>
             You discover SUSTAINABILITY
-          </div>
+          </div> */}
         </div>
         <CaseStudySlider />
       </section>

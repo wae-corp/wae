@@ -428,7 +428,7 @@ export default function ProductDetails() {
                       {spec.title}
                     </div>
 
-                    <div className="mb-3 text-[32px] font-extralight leading-normal md:mb-4 xl:mb-5 xl:text-4xl">
+                    <div className="mb-3 text-[32px] font-extralight leading-normal md:mb-4 xl:mb-5">
                       {spec.value}
                     </div>
 
