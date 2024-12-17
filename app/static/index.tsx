@@ -681,9 +681,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/bfc477ef-9633-42cb-2059-00898188c200/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6fc445ac-0336-4f77-7e19-983923501a00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4fde63dc-3340-4d08-e45d-bc81f5232000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/db728b19-a0dd-45a4-812b-e7594a1b6900/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a86f6929-a0fb-44d1-f78f-b4d0a7049600/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/1f9571c7-362c-4490-95d3-f9072bbe5500/public",
         ],
         features: [
           {
@@ -760,9 +760,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/60624bcd-8cdd-4a32-9b52-20f1c69e9c00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/7ab00856-13bf-49cc-1d90-90574762c500/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/0c68e87a-ef91-4741-d3e4-6db5abb44e00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2e1a6e7f-0b55-4344-4ff9-8dba915a3300/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6b2da797-9d52-40d1-3323-c86ddd384c00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8fab5f68-c2e5-4ec8-f700-cfcea83f7600/public",
         ],
         features: [
           {
@@ -839,9 +839,9 @@ export const productData: ProductData[] = [
         description:
           "A compact, counter-top model designed for easy placement on counters",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/804b5858-eda8-484c-f194-08c421e1d400/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4dd89f6a-b1ea-46ed-86e5-8747b5432100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e6718c14-1c8a-432f-17d5-31c0f4f51800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ad1ea063-3e9d-494e-262b-9e0dfec7e500/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c0002234-c76a-48ba-6b12-308e26b39f00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b6fd26a4-7fe7-4df7-b4b7-b58aae572200/public",
         ],
         features: [
           {
@@ -913,9 +913,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9b7a8014-1ca5-4095-2753-ba366ec52100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25e93e1d-1cd8-47e2-16d5-957e84a9f400/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/539051e8-c36f-4ea5-f1b3-d337cb2e4100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/afee7058-847e-4a58-55d9-ede5da5c6800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a8f5a00e-0285-460b-f009-fa5a3a4d8c00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/07be5d57-d7fd-444f-52f5-6062969b5200/public",
         ],
         features: [
           {
@@ -996,9 +996,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/58af2736-2da1-4a98-cfc0-7b1a76125600/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9a20872c-9962-4ec0-2110-e4fee558c700/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5bd1f03d-81b3-47e8-56d0-e6f594ca2800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4740edc0-da36-41cd-f5ab-9c7f6faad000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6cbe11d1-d684-43fd-b674-e948d745eb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/875719ac-2f9e-456b-662f-d437c10dca00/public",
         ],
         features: [
           {
@@ -1075,9 +1075,9 @@ export const productData: ProductData[] = [
         description:
           "A sleek, compact countertop model designed for convenient placement.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/332d6670-16ff-49da-e386-748fe618ff00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/adfff61c-94be-410f-f389-21510a0a2800/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f78f518e-87fc-4884-d1b7-530193737400/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f1ad952b-5360-4a2d-e17e-13ad12147a00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/68c42af9-cb08-4755-4b76-b31697ee9500/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/125ecf0e-cdbd-428b-d234-f4bd1f7e4300/public",
         ],
         features: [
           {
@@ -1156,9 +1156,9 @@ export const productData: ProductData[] = [
         description:
           "A Floor-standing model designed for convenient placement on the ground.",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/19fa333f-7d0e-4108-5640-9679d8d0ad00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/231a38c3-97b7-4d4b-85a7-cdc42584c100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4d4be20d-fe61-44bc-18c5-b66877c46700/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/655fd93e-7fb0-4449-1f7a-92458eb28700/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/de777aae-d5fd-4dde-d64a-ca8692543800/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/faf6ac94-974b-4aa3-6175-0fa59d586200/public",
         ],
         features: [
           {
@@ -1235,9 +1235,9 @@ export const productData: ProductData[] = [
         description:
           "A compact, counter-top model designed for easy placement on counters",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/bfbf1885-b5d9-483d-0137-0a78cf5fed00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8f660606-e5e1-4be5-4358-aa9e93e87000/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/aa9f4a85-2918-4429-5834-9f9510b0fb00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/79ef281c-75c0-416b-1928-023fa3f58300/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/bdfd78c7-de80-4e95-20be-ffea6b5c5c00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/833cb87f-1ba5-45f8-6f61-fa5cf48a7200/public",
         ],
         features: [
           {
@@ -1403,9 +1403,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6dbddbd4-1786-42d8-16f2-ab78afe10100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3f6a334f-3ab9-42b1-a732-cbc289ab9000/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/11628173-98f1-4dd8-3209-cd5b7fbd2400/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8a7824d7-7f82-49fd-10cf-aaae8610e100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f2a3cb85-9bb6-42ce-54c5-35f6bd266000/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3b80e936-57ba-457d-a11b-85833225c200/public",
         ],
         features: [
           {
@@ -1479,9 +1479,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6232b01c-a47f-460c-455c-6b083de73900/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4418b950-683f-43ff-416b-a8594738fb00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/20c55d69-f031-4a70-1c50-03d0002a7100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b9b68bc5-70be-4303-fb96-b90fbbf77c00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6f56ccc0-e0b5-4fa1-467d-db93eb6b3b00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/7dee6e9b-96e0-4236-49ee-b9e36ffedf00/public",
         ],
         features: [
           {
@@ -1562,12 +1562,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8b6f2fee-336a-4736-bd52-230ae7f15900/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c2fc11a1-dbb6-49cc-1dd2-cffbcfe4d300/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/de420d3a-dc02-4df1-d78d-293893cba500/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cb2a8039-3c66-4c54-d029-0b3fa4f63d00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/33949b56-807e-4cef-93a0-db7e189f8400/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4cbb98a1-d2e7-4e8c-3ff6-9028f7b55400/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/beff5c3b-301a-466d-8b0f-e9fe77bcd200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a850b11e-b4e6-4413-1035-e76da3736100/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c9e2f1ea-74ff-48fc-c0d7-cb5f23c1ea00/public",
         ],
         features: [
           {
@@ -1653,9 +1650,9 @@ export const productData: ProductData[] = [
         mountingType: "Counter-Top",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ed60afe4-3381-4dd8-38a6-21a600df4000/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47685348-649b-4234-fd99-b1bd4fa74800/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/94046aa6-df9e-429e-d03d-11ff25706a00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6e759543-fba1-46e0-1171-9ca6f9d6d200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/21128a4c-a5ff-4368-3a5b-12bd72c06b00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d64a8674-1e83-4cdf-b733-9881bb65da00/public",
         ],
         features: [
           {
@@ -1737,9 +1734,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9fa50ce5-7fc6-4260-4546-3b009f3d8100/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/13f45d36-c6c9-43e4-7079-fa7860877800/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8676f367-6f7d-4ab4-324c-f97fcf5a4b00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9a539ab1-e7f5-48ea-dff3-0c8071dcf300/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25531713-c7e1-40c9-eb1b-44c3c9127400/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a814e21b-b816-4241-14e5-2fb4e5bf4f00/public",
         ],
         features: [
           {
@@ -1815,9 +1812,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e464f3c6-cb5d-448c-da7a-0c6c5c4d9500/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a661576f-abcf-4d53-b111-35d7660d1600/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a8aca47b-7fcd-4037-0afe-66ac58720300/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/267d6f4b-afd7-42d1-c948-02c0cc588b00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/30dcf033-c808-4aba-1f0c-fa72e4022300/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/774bf3ad-1dc7-4ad2-5779-ab2d15f20700/public",
         ],
         features: [
           {
@@ -1896,9 +1893,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3934c66e-2576-4aea-714f-d11f6cd10200/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/15a33428-ea01-4719-1066-428a16b9fc00/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6d12257c-d3c3-48b0-f944-6ac2867af200/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/79ce8da9-daaa-4bad-c80a-5a5f47af3c00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4eb27063-2310-4888-4f1c-9f4b02493d00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c96d8adb-e99f-4181-f45f-1bbd40918c00/public",
         ],
         features: [
           {
@@ -1979,9 +1976,9 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6b93eb3c-5858-4baf-e08c-d8c2afe65800/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/92c186cd-310f-4f6b-edd7-31c488d7f600/public",
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b66d148e-af49-4a90-02a8-3518b2106f00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f6efba25-b43c-449d-d14d-a785f6e61b00/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/70fa9ba1-f0e8-490b-fe4a-4ca531a63700/public",
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/89fe9111-df3e-44fd-146b-913905054100/public",
         ],
         features: [
           {

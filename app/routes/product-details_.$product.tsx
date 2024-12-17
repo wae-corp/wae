@@ -306,7 +306,7 @@ export default function ProductDetails() {
         </div>
       </main>
 
-      <section className="py-20 md:py-[120px] xl:py-[180px]">
+      <section className="bg-black py-20 text-white md:py-[120px] xl:py-[180px]">
         <div className="container">
           <div className="flex flex-col items-center gap-10 md:flex-row md:items-start md:justify-start">
             <div
@@ -322,11 +322,11 @@ export default function ProductDetails() {
                 {category}
               </h6>
 
-              <div className="mb-6 flex items-center justify-between gap-2">
+              {/* <div className="mb-6 flex items-center justify-between gap-2">
                 <h4 className="text-xl font-extrabold md:text-2xl xl:text-[32px] xl:leading-normal">
                   {mountingType}
                 </h4>
-              </div>
+              </div> */}
 
               <div className="mb-5 text-2xl font-light leading-tight md:mb-8 md:text-[32px] md:leading-relaxed xl:mb-10 xl:text-[40px]">
                 {name}
@@ -366,7 +366,7 @@ export default function ProductDetails() {
                         key={idx}
                         className="mb-3 flex items-center text-sm uppercase last:mb-0 xl:text-base"
                       >
-                        <div className="mr-2 h-2 w-2 rounded-full bg-black xl:mr-4 xl:h-4 xl:w-4"></div>
+                        <div className="mr-2 h-2 w-2 rounded-full bg-white xl:mr-4 xl:h-4 xl:w-4"></div>
                         {keyPoint}
                       </li>
                     );
@@ -374,15 +374,15 @@ export default function ProductDetails() {
                 </ul>
               )}
 
-              <button className="wae-btn !rounded-lg border-black px-6 py-2">
+              {/* <button className="wae-btn !rounded-lg border-black px-6 py-2">
                 Get In Touch
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="wae-pt-lg wae-pb-lg bg-black text-white">
+      <section className="wae-pb-lg bg-black text-white">
         <div className="container">
           <div className="mb-[60px] xl:mb-20">
             <div className="mb-10 text-center font-secondary text-[32px] font-light uppercase leading-normal md:text-left xl:mb-[60px] xl:text-[40px]">

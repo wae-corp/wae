@@ -22,7 +22,7 @@ export const ProductImageSlider = ({images}: ProductDetailImageSliderProps) => {
         }}
         previousControlIcon={Icons.ChevronLeft}
         nextControlIcon={Icons.ChevronRight}
-        withIndicators
+        // withIndicators
         withControls={false}
       >
         {images?.map((image, idx) => {
@@ -46,13 +46,13 @@ export const ProductImageSlider = ({images}: ProductDetailImageSliderProps) => {
       <div className="left-0 top-1/2 z-10 mt-3 hidden w-full items-center justify-center gap-4 md:absolute md:mt-0 md:-translate-y-1/2 md:justify-between xl:flex">
         <button
           onClick={() => embla?.scrollPrev()}
-          className="wae-btn h-8 !min-h-8 w-8 !rounded-md border-black"
+          className="wae-btn h-8 !min-h-8 w-8 !rounded-md border-white"
         >
           {Icons.ChevronLeft}
         </button>
         <button
           onClick={() => embla?.scrollNext()}
-          className="wae-btn h-8 !min-h-8 w-8 !rounded-md border-black"
+          className="wae-btn h-8 !min-h-8 w-8 !rounded-md border-white"
         >
           {Icons.ChevronRight}
         </button>
