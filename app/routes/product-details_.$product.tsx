@@ -306,17 +306,18 @@ export default function ProductDetails() {
         </div>
       </main>
 
-      <section className="bg-black py-20 text-white md:py-[120px] xl:py-[180px]">
-        <div className="container">
-          <div className="flex flex-col items-center gap-10 md:flex-row md:items-start md:justify-start">
+      <section className="bg-black py-20 text-white md:py-[120px]">
+        <div className="container xl:max-w-[auto]">
+          <div className="flex flex-col items-center gap-10 md:flex-row md:items-center md:justify-center xl:gap-[78px]">
             <div
-              className="flex flex-shrink-0 justify-center md:w-[300px] xl:w-[600px]"
+              className="flex flex-shrink-0 justify-center md:w-[300px] lg:w-[500px] xl:w-[700px]"
               // data-aos="zoom-in"
             >
               <ProductImageSlider images={image} />
             </div>
             <div
-            // data-aos="fade-left"
+              className="shrink-0 lg:flex-1 xl:w-[500px]"
+              // data-aos="fade-left"
             >
               <h6 className="mb-5 text-base font-light md:mb-10 xl:mb-[68px] xl:text-2xl">
                 {category}
@@ -359,7 +360,7 @@ export default function ProductDetails() {
               </div>
 
               {keyPoints && (
-                <ul className="mb-10 md:mb-[60px] xl:mb-[75px]">
+                <ul className="">
                   {keyPoints.map((keyPoint, idx) => {
                     return (
                       <li
@@ -374,7 +375,7 @@ export default function ProductDetails() {
                 </ul>
               )}
 
-              {/* <button className="wae-btn !rounded-lg border-black px-6 py-2">
+              {/* <button className="wae-btn mt-10 !rounded-lg border-black px-6 py-2 md:mt-[60px] xl:mt-[75px]">
                 Get In Touch
               </button> */}
             </div>

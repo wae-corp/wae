@@ -1,61 +1,58 @@
-import {Carousel, Embla} from "@mantine/carousel";
-import {useState} from "react";
 import {Icons} from "~/static";
 import {ProductDetailImageSliderProps} from "~/typeDefinitions";
-import {useMediaQuery} from "@mantine/hooks";
+import {Swiper, SwiperRef, SwiperSlide, useSwiper} from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import {useRef} from "react";
 
 export const ProductImageSlider = ({images}: ProductDetailImageSliderProps) => {
-  const [embla, setEmbla] = useState<Embla | null>();
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const swiperRef = useRef<any>(null);
 
   return (
     <div className="relative">
-      <Carousel
-        getEmblaApi={setEmbla}
-        loop={true}
-        slideGap={isMobile ? 5 : 100}
-        align={isMobile ? "start" : "center"}
-        controlsOffset={0}
-        className="product-image-slider"
-        classNames={{
-          slide: "md:basis-[300px] xl:basis-[600px]",
-        }}
-        previousControlIcon={Icons.ChevronLeft}
-        nextControlIcon={Icons.ChevronRight}
-        // withIndicators
-        withControls={false}
-      >
-        {images?.map((image, idx) => {
-          return (
-            <Carousel.Slide key={idx}>
-              <img
-                src={image}
-                alt={`Product ${idx}`}
-                className="mx-auto block aspect-square w-full object-cover"
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="500"
-              />
-            </Carousel.Slide>
-          );
-        })}
-      </Carousel>
+      <div className="min-w-[0px]">
+        <Swiper
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          spaceBetween={10}
+          navigation={false}
+          loop={true}
+          slidesPerView={"auto"}
+        >
+          {images?.map((image, idx) => {
+            return (
+              <SwiperSlide key={idx}>
+                <img
+                  src={image}
+                  alt={`Product ${idx}`}
+                  className="mx-auto block aspect-square w-full object-cover"
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="500"
+                />
+              </SwiperSlide>
+            );
+          })}
 
-      <div className="left-0 top-1/2 z-10 mt-3 hidden w-full items-center justify-center gap-4 md:absolute md:mt-0 md:-translate-y-1/2 md:justify-between xl:flex">
-        <button
-          onClick={() => embla?.scrollPrev()}
-          className="wae-btn h-8 !min-h-8 w-8 !rounded-md border-white"
-        >
-          {Icons.ChevronLeft}
-        </button>
-        <button
-          onClick={() => embla?.scrollNext()}
-          className="wae-btn h-8 !min-h-8 w-8 !rounded-md border-white"
-        >
-          {Icons.ChevronRight}
-        </button>
+          <div className="left-0 top-1/2 z-10 mt-3 hidden w-full items-center justify-center gap-4 md:absolute md:mt-0 md:flex md:-translate-y-1/2 md:justify-between">
+            <button
+              onClick={() => swiperRef.current.slidePrev()}
+              className="wae-btn h-8 !min-h-8 w-8 !rounded-md border-white"
+            >
+              {Icons.ChevronLeft}
+            </button>
+            <button
+              onClick={() => swiperRef.current.slideNext()}
+              className="wae-btn h-8 !min-h-8 w-8 !rounded-md border-white"
+            >
+              {Icons.ChevronRight}
+            </button>
+          </div>
+        </Swiper>
       </div>
     </div>
   );
