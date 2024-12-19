@@ -41,7 +41,8 @@ export default {
         "leaf-closeup":
           "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f18fad87-7a6c-4567-1984-21d155651100/public')",
         "earth-in-hands":
-          "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dcd20ad3-c916-450f-494d-a5c3abb79600/public')",
+          // "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dcd20ad3-c916-450f-494d-a5c3abb79600/public')",
+          "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/eb80d7c4-a63a-4e9a-1b21-f4672d39ab00/public')",
         "product-details-banner":
           "url('https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d65a7aae-4e62-49d2-e4be-60b891e6da00/public')",
         "leaf-droplet":

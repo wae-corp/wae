@@ -33,12 +33,12 @@ export default function Careers() {
             </h1>
 
             <p className="wae-h6 font-secondary uppercase">
-              Imagine a workplace where your creativity meets innovation, where
-              your ideas drive change, and where every day is an opportunity to
-              make a real difference. Welcome to WAE. We're not just about
-              business; we're about building a better future. Join us and be a
-              part of a team that's passionate about sustainability, excellence,
-              and creating positive impacts in the world.
+              WAE fosters a culture of collaboration, innovation, and purpose,
+              where individuals are empowered to challenge conventions and
+              develop solutions that advance sustainability. By combining
+              critical thinking and shared commitment, we transform ideas into
+              measurable impact, contributing to a better, more sustainable
+              future for all.
             </p>
           </div>
         </div>
@@ -54,12 +54,11 @@ export default function Careers() {
                 Life at WAE
               </h3>
               <p className="text-sm uppercase md:mb-0 md:ml-28 md:max-w-[80%] xl:text-base">
-                Life at WAE is vibrant and inspiring. Our culture is a tapestry
-                of collaboration, inclusivity, and continuous learning. Here,
-                your professional growth is as important as your personal
-                well-being. Enjoy a work environment that fosters creativity,
-                supports balance, and celebrates every success. At WAE, your
-                journey is our story.
+                Life at WAE is dynamic and purposeful. We foster a culture of
+                collaboration, inclusivity, and continuous learning, where
+                professional growth and personal well-being go hand in hand.
+                With creativity, balance, and shared success, every milestone
+                becomes part of our collective story.
               </p>
             </div>
             <div
@@ -67,12 +66,12 @@ export default function Careers() {
               className="flex-shrink-0 lg:max-w-[400px] lg:pl-8"
             >
               <p className="wae-h6-lg font-light uppercase">
-                WAE is more than a job - it's a journey. We offer competitive
-                benefits, a supportive and inclusive community, and countless
-                opportunities for personal and professional growth. Join us and
-                be part of a team that values your contributions and helps you
-                reach your full potential. Let's create a brighter future
-                together.
+                WAE is not just a workplace—it’s where innovation meets purpose.
+                We provide a supportive, inclusive environment, competitive
+                benefits, and opportunities to grow both personally and
+                professionally. Join us to contribute your expertise,
+                collaborate with forward-thinking teams, and help shape a
+                sustainable future for all.
               </p>
             </div>
           </div>
@@ -117,10 +116,10 @@ export default function Careers() {
 
             <p className="flex items-center text-xs font-light md:text-base xl:text-base">
               <span className="prefix-dot"></span>
-              Whether you're looking for a full-time role, an apprenticeship, a
-              short-term project, or an internship, WAE has a place for you.
-              Discover your perfect fit and join a team that's shaping the
-              future.
+              Whether it’s a full-time role, apprenticeship, project, or
+              internship, WAE offers opportunities to grow and contribute. Find
+              your place and join us in shaping the future of sustainable water
+              solutions.
             </p>
           </div>
 

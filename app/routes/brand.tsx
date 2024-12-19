@@ -60,23 +60,24 @@ export default function Brand() {
             data-aos="fade-up"
           >
             <h1 className="font-secondary text-[32px] leading-normal xl:text-[40px]">
-              WAE:
-              <br /> A Brand Committed to Innovation and Transformation
+              {/* WAE:
+              <br /> A Brand Committed to Innovation and Transformation */}
+              Our Green Is Blue
             </h1>
             <p className="wae-h6 text-center font-light">
-              At WAE, our brand embodies more than just products; it represents
-              a belief in possibilities. Our commitment to innovation, quality,
-              and making a positive impact on people's lives through technology
-              drives us forward. This philosophy is at the heart of everything
-              we do, guiding our efforts to bring transformative solutions to
-              the world.
+              Water is the foundation of life and progress, a resource that
+              sustains ecosystems and drives growth. At WAE, we combine
+              innovation with responsibility to deliver sustainable water
+              solutions. By protecting and preserving this vital resource, we
+              aim to create a future where technology and nature work in harmony
+              for generations to come.
             </p>
           </div>
         </div>
       </main>
 
       <section className="flex flex-col bg-window-pattern bg-cover bg-no-repeat py-20 md:py-[120px] xl:py-[180px]">
-        <div className="container grid gap-x-8 gap-y-[60px] md:grid-cols-2 md:gap-x-10 xl:gap-x-[120px] xl:gap-y-[180px]">
+        <div className="container grid gap-x-8 gap-y-[60px] md:grid-cols-2 md:gap-x-10 xl:gap-x-[120px] xl:gap-y-[120px]">
           <div
             className="flex flex-col"
             data-aos="fade-right"
@@ -84,65 +85,90 @@ export default function Brand() {
             <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
               Belief in Possibilities!
             </h6>
-            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[60px] xl:text-base">
-              At WAE, we believe in the potential for change and progress. Our
-              brand is a testament to this belief, showcasing our dedication to
-              creating technologies that transform lives. We are more than a
-              manufacturer; we are pioneers of innovation, aiming to make a
-              lasting difference.
+            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[40px] xl:text-base">
+              At WAE, we believe in progress driven by purpose and innovation.
+              Our commitment lies in developing technologies that create real
+              impact and enable meaningful change. More than just manufacturers,
+              we are partners in shaping a sustainable future through ingenuity
+              and excellence.
             </p>
-            <div>
+            {/* <div>
               <Link
                 to="#"
                 className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
               >
                 Explore
               </Link>
-            </div>
+            </div> */}
           </div>
           <div
             className="flex flex-col"
             data-aos="fade-left"
           >
             <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
-              Commitment to Quality!
+              Commitment to SDG 6
             </h6>
-            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[60px] xl:text-base">
-              Quality is the cornerstone of our brand. Every product we create
-              is a reflection of our relentless pursuit of excellence. We ensure
-              that our solutions not only meet but exceed expectations,
-              providing unmatched value to our customers and stakeholders
+            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[40px] xl:text-base">
+              Aligned with the United Nations' Sustainable Development Goal 6,
+              we focus on delivering innovative water solutions that ensure
+              clean and accessible water for all. Through sustainable
+              technologies and responsible resource management, we drive
+              progress toward a water-secure future.
             </p>
-            <div>
+            {/* <div>
               <Link
                 to="#"
                 className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
               >
                 Explore
               </Link>
-            </div>
+            </div> */}
           </div>
           <div
             className="flex flex-col"
-            data-aos="fade-up"
+            data-aos="fade-left"
           >
             <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
-              Transformation Through Technology!
+              Moving Towards Zero-To-Landfill
             </h6>
-            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[60px] xl:text-base">
-              Our mission is to leverage technology to bring about meaningful
-              transformation. Whether it's through our advanced water solutions
-              or our commitment to sustainability, we strive to create a better,
-              more sustainable future for all.
+            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[40px] xl:text-base">
+              Focused on achieving zero-to-landfill, we implement solutions that
+              emphasize resource efficiency and waste reduction. Through
+              innovation and responsible practices, we support a circular
+              economy, minimizing environmental impact and driving measurable
+              progress.
             </p>
-            <div>
+            {/* <div>
               <Link
                 to="#"
                 className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
               >
                 Explore
               </Link>
-            </div>
+            </div> */}
+          </div>
+          <div
+            className="flex flex-col"
+            data-aos="fade-left"
+          >
+            <h6 className="wae-h6-lg mb-6 font-extrabold uppercase">
+              Enabling Carbon Reduction
+            </h6>
+            <p className="fw-light mb-10 max-w-xl text-sm xl:mb-[40px] xl:text-base">
+              Our water solutions reduce carbon emissions by eliminating plastic
+              water jars, offering a sustainable alternative made from stainless
+              steel. Designed for longevity and aligned with the principles of a
+              circular economy, they enable efficient resource use while
+              supporting global climate goals.
+            </p>
+            {/* <div>
+              <Link
+                to="#"
+                className="inline-block rounded-md border border-black px-5 py-3 transition-colors hover:bg-white"
+              >
+                Explore
+              </Link>
+            </div> */}
           </div>
         </div>
       </section>
@@ -175,10 +201,11 @@ export default function Brand() {
             </div>
 
             <p className="pl-20 text-sm xl:text-base">
-              Our new logo is a key part of our updated brand identity, designed
-              to drive consistency and focus. Its simple, bold design makes it
-              instantly recognizable and versatile across various marketing
-              mediums, from billboards to mobile screens.
+              Our logo represents our commitment to sustainability and
+              purpose-driven innovation. Its clean, bold design ensures clarity
+              and consistency across all mediums, from digital interfaces to
+              physical spaces, embodying reliability and forward-thinking
+              principles.
             </p>
           </div>
 
@@ -186,13 +213,12 @@ export default function Brand() {
             className="text-left text-base font-light uppercase leading-relaxed text-white md:text-xl xl:max-w-[400px] xl:text-2xl"
             // data-aos="fade-left"
           >
-            The logo features an illustration of six hands moving in harmony,
-            symbolizing our commitment to making the earth a better and more
-            sustainable place. These hands also represent teamwork and
-            cooperation, essential values that drive our success in all
-            endeavors. The number six signifies perfection and completion,
-            reflecting our goal to achieve the highest standards in everything
-            we do.
+            The logo features six hands moving in harmony, symbolizing our
+            commitment to sustainability and a better future. These hands
+            represent teamwork, collaboration, and the values that drive our
+            success. The number six signifies balance, perfection, and
+            completion, reflecting our pursuit of the highest standards and our
+            dedication to achieving excellence in everything we do.
           </p>
         </div>
       </section>
@@ -239,14 +265,14 @@ export default function Brand() {
                 Goals of six sigma
               </h2>
               <p
-                className="text-sm uppercase xl:ml-auto xl:max-w-[545px]"
+                className="text-sm xl:ml-auto xl:max-w-[545px]"
                 // data-aos="fade-left"
               >
                 The Six Sigma principles embedded in our logo highlight our
                 dedication to quality and excellence. By reducing defects and
                 errors, we aim to improve productivity, customer satisfaction,
                 and operational efficiency. Our goal is to produce defect-free
-                products 99.99966% of the time, underscoring our commitment to
+                products 99.99999% of the time, underscoring our commitment to
                 excellence.
               </p>
             </div>

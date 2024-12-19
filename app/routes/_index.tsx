@@ -35,35 +35,34 @@ type ErrorObject = {
 const sliderItemList = [
   {
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25cd406c-a8e7-449b-30ec-4824b6426800/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/616cc5c1-0ee0-43a8-ab22-69a5bf753f00/public",
     title: "Keeping The Blue Planet Green",
     // subtitle: "NEPTUNE DUO",
     align: "center",
     isButton: false,
   },
+  // {
+  //   image:
+  //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25cd406c-a8e7-449b-30ec-4824b6426800/public",
+  //   title: "Keeping The Blue Planet Green",
+  //   subtitle: "NEPTUNE DUO",
+  //   align: "end",
+  //   isButton: true,
+  // },
   {
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25cd406c-a8e7-449b-30ec-4824b6426800/public",
-    title: "Keeping The Blue Planet Green",
-    subtitle: "NEPTUNE DUO",
-    align: "end",
-    isButton: true,
-  },
-  {
-    image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/c4a6698c-b208-4a19-0de1-33dace0f1200/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3c450f07-e95a-4a2c-d108-33538549e700/public",
     title:
-      "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
-    subtitle: "NEPTUNE DUO",
+      "Water Solutions Crafted For Efficiency, Practicality, And Sustainability.",
+    // subtitle: "NEPTUNE DUO",
     align: "center",
     isButton: true,
   },
   {
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f96667c7-d0bb-48fe-9108-a8420e88dd00/public",
-    title:
-      "Did you know? On average we use 5,500 liters of water a day! That is a humungous amount of water!…",
-    subtitle: "NEPTUNE DUO",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2484b0a2-a61f-4538-d716-c39046dcdc00/public",
+    title: "Enabling Clients To Create A Lasting Impact In Carbon Reduction.",
+    // subtitle: "NEPTUNE DUO",
     align: "center",
     isButton: true,
   },
@@ -286,22 +285,21 @@ export default function Index() {
             data-aos-duration="1000"
             data-aos-offset="200"
           >
-            <h6 className="uppercase md:text-sm xl:text-base">
+            {/* <h6 className="uppercase md:text-sm xl:text-base">
               SUSTAINABILITY
-            </h6>
+            </h6> */}
 
             <h2 className="my-12 font-secondary text-[32px] font-light leading-normal md:text-4xl md:leading-relaxed xl:mt-[52px] xl:text-5xl xl:leading-relaxed">
-              WAE embraces a commitment to sustainability, ensuring our blue
-              planet stays green for future generations. By championing
-              eco-friendly practices, we harmonize progress with nature's
-              preservation.
+              WAE integrates innovation and sustainability, delivering hydration
+              solutions that reduce carbon footprints, embrace zero-waste
+              practices, and support environmental balance.
             </h2>
 
             <Link
               to="/sustainability"
               className="uppercase hover:underline md:text-sm xl:text-base"
             >
-              <span className="prefix-dot"></span> EXPLORE SUSTAINABILITY
+              <span className="prefix-dot"></span> Explore Our Products
             </Link>
           </div>
         </div>
@@ -324,13 +322,12 @@ export default function Index() {
               data-aos-duration="1000"
               data-aos-offset="200"
             >
-              WAE is an activist company passionately committed to protecting
-              our most vital resource—water. We advocate for sustainable
-              development and implement innovative water solutions that balance
-              human needs with environmental stewardship. Our mission is to
-              ensure that every drop is preserved, cherished, and used
-              responsibly, paving the way for a future where water
-              sustainability is at the heart of global progress.
+              WAE is a pioneering company dedicated to sustainable innovation,
+              offering precision-engineered stainless steel hydration solutions
+              that minimize carbon footprints. Focused on environmental
+              stewardship, we are advancing towards zero-to-landfill practices,
+              leveraging advanced technology and materials science to deliver
+              hydration systems aligned with global sustainability objectives.
             </h4>
           </div>
 
@@ -355,12 +352,12 @@ export default function Index() {
                 data-aos-duration="1000"
                 data-aos-offset="200"
               >
-                WAE proudly represents India's spirit of innovation, combining
-                traditional wisdom with advanced technology to create solutions
-                that drive sustainable progress. Our 'Made in India' approach is
-                about more than just products—it's about building a better
-                future for communities and showcasing the true potential of
-                Indian ingenuity on a global scale.
+                WAE exemplifies India’s engineering capabilities by designing
+                and manufacturing advanced hydration solutions domestically.
+                Through precision engineering and sustainable practices, WAE
+                reflects India's commitment to innovation, self-reliance, and
+                eco-conscious growth, delivering world-class products that align
+                with global sustainability standards.
               </p>
             </div>
             <div
@@ -401,8 +398,8 @@ export default function Index() {
             </h6>
 
             <h2 className="my-12 font-secondary text-[32px] font-light leading-normal md:text-4xl md:leading-[1.35] xl:text-[56px]">
-              WAE leads transformative projects and develops cutting-edge
-              purification systems, all aimed at ensuring a sustainable future.
+              Discover how WAE’s sustainable solutions have helped clients make
+              a lasting impact on the environment over the years.
             </h2>
 
             <Link
@@ -467,12 +464,12 @@ export default function Index() {
               className="flex-shrink-0 lg:max-w-[400px]"
             >
               <p className="text-base font-light uppercase md:text-xl">
-                Life at WAE is all about bringing your whole self to work. Our
-                diverse and inclusive culture thrives on the unique perspectives
-                of our team, making every day an opportunity to learn, connect,
-                and grow together. It’s a place where your ideas shine, your
-                voice is heard, and you feel right at home no matter where
-                you’re from.
+                Life at WAE is defined by a culture of collaboration, learning,
+                and meaningful impact. We focus on creating innovative,
+                sustainable solutions while fostering an environment where every
+                voice is heard, and every contribution matters. Together, we
+                strive to make a real difference in reducing environmental
+                footprints and shaping a sustainable future.
               </p>
             </div>
           </div>

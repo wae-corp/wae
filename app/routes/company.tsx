@@ -89,15 +89,14 @@ export default function Company() {
               // data-aos="fade-left"
             >
               <p>
-                At WAE, we're driven by an audacious and inspiring mission: to
-                become the world's most admired environmental services
-                corporation, leaving an indelible mark on the quality of life.
-                We innovate with purpose, crafting products and services that
-                tackle one of today's most pressing challenges - water
-                sustainability. Grounded in scientific rigor and research
-                excellence, we turn discoveries into eco-friendly technologies
-                and solutions, ensuring efficiency and sustainability for all.
-                Our ethical commitment to sustainable development is unwavering.
+                WAE’s mission is to drive sustainability through innovative
+                water solutions that reduce carbon emissions and eliminate
+                reliance on plastic water bottles. By combining advanced
+                engineering with sustainable design, we address pressing
+                environmental challenges while promoting water conservation and
+                eco-friendly practices. Committed to creating measurable impact,
+                WAE empowers clients to adopt solutions that enhance efficiency
+                and contribute to a greener, more sustainable future for all.
               </p>
             </div>
           </div>
@@ -170,13 +169,13 @@ export default function Company() {
             </h2>
 
             <p className="font-secondary text-base uppercase xl:text-2xl">
-              Our journey has been a rewarding one, contributing to a
-              sustainable planet where everyone can thrive. Looking ahead, our
-              transformation will be guided by our capabilities, strategic
-              vision, and commitment to creating enduring value for all
-              stakeholders. We invite ongoing support as we embrace new
-              opportunities and challenges, dedicated to making a positive
-              impact on the environment and society.
+              WAE’s journey has been shaped by a clear vision: to contribute to
+              a sustainable planet where everyone can thrive. Through innovation
+              and dedication, we’ve consistently focused on making a positive
+              impact on the environment and society. As we look ahead, we remain
+              committed to leveraging our capabilities and strategic vision to
+              create lasting value, embracing new challenges and opportunities
+              with purpose and resolve.
             </p>
           </div>
         </div>
@@ -204,15 +203,13 @@ export default function Company() {
             </div>
 
             <p className="max-w-[600px] pl-20 text-sm md:pl-0 md:text-base lg:text-xl">
-              Our purpose is to create meaningful and lasting impact. We develop
-              products and solutions that protect our environment and elevate
-              human life, all while preserving the future for generations to
-              come. Leadership in our field isn't about size; it's about
-              excellence in green technologies, consumer value, customer
-              service, employee talent, and steady growth. We strive to
-              harmonize social progress, employee satisfaction, unparalleled
-              customer service, and economic advancement in pursuit of our
-              mission.
+              Our purpose is to create a lasting impact by developing
+              sustainable water solutions that give back to the planet. We focus
+              on advancing green technologies, fostering a circular economy,
+              reducing reliance on plastic, and progressing towards
+              zero-to-landfill goals. By delivering value to customers and
+              driving social progress, we aim to shape a future where water
+              sustainability leads the way to a healthier, greener world.
             </p>
           </div>
         </div>
@@ -224,26 +221,27 @@ export default function Company() {
             <div
             // data-aos="fade-right"
             >
-              <h3 className="mb-[60px] font-secondary text-2xl md:text-[32px] md:leading-normal xl:mb-[60px] xl:text-4xl">
-                Journey and Transformation
+              <h3 className="mb-[60px] font-secondary text-2xl uppercase md:text-[32px] md:leading-normal xl:mb-[60px] xl:text-4xl">
+                What Thrives Us
               </h3>
               <p
                 className="mb-12 md:mb-[60px] md:pl-20 md:text-sm xl:mb-12 xl:text-base"
                 // data-aos="fade-right"
               >
-                Our journey has been a rewarding one, contributing to a
-                sustainable planet where everyone can thrive. Looking ahead, our
-                transformation will be guided by our capabilities, strategic
-                vision, and commitment to creating enduring value for all
-                stakeholders. We invite ongoing support as we embrace new
-                opportunities and challenges, dedicated to making a positive
-                impact on the environment and society.
+                What drives us is a relentless passion for innovation and a
+                commitment to creating solutions that make a difference. At our
+                core, we are inspired by the opportunity to address global
+                challenges in water sustainability, reduce environmental impact,
+                and contribute to a greener planet. Our focus on advancing
+                technology, fostering a culture of responsibility, and
+                delivering meaningful value to our customers fuels our mission
+                to create a sustainable and thriving future for all.
               </p>
 
-              <p className="text-sm uppercase xl:text-base">
+              {/* <p className="text-sm uppercase xl:text-base">
                 <span className="prefix-dot"></span> Our journey is focused
                 towards a sustainable planet
-              </p>
+              </p> */}
             </div>
             <div
               className="flex-shrink-0 xl:max-w-[400px]"
@@ -309,7 +307,8 @@ export default function Company() {
           <div className="text-sm xl:text-base">SUSTAINABILITY</div>
 
           <h3 className="my-10 text-[32px] !leading-relaxed md:my-6 md:text-4xl xl:my-12 xl:text-[58px]">
-            Projects created by our customers to draw inspiration from
+            Our solutions empower clients to make a meaningful & lasting green
+            impact.
           </h3>
 
           {/* <div className="flex items-center justify-center text-sm xl:text-base">

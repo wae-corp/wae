@@ -177,7 +177,7 @@ export default function SustainabilityCaseStudy() {
               <h6 className="mb-10 text-xs uppercase md:mb-[60px] md:text-sm">
                 Why WAE's Green Machines Matter
               </h6>
-
+              ``
               <h5 className="font-secondary text-2xl uppercase leading-tight lg:mb-[100px]">
                 WAE's hydration solutions are engineered to perfection, ensuring
                 minimal water wastage and eliminating plastic waste. Our
@@ -256,8 +256,8 @@ export default function SustainabilityCaseStudy() {
 
             <h5 className="font-secondary text-xl uppercase !leading-relaxed md:text-2xl xl:text-[32px]">
               The BFSI sector is showing that sustainable choices have a ripple
-              effect. By embracing WAE's innovative hydration solutions, these
-              organizations are not just quenching thirst they're feeding a
+              effect. By embracing WAE’s innovative hydration solutions, these
+              organizations are not just quenching thirst—they’re feeding a
               movement toward a greener future.
             </h5>
           </div>

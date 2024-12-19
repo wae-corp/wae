@@ -280,7 +280,7 @@ export const careers = [
     id: 1,
     type: "Apprenticeship",
     details:
-      "Step into the professional world with hands-on experience and expert mentorship. Ideal for those eager to learn and grow.",
+      "Build your skills through hands-on training and guidance from experienced professionals, laying the groundwork for a successful career in water solutions.",
     link: "/careers/apprenticeship",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3101c190-ebdc-4e39-16d0-a79cef6a0e00/public",
@@ -289,7 +289,7 @@ export const careers = [
     id: 2,
     type: "Full-Time Positions",
     details:
-      "Dive into diverse roles that challenge and excite you. From engineering to marketing, we are on the lookout for passionate professionals ready to innovate.",
+      "Take on impactful roles where your expertise drives innovation and contributes to delivering advanced, reliable water solutions for the future.",
     link: "/careers/full-time",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dc8fc541-4998-4084-1d3f-620b9d5e1f00/public",
@@ -298,7 +298,7 @@ export const careers = [
     id: 3,
     type: "Internship",
     details:
-      "Our internships offer more than just experience. They're gateways to your future career, providing real-world skills and professional development.",
+      "Gain practical experience by working on real-world projects, developing skills that prepare you to tackle challenges in water management and technology.",
     link: "/careers/internship",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/e7c9f066-cf23-4012-2342-0161f4f52b00/public",
@@ -307,7 +307,7 @@ export const careers = [
     id: 4,
     type: "Short Term Projects",
     details:
-      "Engage in unique, high-impact projects. Perfect for specialists looking to contribute their expertise on a flexible basis.",
+      "Make a meaningful contribution by applying your expertise to focused, results-driven projects that address specific challenges in water solutions.",
     link: "/careers/short-term",
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3a620cb2-0eb9-41e1-b854-85428c926d00/public",
@@ -325,35 +325,36 @@ export const coreValues = [
     id: 2,
     image: "/images/icons/person-with-leaves.svg",
     value: "Environmental and Human Service",
-    details: "Our top priority is serving the planet and humanity.",
+    details:
+      "Our primary focus is delivering solutions that benefit both the planet and humanity, driven by responsibility, innovation, and purpose.",
   },
   {
     id: 3,
     image: "/images/icons/hand-with-checkmark.svg",
     value: "Responsibility",
     details:
-      "We hold ourselves accountable to our employees, customers, associates, and society, upholding the highest standards in all engagements",
+      "We are accountable to our employees, customers, associates, and society, consistently upholding the highest standards in every interaction and commitment.",
   },
   {
     id: 4,
     image: "/images/icons/employee-value.svg",
     value: "Employee Value",
     details:
-      "Our future hinges on our employees' knowledge, attitude, skills, teamwork, and integrity, which we hold in the highest esteem.",
+      "Our future relies on the knowledge, attitude, skills, teamwork, and integrity of our employees, qualities we deeply value and respect.",
   },
   {
     id: 5,
     image: "/images/icons/hand-with-checkmark.svg",
     value: "Participative Management",
     details:
-      "We champion participative management, productivity, and profit-sharing.",
+      "We advocate participative management, drive productivity, and promote shared success to foster collective growth and achievement.",
   },
   {
     id: 6,
     image: "/images/icons/handshake-verified.svg",
     value: "Quality Commitment",
     details:
-      "We commit to quality in our products, services, relationships, communications, and promises",
+      "We are committed to delivering quality in our products, services, relationships, communications, and the promises we make.",
   },
 ];
 
@@ -660,7 +661,7 @@ export const productData: ProductData[] = [
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/989b9ed7-8668-4a62-7bf6-f32a540d2f00/public",
     categoryDescription:
-      "Water dispensers with inbuilt purification —pure, safe water delivered efficiently. Designed to reduce plastic waste and energy consumption, making sustainability easy.",
+      "The BLUWAE Series features point-of-use water dispensers with inbuilt RO purification, delivering pure, safe water with hot, cold, and ambient options. Designed to eliminate plastic water bottles and jars, it ensures efficient, sustainable hydration.",
     categoryDescriptionTwo:
       "At WAE, we're dedicated to developing solutions that are fundamentally aligned with the principles of SDG 6: Clean Water and Sanitation. Every water system we craft is designed not only to provide pure hydration but also to drastically reduce reliance on single-use plastics. Built entirely from metal, our products contribute to zero landfill waste, combining sustainability with energy efficiency. Choosing WAE means making a meaningful commitment to a smarter, greener future, where hydration meets ecological responsibility.",
     categoryDescriptionThree:
@@ -1378,7 +1379,7 @@ export const productData: ProductData[] = [
   },
   {
     id: "02",
-    categoryName: "DRINKING WATER DISPENSER - TRUBLU Series",
+    categoryName: "WATER DISPENSER (W/O RO) - TRUBLU Series",
     categoryBanner: "/images/banners/trublu-banner.jpg",
     categoryImage:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/708253cf-b3b1-4b4c-e9ed-73f9c05aa400/public",
@@ -1387,7 +1388,7 @@ export const productData: ProductData[] = [
     categoryDescriptionThree:
       "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
     categoryDescription:
-      "Stainless steel water dispensers give you fresh, clean water anytime. Compact, energy-efficient, and perfect for spaces where RO water is not readily available.",
+      "The TRUBLU Series high-capacity water dispensers feature Intank LED UV-C technology for pure, safe water. Built with durable Stainless Steel 304, they offer reliable performance, sustainability, and efficient hydration for any environment.",
     productList: [
       {
         id: "01",
@@ -2058,7 +2059,7 @@ export const productData: ProductData[] = [
     categoryDescriptionThree:
       "Customization meets innovation with our water coolers and fountains. Engineered for heavy use, these units offer advanced filtration and are crafted to minimize environmental impact. Whether you're looking for a sleek wall unit or a robust floor-standing option, they’re designed to deliver clean water efficiently, reducing plastic waste while keeping passengers refreshed and airports sustainable.",
     categoryDescription:
-      "Water coolers cum bubblers provide chilled water on demand. Built to be energy-efficient, they’re ideal for public spaces, reducing both costs and plastic waste.",
+      "The WATERMATIC Series offers advanced drinking water faucets with HYDROPAC under-the-counter purification. Engineered for efficiency and reliability, it delivers clean, safe drinking water through precise, compact, and modern water treatment technology.",
     productList: [
       {
         id: "01",
@@ -2572,7 +2573,7 @@ export const productData: ProductData[] = [
     categoryDescriptionThree:
       "Innovation doesn’t stop at convenience—it extends to responsibility. Our public utility systems not only deliver water where it’s needed most, but they do it with minimal waste. Crafted for long-term performance, these systems align with your commitment to a greener, more efficient future. Because when it comes to public spaces, clean water should be a given—not a challenge.",
     categoryDescription:
-      "Designed for large public spaces, PUS systems ensure clean, accessible water. Engineered for durability and eco-friendliness, they support sustainable communities.",
+      "Water coolers and fountains deliver high-efficiency cooling with optional purification for clean, safe water. Designed for durability and performance, they are ideal for public utilities, institutions, schools, and industrial high-demand environments.",
     productList: [
       {
         id: "01",
@@ -3076,7 +3077,7 @@ export const productData: ProductData[] = [
     categoryDescriptionThree:
       "The UTC Units are designed for those who value simplicity and efficiency. Compact yet powerful, they store water discreetly, ensuring a constant supply while keeping your space organized. Together, our faucets and UTC Units bring you an elegant, space-saving solution that’s both stylish and sustainable. Hydration has never looked—or worked—this good.",
     categoryDescription:
-      "Drinking water faucets with under the counter storage units to make access to fresh water simple. Precision-engineered for smooth flow, with a focus on reducing waste and energy use.",
+      "The Public Utility Series (PUS) is designed for high-footfall areas, providing reliable hydration with robust durability and efficient performance. Ideal for public spaces, it ensures consistent, clean water delivery in demanding environments.",
     productList: [
       {
         id: "01",
@@ -3250,7 +3251,7 @@ export const productData: ProductData[] = [
     categoryDescriptionThree:
       "When innovation meets durability, you get more than just a water dispenser—you get a solution for the future. Our stainless steel dispensers are made to endure and perform, giving you reliable hydration while reducing your environmental footprint. It’s a simple, elegant choice for anyone committed to sustainability without sacrificing style or quality.",
     categoryDescription:
-      "Power your facility with our large-scale hydration plants. Scalable and efficient, they offer high-volume water solutions with a commitment to sustainability",
+      "Commercial and industrial plants with high storage capacity offer quick, clean water bottle filling, integrated with optional purification. Ideal for waiting areas, pantries, lobbies, and break rooms, they ensure efficient and reliable water delivery.",
     productList: [
       {
         id: "01",

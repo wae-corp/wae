@@ -44,14 +44,13 @@ export default function Products() {
               className="wae-h4 mb-12 font-secondary !leading-[1.4] md:text-2xl lg:mb-0 lg:text-[32px]"
               // data-aos="fade-right"
             >
-              We're on a mission to eliminate single-use plastics with
-              sustainable designs that make a real impact. Our water systems are
-              meticulously crafted to not just deliver pure hydration but also
-              to shrink your ecological footprint. Each device is engineered to
-              reduce your reliance on single-use plastics while maximizing
-              energy efficiency, delivering sustainability that saves both the
-              planet and your costs. WAE isn't just a choice—it's a commitment
-              to a greener, smarter future.
+              WAE develops a comprehensive range of sustainable water solutions,
+              from advanced water dispensers to high-capacity RO plants.
+              Engineered for efficiency and reliability, our systems minimize
+              carbon footprints and eliminate plastic water bottles and jars.
+              With a focus on precision, durability, and sustainability, WAE
+              sets new benchmarks in responsible water management and
+              environmental commitment.
             </h4>
             {/* <p
               className="mb-10 text-sm uppercase lg:mb-0 lg:basis-60 lg:text-base"
@@ -142,8 +141,8 @@ export default function Products() {
               <h6 className="text-xs font-bold uppercase">HOW DOES IT WORK?</h6>
 
               <h2 className="wae-h2 mt-12 font-secondary !leading-tight">
-                Choose your product style or type, and let us customize it to
-                perfectly match your needs.
+                Not sure what you’re looking for? Let’s connect and explore the
+                best solution for you!
               </h2>
             </div>
           </div>
