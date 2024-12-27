@@ -3433,4 +3433,39 @@ export const categoryMountingMap: CategoryMounting[] = [
   },
 ];
 
+export const homeRelatedInfoListing = [
+  {
+    id: 1,
+    title: "Awards and Other Information",
+    img: "/images/cards/related-img-1.jpg",
+    description:
+      "Information regarding awards received by the Hitachi Group in various fields and related announcements.",
+    link: "/blogs",
+  },
+  {
+    id: 1,
+    title: "News And Updates",
+    img: "/images/cards/related-img-1.jpg",
+    description:
+      "Information regarding awards received by the Hitachi Group in various fields and related announcements.",
+    link: "/blogs",
+  },
+  {
+    id: 1,
+    title: "Impact We Enable For You",
+    img: "/images/cards/related-img-2.jpg",
+    description:
+      "Information regarding awards received by the Hitachi Group in various fields and related announcements.",
+    link: "/blogs",
+  },
+  {
+    id: 1,
+    title: "Our Sustainable Water Solutions",
+    img: "/images/cards/related-img-3.jpg",
+    description:
+      "Information regarding awards received by the Hitachi Group in various fields and related announcements.",
+    link: "/blogs",
+  },
+];
+
 export * from "./Icons";
