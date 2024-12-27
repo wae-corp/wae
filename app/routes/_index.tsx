@@ -416,7 +416,8 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="container py-20 md:py-[120px]">
+      <section className="bg-white">
+      <div className="container py-20 md:py-[120px]">
         <div className="flex flex-col gap-10 md:gap-[60px] xl:flex-row xl:gap-[120px]">
           <div>
             <h3 className="mb-[60px] font-secondary text-2xl md:mb-10 md:text-[32px] md:leading-normal">
@@ -454,6 +455,7 @@ export default function Index() {
               />
             </div>
           </div>
+        </div>
         </div>
       </section>
 
