@@ -960,15 +960,9 @@ export default function Index() {
                   <p className="text-red-500">{errors.message}</p>
                 )}
 
-                <p className="mt-8 text-sm uppercase">
-                  Nec massa viverra eget feugiat pellentesque. Feugiat
-                  adipiscing massa vitae auctor mi massa. Sodales libero viverra
-                  cursus sed duis luctus
-                </p>
-
                 <button
                   type="submit"
-                  className="wae-btn wae-btn-lg mt-6 w-full border-black lg:mt-12"
+                  className="wae-btn wae-btn-lg mt-8 w-full border-black lg:mt-12"
                 >
                   Send
                 </button>
