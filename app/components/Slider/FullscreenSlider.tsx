@@ -106,6 +106,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
             <div
               data-aos="zoom-in"
               className={"isolate z-[2] mx-auto text-center text-white"}
+              style={item.align === "center" ? {marginTop: "5%"} : undefined}
             >
               <div className="mb-10 md:px-14">
                 {item.subtitle && (
@@ -114,7 +115,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                 {item.title && (
                   <h1
                     className={
-                      "px-16 font-secondary text-2xl md:text-5xl xl:text-[64px] xl:leading-tight"
+                      "px-16 font-secondary text-4xl md:text-5xl xl:text-[64px] xl:leading-tight"
                     }
                   >
                     {item.title}
