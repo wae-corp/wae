@@ -63,10 +63,10 @@ export const ProjectSlider = ({
         })}
       </Carousel>
       {arrows && (
-        <div className="container mt-10 flex items-center justify-end gap-4 lg:mt-20">
+        <div className="mr-8 mt-10 flex items-center justify-end gap-4 lg:mt-20">
           <button
             onClick={() => embla?.scrollPrev()}
-            className="wae-btn carousel-nav-btn border-white"
+            className="wae-btn carousel-nav-btn border-black"
           >
             <svg
               width="8"
@@ -77,13 +77,13 @@ export const ProjectSlider = ({
             >
               <path
                 d="M6.5 12.5L1.5 7L6.5 1.5"
-                stroke="white"
+                stroke="black"
               />
             </svg>
           </button>
           <button
             onClick={() => embla?.scrollNext()}
-            className="wae-btn carousel-nav-btn border-white"
+            className="wae-btn carousel-nav-btn border-black"
           >
             <svg
               width="8"
@@ -94,7 +94,7 @@ export const ProjectSlider = ({
             >
               <path
                 d="M1.5 1.5L6.5 7L1.5 12.5"
-                stroke="white"
+                stroke="black"
               />
             </svg>
           </button>
