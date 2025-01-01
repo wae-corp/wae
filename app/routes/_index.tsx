@@ -39,7 +39,7 @@ const sliderItemList = [
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/616cc5c1-0ee0-43a8-ab22-69a5bf753f00/public",
     title: "Keeping The Blue Planet Green",
     // subtitle: "NEPTUNE DUO",
-    align: "end",
+    align: "center",
     isButton: false,
   },
   // {
