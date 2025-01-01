@@ -10,27 +10,27 @@ export const ExpandingSlider = () => {
     {
       id: 1,
       image:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a55a1197-2bf0-48f4-0b1e-70b9a698a900/public",
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/20aa9294-5c89-4952-41af-9838a6e2d200/public",
     },
     {
       id: 2,
       image:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/125addc3-239e-41cd-8687-8f6d8ec79c00/public",
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3f05bcea-d8ab-468e-7f76-1fd8f0c08700/public",
     },
     {
       id: 3,
       image:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3fadcd4c-7bb2-42ed-8fa2-8d45297c4500/public",
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/eb56baaa-2b0b-455e-502c-7aeda7a66100/public",
     },
     {
       id: 4,
       image:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/90776a8b-ea76-43f4-df59-488d926e2600/public",
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/61e521fe-f8b3-46bf-6d8f-df6d81189300/public",
     },
     {
       id: 5,
       image:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/dd899d46-b0a0-4f2f-ac54-4be4ceb4d100/public",
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/8b27ba78-17f4-419d-41d8-1895c77b9700/public",
     },
     {
       id: 6,
