@@ -308,9 +308,9 @@ export default function ProductDetails() {
 
       <section className="bg-black py-20 text-white md:py-[120px]">
         <div className="container xl:max-w-[auto]">
-          <div className="flex flex-col items-center gap-10 md:flex-row md:items-center md:justify-center xl:gap-[78px]">
+          <div className="grid grid-cols-1 items-center md:grid-cols-2 md:gap-14 lg:gap-[78px]">
             <div
-              className="flex flex-shrink-0 justify-center md:w-[300px] lg:w-[500px] xl:w-[700px]"
+              className="flex flex-shrink-0 justify-center"
               // data-aos="zoom-in"
             >
               <ProductImageSlider images={image} />
