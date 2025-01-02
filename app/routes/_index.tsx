@@ -411,7 +411,7 @@ export default function Index() {
             Calculate your carbon footprint
           </button>
         </div> */}
-        <div>
+        <div className="mt-[30px] md:mt-[80px] xl:mt-[90px]">
           <BrandSlider />
         </div>
       </section>
