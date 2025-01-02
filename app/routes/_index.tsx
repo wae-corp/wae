@@ -403,14 +403,14 @@ export default function Index() {
             })}
           </div>
         </div>
-        <div className="my-[60px] text-center md:my-[160px] xl:my-[180px]">
-{/*           <button
+{/*         <div className="my-[60px] text-center md:my-[160px] xl:my-[180px]">
+          <button
             onClick={() => setCalcFootprintOpen(true)}
             className="wae-btn wae-btn-md px-5 xl:px-10"
-          > */}
+          >
             Calculate your carbon footprint
           </button>
-        </div>
+        </div> */}
         <div>
           <BrandSlider />
         </div>
