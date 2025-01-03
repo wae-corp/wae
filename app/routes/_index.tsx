@@ -37,7 +37,12 @@ const sliderItemList = [
   {
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/616cc5c1-0ee0-43a8-ab22-69a5bf753f00/public",
-    title: "We Are Disrupting The Status Quo",
+    title: (
+      <>
+        WE ARE DISRUPTING THE<br />
+        STATUS QUO
+      </>
+    ),
     // subtitle: "NEPTUNE DUO",
     align: "center",
     isButton: false,
