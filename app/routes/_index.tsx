@@ -318,13 +318,13 @@ export default function Index() {
 
       <section className="flex flex-col gap-20 bg-window-pattern bg-cover bg-no-repeat py-20 md:gap-[120px] md:py-[120px]">
         <section className="container max-w-[1300px]">
-          <p
+          {/* <p
             className="mb-14 text-center text-sm uppercase xl:mb-12"
             data-aos-duration="1000"
             data-aos-offset="200"
           >
             Our Brand
-          </p>
+          </p> */}
 
           <picture
             data-aos="fade-zoom-in"
