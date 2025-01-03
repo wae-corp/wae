@@ -251,7 +251,7 @@ export default function Brand() {
                 className="h-full w-full object-cover"
               />
               <img
-                src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/f78f2987-6585-44e5-40c9-3fb1ac0acc00/public"
+                src=""
                 alt="Core values of WAE"
                 className="h-full w-full object-cover"
               />
