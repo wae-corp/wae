@@ -115,7 +115,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                 {item.title && (
                   <h1
                     className={
-                      "px-16 font-secondary text-4xl md:text-5xl xl:text-[74px] xl:leading-tight pt-40"
+                      "px-16 font-secondary text-4xl md:text-5xl xl:text-[64px] xl:leading-tight"
                     }
                   >
                     {item.title}

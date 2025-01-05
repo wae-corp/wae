@@ -16,7 +16,7 @@ export default function Products() {
       <main className="flex min-h-screen items-center justify-center bg-white bg-gradient-to-b from-[#6d6d6d] from-0% to-white py-8 pt-[var(--header-height)] text-center text-black">
         <div className="container">
           <div
-            className="mx-auto my-0 !my-0 max-w-4xl sm:mt-20 xl:mt-40"
+            className="mx-auto mt-0 !mt-0 max-w-4xl sm:mt-20 xl:mt-40"
             data-aos="fade-down"
           >
             <h6 className="uppercase">SUSTAINABILITY</h6>
