@@ -339,7 +339,15 @@ export default function Index() {
             <img
               src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d3a7d5b9-b62f-4c75-3179-f892318dfa00/public"
               alt="Core values of WAE"
-              className="h-full w-full object-cover"
+              //className="h-full w-full object-contain"
+              style={{
+                width: '1076px', // Set desired width
+                height: 'auto', // Maintain aspect ratio
+                maxWidth: '100%', // Ensure responsiveness
+                maxHeight: '757px', // Limit height to maintain aspect ratio
+                display: 'block', // Ensure the image behaves as a block element
+                margin: '0 auto' // Center horizontally 
+              }}
             />
           </picture>
         </section>
