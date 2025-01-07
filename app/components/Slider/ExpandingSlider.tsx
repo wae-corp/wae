@@ -35,7 +35,7 @@ export const ExpandingSlider = () => {
     {
       id: 6,
       image:
-        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/5e60d433-924f-419b-a6d0-c55e60f89c00/public",
+        "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b435dee3-0609-4f07-9c04-060c1e41fc00/public",
     },
   ];
 
