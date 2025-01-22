@@ -997,7 +997,8 @@ export const productData: ProductData[] = [
         mountingType: "Free-Standing",
         description: "",
         images: [
-          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4740edc0-da36-41cd-f5ab-9c7f6faad000/public",
+          // "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/4740edc0-da36-41cd-f5ab-9c7f6faad000/public"
+          "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/616ddb64-9272-4c5a-8630-63109c9ba600/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/6cbe11d1-d684-43fd-b674-e948d745eb00/public",
           "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/875719ac-2f9e-456b-662f-d437c10dca00/public",
         ],
