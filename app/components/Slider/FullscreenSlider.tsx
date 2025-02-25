@@ -90,7 +90,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
               {
                 "justify-center": item.align === "center",
                 "justify-end": item.align === "end",
-              },
+              }
             )}
           >
             <div className="absolute bottom-0 left-0 right-0 top-0 z-[1] h-full w-full bg-gradient-to-b from-black via-transparent to-black"></div>
@@ -106,33 +106,64 @@ export const FullscreenSlider = ({items}: SliderProps) => {
             <div
               data-aos="zoom-in"
               className={"isolate z-[2] mx-auto text-center text-white"}
-              style={item.align === "center" ? {marginTop: "5%"} : undefined}
+              style={item.align === "center" ? { marginTop: "5%" } : undefined}
             >
-              <div className="mb-10 md:px-14">
+              {/* Wrapper for header, subtext, and button */}
+              <div
+                className={clsx(
+                  "mb-10 md:px-14 transform",
+                  {
+                    "mt-[15vh] md:mt-[20vh]": idx === 0, // Slide 1
+                    "mt-[15vh] md:mt-[20vh] sm:mt-[25vh] lg:mt-[20vh]": idx === 1 || idx === 2, // Slide 2 & 3
+                  }                  
+                )}
+              >
                 {item.subtitle && (
                   <h3 className="wae-h6 mb-6 font-black">{item.subtitle}</h3>
                 )}
                 {item.title && (
                   <h1
-                    className={
-                      "px-16 font-secondary text-4xl md:text-5xl xl:text-[64px] xl:leading-tight"
-                    }
+                    className={clsx(
+                      "px-6 text-center leading-tight font-poppins",
+                      {
+                        "text-[74px] leading-[82px] uppercase font-medium": idx === 0,
+                        "text-[48px] leading-[56px] font-normal": idx === 1 || idx === 2,
+                      }
+                    )}
                   >
-                    {item.title}
+                    {idx === 0 ? item.title.toUpperCase() : item.title}
                   </h1>
                 )}
-              </div>
 
-              {item.isButton && (
-                <Link
-                  to={"/contact"}
-                  className="wae-btn-light wae-btn wae-btn-lg !border-none px-10"
-                >
-                  Get in Touch
-                </Link>
-              )}
+                {/* Subtext Below Header (All Slides) */}
+                <p className="mt-2 text-center text-[16px] leading-[24px] font-poppins">
+                  {idx === 0 ? (
+                    <>
+                      Our <span className="text-[#008CFF]">Green</span> Is{" "}
+                      <span className="text-[#00FF4C]">Blue</span>
+                    </>
+                  ) : idx === 1 ? (
+                    "No Green Wasting Here"
+                  ) : (
+                    "Don't just pledge - Act"
+                  )}
+                </p>
+
+                {/* Conditionally Render Button */}
+                {item.isButton && item.buttonText && (
+                  <div className="mt-[calc(53px+2vw)]">
+                    <Link
+                      to={idx === 1 ? "/products" : idx === 2 ? "/sustainability-case-study" : "/contact"} // Dynamically change link
+                      className="wae-btn-light wae-btn wae-btn-lg !border-none px-10"
+                    >
+                      {item.buttonText}
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
           </Carousel.Slide>
+
         );
       })}
     </Carousel>
@@ -145,6 +176,7 @@ interface SliderItem {
   subtitle?: string;
   align: "center" | "end";
   isButton: boolean;
+  buttonText?: string;
 }
 
 interface SliderProps {

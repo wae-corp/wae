@@ -36,7 +36,7 @@ type ErrorObject = {
 const sliderItemList = [
   {
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/616cc5c1-0ee0-43a8-ab22-69a5bf753f00/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cbed1e2a-0ea3-40f2-6ad4-fc63a4461c00/public",
     title: "We Are Disrupting The Status Quo",
     // subtitle: "NEPTUNE DUO",
     align: "center",
@@ -52,20 +52,22 @@ const sliderItemList = [
   // },
   {
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/3c450f07-e95a-4a2c-d108-33538549e700/public",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a13fd704-40a3-4216-4d58-d0da64a73600/public",
     title:
-      "Water Solutions Crafted For Efficiency, Practicality, And Sustainability.",
+      "Green By Design",
     // subtitle: "NEPTUNE DUO",
     align: "end",
     isButton: true,
+    buttonText: "Explore Products",
   },
   {
     image:
-      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/2484b0a2-a61f-4538-d716-c39046dcdc00/public",
-    title: "Enabling Clients To Create A Lasting Impact In Carbon Reduction.",
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47dc0a5a-cc20-4aca-cae4-cfa2bf102a00/public",
+    title: "Planet Over Profit",
     // subtitle: "NEPTUNE DUO",
     align: "end",
     isButton: true,
+    buttonText: "Explore Case Studies",
   },
 ];
 
