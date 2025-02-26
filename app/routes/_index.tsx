@@ -37,7 +37,7 @@ const sliderItemList = [
   {
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cbed1e2a-0ea3-40f2-6ad4-fc63a4461c00/public",
-    title: "We Are Disrupting The Status Quo",
+    title: "Disrupting The Status Quo",
     // subtitle: "NEPTUNE DUO",
     align: "center",
     isButton: false,
@@ -67,7 +67,7 @@ const sliderItemList = [
     // subtitle: "NEPTUNE DUO",
     align: "end",
     isButton: true,
-    buttonText: "Explore Case Studies",
+    buttonText: "Explore Sustainability",
   },
 ];
 
