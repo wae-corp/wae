@@ -155,8 +155,8 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                     <Link
                       to={idx === 1 ? "/products" : idx === 2 ? "/sustainability" : "/contact"} // Dynamically change link
                       className="wae-btn-light wae-btn wae-btn-lg !border-none px-10 py-3 text-[16px] 
-                      w-[200px] h-[48px] font-poppins md:text-[16px] 
-                      sm:w-[160px] sm:h-[40px] sm:text-[14px] md:px-6"
+                      w-auto min-w-[200px] h-[48px] font-poppins md:text-[16px] 
+                      sm:w-[160px] sm:h-[40px] sm:text-[14px] md:px-6 whitespace-nowrap"
                     >
                       {item.buttonText}
                     </Link>
