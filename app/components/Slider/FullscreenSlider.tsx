@@ -114,7 +114,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                   "mb-10 md:px-14 transform",
                   {
                     "mt-[15vh] md:mt-[20vh]": idx === 0, // Slide 1
-                    "mt-[15vh] md:mt-[20vh] sm:mt-[25vh] lg:mt-[20vh]": idx === 1 || idx === 2, // Slide 2 & 3
+                    "mt-[25vh] md:mt-[20vh] sm:mt-[25vh] lg:mt-[20vh]": idx === 1 || idx === 2, // Slide 2 & 3
                   }                  
                 )}
               >
@@ -126,12 +126,12 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                     className={clsx(
                       "px-6 text-center leading-tight font-poppins",
                       {
-                        "text-[74px] leading-[82px] uppercase font-medium": idx === 0,
+                        "text-[74px] leading-[82px] font-medium": idx === 0,
                         "text-[48px] leading-[56px] font-normal": idx === 1 || idx === 2,
                       }
                     )}
                   >
-                    {idx === 0 ? item.title.toUpperCase() : item.title}
+                    {idx === 0 ? item.title : item.title}
                   </h1>
                 )}
 
@@ -154,7 +154,9 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                   <div className="mt-[calc(53px+2vw)]">
                     <Link
                       to={idx === 1 ? "/products" : idx === 2 ? "/sustainability-case-study" : "/contact"} // Dynamically change link
-                      className="wae-btn-light wae-btn wae-btn-lg !border-none px-10"
+                      className="wae-btn-light wae-btn wae-btn-lg !border-none px-10 py-3 text-[16px] 
+                      w-[200px] h-[48px] font-poppins md:text-[16px] 
+                      sm:w-[160px] sm:h-[40px] sm:text-[14px] md:px-6"
                     >
                       {item.buttonText}
                     </Link>
