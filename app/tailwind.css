@@ -6,6 +6,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+
   @font-face {
     font-family: "Monschone";
     font-style: normal;

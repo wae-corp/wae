@@ -129,7 +129,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
 
             <div
               data-aos="zoom-in"
-              className={"isolate z-[2] mx-auto text-center text-white"}
+              className={"isolate z-[2] mx-auto text-center text-white relative"}
               style={item.align === "center" ? { marginTop: "5%" } : undefined}
             >
               {/* Wrapper for header, subtext, and button */}
@@ -138,7 +138,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                   "mb-10 md:px-14 transform",
                   {
                     "mt-[15vh] md:mt-[20vh]": idx === 0, // Slide 1
-                    "mt-[25vh] md:mt-[20vh] sm:mt-[25vh] lg:mt-[20vh]": idx === 1 || idx === 2, // Slide 2 & 3
+                    "mt-[25vh] md:mt-[20vh] sm:mt-[25vh] lg:mt-[20vh]": idx === 1 || idx === 2 || idx === 3, // Slide 2 & 3
                   }                  
                 )}
               >
@@ -151,7 +151,7 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                       "px-6 text-center font-poppins",
                       {
                         "text-[74px] leading-[82px] font-medium": idx === 0,
-                        "text-[74px] leading-[88.8px] font-medium": idx === 1 || idx === 2,
+                        "text-[74px] leading-[88.8px] font-medium": idx === 1 || idx === 2 || idx === 3,
                       }
                     )}
                   >
@@ -174,14 +174,16 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                     </>
                   ) : idx === 1 ? (
                     "No Green Wasting Here"
-                  ) : (
+                  ) : idx === 2 ? (
                     "Don't just pledge - Act"
+                  ) : (
+                    "Rethink Green"
                   )}
                 </p>
 
                 {/* Conditionally Render Button */}
                 {item.isButton && item.buttonText && (
-                  <div className="mt-[calc(53px+2vw)]">
+                  <div className="mt-[40px]">
                     <Link
                       to={idx === 1 ? "/products" : idx === 2 ? "/sustainability" : "/contact"} // Dynamically change link
                       className="wae-btn-light wae-btn wae-btn-lg !border-none px-10 py-3 text-[16px] 
@@ -194,6 +196,22 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                 )}
               </div>
             </div>
+
+            {/* Additional text for slide 3 - Positioned outside the centered content */}
+            {idx === 2 && (
+              <div 
+                className="absolute z-[2] text-right font-poppins text-[16px] leading-[24px] tracking-[0.01em] font-normal text-white"
+                style={{
+                  width: '480px',
+                  height: '72px',
+                  top: '590px',
+                  left: '900px',
+                  fontFamily: 'Poppins'
+                }}
+              >
+                Three Gorges Dam drives clean energy and flood control, but at the cost of lost habitats, displaced communities, and a majorly disrupted ecosystem.
+              </div>
+            )}
           </Carousel.Slide>
 
         );

@@ -42,19 +42,10 @@ const sliderItemList = [
     align: "center" as const,
     isButton: false,
   },
-  // {
-  //   image:
-  //     "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/25cd406c-a8e7-449b-30ec-4824b6426800/public",
-  //   title: "Keeping The Blue Planet Green",
-  //   subtitle: "NEPTUNE DUO",
-  //   align: "end",
-  //   isButton: true,
-  // },
   {
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a13fd704-40a3-4216-4d58-d0da64a73600/public",
-    title:
-      "Green By Design",
+    title: "Green By Design",
     align: "end" as const,
     isButton: true,
     buttonText: "Explore Products",
@@ -65,7 +56,17 @@ const sliderItemList = [
     title: "Planet Over Profit",
     align: "end" as const,
     isButton: true,
+    buttonText: "Explore WAE Foundation",
+    buttonLink: "/",
+  },
+  {
+    image:
+      "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/17077c03-3855-4e09-f60b-9b41b40c6c00/public",
+    title: "Break The Cycle",
+    align: "end" as const,
+    isButton: true,
     buttonText: "Explore Sustainability",
+    buttonLink: "/sustainability",
   },
 ];
 

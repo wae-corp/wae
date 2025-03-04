@@ -226,7 +226,7 @@ export default function Company() {
             // data-aos="fade-right"
             >
               <h3 className="mb-[60px] font-secondary text-2xl uppercase md:text-[32px] md:leading-normal xl:mb-[60px] xl:text-4xl">
-                WHAT DRIVES US PASSION WITH PURPOSE
+                WHAT DRIVES US
               </h3>
               <p
                 className="mb-[48px] h-[216px] w-[550px] font-mont text-base font-light leading-6 tracking-[0.01em] md:pl-20"
