@@ -186,9 +186,10 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                   <div className="mt-[40px]">
                     <Link
                       to={idx === 1 ? "/products" : idx === 2 ? "/sustainability" : "/contact"} // Dynamically change link
-                      className="wae-btn-light wae-btn wae-btn-lg !border-none px-10 py-3 text-[16px] 
+                      className="wae-btn-light wae-btn wae-btn-lg !border-none px-16 py-3 text-[16px] 
                       w-auto min-w-[200px] h-[48px] font-poppins md:text-[16px] 
-                      sm:w-[160px] sm:h-[40px] sm:text-[14px] md:px-6 whitespace-nowrap"
+                      sm:w-[160px] sm:h-[40px] sm:text-[14px] md:px-10 whitespace-nowrap
+                      hover:bg-white/95 transition-colors duration-200 !hover:scale-100 hover:!text-black"
                     >
                       {item.buttonText}
                     </Link>
