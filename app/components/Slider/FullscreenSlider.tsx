@@ -200,14 +200,11 @@ export const FullscreenSlider = ({items}: SliderProps) => {
             {/* Additional text for slide 3 - Positioned outside the centered content */}
             {idx === 2 && (
               <div 
-                className="absolute z-[2] text-right font-poppins text-[16px] leading-[24px] tracking-[0.01em] font-normal text-white"
-                style={{
-                  width: '480px',
-                  height: '72px',
-                  top: '590px',
-                  left: '900px',
-                  fontFamily: 'Poppins'
-                }}
+                className="absolute z-[2] text-right font-poppins text-[16px] leading-[24px] tracking-[0.01em] font-normal text-white
+                max-w-[480px] top-[36.875rem] left-[56.25rem]
+                lg:top-[calc(590/16*1rem)] lg:left-[calc(900/16*1rem)]
+                max-lg:top-[50vh] max-lg:left-[40vw]
+                max-sm:relative max-sm:text-center max-sm:text-sm max-sm:mx-auto max-sm:mt-8 max-sm:max-w-[300px] max-sm:left-auto max-sm:top-auto"
               >
                 Three Gorges Dam drives clean energy and flood control, but at the cost of lost habitats, displaced communities, and a majorly disrupted ecosystem.
               </div>
