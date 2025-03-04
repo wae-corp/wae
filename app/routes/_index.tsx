@@ -37,7 +37,8 @@ const sliderItemList = [
   {
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cbed1e2a-0ea3-40f2-6ad4-fc63a4461c00/public",
-    title: "Disrupting the status quo",
+    title: "Disrupting",
+    title2: "the status quo",
     align: "center" as const,
     isButton: false,
   },

@@ -95,13 +95,37 @@ export const FullscreenSlider = ({items}: SliderProps) => {
           >
             <div className="absolute bottom-0 left-0 right-0 top-0 z-[1] h-full w-full bg-gradient-to-b from-black via-transparent to-black"></div>
 
-            <img
-              src={item.image}
-              alt=""
-              width={1920}
-              height={1080}
-              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover"
-            />
+            {idx === 0 ? (
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover"
+              >
+                <source src="/images/banners/Earth_Rotation_3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : idx === 2 ? (
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover"
+              >
+                <source src="/images/banners/freepik__push-in-on-the-dam-capturing-the-intricate-details__777132-ezgif.com-reverse-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <img
+                src={item.image}
+                alt=""
+                width={1920}
+                height={1080}
+                className="absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover"
+              />
+            )}
 
             <div
               data-aos="zoom-in"
@@ -124,14 +148,20 @@ export const FullscreenSlider = ({items}: SliderProps) => {
                 {item.title && (
                   <h1
                     className={clsx(
-                      "px-6 text-center leading-tight font-poppins",
+                      "px-6 text-center font-poppins",
                       {
                         "text-[74px] leading-[82px] font-medium": idx === 0,
-                        "text-[48px] leading-[56px] font-normal": idx === 1 || idx === 2,
+                        "text-[74px] leading-[88.8px] font-medium": idx === 1 || idx === 2,
                       }
                     )}
                   >
-                    {idx === 0 ? item.title : item.title}
+                    {item.title}
+                    {item.title2 && (
+                      <>
+                        <br />
+                        {item.title2}
+                      </>
+                    )}
                   </h1>
                 )}
 
@@ -171,10 +201,10 @@ export const FullscreenSlider = ({items}: SliderProps) => {
     </Carousel>
   );
 };
-
 interface SliderItem {
   image: string;
   title?: string;
+  title2?: string;
   subtitle?: string;
   align: "center" | "end";
   isButton: boolean;
@@ -184,3 +214,4 @@ interface SliderItem {
 interface SliderProps {
   items: SliderItem[];
 }
+
