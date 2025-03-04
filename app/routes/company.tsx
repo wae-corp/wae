@@ -59,11 +59,11 @@ export default function Company() {
             className="text-left text-base font-light uppercase leading-relaxed text-white md:text-2xl xl:max-w-[400px]"
             // data-aos="fade-left"
           >
-            WAE is more than a job – it’s a journey. We offer competitive
+            WAE is more than a job – it's a journey. We offer competitive
             benefits, a supportive and inclusive community, and countless
             opportunities for personal and professional growth. Join us and be
             part of a team that values your contributions and helps you reach
-            your full potential. Let’s create a brighter future together.
+            your full potential. Let's create a brighter future together.
           </p>
         </div>
       </section> */}
@@ -79,24 +79,26 @@ export default function Company() {
                 Mission & Vision
               </label>
 
-              <div className="flex items-center text-sm uppercase">
+              <div className="flex items-center text-sm uppercase w-[200px] h-[72px]">
                 <div className="prefix-dot"></div>
-                The WAE's Vision Towards Sustainable Development
+                THE WAE'S VISION TOWARDS SUSTAINABLE DEVELOPMENT
               </div>
             </div>
             <div
-              className="max-w-[650px] pl-20 text-sm md:pl-10 md:text-xl"
+              className="max-w-[650px] pl-20 font-mont text-xl font-light leading-7 tracking-[0.01em] md:pl-10"
               // data-aos="fade-left"
             >
               <p>
-                WAE’s mission is to drive sustainability through innovative
-                water solutions that reduce carbon emissions and eliminate
-                reliance on plastic water bottles. By combining advanced
-                engineering with sustainable design, we address pressing
-                environmental challenges while promoting water conservation and
-                eco-friendly practices. Committed to creating measurable impact,
-                WAE empowers clients to adopt solutions that enhance efficiency
-                and contribute to a greener, more sustainable future for all.
+                At WAE, our mission is clear. We revolutionize water 
+                sustainability through cutting-edge innovation. We eliminate 
+                the need for plastic water bottles, slash carbon emissions, and 
+                engineer solutions that redefine efficiency. Sustainability is not 
+                just a goal; it is our blueprint for the future. By merging 
+                advanced technology with eco-conscious design, we tackle 
+                global water challenges head-on, empowering businesses and 
+                communities to make a measurable impact. Our vision is a 
+                world where water conservation leads the charge toward a 
+                cleaner, greener planet.
               </p>
             </div>
           </div>
@@ -106,7 +108,7 @@ export default function Company() {
               className="text-center"
               data-aos="fade-up"
             >
-              <h2 className="mb-5 font-secondary text-4xl font-semibold uppercase md:text-[40px] lg:text-[50px]">
+              <h2 className="mb-5 font-poppins text-[50px] font-normal leading-[70px] tracking-[0.01em]">
                 <Counter
                   end={1012120.25}
                   duration={1}
@@ -123,7 +125,7 @@ export default function Company() {
               className="text-center"
               data-aos="fade-up"
             >
-              <h2 className="mb-5 font-secondary text-4xl font-semibold uppercase md:text-[40px] lg:text-[50px]">
+              <h2 className="mb-5 font-poppins text-[50px] font-normal leading-[70px] tracking-[0.01em]">
                 {" "}
                 <Counter
                   end={12185.43}
@@ -141,7 +143,7 @@ export default function Company() {
               className="text-center"
               data-aos="fade-up"
             >
-              <h2 className="mb-5 font-secondary text-4xl font-semibold uppercase md:text-[40px] lg:text-[50px]">
+              <h2 className="mb-5 font-poppins text-[50px] font-normal leading-[70px] tracking-[0.01em]">
                 <Counter
                   end={22253.65}
                   duration={1}
@@ -165,17 +167,17 @@ export default function Company() {
         >
           <div className="mx-auto max-w-[1080px] text-white 2xl:mt-40">
             <h2 className="mb-6 text-sm font-extrabold uppercase md:text-xl xl:mb-9">
-              Journey and Transformation
+              Our Journey: A vision in motion
             </h2>
 
-            <p className="font-secondary text-base uppercase xl:text-2xl">
-              WAE’s journey has been shaped by a clear vision: to contribute to
-              a sustainable planet where everyone can thrive. Through innovation
-              and dedication, we’ve consistently focused on making a positive
-              impact on the environment and society. As we look ahead, we remain
-              committed to leveraging our capabilities and strategic vision to
-              create lasting value, embracing new challenges and opportunities
-              with purpose and resolve.
+            <p className="font-poppins text-[24px] font-normal leading-[36px] tracking-[0.01em] text-center uppercase">
+              WAE WAS BUILT ON A SINGULAR VISION—CREATING A WORLD WHERE SUSTAINABILITY AND 
+              PROGRESS GO HAND IN HAND. OUR JOURNEY HAS BEEN DEFINED BY RELENTLESS INNOVATION, 
+              BOLD STRATEGIES, AND A DEEP-ROOTED COMMITMENT TO ENVIRONMENTAL AND SOCIAL 
+              IMPACT. WITH EVERY MILESTONE, WE HAVE PUSHED THE BOUNDARIES OF WHAT IS POSSIBLE. 
+              AS WE MOVE FORWARD, OUR PLEDGE REMAINS UNWAVERING. WE DRIVE TRANSFORMATIVE 
+              CHANGE, EMBRACE NEW CHALLENGES, AND BUILD A FUTURE WHERE SUSTAINABILITY IS NOT 
+              AN OPTION; IT IS THE STANDARD.
             </p>
           </div>
         </div>
@@ -198,18 +200,20 @@ export default function Company() {
                 className="flex items-center text-sm uppercase xl:text-base"
               >
                 <div className="prefix-dot"></div>
-                Brand WAE
+                The Essence of WAE
               </Link>
             </div>
 
-            <p className="max-w-[600px] pl-20 text-sm md:pl-0 md:text-base lg:text-xl">
-              Our purpose is to create a lasting impact by developing
-              sustainable water solutions that give back to the planet. We focus
-              on advancing green technologies, fostering a circular economy,
-              reducing reliance on plastic, and progressing towards
-              zero-to-landfill goals. By delivering value to customers and
-              driving social progress, we aim to shape a future where water
-              sustainability leads the way to a healthier, greener world.
+            <p className="max-w-[600px] pl-20 font-mont text-[20px] font-light leading-[28px] md:pl-0">
+              We exist to do more than provide water solutions—we create 
+              lasting impact. Our mission is to engineer sustainability at 
+              scale, pioneering green technologies that drive a circular 
+              economy, minimize waste, and eliminate plastic dependency. 
+              From reducing landfill contributions to enhancing water 
+              efficiency, we craft solutions that benefit businesses, 
+              communities, and the planet. The result is a future where 
+              responsible water consumption leads the way to a healthier, 
+              more sustainable world.
             </p>
           </div>
         </div>
@@ -222,26 +226,27 @@ export default function Company() {
             // data-aos="fade-right"
             >
               <h3 className="mb-[60px] font-secondary text-2xl uppercase md:text-[32px] md:leading-normal xl:mb-[60px] xl:text-4xl">
-                What Thrives Us
+                WHAT DRIVES US PASSION WITH PURPOSE
               </h3>
               <p
-                className="mb-12 md:mb-[60px] md:pl-20 md:text-sm xl:mb-12 xl:text-base"
+                className="mb-[48px] h-[216px] w-[550px] font-mont text-base font-light leading-6 tracking-[0.01em] md:pl-20"
                 // data-aos="fade-right"
               >
-                What drives us is a relentless passion for innovation and a
-                commitment to creating solutions that make a difference. At our
-                core, we are inspired by the opportunity to address global
-                challenges in water sustainability, reduce environmental impact,
-                and contribute to a greener planet. Our focus on advancing
-                technology, fostering a culture of responsibility, and
-                delivering meaningful value to our customers fuels our mission
-                to create a sustainable and thriving future for all.
+                Innovation fuels us. Sustainability defines us. At WAE, we 
+                are relentless in our pursuit of pioneering solutions that 
+                address the global water crisis. We do not just adapt to 
+                change; we create it. Our drive stems from a 
+                commitment to reducing environmental impact, 
+                advancing technology, and delivering unparalleled value 
+                to our customers. Every breakthrough, every milestone, 
+                and every innovation is a step toward a world where 
+                water sustainability is a reality, not just a vision.
               </p>
 
-              {/* <p className="text-sm uppercase xl:text-base">
+              <p className="text-sm uppercase xl:text-base">
                 <span className="prefix-dot"></span> Our journey is focused
                 towards a sustainable planet
-              </p> */}
+              </p>
             </div>
             <div
               className="flex-shrink-0 xl:max-w-[400px]"
@@ -262,15 +267,15 @@ export default function Company() {
             </div>
           </div>
 
-          <div className="mb-20 max-w-[670px] md:mb-[120px] lg:mb-36">
+          <div className="mb-20 max-w-[660px] md:mb-[120px] lg:mb-36">
             <h4 className="mb-5 font-secondary text-2xl uppercase xl:text-[30px]">
               Core Values and Beliefs
             </h4>
 
-            <p className="flex items-center gap-4 text-sm uppercase xl:text-base">
+            <p className="flex items-center gap-4 text-sm xl:text-base">
               <span className="prefix-dot"></span>
-              WAE thrives on a foundation of progressive values and beliefs,
-              reflected in every interaction:
+              At WAE, our values are not just words; 
+              they are the foundation of everything we do.
             </p>
           </div>
 
@@ -298,6 +303,19 @@ export default function Company() {
                 </div>
               );
             })}
+          </div>
+
+          <div 
+            className="mt-[60px] mx-auto"
+            style={{
+              width: '991px',
+              height: '150px',
+            }}
+          >
+            <p className="font-poppins uppercase font-semibold text-[36px] leading-[50.4px] text-center">
+              WAE is not just redefining water sustainability;
+              we are shaping the future. And we are just getting started.
+            </p>
           </div>
         </div>
       </section>

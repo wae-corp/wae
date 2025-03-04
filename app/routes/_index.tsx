@@ -37,9 +37,8 @@ const sliderItemList = [
   {
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cbed1e2a-0ea3-40f2-6ad4-fc63a4461c00/public",
-    title: "Disrupting The Status Quo",
-    // subtitle: "NEPTUNE DUO",
-    align: "center",
+    title: "Disrupting the status quo",
+    align: "center" as const,
     isButton: false,
   },
   // {
@@ -55,8 +54,7 @@ const sliderItemList = [
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/a13fd704-40a3-4216-4d58-d0da64a73600/public",
     title:
       "Green By Design",
-    // subtitle: "NEPTUNE DUO",
-    align: "end",
+    align: "end" as const,
     isButton: true,
     buttonText: "Explore Products",
   },
@@ -64,8 +62,7 @@ const sliderItemList = [
     image:
       "https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/47dc0a5a-cc20-4aca-cae4-cfa2bf102a00/public",
     title: "Planet Over Profit",
-    // subtitle: "NEPTUNE DUO",
-    align: "end",
+    align: "end" as const,
     isButton: true,
     buttonText: "Explore Sustainability",
   },
@@ -443,8 +440,8 @@ export default function Index() {
               the time-honoured ideals with the latest technology. We are driven
               by the mission to build a brand that not only saves the planet but
               also creates a potent impact on future generations for the
-              country’s advancements, integrity & innovation. Our approach
-              strengthens community resilience while showcasing India’s
+              country's advancements, integrity & innovation. Our approach
+              strengthens community resilience while showcasing India's
               Intellectual capital on the world stage.
             </p>
           </div>
@@ -492,9 +489,9 @@ export default function Index() {
                 Life at WAE is all about bringing your whole self to work. Our
                 diverse and inclusive culture thrives on the unique perspectives
                 of our team, making every day an opportunity to learn, connect,
-                and grow together. It’s a place where your ideas shine, your
+                and grow together. It's a place where your ideas shine, your
                 voice is heard, and you feel right at home no matter where
-                you’re from.
+                you're from.
               </p>
             </div>
           </div>

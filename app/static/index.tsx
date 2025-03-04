@@ -318,43 +318,43 @@ export const coreValues = [
   {
     id: 1,
     image: "/images/icons/magnifying-glass-with-gear.svg",
-    value: "Research-Driven",
-    details: "We prioritize research and technology over market trends.",
+    value: "Research-Driven Innovation",
+    details: "We prioritize science and technology over fleeting market trends, ensuring that every solution is built on substance and sustainability.",
   },
   {
     id: 2,
     image: "/images/icons/person-with-leaves.svg",
-    value: "Environmental and Human Service",
+    value: "Planet and People First",
     details:
-      "Our primary focus is delivering solutions that benefit both the planet and humanity, driven by responsibility, innovation, and purpose.",
+      "Our focus is on solutions that serve both humanity and the environment. Responsibility, innovation, and impact guide every decision we make.",
   },
   {
     id: 3,
     image: "/images/icons/hand-with-checkmark.svg",
-    value: "Responsibility",
+    value: "People Powered Growth",
     details:
-      "We are accountable to our employees, customers, associates, and society, consistently upholding the highest standards in every interaction and commitment.",
+      "Our employees are our greatest asset. Their expertise, teamwork, and integrity drive our success, and we invest in their growth and development.",
   },
   {
     id: 4,
     image: "/images/icons/employee-value.svg",
-    value: "Employee Value",
+    value: "Accountability in Action",
     details:
-      "Our future relies on the knowledge, attitude, skills, teamwork, and integrity of our employees, qualities we deeply value and respect.",
+      "We hold ourselves to the highest standards, delivering excellence to our employees, clients, and communities with every commitment we make.",
   },
   {
     id: 5,
     image: "/images/icons/hand-with-checkmark.svg",
-    value: "Participative Management",
+    value: "Quality without compromise",
     details:
-      "We advocate participative management, drive productivity, and promote shared success to foster collective growth and achievement.",
+      "From products to partnerships, service to communication, quality is at the heart of everything we do.",
   },
   {
     id: 6,
     image: "/images/icons/handshake-verified.svg",
-    value: "Quality Commitment",
+    value: "Collaborative Leadership",
     details:
-      "We are committed to delivering quality in our products, services, relationships, communications, and the promises we make.",
+      "We believe in participative management, fostering an environment where collective success propels us all forward.",
   },
 ];
 
