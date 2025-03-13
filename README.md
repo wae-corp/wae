@@ -103,7 +103,7 @@ This project is proprietary and confidential. All rights reserved by WAE Corp.
 
 ## 👥 Team
 
-- Development Team @ WAE Corp
+- Author: Harshit Raj
 - For support, contact: info@waecorp.com
 
 ## 🔐 Security
